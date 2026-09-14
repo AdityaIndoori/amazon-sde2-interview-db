@@ -117,6 +117,7 @@ scripts/serve.js                Local static preview server
 7. Run `bun run build` and `bun run check`, inspect the resulting rows in the viewer, and commit the research and generated artifacts together.
 
 If only the final-loop ordinal is unknown, use `data/unconfirmed/*.json` with `data/unconfirmed.schema.json`: retain all other admission evidence, `round: null`, and a precise `roundUncertainty`. Do not put generic or screening-ambiguous leads here. To promote a source/question, add supported numbered evidence to strict inputs and remove the supplemental entry in the same change; the compiler rejects source+canonical-question collisions. Campaign inputs follow `data/campaign.schema.json`, one run per file. Record every returned source as verified, unconfirmed, duplicate, excluded or unresolved; do not invent closed dispositions to make a search look complete.
+Supplemental reports must explicitly declare `stage: "final-loop"`; missing, phone-screen and OA stage values are rejected. This machine check supplements, rather than replaces, curator inspection of the required `stageEvidence` quotation.
 
 The window is a fixed research snapshot, not a live feed. To extend it, update the cutoff in `scripts/build.js`, plan/methodology scope and initial HTML text, then research and validate new sources. Do not simply relabel old data as current.
 

@@ -2,7 +2,7 @@ import { describe, expect, test } from 'bun:test';
 import { compileResearchExpansion } from './research-expansion.js';
 
 const question = overrides => ({ round: null, key: 'lru-cache', question: 'Implement an LRU cache.', topic: 'Data structures / Cache', evidence: 'The candidate reports being asked to implement an LRU cache in the onsite loop.', roundUncertainty: 'The final-loop account lists questions without identifying their sessions.', ...overrides });
-const report = overrides => ({ id: 'source-a', url: 'https://example.com/source-a', title: 'Amazon SDE II onsite experience', role: 'SDE II', stageEvidence: 'Candidate explicitly describes the final onsite loop after passing the phone screen.', location: 'Seattle, United States', date: '2026-03-05', dateBasis: 'interview', questions: [question()], ...overrides });
+const report = overrides => ({ id: 'source-a', url: 'https://example.com/source-a', title: 'Amazon SDE II onsite experience', role: 'SDE II', stage: 'final-loop', stageEvidence: 'Candidate explicitly describes the final onsite loop after passing the phone screen.', location: 'Seattle, United States', date: '2026-03-05', dateBasis: 'interview', questions: [question()], ...overrides });
 const fixture = () => ({
   slices: [{ slice: 'recovery', reports: [report()] }],
   strict: { metadata: { startDate: '2025-01-01', endDate: '2026-09-13', reportCount: 0, questionCount: 0, occurrenceCount: 0 }, questions: [], reports: [], coverage: [] },
@@ -12,6 +12,14 @@ const fixture = () => ({
 const campaign = overrides => ({ id: 'us-spring', country: 'United States', startDate: '2026-01-01', endDate: '2026-06-30', searchedAt: '2026-09-14T10:00:00Z', provider: 'Exa', queries: ['Amazon SDE II onsite United States spring 2026'], artifact: 'data/exa/us-spring.json', status: 'completed', sources: [{ url: 'https://example.com/source-a', disposition: 'unconfirmed', reason: 'Explicit final loop, question given without a session number.', reportId: 'source-a' }], ...overrides });
 
 describe('supplemental compilation boundaries', () => {
+  test('rejects supplemental records without an explicit final-loop stage', () => {
+    const input = fixture();
+    for (const stage of [undefined, 'phone-screen', 'online-assessment']) {
+      input.slices[0].reports[0].stage = stage;
+      expect(() => compileResearchExpansion(input)).toThrow('final-loop stage');
+    }
+  });
+
   test('keeps strict data untouched and supplemental frequencies independent', () => {
     const input = fixture();
     input.strict.reports = [report({ id: 'strict-only', url: 'https://example.com/strict', location: 'United States', questions: [question({ round: 2 })] })];

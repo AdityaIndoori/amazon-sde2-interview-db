@@ -60,6 +60,7 @@ export function compileResearchExpansion({ slices, strict, normalization, campai
     coverage.push({ slice: sliceId, queries: [], excluded: [], limitations: ['Final-loop questions in this collection have no verified round number.'] });
     for (const raw of array(slice.reports, `${sliceId} reports`)) {
       const id = idFor(raw.id);
+      if (raw.stage !== 'final-loop') fail(`${id}: supplemental account requires explicit final-loop stage`);
       const report = {
         ...raw, id, url: webUrl(raw.url, 'report URL'), title: text(raw.title, 'report title'),
         role: text(raw.role, 'role'), stageEvidence: text(raw.stageEvidence, 'role/stage evidence'),

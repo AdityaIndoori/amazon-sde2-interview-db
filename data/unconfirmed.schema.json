@@ -29,7 +29,7 @@
     },
     "report": {
       "type": "object",
-      "required": ["id", "url", "title", "role", "stageEvidence", "location", "date", "dateBasis", "questions"],
+      "required": ["id", "url", "title", "role", "stage", "stageEvidence", "location", "date", "dateBasis", "questions"],
       "properties": {
         "id": {"type": "string", "minLength": 1},
         "url": {"$ref": "#/$defs/url"},
@@ -37,6 +37,7 @@
         "aliases": {"type": "array", "items": {"$ref": "#/$defs/url"}},
         "title": {"type": "string", "minLength": 1},
         "role": {"type": "string", "minLength": 1},
+        "stage": {"const": "final-loop", "description": "Curator-verified stage; evidence must establish a final-loop interview, not OA or screening."},
         "stageEvidence": {"type": "string", "minLength": 1},
         "eligibility": {"type": "string"},
         "location": {"type": "string", "minLength": 1},
