@@ -3,7 +3,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const collator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
-  const controls = { q: $("search"), round: $("round"), topic: $("topic"), location: $("location"), year: $("year"), basis: $("basis"), min: $("minimum") };
+  const controls = { q: $("search"), round: $("round"), topic: $("topic"), category: $("category"), quality: $("quality"), location: $("location"), year: $("year"), basis: $("basis"), min: $("minimum"), personal: $("personal") };
   const sortKeys = ["round", "question", "topic", "frequency", "dates", "sources", "locations"];
   let database;
   const collections = {};
@@ -13,6 +13,94 @@
   let visibleRows = [];
   let sort = { key: "frequency", direction: "desc" };
   let searchTimer;
+  const qualityLabels = { "exact-named": "Exact named", described: "Described", partial: "Partial" };
+  const studyKey = "interview-fieldnotes.study.v1";
+  let study = { version: 1, marks: Object.create(null), views: [] };
+  let storageAvailable = true;
+  let research;
+
+  function storageNotice(message) {
+    storageAvailable = false;
+    $("storage-notice").hidden = false;
+    $("storage-notice").textContent = `${message} Changes are session-only and will be lost on reload. No study data is uploaded.`;
+  }
+
+  function publicQuery(query) {
+    const input = new URLSearchParams(query);
+    const output = new URLSearchParams();
+    for (const key of [...Object.keys(controls).filter(key => key !== "personal"), "view", "sort", "dir"]) {
+      for (const value of input.getAll(key)) output.append(key, value);
+    }
+    return output.size ? `?${output}` : "";
+  }
+
+  function readStudy() {
+    try {
+      const stored = localStorage.getItem(studyKey);
+      if (!stored) return;
+      const data = JSON.parse(stored);
+      if (data?.version !== 1 || !data.marks || typeof data.marks !== "object" || Array.isArray(data.marks) || !Array.isArray(data.views)) throw new Error("Unrecognized study data");
+      const marks = Object.create(null);
+      for (const [key, value] of Object.entries(data.marks)) {
+        const identity = JSON.parse(key);
+        if (!Array.isArray(identity) || identity.length !== 2 || !["strict", "unconfirmed"].includes(identity[0]) || typeof identity[1] !== "string" || !value || typeof value !== "object" || typeof value.bookmarked !== "boolean" || typeof value.practiced !== "boolean") throw new Error("Invalid study mark");
+        marks[key] = { bookmarked: value.bookmarked, practiced: value.practiced };
+      }
+      const views = [];
+      for (const item of data.views) {
+        if (!item || typeof item.name !== "string" || !item.name.trim() || item.name.length > 80 || typeof item.query !== "string" || (item.query && !item.query.startsWith("?"))) throw new Error("Invalid saved filter set");
+        if (!views.some(saved => saved.name === item.name)) views.push({ name: item.name, query: publicQuery(item.query) });
+      }
+      study = { version: 1, marks, views };
+    } catch {
+      storageNotice("Local study storage could not be read safely. Existing stored data has not been changed.");
+    }
+  }
+
+  function persistStudy() {
+    if (!storageAvailable) return;
+    try { localStorage.setItem(studyKey, JSON.stringify(study)); }
+    catch { storageNotice("This browser could not save local study data."); }
+  }
+
+  function markKey(row) { return JSON.stringify([view, row.id]); }
+
+  function renderSavedViews(selected = $("saved-view").value) {
+    $("saved-view").replaceChildren(new Option(study.views.length ? "Choose a saved filter set" : "No saved filter sets", ""), ...study.views.map((item, index) => new Option(item.name, String(index))));
+    $("saved-view").value = selected;
+    updateSavedActions();
+  }
+
+  function updateSavedActions() {
+    const selected = $("saved-view").value;
+    const available = selected !== "" && !!study.views[Number(selected)];
+    $("load-view").disabled = !database || !available;
+    $("delete-view").disabled = !available;
+  }
+
+  function studyActions(row) {
+    const group = element("div", null, "study-actions");
+    const identity = markKey(row);
+    for (const [key, label] of [["bookmarked", "Bookmark"], ["practiced", "Practiced"]]) {
+      const button = element("button", label, "study-toggle");
+      button.type = "button";
+      button.dataset.mark = key;
+      button.dataset.identity = identity;
+      button.setAttribute("aria-label", `${label}: ${row.question}`);
+      button.setAttribute("aria-pressed", String(!!study.marks[identity]?.[key]));
+      button.addEventListener("click", () => {
+        const previous = study.marks[identity] || { bookmarked: false, practiced: false };
+        study.marks[identity] = { ...previous, [key]: !previous[key] };
+        if (!study.marks[identity].bookmarked && !study.marks[identity].practiced) delete study.marks[identity];
+        persistStudy();
+        const personal = controls.personal.value;
+        if ((key === "bookmarked" && personal === "bookmarked") || (key === "practiced" && ["practiced", "not-practiced"].includes(personal))) render();
+        else button.setAttribute("aria-pressed", String(!!study.marks[identity]?.[key]));
+      });
+      group.append(button);
+    }
+    return group;
+  }
 
   function element(tag, text, className) {
     const node = document.createElement(tag);
@@ -122,10 +210,11 @@
     return state;
   }
 
-  function restoreURL() {
-    const params = new URLSearchParams(location.search);
+  function restoreURL(search = location.search) {
+    const params = new URLSearchParams(search);
     selectCollection(params.get("view"));
     for (const [key, control] of Object.entries(controls)) {
+      if (key === "personal") { control.value = ""; continue; }
       const value = params.get(key) || (key === "min" ? "1" : "");
       if (control.hasAttribute("data-multiple")) {
         const selected = new Set(params.getAll(key));
@@ -138,11 +227,11 @@
     sort = { key: sortKeys.includes(key) ? key : "frequency", direction: params.get("dir") === "asc" ? "asc" : "desc" };
   }
 
-  function saveURL(state) {
-    const url = new URL(location.href);
-    for (const key of [...Object.keys(controls), "sort", "dir", "view"]) url.searchParams.delete(key);
+  function publicURL(state = stateFromControls()) {
+    const url = new URL(location.pathname, location.origin);
     if (view === "unconfirmed") url.searchParams.set("view", view);
     for (const [key, value] of Object.entries(state)) {
+      if (key === "personal") continue;
       if (Array.isArray(value)) {
         for (const selected of value) url.searchParams.append(key, selected);
       } else if (value && !(key === "min" && value === 1)) url.searchParams.set(key, value);
@@ -151,6 +240,12 @@
       url.searchParams.set("sort", sort.key);
       url.searchParams.set("dir", sort.direction);
     }
+    return url;
+  }
+
+  function saveURL(state) {
+    const url = publicURL(state);
+    url.hash = location.hash;
     try { history.replaceState(null, "", url); } catch { /* Filtering still works when URL updates are unavailable. */ }
   }
 
@@ -161,6 +256,8 @@
     return {
       ...question,
       occurrences,
+      evidenceQualities: uniqueSorted(occurrences.map(item => item.evidenceQuality)),
+      practiceLinks: uniqueSorted(occurrences.filter(item => item.evidenceQuality === "exact-named" && item.problemUrl && item.problemEvidence).map(item => item.problemUrl)),
       frequency: reportIds.size,
       dates: [...dateMap.values()].sort((a, b) => collator.compare(a.date, b.date) || collator.compare(a.basis, b.basis)),
       sources: [...reportIds].map((id) => ({ ...sourceFor(question, id), id })).sort((a, b) => collator.compare(a.title, b.title)),
@@ -174,14 +271,20 @@
     for (const question of database.questions) {
       if (view === "strict" && state.round.length && !state.round.includes(String(question.round))) continue;
       if (state.topic.length && !state.topic.includes(question.topic)) continue;
-      const questionText = `${question.question} ${question.topic} ${roundLabel(question.round)}`.toLocaleLowerCase();
+      if (state.category.length && !state.category.includes(question.category)) continue;
+      const mark = study.marks[markKey(question)];
+      if (state.personal === "bookmarked" && !mark?.bookmarked) continue;
+      if (state.personal === "practiced" && !mark?.practiced) continue;
+      if (state.personal === "not-practiced" && mark?.practiced) continue;
+      const questionText = `${question.id} ${question.question} ${question.topic} ${question.category} ${roundLabel(question.round)}`.toLocaleLowerCase();
       const occurrences = question.occurrences.filter((item) => {
         if (state.year.length && !state.year.includes(item.date.slice(0, 4))) return false;
         if (state.location.length && !state.location.includes(item.location || "Not stated")) return false;
         if (state.basis.length && !state.basis.includes(item.dateBasis)) return false;
+        if (state.quality.length && !state.quality.includes(item.evidenceQuality)) return false;
         if (!terms.length) return true;
         const source = sourceFor(question, item.reportId);
-        const text = `${questionText} ${item.evidence} ${item.roundUncertainty || ""} ${item.roundMappingNote || ""} ${item.location} ${item.date} ${source.title} ${source.url}`.toLocaleLowerCase();
+        const text = `${questionText} ${item.reportId} ${item.evidence} ${item.roundUncertainty || ""} ${item.roundMappingNote || ""} ${item.location} ${item.date} ${source.title} ${source.url}`.toLocaleLowerCase();
         return terms.every((term) => text.includes(term));
       });
       if (!occurrences.length) continue;
@@ -235,6 +338,12 @@
         const heading = element("h3");
         heading.append(safeLink(source.title || occurrence.reportId, source.url));
         article.append(heading, element("p", `${row.round === null ? "Round unconfirmed" : `Round ${row.round}`} · ${dateLabel(occurrence.date)} · ${basisLabel(occurrence.dateBasis)} · ${occurrence.location || "Not stated"}`), element("blockquote", occurrence.evidence));
+        article.append(element("span", qualityLabels[occurrence.evidenceQuality] || "Quality unavailable", `quality-badge quality-${occurrence.evidenceQuality}`), element("p", occurrence.qualityReason || "No evidence assessment is available."));
+        if (occurrence.evidenceQuality === "exact-named" && occurrence.problemUrl && occurrence.problemEvidence) {
+          const practice = element("p");
+          practice.append(safeLink("Practice this exact named problem", occurrence.problemUrl));
+          article.append(practice, element("p", `Practice-link evidence: ${occurrence.problemEvidence}`));
+        }
         if (occurrence.reportedQuestion && occurrence.reportedQuestion !== row.question) article.append(element("p", `Reported prompt: ${occurrence.reportedQuestion}`));
         if (occurrence.sourceRound) article.append(element("p", `Original label: ${occurrence.sourceRound}`, "date-basis"));
         if (row.round === null) article.append(element("p", `Why the round is unconfirmed: ${occurrence.roundUncertainty || occurrence.roundMappingNote}`, "round-uncertainty"));
@@ -258,14 +367,27 @@
 
   function renderRows(rows) {
     const fragment = document.createDocumentFragment();
+    const active = document.activeElement;
+    const focusedMark = active?.dataset.mark;
+    const focusedIdentity = active?.dataset.identity;
+    const oldButtons = [...$("question-rows").querySelectorAll("button[data-mark]")];
+    const focusedIndex = oldButtons.indexOf(active);
+    const openEvidence = new Set([...$("question-rows").querySelectorAll("tr[data-identity]")].filter(tr => tr.querySelector(".evidence")?.open).map(tr => tr.dataset.identity));
     for (const row of rows) {
       const tr = element("tr");
+      tr.dataset.identity = markKey(row);
       const round = element("td");
       round.append(element("span", roundLabel(row.round), "round-badge"));
       const question = element("td");
-      question.append(element("p", row.question, "question-text"), evidenceView(row));
+      const badges = element("div", null, "quality-badges");
+      for (const quality of row.evidenceQualities) badges.append(element("span", qualityLabels[quality] || "Quality unavailable", `quality-badge quality-${quality}`));
+      const evidence = evidenceView(row);
+      evidence.open = openEvidence.has(markKey(row));
+      question.append(element("p", row.question, "question-text"), badges, studyActions(row));
+      if (row.practiceLinks.length) question.append(list(row.practiceLinks, url => safeLink("Practice exact named problem", url)));
+      question.append(evidence);
       const topic = element("td");
-      topic.append(element("span", row.topic, "topic-label"));
+      topic.append(element("span", row.category, "category-label"), element("span", row.topic, "topic-label"));
       const frequency = element("td");
       frequency.append(element("span", row.frequency, "frequency-value"), element("span", row.frequency === 1 ? "report" : "reports", "frequency-unit"));
       const dates = element("td");
@@ -284,6 +406,11 @@
       fragment.append(tr);
     }
     $("question-rows").replaceChildren(fragment);
+    if (focusedMark) {
+      const buttons = [...$("question-rows").querySelectorAll("button[data-mark]")];
+      const same = buttons.find(button => button.dataset.identity === focusedIdentity && button.dataset.mark === focusedMark);
+      (same || buttons[Math.min(focusedIndex, buttons.length - 1)] || controls.personal).focus({ preventScroll: true });
+    }
   }
 
   function render(updateURL = true) {
@@ -434,6 +561,88 @@
         : `${matches.length} of ${campaigns.length} documented campaigns · scope is research activity, not interview coverage`;
   }
 
+  function renderQueue() {
+    if (!research) return;
+    const status = $("queue-status").value;
+    const matches = research.queue.filter(candidate => !status || candidate.status === status);
+    $("queue-records").replaceChildren(...matches.map(candidate => {
+      const article = element("article", null, "research-record");
+      const heading = element("h4");
+      heading.append(safeLink(candidate.title || candidate.url, candidate.url));
+      article.append(heading, element("p", `${candidate.status} · Discovered ${candidate.discoveredAt}${candidate.publishedDate ? ` · Published ${candidate.publishedDate}` : ""}`), element("p", `Candidate: ${candidate.id}`, "record-reference"));
+      if (candidate.reason) article.append(element("p", candidate.reason));
+      if (candidate.reportId) article.append(element("p", `Admitted report reference: ${candidate.reportId}`, "record-reference"));
+      article.append(element("p", `Discovery runs: ${candidate.runIds.join(", ")}`, "record-reference"));
+      return article;
+    }));
+    $("queue-summary").textContent = `${matches.length} of ${research.queue.length} review candidates${matches.length ? "" : " · No candidates match this status"}. Queue entries are not question counts.`;
+  }
+
+  async function loadResearch() {
+    try {
+      const data = await fetchData("data/research-status.json");
+      if (!data || typeof data.cutoff !== "string" || !Array.isArray(data.queue) || !Array.isArray(data.runs) || !Array.isArray(data.history)
+        || !data.queue.every(item => item && typeof item.id === "string" && typeof item.url === "string" && ["pending", "rejected", "duplicate", "accepted"].includes(item.status) && Array.isArray(item.runIds))
+        || !data.runs.every(item => item && typeof item.id === "string" && Array.isArray(item.queries))
+        || !data.history.every(item => item && typeof item.id === "string" && Array.isArray(item.changes) && item.changes.every(change => change && typeof change.id === "string" && typeof change.collection === "string"))) throw new Error("The research status does not match the documented format.");
+      research = data;
+      $("research-watermark").textContent = `Last successful research: ${data.lastResearchedAt || "None recorded"} · Corpus cutoff: ${dateLabel(data.cutoff)}`;
+      $("research-status").textContent = `Last research attempt: ${data.lastAttemptedAt || "None recorded"}. Failed attempts do not advance the successful research date. The corpus cutoff is separate from discovery activity.`;
+      renderQueue();
+      $("discovery-runs").replaceChildren(...data.runs.slice().reverse().map(run => {
+        const article = element("article", null, "research-record");
+        article.append(element("h4", `${run.status} · ${run.id}`), element("p", `Started ${run.startedAt}${run.completedAt ? ` · Completed ${run.completedAt}` : ""}`), element("p", `Search scope: ${run.country} · ${run.startDate} – ${run.endDate}`));
+        if (run.error) article.append(element("p", `Failure: ${run.error}`));
+        const queries = element("details", null, "evidence");
+        queries.append(element("summary", `${run.queries.length} search queries`), list(run.queries, query => element("span", query)));
+        article.append(queries);
+        if (run.artifact) article.append(artifactLink(run.artifact));
+        return article;
+      }));
+      if (!data.runs.length) $("discovery-runs").append(element("p", "No incremental discovery runs recorded."));
+      $("record-history").replaceChildren(...data.history.slice().reverse().map(release => {
+        const article = element("article", null, "research-record");
+        article.append(element("h4", `${release.date} · ${release.summary}`), element("p", `Release: ${release.id}`, "record-reference"));
+        if (!release.changes.length) article.append(element("p", "No record-level changes in this release."));
+        else {
+          const changes = element("details", null, "evidence");
+          changes.append(element("summary", `${release.changes.length} record changes`));
+          changes.addEventListener("toggle", () => {
+            if (!changes.open || changes.dataset.loaded) return;
+            changes.dataset.loaded = "true";
+          for (const change of release.changes) {
+            const record = element("div", null, "history-change");
+            record.append(element("p", `${change.type} · ${change.collection} · ${change.id}`, "record-reference"));
+            if (change.fields?.length) record.append(element("p", `Changed fields: ${change.fields.join(", ")}`));
+            if (["strict", "unconfirmed"].includes(change.collection) && change.type !== "removed") {
+              const url = new URL(location.pathname, location.origin);
+              url.searchParams.set("view", change.collection);
+              url.searchParams.set("q", change.id);
+              record.append(safeLink("Find current record", url.href));
+            }
+            for (const key of ["before", "after"]) {
+              if (change[key] === undefined) continue;
+              const snapshot = element("details", null, "evidence");
+              snapshot.append(element("summary", key === "before" ? "Before" : "After"), element("pre", JSON.stringify(change[key], null, 2)));
+              record.append(snapshot);
+            }
+            changes.append(record);
+          }
+          });
+          article.append(changes);
+        }
+        return article;
+      }));
+      if (!data.history.length) $("record-history").append(element("p", "No record releases recorded."));
+      $("research-content").hidden = false;
+    } catch (error) {
+      research = undefined;
+      $("research-content").hidden = true;
+      $("research-watermark").textContent = `Last successful research: unavailable · Corpus cutoff: ${dateLabel(collections.strict?.metadata.endDate || "2026-09-13")}`;
+      $("research-status").textContent = `Optional research status unavailable: ${error.message} Questions remain independently available. Reload the page to retry.`;
+    }
+  }
+
   async function fetchData(path) {
     const response = await fetch(path);
     if (!response.ok) throw new Error(`${path} returned HTTP ${response.status}.`);
@@ -489,6 +698,8 @@
       const occurrences = questions.flatMap(question => question.occurrences);
       populateChoices("round", data.questions.map(question => String(question.round)), value => `Round ${value}`);
       populateChoices("topic", questions.map(question => question.topic));
+      populateChoices("category", questions.map(question => question.category).filter(Boolean));
+      populateChoices("quality", Object.keys(qualityLabels), value => qualityLabels[value]);
       populateChoices("location", occurrences.map(item => item.location || "Not stated"));
       populateChoices("year", occurrences.map(item => item.date.slice(0, 4)));
       populateChoices("basis", ["interview", "publication"], basisLabel);
@@ -499,6 +710,9 @@
       $("view-strict").disabled = false;
       $("view-unconfirmed").disabled = !collections.unconfirmed;
       $("filter-fields").disabled = false;
+      $("save-view").disabled = false;
+      $("share-view").disabled = false;
+      updateSavedActions();
     } catch (error) {
       database = undefined;
       visibleRows = [];
@@ -507,6 +721,9 @@
       $("filter-fields").disabled = true;
       $("reset").disabled = true;
       $("export-csv").disabled = true;
+      $("save-view").disabled = true;
+      $("share-view").disabled = true;
+      updateSavedActions();
       $("question-table").hidden = true;
       $("empty-state").hidden = true;
       $("table-hint").hidden = true;
@@ -519,6 +736,55 @@
     }
   }
 
+  readStudy();
+  renderSavedViews();
+  $("saved-view").addEventListener("change", updateSavedActions);
+  $("save-view-form").addEventListener("submit", event => {
+    event.preventDefault();
+    if (!database) return;
+    const name = $("view-name").value.trim();
+    if (!name) { $("view-name").focus(); return; }
+    if (study.views.some(item => item.name === name)) {
+      $("study-status").textContent = "That name is already saved. Choose another name, or delete the old filter set first.";
+      $("view-name").focus();
+      return;
+    }
+    study.views.push({ name, query: publicURL().search });
+    persistStudy();
+    renderSavedViews(String(study.views.length - 1));
+    $("study-status").textContent = `Saved “${name}” ${storageAvailable ? "in this browser" : "for this session"}. Personal progress filters are not saved or shared.`;
+  });
+  $("load-view").addEventListener("click", () => {
+    const saved = study.views[Number($("saved-view").value)];
+    if (!database || !saved || $("saved-view").value === "") return;
+    clearTimeout(searchTimer);
+    restoreURL(saved.query);
+    render();
+    $("study-status").textContent = `Loaded “${saved.name}”. Personal progress filter reset to All.${new URLSearchParams(saved.query).get("view") === "unconfirmed" && !collections.unconfirmed ? " The unconfirmed collection is unavailable; showing round verified instead." : ""}`;
+  });
+  $("delete-view").addEventListener("click", () => {
+    if ($("saved-view").value === "") return;
+    const [removed] = study.views.splice(Number($("saved-view").value), 1);
+    persistStudy();
+    renderSavedViews("");
+    $("study-status").textContent = `Deleted saved filter set “${removed.name}”. Question marks are unchanged.`;
+    $("saved-view").focus();
+  });
+  $("share-view").addEventListener("click", async () => {
+    const url = publicURL().href;
+    $("share-url").value = url;
+    try {
+      await navigator.clipboard.writeText(url);
+      $("share-fallback").hidden = true;
+      $("study-status").textContent = "Public filter URL copied. No bookmarks, practiced marks, or personal filter are included.";
+    } catch {
+      $("share-fallback").hidden = false;
+      $("share-url").focus();
+      $("share-url").select();
+      $("study-status").textContent = "Clipboard unavailable. Copy the selected public URL above; it contains no personal study progress.";
+    }
+  });
+  $("queue-status").addEventListener("change", renderQueue);
   $("collection-switch").addEventListener("change", event => {
     if (event.target.name !== "view") return;
     clearTimeout(searchTimer);
@@ -546,4 +812,5 @@
   $("retry").addEventListener("click", load);
   window.addEventListener("popstate", () => { if (database) { restoreURL(); render(false); } });
   load();
+  loadResearch();
 })();

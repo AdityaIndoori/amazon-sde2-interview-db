@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "runId": "discovery-2026-09-14T18-30-21-324Z-bc63e0b7",
+  "endpoint": "https://mcp.exa.ai/mcp?tools=web_search_advanced_exa",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "web_search_advanced_exa",
+      "arguments": {
+        "query": "First-person Amazon SDE II SDE 2 L5 final onsite interview experience with specific coding, low-level design or system design questions in United States",
+        "numResults": 5,
+        "type": "auto",
+        "startPublishedDate": "2026-09-07T00:00:00.000Z",
+        "endPublishedDate": "2026-09-14T23:59:59.999Z",
+        "textMaxCharacters": 2000
+      }
+    }
+  },
+  "responses": [
+    {
+      "status": 200,
+      "contentType": "text/event-stream",
+      "body": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"requestId\\\":\\\"921070ae2c8ab380bd2a0207ea736cf7\\\",\\\"resolvedSearchType\\\":\\\"\\\",\\\"results\\\":[{\\\"id\\\":\\\"https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh\\\",\\\"url\\\":\\\"https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh\\\",\\\"publishedDate\\\":\\\"2026-09-07T00:00:00.000Z\\\",\\\"author\\\":\\\"Rostislav Borovikov\\\",\\\"text\\\":\\\"# Chapter 14: Four Interviews, One Format, Zero Identical Rounds | Rostislav Borovikov · LinkedIn · 2026-09-07\\\\n\\\\n**Rostislav Borovikov**: Rostislav Borovikov has held roles including Java Software Engineer at VADAROD, Java Software Engineer at InStock Technologies, and Java Software Engineer at IBA Group. Based in Minsk, Minsk, Belarus [BY].\\\\n\\\\n---\\\\n\\\\nChapter 14: Four Interviews, One Format, Zero Identical Rounds\\\\n\\\\nThe final loop: four interviews, 60 minutes each. Every single round followed the exact same skeleton - 30 minutes of Leadership Principles, 30 minutes of a technical task. Yet, the technical halves felt completely different.\\\\n\\\\nBefore the loop, the recruiter shared the evaluation map. The core technical competencies spanned System Design, DSA, Logical & Maintainable Coding, Problem Solving, and Generative AI fluency. The LP focus was heavy on Earn Trust, Customer Obsession, Deliver Results, Ownership, Invent and Simplify, Bias for Action, and Insist on the Highest Standards.\\\\nHere is exactly how those four technical halves broke down (formats only, no specific tasks):\\\\n\\\\n🔹 Round 1: Classic Algorithmic Task\\\\nThis was an easy-level problem, the kind you have likely run into on LeetCode. I found the optimal solution quickly, which led straight into the real test: \\\\\\\"What is the Big O of your solution?\\\\\\\" Expect this question every single time. It is never enough to just make the code work - you have to know exactly how much that solution costs in time and memory.\\\\n\\\\n🔹 Round 2: Multi-Stage Business Service\\\\nThe goal here was to implement a service covering a multi-step business scenario. Once that was done, the interviewer threw a wrench in it: \\\\\\\"Now add this functionality.\\\\\\\" From there, the conversation shifted straight into SOLID principles and how to make the design more robust. This round tests how easily your code bends before it breaks.\\\\n\\\\n🔹 Round 3: System Design\\\\nThis is the round where I made my biggest mistake of the entire interview process. It honestly deserves its o\\\",\\\"image\\\":\\\"https://media.licdn.com/dms/image/v2/D4D22AQFD8fJGW3BT3Q/feedshare-image-high-res/B4DaB488jCGkAU-/0/1788735638345?e=2147483647&v=beta&t=5tKBTA9uYuHl89iQjI0X5EDcTTw1enNp2PId4k-EdQI\\\",\\\"title\\\":\\\"Chapter 14: Four Interviews, One Format, Zero Identical Rounds | Rostislav Borovikov\\\"},{\\\"id\\\":\\\"https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/\\\",\\\"url\\\":\\\"https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/\\\",\\\"publishedDate\\\":\\\"2026-09-12T00:00:00.000Z\\\",\\\"author\\\":\\\"Nakul Mathur\\\",\\\"text\\\":\\\"Amazon SDE II Interview Experience (Bangalore, Selected) ~ Aug 2026 ~ DevBrainiac\\\\n\\\\n# Amazon SDE II Interview Experience (Bangalore, Selected) ~ Aug 2026\\\\n\\\\nNakul Mathur \\\\n\\\\nLast Updated : 10 hr ago\\\\n\\\\nHeyaaa! 👋\\\\n\\\\nBefore I get into it, thank you. I read so many interview posts on this community while I was prepping. Every one of them helped a little. A tip here, a \\\\\\\"don't do what I did\\\\\\\" there. Random small details that made a round feel less scary because someone had already been through it and lived to tell me about it. So this is me doing the same thing for you. Quick, slightly silly detail before we start. Amazon caps how many active applications you can have on one account. I wanted to apply to every open SDE II role I could find. So yes, I used two accounts. No regrets.\\\\n\\\\nFour rounds. One real regret. One moment I'm still a little proud of. Let's go.\\\\n\\\\n## Round 0 : The OA\\\\n\\\\nI'll be honest, my memory of this one has faded. There was a section with some kind of AI-related repository or codebase and one DSA question I genuinely can't recall anymore. I'd rather say \\\\\\\"I don't remember\\\\\\\" than make something up just to sound more prepared than I was. It happens. Keep reading anyway.\\\\n\\\\n## Round 1 : DSA and the Moment I Almost Regret\\\\n\\\\nMy interviewer was an SDE III. We started soft, about 10 minutes on two Leadership Principle questions: Learn & Be Curious and Ownership. No code yet. If you're new to Amazon's style, this is normal here. LPs open almost every round, not just one dedicated \\\\\\\"behavioral\\\\\\\" slot at the end.\\\\n\\\\nThen came a coding problem that kept growing on me. He'd let me solve one version, then add a twist, then another, until a fairly plain BFS question had turned into a full multi-source BFS problem by the end. I actually liked this. It felt less like a test and more like solving something together, one layer at a time.\\\\n\\\\nQuick plain-English version of what multi-source BFS even means, in case you haven't hit it before: normally BFS starts from one point and spreads out. Mu\\\",\\\"title\\\":\\\"Amazon SDE II Interview Experience (Bangalore, Selected)  ~ Aug 2026 ~ DevBrainiac\\\"},{\\\"id\\\":\\\"https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds\\\",\\\"url\\\":\\\"https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds\\\",\\\"publishedDate\\\":\\\"2026-09-13T00:00:00.000Z\\\",\\\"text\\\":\\\"Amazon New Grad Software Engineer Interview Experience — AWS Offer After Four Onsite Rounds | PracHub\\\\n\\\\n# Amazon New Grad Software Engineer Interview Experience — AWS Offer After Four Onsite Rounds\\\\n\\\\nAmazon· Software Engineer· Aug 2026\\\\n\\\\nTimeline:\\\\n\\\\nJuly 24: HR reached out on LinkedIn; I applied. July 31: OA. August 24: Survey. September 4: BOS onsite. September 10: Verbal offer.\\\\n\\\\nFour back-to-back onsite rounds.\\\\n\\\\nFirst round\\\\n\\\\nThe interviewer asked two behavioral questions: one about doing something outside my area of responsibility, and one about helping a peer who was struggling.\\\\n\\\\nThe coding question was similar to LeetCode 1152, but seemed a little easier: I only had to consider consecutive logs.\\\\n\\\\nSecond round\\\\n\\\\nThe bar raiser pressed hard on three Dive Deep questions and one about critical feedback, then left ten-plus minutes for my questions.\\\\n\\\\nThird round\\\\n\\\\nThere was an interviewer and a shadow interviewer. The behavioral questions included a tight deadline and a time I hadn't finished by the deadline.\\\\n\\\\nThirty minutes for two coding problems: Longest Substring Without Repeating Characters and Word Search II. Both were exactly the standard problems.\\\\n\\\\nFourth round\\\\n\\\\nThe hiring manager asked GenAI-related questions and wanted detailed examples, including examples of mistakes.\\\\n\\\\nThe coding question was to design a rate limiter. The prompt was vague and provided nothing; I had to clarify everything myself. After asking my questions, I used a deque for a sliding window. The interviewer kept asking what could replace the deque, and I couldn't answer. There were some other follow-ups too.\\\\n\\\\nI originally thought my poor answers to the follow-ups in this round would be a problem, but they didn't seem to have much impact.\\\\n\\\\nPublished Sep 13, 2026\\\\n\\\\n## Discussion\\\\n\\\\nSign in to join the discussion. The author is notified of every comment.\\\\n\\\\nSoftware Engineer\\\\n\\\\nNew Grad\\\\n\\\\nRounds\\\\n\\\\nOnline Assessment → Onsite\\\\n\\\\n- support@prachub.com\\\\n- (916) 541-4762 (+19165414762)\\\",\\\"image\\\":\\\"https://prachub.com/opengraph-image\\\",\\\"title\\\":\\\"Amazon New Grad Software Engineer Interview Experience — AWS Offer After Four Onsite Rounds | PracHub\\\"},{\\\"id\\\":\\\"https://www.instagram.com/reel/DdN8vSuTvi5/\\\",\\\"url\\\":\\\"https://www.instagram.com/reel/DdN8vSuTvi5/\\\",\\\"publishedDate\\\":\\\"2026-09-13T18:30:23.218Z\\\",\\\"text\\\":\\\"Instagram\\\\n\\\\n•\\\\n\\\\nFollow\\\\n\\\\n---\\\\n\\\\nHow I got an Amazon SDE-2 offer 📦✨March 2025 to May 2025:I interviewed for Amazon SDE-2 and completed all around but LLD round didn’t go up to the mark so I was offered an SDE-1 opportunity, but declined due to the location.Late December 2025 to March 2026:After the cooling-off period of 6month, Amazon recruiter reached out again.I cleared the OA with two DSA problems. ✅4 Interview rounds:* DSA + Leadership Principles: Two medium-to-hard problems and LP questions.* LLD: Designed a system similar to one I had worked on at Walmart so did very well in this round.* HLD: Designed a recommendation system and explained the architecture and trade-offs.* Bar Raiser: DSA, LPs, and Amazon’s ethics and decision-making principles.Two weeks later during Holi festival 2026, I received the call:“Congratulations, you’ve been selected.” 🎉I cleared HR and compensation discussions and received the Amazon SDE-2 offer.But here’s the twist…I chose Google instead. Though It was ha\\\",\\\"image\\\":\\\"https://scontent-atl3-2.cdninstagram.com/v/t15.5256-10/808763595_4453778558100691_2078137497619107445_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kxQO5Mdd3lUQ7kNvwEvy8i0&_nc_oc=AdqMUO6yRneNj6CVDyjyk7F3XpnCBXV-NKxwUlg0OdoqaxnE5724v_uD77SPYkG7Vn0&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=0YanIbypBqKsqqd08s8nVQ&_nc_ss=7a689&oh=00_AQJxnmmKBYoZT9dGqUQA2xPTmeqsC6KC7iFHPEaFAVHh4Q&oe=6AAE0D1C\\\",\\\"favicon\\\":\\\"https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp\\\",\\\"title\\\":\\\"How I got an Amazon SDE-2 offer March 2025 to May ... - Instagram\\\"},{\\\"id\\\":\\\"https://www.linkedin.com/posts/sudhir-dhangar-197107194_java-backenddevelopment-systemdesign-activity-7502570587341565953-KXsy\\\",\\\"url\\\":\\\"https://www.linkedin.com/posts/sudhir-dhangar-197107194_java-backenddevelopment-systemdesign-activity-7502570587341565953-KXsy\\\",\\\"publishedDate\\\":\\\"2026-09-07T00:00:00.000Z\\\",\\\"author\\\":\\\"Sudhir Dhangar\\\",\\\"text\\\":\\\"# He cleared every DSA round at Amazon. | Sudhir Dhangar · LinkedIn · 2026-09-07\\\\n\\\\n**Sudhir Dhangar**: Specialist Programmer L2 at Infosys for 3 months with 5 years 1 month of total professional experience. Previous roles include Specialist Programmer L1 at Infosys, Digital Specialist Engineer at Infosys, and Technical Content Developer at PrepInsta. Based in Greater Indore Area [IN].\\\\n\\\\n---\\\\n\\\\nHe cleared every DSA round at Amazon.\\\\nStill got rejected.\\\\n\\\\nThe reason? Design depth.\\\\n\\\\nA candidate recently shared his entire interview experience with me, and one lesson stood out:\\\\n\\\\nYou can be excellent at DSA and still lose the interview if your weakest area shows up at the wrong time.\\\\n\\\\nHis loop started with a Bar Raiser + LLD — exactly the area he was least confident in.\\\\n\\\\nHe struggled initially with the problem, drifted into HLD, and ran out of time.\\\\n\\\\nThe later rounds went much better:\\\\n• Strong DSA performance\\\\n• Good HLD discussion\\\\n• Complete coding in another round\\\\n• Good interviewer feedback\\\\n\\\\nBut the first round had already exposed the gap.\\\\n\\\\nThe biggest lesson?\\\\n\\\\nDon’t prepare only for what you’re good at.\\\\n\\\\nIf you’re targeting SDE roles, your preparation needs to cover:\\\\n\\\\n→ DSA\\\\n→ LLD\\\\n→ HLD\\\\n→ System design fundamentals\\\\n→ Communication & problem clarification\\\\n→ Failure scenarios and trade-offs\\\\n\\\\nBecause in interviews, your weakest skill can matter more than your strongest one.\\\\n\\\\n𝗞𝗲𝗲𝗽𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗶𝗻 𝗺𝗶𝗻𝗱, 𝗜 𝘄𝗲𝗻𝘁 𝗱𝗲𝗲𝗽 𝗮𝗻𝗱 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗲𝗱 𝗲𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 𝗶𝗻𝘁𝗼 𝗮 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗚𝘂𝗶𝗱𝗲. 𝗚𝗲𝘁 𝘁𝗵𝗲 𝗚𝘂𝗶𝗱𝗲 𝗵𝗲𝗿𝗲:\\\\n\\\\nhttps://lnkd.in/dsWQkfy4\\\\n\\\\nUntil the next post...\\\\nStay Curious. Keep Coding. 🚀\\\\n\\\\n#Java #BackendDevelopment #SystemDesign #LLD #HLD #DSA #SoftwareEngineering #SDE #AmazonInterview #CodingInterview\\\\n\\\\n## Comments\\\\n\\\\n**[Harsh Patil](https://linkedin.com/in/harsh-patil-141646374)** · 2026-09-07\\\\n> These companies and their unrealistic expectations 😑🥱\\\\n\\\\n## Engagement\\\\n\\\\n- Reactions: 22\\\\n- Comments: 1\\\",\\\"title\\\":\\\"He cleared every DSA round at Amazon. | Sudhir Dhangar\\\"}],\\\"searchTime\\\":11937.6}\",\"_meta\":{\"searchTime\":11937.6}}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    }
+  ],
+  "ignored": [],
+  "run": {
+    "id": "discovery-2026-09-14T18-30-21-324Z-bc63e0b7",
+    "startedAt": "2026-09-14T18:30:21.324Z",
+    "status": "successful",
+    "country": "United States",
+    "startDate": "2026-09-07",
+    "endDate": "2026-09-14",
+    "queries": [
+      "First-person Amazon SDE II SDE 2 L5 final onsite interview experience with specific coding, low-level design or system design questions in United States"
+    ],
+    "artifact": "data/discovery/initial/discovery-2026-09-14T18-30-21-324Z-bc63e0b7.json",
+    "completedAt": "2026-09-14T18:30:33.348Z"
+  },
+  "candidates": [
+    {
+      "id": "candidate-7af4ad01c37f86847ec13f43",
+      "url": "https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh",
+      "title": "Chapter 14: Four Interviews, One Format, Zero Identical Rounds | Rostislav Borovikov",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-07T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-589790b180a45d5a2aad4f69",
+      "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+      "title": "Amazon SDE II Interview Experience (Bangalore, Selected)  ~ Aug 2026 ~ DevBrainiac",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-12T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-aa6ac734bd90f87e206a8ab9",
+      "url": "https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds",
+      "title": "Amazon New Grad Software Engineer Interview Experience — AWS Offer After Four Onsite Rounds | PracHub",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-13T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-a1136c2273d118575acdfa35",
+      "url": "https://www.instagram.com/reel/DdN8vSuTvi5/",
+      "title": "How I got an Amazon SDE-2 offer March 2025 to May ... - Instagram",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-13T18:30:23.218Z"
+    },
+    {
+      "id": "candidate-30de19057e767747e7996e09",
+      "url": "https://www.linkedin.com/posts/sudhir-dhangar-197107194_java-backenddevelopment-systemdesign-activity-7502570587341565953-KXsy",
+      "title": "He cleared every DSA round at Amazon. | Sudhir Dhangar",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-07T00:00:00.000Z"
+    }
+  ]
+}

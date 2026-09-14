@@ -4,6 +4,8 @@ import { isAbsolute, join, relative, sep } from 'node:path';
 import { compileResearchExpansion } from './research-expansion.js';
 import { fail, text, basis, webUrl, calendarDate } from './evidence-validation.js';
 import { exportCollection } from './export-collection.js';
+import { enrichEvidence } from './enrich-evidence.js';
+import { compileResearchStatus, emptyQueue } from './research-status.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dataDir = join(root, 'data');
@@ -141,14 +143,25 @@ const readInputs = async name => {
 };
 const [slices, campaigns] = await Promise.all([readInputs('unconfirmed'), readInputs('campaigns')]);
 const { unconfirmed, ledger } = compileResearchExpansion({ slices, strict: database, normalization, campaigns });
+const assessments = await Bun.file(join(dataDir, 'evidence-assessments.json')).json();
+const allKeys = new Set([...database.questions, ...unconfirmed.questions].map(q => q.id.replace(/^(?:r\d|u)-/, '')));
+for (const key of Object.keys(assessments.categories ?? {})) if (!allKeys.has(key)) fail(`Unknown category assessment target: ${key}`);
+const enrichedStrict = enrichEvidence(database, assessments);
+const enrichedUnconfirmed = enrichEvidence(unconfirmed, assessments);
+const queuePath = join(dataDir, 'review-queue.json');
+const historyPath = join(dataDir, 'change-history.json');
+const queue = await Bun.file(queuePath).exists() ? await Bun.file(queuePath).json() : emptyQueue();
+const history = await Bun.file(historyPath).exists() ? await Bun.file(historyPath).json() : { version: 1, releases: [] };
+const researchStatus = compileResearchStatus({ queue, history, collections: { strict: enrichedStrict, unconfirmed: enrichedUnconfirmed }, campaigns: ledger.campaigns });
 const realRoot = await realpath(root);
 for (const campaign of ledger.campaigns) {
   const artifact = await realpath(join(root, campaign.artifact));
   const path = relative(realRoot, artifact);
   if (isAbsolute(path) || path === '..' || path.startsWith(`..${sep}`) || !(await stat(artifact)).isFile()) fail(`Campaign artifact must be a repository file: ${campaign.artifact}`);
 }
-await exportCollection(dataDir, 'database', database);
-await exportCollection(dataDir, 'unconfirmed', unconfirmed);
+await exportCollection(dataDir, 'database', enrichedStrict);
+await exportCollection(dataDir, 'unconfirmed', enrichedUnconfirmed);
 await Bun.write(join(dataDir, 'research-ledger.json'), `${JSON.stringify(ledger, null, 2)}\n`);
+await Bun.write(join(dataDir, 'research-status.json'), `${JSON.stringify(researchStatus, null, 2)}\n`);
 console.log(`Built ${questions.length} question/round rows, ${metadata.occurrenceCount} occurrences, ${reports.length} independent reports from ${files.length} research slices.`);
 console.log(`Built ${unconfirmed.questions.length} unconfirmed rows, ${unconfirmed.metadata.occurrenceCount} occurrences, ${unconfirmed.reports.length} reports and ${ledger.campaigns.length} scoped campaigns.`);

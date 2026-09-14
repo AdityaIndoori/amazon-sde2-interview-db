@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0a0a0f">
   <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
   <title>Amazon SDE II · Interview fieldnotes</title>
-  <link rel="stylesheet" href="styles.css?v=ccfce7040091">
-  <script src="app.js?v=4cd93707a0b1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=307d883a1836">
+  <script src="app.js?v=e2439a162735" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#results">Skip to questions</a>
@@ -24,6 +24,7 @@
           <h1 id="page-title">Less guesswork.<br><span>More evidence.</span></h1>
           <p class="lede">Final-loop questions, grounded in candidate accounts. Explore what was reported, in which round, and the evidence behind it.</p>
           <p id="date-window" class="window">January 2025 – September 13, 2026 · Rounds 1–4</p>
+          <p id="research-watermark" class="window" role="status">Last successful research: loading… · Corpus cutoff: September 13, 2026</p>
         </div>
         <aside class="scope-note" aria-label="How to read this collection">
           <span class="eyebrow">A RECORD, NOT A PREDICTION</span>
@@ -63,14 +64,34 @@
             <div class="filter-grid">
               <details class="multi-filter" id="round" data-multiple data-all="All rounds"><summary>Round <span class="selection-label">All rounds</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose rounds</legend></fieldset></details>
               <details class="multi-filter" id="topic" data-multiple data-all="All topics"><summary>Topic <span class="selection-label">All topics</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose topics</legend></fieldset></details>
+              <details class="multi-filter" id="category" data-multiple data-all="All categories"><summary>Category <span class="selection-label">All categories</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose categories</legend></fieldset></details>
+              <details class="multi-filter" id="quality" data-multiple data-all="All evidence qualities"><summary>Evidence quality <span class="selection-label">All evidence qualities</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose evidence qualities</legend></fieldset></details>
               <details class="multi-filter" id="location" data-multiple data-all="All countries"><summary>Location (country) <span class="selection-label">All countries</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose countries</legend></fieldset></details>
               <details class="multi-filter" id="year" data-multiple data-all="All years"><summary>Year <span class="selection-label">All years</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose years</legend></fieldset></details>
               <details class="multi-filter" id="basis" data-multiple data-all="Both date types"><summary>Date basis <span class="selection-label">Both date types</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose date types</legend></fieldset></details>
               <div><label for="minimum">Min. frequency</label><input id="minimum" name="min" type="number" min="1" step="1" value="1" inputmode="numeric"></div>
+              <div><label for="personal">My study progress</label><select id="personal"><option value="">All questions</option><option value="bookmarked">Bookmarked</option><option value="practiced">Practiced</option><option value="not-practiced">Not practiced</option></select></div>
             </div>
           </fieldset>
         </form>
-        <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, and date basis must match the <em>same occurrence</em>; counts and exports update accordingly.</p>
+        <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, date basis, and evidence quality must match the <em>same occurrence</em>; counts, badges, practice links, and exports update accordingly. “Exact named” requires curator-backed source evidence; “Described” means a reported description, not a completeness guarantee; “Partial” preserves unspecified variants. Quality does not establish the date or round.</p>
+        <section class="study-tools" aria-labelledby="study-heading">
+          <h3 id="study-heading">Your study space</h3>
+          <p>Bookmarks, practiced marks, and saved views stay in this browser only. Shared links contain public filters, never your marks or personal progress filter.</p>
+          <p id="storage-notice" class="availability-note" role="status" hidden></p>
+          <form id="save-view-form" class="study-form">
+            <div><label for="view-name">Name this public filter set</label><input id="view-name" type="text" maxlength="80" required placeholder="e.g. India coding practice" autocomplete="off"></div>
+            <button id="save-view" class="button" type="submit" disabled>Save filter set</button>
+          </form>
+          <div class="study-form">
+            <div><label for="saved-view">Saved filter sets</label><select id="saved-view"><option value="">No saved filter sets</option></select></div>
+            <button id="load-view" class="button" type="button" disabled>Load</button>
+            <button id="delete-view" class="button" type="button" disabled>Delete</button>
+            <button id="share-view" class="button" type="button" disabled>Copy current public URL</button>
+          </div>
+          <div id="share-fallback" hidden><label for="share-url">Public URL — select and copy</label><input id="share-url" type="url" readonly></div>
+          <p id="study-status" class="availability-note" role="status" aria-live="polite"></p>
+        </section>
 
         <div class="results-toolbar">
           <p id="result-summary" role="status" aria-live="polite" aria-atomic="true">Loading the research database…</p>
@@ -114,6 +135,18 @@
           <p id="ledger-summary" role="status" aria-live="polite">Loading the research ledger…</p>
           <div id="ledger-results" class="table-wrap" tabindex="0" role="region" aria-label="Research campaigns; horizontally scrollable" hidden>
             <table class="ledger-table"><caption class="sr-only">Documented campaign scope, execution and source decisions. Expand the evidence column for queries and dispositions.</caption><thead><tr><th scope="col">Search scope</th><th scope="col">Execution</th><th scope="col">Outcome</th><th scope="col">Queries & evidence</th></tr></thead><tbody id="ledger-rows"></tbody></table>
+          </div>
+        </section>
+        <section class="campaign-ledger" aria-labelledby="research-heading">
+          <h3 id="research-heading">Discovery queue & record history</h3>
+          <p>Read-only review activity. Pending candidates are not admitted evidence. Accepting a queue entry only references an already admitted report; it never adds questions automatically.</p>
+          <p id="research-status" role="status">Loading optional research status…</p>
+          <div id="research-content" hidden>
+            <fieldset id="queue-filters" class="ledger-filters"><legend class="sr-only">Filter discovery queue</legend><div><label for="queue-status">Candidate review status</label><select id="queue-status"><option value="">All statuses</option><option value="pending">Pending</option><option value="rejected">Rejected</option><option value="duplicate">Duplicate</option><option value="accepted">Accepted</option></select></div></fieldset>
+            <p id="queue-summary" role="status" aria-live="polite"></p>
+            <div id="queue-records" class="research-records"></div>
+            <details class="coverage-panel"><summary>Discovery run history</summary><div id="discovery-runs" class="coverage-body research-records"></div></details>
+            <details class="coverage-panel"><summary>Record change history</summary><div id="record-history" class="coverage-body research-records"></div></details>
           </div>
         </section>
         <details class="coverage-panel">

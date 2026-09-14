@@ -7,7 +7,11 @@
   "scripts": {
     "build": "bun scripts/build.js",
     "check": "bun scripts/check.js",
-    "test": "bun test scripts/research-expansion.test.js",
+    "test": "bun test scripts/",
+    "discover": "bun scripts/discover.js",
+    "import-discovery": "bun scripts/import-discovery.js",
+    "review-queue": "bun scripts/review-queue.js",
+    "record-changes": "bun scripts/record-changes.js",
     "serve": "bun scripts/serve.js"
   },
   "engines": { "bun": ">=1.2.0" }

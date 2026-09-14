@@ -1,0 +1,234 @@
+{
+  "occurrences": {
+    "leetcode-6774605|1|number-of-islands": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/number-of-islands/",
+      "problemEvidence": "Onsite Round 1 ... same as https://leetcode.com/problems/number-of-islands/description/"
+    },
+    "leetcode-7311674|1|decode-ways": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/decode-ways/",
+      "problemEvidence": "Super Day: Round 1: https://leetcode.com/problems/decode-ways/description/"
+    },
+    "leetcode-7670163|1|copy-list-random-pointer": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+      "problemEvidence": "Round 1 Interview; https://leetcode.com/problems/copy-list-with-random-pointer"
+    },
+    "leetcode-7638107|1|132-pattern": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/132-pattern/",
+      "problemEvidence": "DSA round 1; https://leetcode.com/problems/132-pattern/description/"
+    },
+    "leetcode-6961860|1|pacific-atlantic-water-flow": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+      "problemEvidence": "Round 1 (DSA): Q2: https://leetcode.com/problems/pacific-atlantic-water-flow/"
+    },
+    "leetcode-6961332|1|lowest-common-ancestor-binary-tree-iv": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/",
+      "problemEvidence": "1st round: DSA ... 1st question: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description/"
+    },
+    "reddit-1kazu6q|1|majority-element": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/majority-element/",
+      "problemEvidence": "2. DSA Round (4 April) ... https://leetcode.com/problems/majority-element/description/"
+    },
+    "reddit-1kazu6q|1|median-two-sorted-arrays": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+      "problemEvidence": "2. DSA Round (4 April) ... https://leetcode.com/problems/median-of-two-sorted-arrays/description/"
+    },
+    "leetcode-6585102|1|bus-routes": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/bus-routes/",
+      "problemEvidence": "Onsite Rounds / Round 1: https://leetcode.com/problems/bus-routes/description/"
+    },
+    "linkedin-7457469538344017920|1|shortest-bridge": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/shortest-bridge/",
+      "problemEvidence": "\"Loop Interviews: Round 3: Coding – Data Structures & Algorithms (60 mins) https://lnkd.in/gjAJMgNT\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/shortest-bridge/description/."
+    },
+    "leetcode-7670163|1|first-unique-number": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/first-unique-number/",
+      "problemEvidence": "Round 1 Interview; https://leetcode.com/problems/first-unique-number/description/"
+    },
+    "leetcode-7202678|1|house-robber-iii": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/house-robber-iii/",
+      "problemEvidence": "Round 1(DSA): ... https://leetcode.com/problems/house-robber-iii/description/"
+    },
+    "leetcode-7054407|1|merge-k-sorted-lists": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "problemEvidence": "Round 1 - DSA ... https://leetcode.com/problems/merge-k-sorted-lists/description/"
+    },
+    "leetcode-6961332|1|reschedule-meetings-maximum-free-time-i": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/",
+      "problemEvidence": "1st round: DSA ... 2nd question: https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/description/"
+    },
+    "leetcode-6961860|1|koko-eating-bananas-variant-6961860": {
+      "quality": "partial",
+      "reason": "Source explicitly describes a changed or unspecified variant; base-problem link is not an exact match."
+    },
+    "leetcode-7202678|1|sort-colors": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/sort-colors/",
+      "problemEvidence": "Round 1(DSA): ... https://leetcode.com/problems/sort-colors/"
+    },
+    "leetcode-6898756|2|maximum-profit-job-scheduling": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+      "problemEvidence": "Round 2 (DSA - F2F): https://leetcode.com/problems/maximum-profit-in-job-scheduling/"
+    },
+    "leetcode-7878487|2|ipo": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/ipo/",
+      "problemEvidence": "Round 2: DSA; https://leetcode.com/problems/ipo/description/"
+    },
+    "leetcode-6898756|2|max-consecutive-ones-iii": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+      "problemEvidence": "Round 2 (DSA - F2F): https://leetcode.com/problems/max-consecutive-ones-iii/"
+    },
+    "leetcode-7878487|2|shortest-path-obstacle-elimination": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+      "problemEvidence": "Round 2: DSA; https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/"
+    },
+    "leetcode-6888988|2|all-one-data-structure": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/all-oone-data-structure/",
+      "problemEvidence": "Round 2(DSA): https://leetcode.com/problems/all-oone-data-structure/description/"
+    },
+    "leetcode-8513742|2|reorganize-string": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/reorganize-string/",
+      "problemEvidence": "Round 2 : DSA ... \"Following was the DSA question\" followed by https://leetcode.com/problems/reorganize-string/description/"
+    },
+    "leetcode-7878487|2|search-rotated-sorted-array": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "problemEvidence": "Round 2: DSA; https://leetcode.com/problems/search-in-rotated-sorted-array/description/"
+    },
+    "linkedin-7457469538344017920|2|smallest-range-covering-elements-from-k-lists-variant": {
+      "quality": "partial",
+      "reason": "Source explicitly describes a changed or unspecified variant; base-problem link is not an exact match."
+    },
+    "reddit-1j4erti|3|shortest-path-obstacle-elimination": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+      "problemEvidence": "Third listed round: DSA/Algorithms ... This was the question asked: https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/"
+    },
+    "leetcode-6841317|3|find-median-from-data-stream": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
+      "problemEvidence": "Round 3: DSA: https://leetcode.com/problems/find-median-from-data-stream/description/"
+    },
+    "leetcode-6961860|4|maximum-tastiness-candy-basket": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/maximum-tastiness-of-candy-basket/",
+      "problemEvidence": "Round 4 (Bar Raiser): Coding Question: https://leetcode.com/problems/maximum-tastiness-of-candy-basket/"
+    },
+    "medium-57655fab76b8|4|trapping-rain-water": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/trapping-rain-water/",
+      "problemEvidence": "5. Bar Raiser Round: ... question boils down to ... https://leetcode.com/problems/trapping-rain-water/description/"
+    },
+    "reddit-1p8fyxx|4|first-missing-positive": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/first-missing-positive/",
+      "problemEvidence": "Round 4: Bar raiser ... Question 2: https://leetcode.com/problems/first-missing-positive/description/"
+    },
+    "leetcode-6708128|4|max-consecutive-ones-iii": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+      "problemEvidence": "Round 5 ... https://leetcode.com/problems/max-consecutive-ones-iii/description/"
+    },
+    "reddit-1kazu6q|4|longest-substring-without-repeating": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "problemEvidence": "4. Bar Raiser Round (21 April) ... https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    "leetcode-7054407|4|lru-cache": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/lru-cache/",
+      "problemEvidence": "Round 4: DSA (bar raiser round) ... https://leetcode.com/problems/lru-cache/description/"
+    },
+    "leetcode-6585102|4|lru-cache": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/lru-cache/",
+      "problemEvidence": "Round 4 ... https://leetcode.com/problems/lru-cache/description/"
+    },
+    "leetcode-6888988|4|remove-k-digits": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/remove-k-digits/",
+      "problemEvidence": "Round 4(DSA): https://leetcode.com/problems/remove-k-digits/description/"
+    },
+    "reddit-1kazu6q|4|serialize-and-deserialize-binary-tree": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+      "problemEvidence": "4. Bar Raiser Round (21 April) ... https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/"
+    },
+    "leetcode-6674923|4|course-schedule-ii-variant-6674923": {
+      "quality": "partial",
+      "reason": "Source explicitly describes a changed or unspecified variant; base-problem link is not an exact match."
+    },
+    "leetcode-6467921|unconfirmed|jump-game": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/jump-game/",
+      "problemEvidence": "https://leetcode.com/problems/jump-game/description/ ... finished first jump game - no problem"
+    },
+    "leetcode-6558499|unconfirmed|course-schedule-ii": {
+      "quality": "exact-named",
+      "reason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+      "problemUrl": "https://leetcode.com/problems/course-schedule-ii/",
+      "problemEvidence": "Coding 3: Course Schedule 2: https://leetcode.com/problems/course-schedule-ii/"
+    },
+    "leetcode-6467921|unconfirmed|jump-game-minimum-path": {
+      "quality": "partial",
+      "reason": "Source explicitly describes a changed or unspecified variant; base-problem link is not an exact match."
+    }
+  },
+  "categories": {
+    "sql-versus-nosql": "Low-level design",
+    "design-train-management": "System design"
+  }
+}

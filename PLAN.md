@@ -99,7 +99,7 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 ## Execution record
 
 - Repository finalized at `/home/aditya/amazon-sde2-interview-db` (moved out of temporary storage).
-- Delivered 589 verified question–round rows, 639 occurrences and 137 strict reports, plus 31 separate round-unconfirmed questions from 7 reports. Combined unique account count is 143 because one source contributes different questions to both collections.
+- Delivered 590 verified question–round rows, 639 occurrences and 137 strict reports, plus 31 separate round-unconfirmed questions from 7 reports. Combined unique account count is 143 because one source contributes different questions to both collections. Study metadata, local progress, review-only discovery and explicit history are specified in STUDY_RESEARCH_PLAN.md.
 - Recorded 297 strict research query/discovery entries, 1,327 exclusion/uncertainty entries and 16 scoped campaigns; coverage limits are explicit in METHODOLOGY.md.
 - Build/check passed; all three artifacts were byte-identical across regeneration.
 - Chromium exercised loaded data, seven sort controls, filters, source/evidence expansion, CSV export, keyboard reset, project-subpath navigation and 390px mobile layout.

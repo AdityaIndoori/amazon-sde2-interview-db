@@ -25,8 +25,8 @@ export async function exportCollection(dataDir, name, collection) {
   PRAGMA foreign_keys = ON;
   CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
   CREATE TABLE reports (id TEXT PRIMARY KEY, title TEXT NOT NULL, url TEXT NOT NULL UNIQUE, retrieved_via TEXT, role TEXT NOT NULL, location TEXT NOT NULL, date TEXT NOT NULL, date_basis TEXT NOT NULL CHECK(date_basis IN ('interview','publication')), published_date TEXT, interview_date TEXT, stage_evidence TEXT NOT NULL, aliases_json TEXT NOT NULL, details_json TEXT NOT NULL);
-  CREATE TABLE questions (id TEXT PRIMARY KEY, round INTEGER ${roundConstraint}, question TEXT NOT NULL, topic TEXT NOT NULL);
-  CREATE TABLE occurrences (question_id TEXT NOT NULL REFERENCES questions(id), report_id TEXT NOT NULL REFERENCES reports(id), date TEXT NOT NULL, date_basis TEXT NOT NULL CHECK(date_basis IN ('interview','publication')), location TEXT NOT NULL, evidence TEXT NOT NULL, source_round TEXT NOT NULL, round_mapping_note TEXT NOT NULL, reported_question TEXT NOT NULL, reported_topic TEXT NOT NULL${uncertaintyColumn}, PRIMARY KEY(question_id, report_id));
+  CREATE TABLE questions (id TEXT PRIMARY KEY, round INTEGER ${roundConstraint}, question TEXT NOT NULL, topic TEXT NOT NULL, category TEXT NOT NULL, evidence_qualities_json TEXT NOT NULL);
+  CREATE TABLE occurrences (question_id TEXT NOT NULL REFERENCES questions(id), report_id TEXT NOT NULL REFERENCES reports(id), date TEXT NOT NULL, date_basis TEXT NOT NULL CHECK(date_basis IN ('interview','publication')), location TEXT NOT NULL, evidence TEXT NOT NULL, source_round TEXT NOT NULL, round_mapping_note TEXT NOT NULL, reported_question TEXT NOT NULL, reported_topic TEXT NOT NULL, evidence_quality TEXT NOT NULL, quality_reason TEXT NOT NULL, problem_url TEXT, problem_evidence TEXT${uncertaintyColumn}, PRIMARY KEY(question_id, report_id));
   CREATE TABLE research_coverage (slice TEXT PRIMARY KEY, details_json TEXT NOT NULL);
   CREATE INDEX occurrences_date ON occurrences(date);
   CREATE INDEX occurrences_location ON occurrences(location);
@@ -37,16 +37,16 @@ export async function exportCollection(dataDir, name, collection) {
 `);
     const insertMeta = db.prepare('INSERT INTO metadata VALUES (?, ?)');
     const insertReport = db.prepare('INSERT INTO reports VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-    const insertQuestion = db.prepare('INSERT INTO questions VALUES (?, ?, ?, ?)');
-    const insertOccurrence = db.prepare(`INSERT INTO occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?${supplemental ? ', ?' : ''})`);
+    const insertQuestion = db.prepare('INSERT INTO questions VALUES (?, ?, ?, ?, ?, ?)');
+    const insertOccurrence = db.prepare(`INSERT INTO occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?${supplemental ? ', ?' : ''})`);
     const insertCoverage = db.prepare('INSERT INTO research_coverage VALUES (?, ?)');
     db.transaction(() => {
       for (const [key, value] of Object.entries(metadata)) insertMeta.run(key, JSON.stringify(value));
       for (const r of reports) insertReport.run(r.id, r.title, r.url, r.retrievedVia ?? null, r.role, r.location, r.date, r.dateBasis, r.publishedDate, r.interviewDate, r.stageEvidence, JSON.stringify(r.aliases), JSON.stringify(r));
       for (const q of questions) {
-        insertQuestion.run(q.id, q.round, q.question, q.topic);
+        insertQuestion.run(q.id, q.round, q.question, q.topic, q.category, JSON.stringify(q.evidenceQualities));
         for (const o of q.occurrences) {
-          const values = [q.id, o.reportId, o.date, o.dateBasis, o.location, o.evidence, o.sourceRound, o.roundMappingNote, o.reportedQuestion, o.reportedTopic];
+          const values = [q.id, o.reportId, o.date, o.dateBasis, o.location, o.evidence, o.sourceRound, o.roundMappingNote, o.reportedQuestion, o.reportedTopic, o.evidenceQuality, o.qualityReason, o.problemUrl ?? null, o.problemEvidence ?? null];
           if (supplemental) values.push(o.roundUncertainty);
           insertOccurrence.run(...values);
         }

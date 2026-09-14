@@ -2,7 +2,7 @@
 
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
-**589 round-verified rows · 639 reported occurrences · 137 candidate accounts · 6 stated countries.** These are 525 conservatively normalized question identities across rounds. A separate round-unconfirmed collection contains31 questions from7 reports. Counts are public-report frequencies, not Amazon's internal asking rates.
+**590 round-verified rows · 639 reported occurrences · 137 candidate accounts · 6 stated countries.** These are 525 conservatively normalized question identities across rounds. A separate round-unconfirmed collection contains 31 questions from 7 reports. Counts are public-report frequencies, not Amazon's internal asking rates.
 
 > This is not ALL questions asked at Amazon. No public source can establish that. The strict corpus research ledger contains297 query/discovery entries and1,327 exclusion/uncertainty entries; structured campaign logs separately record scoped searches and inspections. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
 
@@ -26,7 +26,7 @@ The table exposes the requested schema:
 |---|---|---|---|---|---|---|
 | Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Countries only, or Not stated |
 
-The default **Round verified** collection contains589 rows,639 occurrences and137 reports. **Round unconfirmed** is a separate collection of31 questions from7 accounts whose SDEII final-loop stage is supported but whose question ordinals are missing. One account contributes different questions to both collections; their unique combined report count is143, not144. Supplemental questions never change verified-round frequencies. Open them with `?view=unconfirmed`; the round filter is disabled and ignored, while its selected values are retained for switching back. Reset in this view clears applicable filters but keeps those dormant round choices. Counts and JSON/SQLite/CSV downloads always refer to the active collection.
+The default **Round verified** collection contains 590 rows, 639 occurrences and 137 reports. **Round unconfirmed** is a separate collection of 31 questions from 7 accounts whose SDE II final-loop stage is supported but whose question ordinals are missing. One account contributes different questions to both collections; their unique combined report count is 143, not 144. Supplemental questions never change verified-round frequencies. Open them with `?view=unconfirmed`; the round filter is disabled and ignored, while its selected values are retained for switching back. Reset in this view clears applicable filters but keeps those dormant round choices. Counts and JSON/SQLite/CSV downloads always refer to the active collection.
 
 The **Scoped research campaigns** ledger records actual search scopes, providers, execution dates, queries, evidence artifacts and per-source decisions. Its country/status filters are independent of question filters. Search scope never supplies a candidate country or interview date. Sixteen runs now include all nine2026 publication-month windows through September13 for US-targeted discovery, plus source-recovery inspections and prior campaigns. Missing campaigns and empty search results do not establish that interviews did not occur.
 
@@ -41,6 +41,45 @@ The **Scoped research campaigns** ledger records actual search scopes, providers
 - Narrow screens scroll the table horizontally without overflowing the page.
 - Minimalist Dark styling uses layered slate surfaces, amber accents, subtle glass/glow effects and locally hosted Space Grotesk, Inter and JetBrains Mono. Shared CSS tokens control color, type, spacing, radius and elevation. Font licenses are included under `assets/fonts/`.
 - Motion respects `prefers-reduced-motion`; interactive controls have amber focus states and 44px targets. Muted text is lightened from the supplied palette to preserve contrast. The table has a bounded scrolling viewport and sticky sortable headers.
+
+## Evidence quality and private study tools
+
+- **Exact named:** a curator assessment contains source proof identifying a specific named problem. A LeetCode practice link is shown only when explicitly supported.
+- **Described:** the source supplies a description; this is not a completeness or authenticity guarantee.
+- **Partial:** the source mentions a variant, similarity or missing problem details. Unknown round and publication-date fallback remain separate labels.
+- Quality filters apply to individual occurrences. If an exact source is filtered out, its practice link disappears; mixed rows show only matching evidence labels.
+- Category filters separate Coding, Low-level design, System design, Behavioral, GenAI and Project deep dive.
+- Bookmark/Practiced toggles and named saved filter sets use localStorage in this browser only. No account, server or upload. Blocked/corrupt storage falls back to a visible session-only mode. Shared links exclude study marks and personal filters. Copy failure exposes a selectable public URL.
+- Study state is keyed by collection and row ID; a deliberately corrected/rekeyed row may need re-bookmarking. Browser-data deletion removes local marks; there is no cloud backup.
+
+The [provenance audit](data/provenance-audit.json) reviewed all 42 baseline frequency>1 rows using their retained evidence and targeted original checks. It corrected a June10 update date to the actual May20 publication date for leetcode-6763561 and separated a generic-feedback occurrence from manager-specific feedback. Counts of candidate reports and occurrences did not increase; one grouping split adds one row. The explicit registry has 35 source-supported practice links and four partial-variant overrides; other classifications are conservative description-based labels.
+
+## Incremental discovery, review and change history
+
+```sh
+bun run discover --start 2026-09-07 --end 2026-09-14 --country "United States" --results 5 --output data/discovery/initial
+bun run import-discovery --input data/discovery/initial/review-queue.json
+bun run review-queue --id CANDIDATE_ID --status rejected --reason "Evidence-based reason"
+bun run build
+bun run check
+```
+
+Discovery makes one bounded Exa request and writes public response/failure audit plus a pending-only queue artifact. It never modifies the admitted corpus or authoritative queue. Import explicitly merges candidates and preserves curator decisions. `accepted` requires a matching report already admitted through normal source curation; the review command cannot create questions. Optional `EXA_API_KEY` is read from the environment and never saved. Failed runs do not advance successful discovery watermarks.
+
+`.github/workflows/discover.yml` runs weekly and supports manual dispatch. It has read-only repository permissions and uploads an artifact only: no commit, push, admission or Pages publication. Extract the workflow artifact under its original `data/discovery/weekly/` path before importing it. The default date window starts at the last imported successful end date for the same country minus overlap, or the corpus cutoff when none exists. The site displays last successful research, last attempt and corpus cutoff separately.
+
+A real local discovery run produced five pending candidates; one wrong-level new-grad result was explicitly rejected, leaving four pending. These are review leads, not new interview records. Search country and provider publication metadata are not admission facts.
+
+After intentional source/assessment changes:
+
+```sh
+bun run build
+bun run record-changes --date YYYY-MM-DD --id UNIQUE_RELEASE_ID --summary "Describe the change"
+bun run build
+bun run check
+```
+
+`data/history-snapshot.json` is the prior row manifest; `data/change-history.json` records explicit added/corrected/removed rows and before/after fields. Build never mutates history. The initial baseline does not fabricate past changes; older changes remain in Git. The first upgrade records evidence metadata enrichment and the two audit corrections. The page exposes read-only candidate decisions, discovery runs and record history through `data/research-status.json`. Full implementation contracts are in [STUDY_RESEARCH_PLAN.md](STUDY_RESEARCH_PLAN.md).
 
 ## Database and reproducibility
 
@@ -58,6 +97,7 @@ bun test
 
 - `data/unconfirmed.json`, `data/unconfirmed.csv`, `data/unconfirmed.sqlite`: separate final-loop questions with `round: null` and mandatory uncertainty evidence. CSV displays `Unconfirmed`, not R0.
 - [`data/research-ledger.json`](data/research-ledger.json): validated campaign scopes, source dispositions and derived outcomes. Source references and repository artifacts are checked during build/check.
+- [`data/research-status.json`](data/research-status.json): validated pending/reviewed candidates, research dates and record history; no automatic admissions.
 
 `check` verifies unique IDs, source references, counts, occurrence provenance, SQLite integrity/foreign keys, and agreement between JSON, CSV and SQLite.
 The focused compiler suite tests collection isolation, canonical deduplication, promotion collisions, invalid dates, missing uncertainty and misleading campaign outcomes. There is no TypeScript/typecheck command in this plain-JavaScript project.
@@ -115,6 +155,7 @@ scripts/serve.js                Local static preview server
 5. Use the existing canonical key only for an equivalent question. Keep uncertain variants report-specific; keep low-level implementation and high-level architecture questions distinct.
 6. Record cross-posts as aliases, not extra independent reports. Use `normalization.json` for reviewed equivalence and exclusion decisions.
 7. Run `bun run build` and `bun run check`, inspect the resulting rows in the viewer, and commit the research and generated artifacts together.
+8. Update `data/evidence-assessments.json` only for supported quality/link/category decisions. Exact links require a source quotation and exact-named assessment; an algorithmic resemblance is not enough. Record intentional data changes with `bun run record-changes`, then rebuild and commit the history/snapshot with generated artifacts.
 
 If only the final-loop ordinal is unknown, use `data/unconfirmed/*.json` with `data/unconfirmed.schema.json`: retain all other admission evidence, `round: null`, and a precise `roundUncertainty`. Do not put generic or screening-ambiguous leads here. To promote a source/question, add supported numbered evidence to strict inputs and remove the supplemental entry in the same change; the compiler rejects source+canonical-question collisions. Campaign inputs follow `data/campaign.schema.json`, one run per file. Record every returned source as verified, unconfirmed, duplicate, excluded or unresolved; do not invent closed dispositions to make a search look complete.
 Supplemental reports must explicitly declare `stage: "final-loop"`; missing, phone-screen and OA stage values are rejected. This machine check supplements, rather than replaces, curator inspection of the required `stageEvidence` quotation.

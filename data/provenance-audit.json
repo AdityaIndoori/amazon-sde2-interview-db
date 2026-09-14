@@ -1,0 +1,420 @@
+{
+  "date": "2026-09-14",
+  "scope": {
+    "frequencyRowsReviewed": 42,
+    "method": "Read every retained occurrence quotation and prompt for all baseline frequency>1 rows; targeted live original checks for suspected feedback attribution and publication date. Not a re-fetch of every source or authentication of candidates."
+  },
+  "groups": [
+    {
+      "id": "r1-number-of-islands",
+      "frequency": 4,
+      "reportIds": [
+        "leetcode-8096139",
+        "leetcode-7337246",
+        "leetcode-6774605",
+        "leetcode-6493437"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-behavior-tight-deadline",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7175298",
+        "leetcode-6962158"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-behavior-innovative-idea",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7175298",
+        "leetcode-6461481"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-lru-cache",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7176045",
+        "leetcode-6742436"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-find-median-from-data-stream",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8363946",
+        "leetcode-8315111"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-alexa-device-battery-lld",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-6898756",
+        "leetcode-6708128"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-boundary-binary-tree",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7796848",
+        "leetcode-6493437"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r1-course-schedule-ii",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8286346",
+        "reddit-1kmwz84"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-minimum-cost-connect-ropes",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7175298",
+        "leetcode-6324163"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-above-beyond-customer",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-6774605",
+        "leetcode-6417079"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-logging-framework",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7815146",
+        "leetcode-6884999"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-design-url-shortener",
+      "frequency": 2,
+      "reportIds": [
+        "reddit-1j4erti",
+        "leetcode-6390329"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-design-vehicle-rental",
+      "frequency": 2,
+      "reportIds": [
+        "linkedin-7397256807641120768",
+        "reddit-1o5jhbs"
+      ],
+      "decision": "Retain common system family; specific requirements remain occurrence-scoped"
+    },
+    {
+      "id": "r2-design-atm",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-6763561",
+        "reddit-1kmwz84"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-design-rate-limiter",
+      "frequency": 3,
+      "reportIds": [
+        "leetcode-7671704",
+        "leetcode-7311674",
+        "leetcode-6870939"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-stack-overflow-lld",
+      "frequency": 2,
+      "reportIds": [
+        "linkedin-7400108261531684864",
+        "medium-57655fab76b8"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-twitter-hld",
+      "frequency": 2,
+      "reportIds": [
+        "reddit-1p8fyxx",
+        "leetcode-6841317"
+      ],
+      "decision": "Retain common system family; specific requirements remain occurrence-scoped"
+    },
+    {
+      "id": "r2-find-median-from-data-stream",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7464207",
+        "leetcode-6988116"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-search-rotated-sorted-array",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7878487",
+        "leetcode-6766714"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r2-learn-apply-work",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8315111",
+        "leetcode-7796848"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-above-beyond-customer",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-6624679",
+        "reddit-1jf07ti"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-behavior-beyond-responsibility",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-6962158",
+        "reddit-1jf07ti"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-movie-ticket-booking",
+      "frequency": 3,
+      "reportIds": [
+        "leetcode-7701734",
+        "leetcode-7228788",
+        "leetcode-6961332"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-food-delivery",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8312943",
+        "leetcode-7009755"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-notification-system",
+      "frequency": 2,
+      "reportIds": [
+        "linkedin-7397256807641120768",
+        "leetcode-6792693"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-parking-lot",
+      "frequency": 3,
+      "reportIds": [
+        "medium-c01839b6d87d",
+        "linkedin-7411035075385163778",
+        "leetcode-6436772"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-ticket-booking",
+      "frequency": 2,
+      "reportIds": [
+        "medium-5ddaa4c0edf3",
+        "reddit-1mfhd0z"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-url-shortener",
+      "frequency": 3,
+      "reportIds": [
+        "leetcode-7515006",
+        "leetcode-6898756",
+        "leetcode-6654251"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-design-rate-limiter",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8512004",
+        "leetcode-7728145"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r3-critical-manager-feedback",
+      "frequency": 3,
+      "reportIds": [
+        "leetcode-8315111",
+        "medium-c2cd6e71c035",
+        "medium-19b9593b32ec"
+      ],
+      "decision": "Split generic feedback occurrence from manager-specific group"
+    },
+    {
+      "id": "r3-why-amazon",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7132680",
+        "leetcode-7052436"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-behavioral-disagreement-with-senior",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8468910",
+        "leetcode-6763561"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-design-notification-system",
+      "frequency": 2,
+      "reportIds": [
+        "linkedin-7457469538344017920",
+        "leetcode-6436772"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-design-amazon-locker",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7228788",
+        "reddit-1kkg96s"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-file-filtering-api",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7787615",
+        "reddit-1rqqlel"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-design-device-configuration-sync",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8499681",
+        "leetcode-6923887"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-longest-substring-without-repeating",
+      "frequency": 3,
+      "reportIds": [
+        "leetcode-8096139",
+        "reddit-1kazu6q",
+        "leetcode-6654251"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-rotting-oranges",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7477684",
+        "leetcode-7554515"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-lru-cache",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7054407",
+        "leetcode-6585102"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-binary-tree-level-order",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7554515",
+        "leetcode-6763561"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-serialize-and-deserialize-binary-tree",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-8096139",
+        "reddit-1kazu6q"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    },
+    {
+      "id": "r4-asteroid-collision",
+      "frequency": 2,
+      "reportIds": [
+        "leetcode-7477684",
+        "leetcode-6769948"
+      ],
+      "decision": "Retain grouping; no confirmed duplicate candidate or incompatible core task in retained evidence"
+    }
+  ],
+  "corrections": [
+    {
+      "reportId": "medium-19b9593b32ec",
+      "question": "critical-manager-feedback",
+      "change": "Rekey generic critical feedback to behavior-critical-feedback",
+      "evidence": "Original Round4 HLD quote asks tough critical feedback but does not say manager; manager-specific frequency3 becomes2."
+    },
+    {
+      "reportId": "leetcode-6763561",
+      "change": "Publication fallback2025-06-10 corrected to2025-05-20",
+      "evidence": "Original browser createdAt2025-05-20T14:26:28.821424+00:00, updatedAt2025-06-10T14:16:53.482444+00:00."
+    }
+  ],
+  "linkAudit": {
+    "reviewed": 39,
+    "exactLinks": 35,
+    "partialWithheld": 4,
+    "rule": "Direct problem URL in source quotation, no changed/unspecified variant; no source slug-only inference."
+  },
+  "limitations": [
+    "No candidate identity verification; unknown crossposts may remain.",
+    "Described label does not promise full problem statement.",
+    "Publication fallback remains distinct from actual interview date.",
+    "Additional source-level constraints retained in occurrence evidence; design family counts do not assert identical wording."
+  ]
+}

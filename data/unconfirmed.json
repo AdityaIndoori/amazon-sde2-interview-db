@@ -45,8 +45,14 @@
           "reportedTopic": "Dynamic programming",
           "sourceRound": "DSA",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -82,8 +88,14 @@
           "reportedTopic": "Low-level design / Parsing",
           "sourceRound": "LLD interview (ordinal not supplied)",
           "roundMappingNote": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round.",
-          "roundUncertainty": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round."
+          "roundUncertainty": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round.",
+          "evidenceQuality": "partial",
+          "qualityReason": "Reported prompt or evidence describes a variant, similarity, or unspecified problem details; no exact named-problem match is inferred."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "partial"
       ]
     },
     {
@@ -119,8 +131,14 @@
           "reportedTopic": "Behavioral / Disagreement",
           "sourceRound": "DSA",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -156,8 +174,14 @@
           "reportedTopic": "Behavioral / Judgment",
           "sourceRound": "Bar raiser",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -193,8 +217,14 @@
           "reportedTopic": "Behavioral / Dive deep",
           "sourceRound": "Onsite — Coding 1",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -230,8 +260,14 @@
           "reportedTopic": "Behavioral / Customer obsession",
           "sourceRound": "Bar raiser",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -267,8 +303,14 @@
           "reportedTopic": "Behavioral / Learn and be curious",
           "sourceRound": "Onsite — Problem Solving",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -304,8 +346,14 @@
           "reportedTopic": "Behavioral / Ownership",
           "sourceRound": "Onsite — Problem Solving",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -341,8 +389,14 @@
           "reportedTopic": "Behavioral / Dive deep",
           "sourceRound": "Onsite — Coding 2",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -378,8 +432,14 @@
           "reportedTopic": "Behavioral / Ownership",
           "sourceRound": "DSA",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -415,8 +475,14 @@
           "reportedTopic": "Behavioral / Ownership",
           "sourceRound": "Onsite — Hiring Manager",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -452,8 +518,14 @@
           "reportedTopic": "Low-level design / Backups",
           "sourceRound": "LLD",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -489,8 +561,14 @@
           "reportedTopic": "Low-level design / Caching",
           "sourceRound": "Onsite — Coding 2",
           "roundMappingNote": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
-          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -526,8 +604,14 @@
           "reportedTopic": "Low-level design / Graphs",
           "sourceRound": "Onsite — Coding 1",
           "roundMappingNote": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
-          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -563,8 +647,14 @@
           "reportedTopic": "Low-level design / Restaurants",
           "sourceRound": "LLD round",
           "roundMappingNote": "Onsite status is explicit, but the overview orders DSA, DSA, LLD while detailed sections order DSA-1, LLD, DSA-2. The author says initially LLD and DSA-1 were scheduled without giving their order. The earlier LLD ordinal is therefore unverified; independently verified HLD+HM R4 remains only in the strict collection.",
-          "roundUncertainty": "Onsite status is explicit, but the overview orders DSA, DSA, LLD while detailed sections order DSA-1, LLD, DSA-2. The author says initially LLD and DSA-1 were scheduled without giving their order. The earlier LLD ordinal is therefore unverified; independently verified HLD+HM R4 remains only in the strict collection."
+          "roundUncertainty": "Onsite status is explicit, but the overview orders DSA, DSA, LLD while detailed sections order DSA-1, LLD, DSA-2. The author says initially LLD and DSA-1 were scheduled without giving their order. The earlier LLD ordinal is therefore unverified; independently verified HLD+HM R4 remains only in the strict collection.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -600,8 +690,14 @@
           "reportedTopic": "System design / Commerce",
           "sourceRound": "HLD",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "System design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -637,8 +733,14 @@
           "reportedTopic": "System design / Inventory",
           "sourceRound": "Onsite — System Design",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "System design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -674,8 +776,14 @@
           "reportedTopic": "System design / Analytics",
           "sourceRound": "System Design — High level design Interview — Bar raiser",
           "roundMappingNote": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
-          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "System design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -711,8 +819,14 @@
           "reportedTopic": "System design / Data pipelines",
           "sourceRound": "Onsite — System Design",
           "roundMappingNote": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
-          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "System design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -748,8 +862,14 @@
           "reportedTopic": "System design / File storage",
           "sourceRound": "HLD (one of two completed onsite rounds)",
           "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2.",
-          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2."
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "System design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -785,8 +905,14 @@
           "reportedTopic": "Low-level design / Commerce",
           "sourceRound": "Logical and Maintainable — Low level Design Interview",
           "roundMappingNote": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
-          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -822,8 +948,14 @@
           "reportedTopic": "Low-level design / Filtering",
           "sourceRound": "Onsite — Problem Solving",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Low-level design",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -859,8 +991,16 @@
           "reportedTopic": "Dynamic programming",
           "sourceRound": "Problem Solving Interview",
           "roundMappingNote": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
-          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
+          "evidenceQuality": "exact-named",
+          "qualityReason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+          "problemEvidence": "https://leetcode.com/problems/jump-game/description/ ... finished first jump game - no problem",
+          "problemUrl": "https://leetcode.com/problems/jump-game/"
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "exact-named"
       ]
     },
     {
@@ -896,8 +1036,14 @@
           "reportedTopic": "Behavioral / Career motivation",
           "sourceRound": "HLD",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -933,8 +1079,14 @@
           "reportedTopic": "Dynamic programming / Strings",
           "sourceRound": "Onsite — Coding 2",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -970,8 +1122,14 @@
           "reportedTopic": "Graphs / Widest path",
           "sourceRound": "Onsite — Coding 1",
           "roundMappingNote": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
-          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -1007,8 +1165,16 @@
           "reportedTopic": "Graphs / Topological sorting",
           "sourceRound": "Onsite — Coding 3",
           "roundMappingNote": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
-          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified.",
+          "evidenceQuality": "exact-named",
+          "qualityReason": "Curator-reviewed source evidence explicitly links this problem; this identifies the named problem, not all interviewer follow-ups.",
+          "problemEvidence": "Coding 3: Course Schedule 2: https://leetcode.com/problems/course-schedule-ii/",
+          "problemUrl": "https://leetcode.com/problems/course-schedule-ii/"
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "exact-named"
       ]
     },
     {
@@ -1044,8 +1210,14 @@
           "reportedTopic": "Graphs / BFS",
           "sourceRound": "Data Structures and Algorithms Interview — Hiring Manager",
           "roundMappingNote": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
-          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -1081,8 +1253,14 @@
           "reportedTopic": "Graphs / BFS",
           "sourceRound": "Coding DSA (one of two completed onsite rounds)",
           "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2.",
-          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2."
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "described"
       ]
     },
     {
@@ -1118,8 +1296,14 @@
           "reportedTopic": "Arrays / Greedy",
           "sourceRound": "Problem Solving Interview",
           "roundMappingNote": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
-          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4.",
+          "evidenceQuality": "partial",
+          "qualityReason": "Source explicitly describes a changed or unspecified variant; base-problem link is not an exact match."
         }
+      ],
+      "category": "Coding",
+      "evidenceQualities": [
+        "partial"
       ]
     },
     {
@@ -1155,8 +1339,14 @@
           "reportedTopic": "Behavioral / Learn and be curious",
           "sourceRound": "HLD",
           "roundMappingNote": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
-          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified.",
+          "evidenceQuality": "described",
+          "qualityReason": "Reported question description; this label does not establish source completeness or an exact named-problem match."
         }
+      ],
+      "category": "Behavioral",
+      "evidenceQualities": [
+        "described"
       ]
     }
   ],

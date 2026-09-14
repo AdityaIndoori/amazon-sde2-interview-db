@@ -1,0 +1,31 @@
+name: Discover public reports for curator review
+on:
+  schedule:
+    - cron: '20 8 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.4.1'
+      - name: Discover pending candidates only
+        env:
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: bun scripts/discover.js --results 10 --overlap 7 --output data/discovery/weekly
+      - name: Retain public requests, responses and failure audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-discovery-${{ github.run_id }}
+          path: data/discovery/weekly/
+          if-no-files-found: error
+          retention-days: 90

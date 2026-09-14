@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "id": "discovery-2026-09-14T18-30-21-324Z-bc63e0b7",
+      "startedAt": "2026-09-14T18:30:21.324Z",
+      "status": "successful",
+      "country": "United States",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-14",
+      "queries": [
+        "First-person Amazon SDE II SDE 2 L5 final onsite interview experience with specific coding, low-level design or system design questions in United States"
+      ],
+      "artifact": "data/discovery/initial/discovery-2026-09-14T18-30-21-324Z-bc63e0b7.json",
+      "completedAt": "2026-09-14T18:30:33.348Z"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "candidate-7af4ad01c37f86847ec13f43",
+      "url": "https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh",
+      "title": "Chapter 14: Four Interviews, One Format, Zero Identical Rounds | Rostislav Borovikov",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-07T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-589790b180a45d5a2aad4f69",
+      "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+      "title": "Amazon SDE II Interview Experience (Bangalore, Selected)  ~ Aug 2026 ~ DevBrainiac",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-12T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-aa6ac734bd90f87e206a8ab9",
+      "url": "https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds",
+      "title": "Amazon New Grad Software Engineer Interview Experience — AWS Offer After Four Onsite Rounds | PracHub",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-13T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-a1136c2273d118575acdfa35",
+      "url": "https://www.instagram.com/reel/DdN8vSuTvi5/",
+      "title": "How I got an Amazon SDE-2 offer March 2025 to May ... - Instagram",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-13T18:30:23.218Z"
+    },
+    {
+      "id": "candidate-30de19057e767747e7996e09",
+      "url": "https://www.linkedin.com/posts/sudhir-dhangar-197107194_java-backenddevelopment-systemdesign-activity-7502570587341565953-KXsy",
+      "title": "He cleared every DSA round at Amazon. | Sudhir Dhangar",
+      "discoveredAt": "2026-09-14T18:30:21.324Z",
+      "runIds": [
+        "discovery-2026-09-14T18-30-21-324Z-bc63e0b7"
+      ],
+      "status": "pending",
+      "publishedDate": "2026-09-07T00:00:00.000Z"
+    }
+  ]
+}

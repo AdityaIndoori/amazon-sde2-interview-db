@@ -12,7 +12,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.4.1'
-      - name: Test supplemental compiler boundaries
+      - name: Test evidence, discovery and history boundaries
         run: bun run test
       - name: Verify checked-in database
         run: bun run check
@@ -21,4 +21,4 @@ jobs:
       - name: Verify regenerated database
         run: bun run check
       - name: Require generated artifacts to be current
-        run: git diff --exit-code -- data/database.json data/database.csv data/database.sqlite data/unconfirmed.json data/unconfirmed.csv data/unconfirmed.sqlite data/research-ledger.json
+        run: git diff --exit-code -- data/database.json data/database.csv data/database.sqlite data/unconfirmed.json data/unconfirmed.csv data/unconfirmed.sqlite data/research-ledger.json data/research-status.json

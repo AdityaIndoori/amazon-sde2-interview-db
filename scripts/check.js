@@ -4,6 +4,8 @@ import { readdir, realpath, stat } from 'node:fs/promises';
 import { isAbsolute, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compileResearchExpansion } from './research-expansion.js';
+import { enrichEvidence } from './enrich-evidence.js';
+import { compileResearchStatus, emptyQueue } from './research-status.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const base = new URL('../data/', import.meta.url);
@@ -18,7 +20,13 @@ const readInputs = async name => {
 };
 const [slices, campaigns] = await Promise.all([readInputs('unconfirmed'), readInputs('campaigns')]);
 const compiled = compileResearchExpansion({ slices, strict: data, normalization, campaigns });
-assert.deepEqual(unconfirmed, compiled.unconfirmed, 'Unconfirmed JSON matches validated research inputs');
+const assessments = await Bun.file(new URL('evidence-assessments.json', base)).json();
+assert.deepEqual(data, enrichEvidence(data, assessments), 'Strict evidence metadata matches assessments');
+assert.deepEqual(unconfirmed, enrichEvidence(compiled.unconfirmed, assessments), 'Unconfirmed JSON matches validated research inputs and assessments');
+const queueFile = Bun.file(new URL('review-queue.json', base));
+const historyFile = Bun.file(new URL('change-history.json', base));
+const status = compileResearchStatus({ queue: await queueFile.exists() ? await queueFile.json() : emptyQueue(), history: await historyFile.exists() ? await historyFile.json() : { version: 1, releases: [] }, collections: { strict: data, unconfirmed }, campaigns: ledger.campaigns });
+assert.deepEqual(await Bun.file(new URL('research-status.json', base)).json(), status, 'Research status matches queue and history');
 assert.deepEqual(ledger, compiled.ledger, 'Ledger matches validated campaign inputs and report references');
 const realRoot = await realpath(root);
 for (const campaign of ledger.campaigns) {
@@ -88,9 +96,12 @@ async function checkCollection(collection, filename, supplemental) {
           assert.equal(raw.roundUncertainty, o.roundUncertainty);
         }
         const sql = db.query('SELECT * FROM occurrences WHERE question_id = ? AND report_id = ?').get(q.id, o.reportId);
-        assert.deepEqual(sql, { question_id: q.id, report_id: o.reportId, date: o.date, date_basis: o.dateBasis, location: o.location, evidence: o.evidence, source_round: o.sourceRound, round_mapping_note: o.roundMappingNote, reported_question: o.reportedQuestion, reported_topic: o.reportedTopic, ...(supplemental ? { round_uncertainty: o.roundUncertainty } : {}) });
+        assert.deepEqual(sql, { question_id: q.id, report_id: o.reportId, date: o.date, date_basis: o.dateBasis, location: o.location, evidence: o.evidence, source_round: o.sourceRound, round_mapping_note: o.roundMappingNote, reported_question: o.reportedQuestion, reported_topic: o.reportedTopic, evidence_quality: o.evidenceQuality, quality_reason: o.qualityReason, problem_url: o.problemUrl ?? null, problem_evidence: o.problemEvidence ?? null, ...(supplemental ? { round_uncertainty: o.roundUncertainty } : {}) });
       }
       const sql = db.query('SELECT * FROM question_database WHERE id = ?').get(q.id);
+      const enrichedRow = db.query('SELECT category, evidence_qualities_json FROM questions WHERE id = ?').get(q.id);
+      assert.equal(enrichedRow.category, q.category);
+      assert.deepEqual(JSON.parse(enrichedRow.evidence_qualities_json), q.evidenceQualities);
       assert.equal(sql.Round, q.round);
       assert.equal(sql.Frequency, q.frequency);
       assert.equal(sql.Question, q.question);
