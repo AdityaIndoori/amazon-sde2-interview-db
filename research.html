@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
+  <title>Research & provenance · Amazon SDE II</title>
+  <link rel="stylesheet" href="styles.css?v=47d6bd3f3d12">
+  <script src="research.js?v=a0389dc01263" defer></script>
+</head>
+<body class="research-page">
+  <a class="skip-link" href="#methodology">Skip to research</a>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="Interview fieldnotes home"><span class="mark" aria-hidden="true">IF</span> Interview fieldnotes</a>
+      <nav class="edition" aria-label="Main navigation"><a href="./">Practice questions</a></nav>
+    </header>
+    <main>
+      <h1>Research &amp; provenance</h1>
+      <p id="date-window"></p>
+      <p id="disclaimer"></p>
+      <p id="research-watermark" role="status">Loading research dates…</p>
+      <section id="methodology" class="methodology" aria-labelledby="methodology-heading">
+        <div><p class="eyebrow">02 / Provenance first</p><h2 id="methodology-heading">Clarity behind every count.</h2></div>
+        <div class="method-grid">
+          <article><h3>Count reports, not repetitions</h3><p id="frequency-definition">Frequency is the number of distinct candidate reports for a question in a particular round. Cross-posts and repeated mentions do not add to the count. It is not an estimate of Amazon’s asking rate.</p></article>
+          <article><h3>Preserve the date evidence</h3><p>Interview dates take precedence. When unavailable, publication dates are explicitly labeled. Month- and year-only dates retain that precision; no exact interview day is inferred.</p></article>
+          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops only. Round verified requires a supported position in rounds 1–4; Round unconfirmed verifies the final-loop stage but leaves the ordinal unknown. Online assessments, phone screens, internal transfers, and other levels are excluded. Locations are countries only; “Not stated” means the report does not establish a country.</p></article>
+        </div>
+        <section class="campaign-ledger" aria-labelledby="ledger-heading" aria-describedby="ledger-note">
+          <h3 id="ledger-heading">Scoped research campaigns</h3>
+          <p id="ledger-note">A ledger of documented research activity, not exhaustive interview coverage. Country and dates describe the search scope, never an interview’s location or date. These controls are independent of question filters.</p>
+          <fieldset id="ledger-filters" class="ledger-filters" disabled>
+            <legend class="sr-only">Filter research campaigns</legend>
+            <div><label for="ledger-country">Search country</label><select id="ledger-country"><option value="">All countries</option></select></div>
+            <div><label for="ledger-status">Execution status</label><select id="ledger-status"><option value="">All statuses</option><option value="completed">Completed</option><option value="failed">Failed</option></select></div>
+          </fieldset>
+          <p id="ledger-summary" role="status" aria-live="polite">Loading the research ledger…</p>
+          <div id="ledger-results" class="table-wrap" tabindex="0" role="region" aria-label="Research campaigns; horizontally scrollable" hidden>
+            <table class="ledger-table"><caption class="sr-only">Documented campaign scope, execution and source decisions. Expand the evidence column for queries and dispositions.</caption><thead><tr><th scope="col">Search scope</th><th scope="col">Execution</th><th scope="col">Outcome</th><th scope="col">Queries & evidence</th></tr></thead><tbody id="ledger-rows"></tbody></table>
+          </div>
+        </section>
+        <section class="campaign-ledger" aria-labelledby="research-heading">
+          <h3 id="research-heading">Discovery queue & record history</h3>
+          <p>Read-only review activity. Pending candidates are not admitted evidence. Accepting a queue entry only references an already admitted report; it never adds questions automatically.</p>
+          <p id="research-status" role="status">Loading optional research status…</p>
+          <div id="research-content" hidden>
+            <fieldset id="queue-filters" class="ledger-filters"><legend class="sr-only">Filter discovery queue</legend><div><label for="queue-status">Candidate review status</label><select id="queue-status"><option value="">All statuses</option><option value="pending">Pending</option><option value="rejected">Rejected</option><option value="duplicate">Duplicate</option><option value="accepted">Accepted</option></select></div></fieldset>
+            <p id="queue-summary" role="status" aria-live="polite"></p>
+            <div id="queue-records" class="research-records"></div>
+            <details class="coverage-panel"><summary>Discovery run history</summary><div id="discovery-runs" class="coverage-body research-records"></div></details>
+            <details class="coverage-panel"><summary>Record change history</summary><div id="record-history" class="coverage-body research-records"></div></details>
+          </div>
+        </section>
+        <details class="coverage-panel">
+          <summary>Historical search notes, exclusions & limitations <span id="coverage-summary"></span></summary>
+          <div class="coverage-body"><p>Coverage reflects the searches documented below, not a complete inventory of Amazon interviews. Source access gaps and ambiguous reports remain visible rather than being filled in.</p><div id="coverage-content"><p>Coverage details load with the database.</p></div></div>
+        </details>
+      </section>
+      <section id="filter-help"><h2>Using the question filters</h2>
+        <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, date basis, and evidence quality must match the <em>same occurrence</em>; counts, badges, practice links, and exports update accordingly. “Exact named” requires curator-backed source evidence; “Described” means a reported description, not a completeness guarantee; “Partial” preserves unspecified variants. Quality does not establish the date or round.</p>
+        <p>Round verified requires a supported ordinal. Round unconfirmed leaves that ordinal unknown. All shows both collections without merging row frequencies; shared reports count once. Numbered round filters exclude unconfirmed rows. Bookmarks remain attached to their original collection.</p>
+      </section>
+      <section class="downloads" aria-labelledby="downloads-heading">
+        <div><h2 id="downloads-heading">Database downloads</h2><p id="download-description">Verified and unconfirmed evidence are separate full downloads; use Export CSV on the questions page for a filtered selection.</p></div>
+        <div class="download-links"><a id="download-json" class="button" href="data/database.json" download>Verified JSON <span aria-hidden="true">↓</span></a><a id="download-sqlite" class="button" href="data/database.sqlite" download>Verified SQLite <span aria-hidden="true">↓</span></a><a id="download-unconfirmed-json" class="button" href="data/unconfirmed.json" download>Unconfirmed JSON</a><a id="download-unconfirmed-sqlite" class="button" href="data/unconfirmed.sqlite" download>Unconfirmed SQLite</a></div>
+      </section>
+    </main>
+    <footer><a href="./">Back to practice questions</a><p>Independent research. Not affiliated with Amazon.</p></footer>
+  </div>
+</body>
+</html>

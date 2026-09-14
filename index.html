@@ -7,72 +7,52 @@
   <meta name="theme-color" content="#0a0a0f">
   <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
   <title>Amazon SDE II · Interview fieldnotes</title>
-  <link rel="stylesheet" href="styles.css?v=ecc5d39a83b5">
-  <script src="app.js?v=eec1500de3dc" defer></script>
+  <link rel="stylesheet" href="styles.css?v=47d6bd3f3d12">
+  <script src="app.js?v=bc231ff01511" defer></script>
 </head>
-<body>
+<body class="prep-page">
   <a class="skip-link" href="#results">Skip to questions</a>
   <div class="page">
     <header class="masthead">
       <a class="wordmark" href="./" aria-label="Interview fieldnotes home"><span class="mark" aria-hidden="true">IF</span> Interview fieldnotes</a>
-      <nav class="edition" aria-label="Main navigation"><a href="#explore-heading">Question index</a><a href="#methodology">Methodology</a></nav>
+      <nav class="edition" aria-label="Main navigation"><a href="research.html">Research &amp; provenance</a></nav>
     </header>
     <main>
-      <section class="intro" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow hero-badge">Amazon · SDE II · L5</p>
-          <h1 id="page-title">Less guesswork.<br><span>More evidence.</span></h1>
-          <p class="lede">Final-loop questions, grounded in candidate accounts. Explore what was reported, in which round, and the evidence behind it.</p>
-          <p id="date-window" class="window">January 2025 – September 13, 2026 · Rounds 1–4</p>
-          <p id="research-watermark" class="window" role="status">Last successful research: loading… · Corpus cutoff: September 13, 2026</p>
-        </div>
-        <aside class="scope-note" aria-label="How to read this collection">
-          <span class="eyebrow">A RECORD, NOT A PREDICTION</span>
-          <p id="disclaimer">This is a collection of discovered public reports—not every question asked at Amazon. Rounds refer to final-loop positions; original labels and any explicit numbering offsets remain in the evidence.</p>
-          <a href="#methodology">Read the evidence rules <span aria-hidden="true">↗</span></a>
-        </aside>
-      </section>
-
-      <section class="stats" aria-label="Current selection statistics">
-        <div><strong id="stat-questions">—</strong><span id="stat-question-label">question–round pairs · verified</span></div>
-        <div><strong id="stat-reports">—</strong><span>distinct candidate reports</span></div>
-        <div><strong id="stat-occurrences">—</strong><span>matching occurrences</span></div>
-        <div><strong id="stat-locations">—</strong><span>stated countries</span></div>
-      </section>
 
       <section class="workspace" aria-labelledby="explore-heading">
         <div class="section-heading">
-          <div><p class="eyebrow">01 / The question index</p><h2 id="explore-heading">Find your focus.</h2></div>
+          <h1 id="explore-heading">Amazon SDE II questions</h1>
           <button id="reset" type="button" class="text-button" disabled>Reset filters</button>
         </div>
         <form id="filters" class="filters" role="search" aria-label="Filter interview questions">
           <fieldset id="filter-fields" disabled>
             <legend class="sr-only">Question filters</legend>
             <div class="search-field">
-              <label for="search">Search the record</label>
+              <label for="search">Search questions</label>
               <input id="search" name="q" type="search" placeholder="Question, topic, source, or evidence…" autocomplete="off">
             </div>
             <div class="filter-grid">
               <div><label for="collection-switch">Question collection</label><select id="collection-switch" name="view" aria-describedby="collection-note auxiliary-status"><option id="view-strict" value="strict">Round verified</option><option id="view-unconfirmed" value="unconfirmed" disabled>Round unconfirmed</option><option id="view-all" value="all" disabled>All</option></select></div>
               <details class="multi-filter" id="round" data-multiple data-all="All rounds"><summary>Round <span class="selection-label">All rounds</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose rounds</legend></fieldset></details>
-              <details class="multi-filter" id="topic" data-multiple data-all="All topics"><summary>Topic <span class="selection-label">All topics</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose topics</legend></fieldset></details>
               <details class="multi-filter" id="category" data-multiple data-all="All categories"><summary>Category <span class="selection-label">All categories</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose categories</legend></fieldset></details>
+              <div><label for="personal">My study progress</label><select id="personal"><option value="">All questions</option><option value="bookmarked">Bookmarked</option><option value="practiced">Practiced</option><option value="not-practiced">Not practiced</option></select></div>
+            </div>
+            <details class="advanced-filters"><summary>More filters</summary><div class="filter-grid">
+              <details class="multi-filter" id="topic" data-multiple data-all="All topics"><summary>Topic <span class="selection-label">All topics</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose topics</legend></fieldset></details>
               <details class="multi-filter" id="quality" data-multiple data-all="All evidence qualities"><summary>Evidence quality <span class="selection-label">All evidence qualities</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose evidence qualities</legend></fieldset></details>
               <details class="multi-filter" id="location" data-multiple data-all="All countries"><summary>Location (country) <span class="selection-label">All countries</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose countries</legend></fieldset></details>
               <details class="multi-filter" id="year" data-multiple data-all="All years"><summary>Year <span class="selection-label">All years</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose years</legend></fieldset></details>
               <details class="multi-filter" id="basis" data-multiple data-all="Both date types"><summary>Date basis <span class="selection-label">Both date types</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose date types</legend></fieldset></details>
               <div><label for="minimum">Min. frequency</label><input id="minimum" name="min" type="number" min="1" step="1" value="1" inputmode="numeric"></div>
-              <div><label for="personal">My study progress</label><select id="personal"><option value="">All questions</option><option value="bookmarked">Bookmarked</option><option value="practiced">Practiced</option><option value="not-practiced">Not practiced</option></select></div>
-            </div>
+            </div></details>
           </fieldset>
-        <p id="collection-note" class="filter-note">Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number.</p>
+        <p id="collection-note" class="filter-note"></p>
         <p id="auxiliary-status" class="availability-note" role="status">Loading the separate round-unconfirmed collection…</p>
         </form>
-        <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, date basis, and evidence quality must match the <em>same occurrence</em>; counts, badges, practice links, and exports update accordingly. “Exact named” requires curator-backed source evidence; “Described” means a reported description, not a completeness guarantee; “Partial” preserves unspecified variants. Quality does not establish the date or round.</p>
-        <section class="study-tools" aria-labelledby="study-heading">
-          <h3 id="study-heading">Your study space</h3>
-          <p>Bookmarks, practiced marks, and saved views stay in this browser only. Shared links contain public filters, never your marks or personal progress filter.</p>
           <p id="storage-notice" class="availability-note" role="status" hidden></p>
+        <details class="study-tools">
+          <summary>Saved filters &amp; sharing</summary>
+          <p>Bookmarks, practiced marks, and saved views stay in this browser only. Shared links contain public filters, never your marks or personal progress filter.</p>
           <form id="save-view-form" class="study-form">
             <div><label for="view-name">Name this public filter set</label><input id="view-name" type="text" maxlength="80" required placeholder="e.g. India coding practice" autocomplete="off"></div>
             <button id="save-view" class="button" type="submit" disabled>Save filter set</button>
@@ -85,7 +65,7 @@
           </div>
           <div id="share-fallback" hidden><label for="share-url">Public URL — select and copy</label><input id="share-url" type="url" readonly></div>
           <p id="study-status" class="availability-note" role="status" aria-live="polite"></p>
-        </section>
+        </details>
 
         <div class="results-toolbar">
           <p id="result-summary" role="status" aria-live="polite" aria-atomic="true">Loading the research database…</p>
@@ -111,49 +91,8 @@
         </div>
       </section>
 
-      <section id="methodology" class="methodology" aria-labelledby="methodology-heading">
-        <div><p class="eyebrow">02 / Provenance first</p><h2 id="methodology-heading">Clarity behind every count.</h2></div>
-        <div class="method-grid">
-          <article><h3>Count reports, not repetitions</h3><p id="frequency-definition">Frequency is the number of distinct candidate reports for a question in a particular round. Cross-posts and repeated mentions do not add to the count. It is not an estimate of Amazon’s asking rate.</p></article>
-          <article><h3>Preserve the date evidence</h3><p>Interview dates take precedence. When unavailable, publication dates are explicitly labeled. Month- and year-only dates retain that precision; no exact interview day is inferred.</p></article>
-          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops only. Round verified requires a supported position in rounds 1–4; Round unconfirmed verifies the final-loop stage but leaves the ordinal unknown. Online assessments, phone screens, internal transfers, and other levels are excluded. Locations are countries only; “Not stated” means the report does not establish a country.</p></article>
-        </div>
-        <section class="campaign-ledger" aria-labelledby="ledger-heading" aria-describedby="ledger-note">
-          <h3 id="ledger-heading">Scoped research campaigns</h3>
-          <p id="ledger-note">A ledger of documented research activity, not exhaustive interview coverage. Country and dates describe the search scope, never an interview’s location or date. These controls are independent of question filters.</p>
-          <fieldset id="ledger-filters" class="ledger-filters" disabled>
-            <legend class="sr-only">Filter research campaigns</legend>
-            <div><label for="ledger-country">Search country</label><select id="ledger-country"><option value="">All countries</option></select></div>
-            <div><label for="ledger-status">Execution status</label><select id="ledger-status"><option value="">All statuses</option><option value="completed">Completed</option><option value="failed">Failed</option></select></div>
-          </fieldset>
-          <p id="ledger-summary" role="status" aria-live="polite">Loading the research ledger…</p>
-          <div id="ledger-results" class="table-wrap" tabindex="0" role="region" aria-label="Research campaigns; horizontally scrollable" hidden>
-            <table class="ledger-table"><caption class="sr-only">Documented campaign scope, execution and source decisions. Expand the evidence column for queries and dispositions.</caption><thead><tr><th scope="col">Search scope</th><th scope="col">Execution</th><th scope="col">Outcome</th><th scope="col">Queries & evidence</th></tr></thead><tbody id="ledger-rows"></tbody></table>
-          </div>
-        </section>
-        <section class="campaign-ledger" aria-labelledby="research-heading">
-          <h3 id="research-heading">Discovery queue & record history</h3>
-          <p>Read-only review activity. Pending candidates are not admitted evidence. Accepting a queue entry only references an already admitted report; it never adds questions automatically.</p>
-          <p id="research-status" role="status">Loading optional research status…</p>
-          <div id="research-content" hidden>
-            <fieldset id="queue-filters" class="ledger-filters"><legend class="sr-only">Filter discovery queue</legend><div><label for="queue-status">Candidate review status</label><select id="queue-status"><option value="">All statuses</option><option value="pending">Pending</option><option value="rejected">Rejected</option><option value="duplicate">Duplicate</option><option value="accepted">Accepted</option></select></div></fieldset>
-            <p id="queue-summary" role="status" aria-live="polite"></p>
-            <div id="queue-records" class="research-records"></div>
-            <details class="coverage-panel"><summary>Discovery run history</summary><div id="discovery-runs" class="coverage-body research-records"></div></details>
-            <details class="coverage-panel"><summary>Record change history</summary><div id="record-history" class="coverage-body research-records"></div></details>
-          </div>
-        </section>
-        <details class="coverage-panel">
-          <summary>Historical search notes, exclusions & limitations <span id="coverage-summary"></span></summary>
-          <div class="coverage-body"><p>Coverage reflects the searches documented below, not a complete inventory of Amazon interviews. Source access gaps and ambiguous reports remain visible rather than being filled in.</p><div id="coverage-content"><p>Coverage details load with the database.</p></div></div>
-        </details>
-      </section>
-      <section class="downloads" aria-labelledby="downloads-heading">
-        <div><h2 id="downloads-heading">Take the evidence with you.</h2><p id="download-description">Full downloads include the round-verified collection, regardless of the active filters.</p></div>
-        <div class="download-links"><a id="download-json" class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a id="download-sqlite" class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a><a id="download-unconfirmed-json" class="button" href="data/unconfirmed.json" download hidden>Unconfirmed JSON</a><a id="download-unconfirmed-sqlite" class="button" href="data/unconfirmed.sqlite" download hidden>Unconfirmed SQLite</a></div>
-      </section>
     </main>
-    <footer><p>Independent research. Not affiliated with or endorsed by Amazon.</p><p id="generated-at">Source evidence stays attached to every question.</p></footer>
+    <footer><a href="research.html#filter-help">Filter help</a><a href="research.html">Research &amp; provenance</a><a href="research.html#downloads-heading">Full downloads</a></footer>
   </div>
   <noscript><div class="noscript">JavaScript is needed to filter this index. You can still download the <a href="data/database.json">complete JSON database</a> or <a href="data/database.sqlite">SQLite database</a>.</div></noscript>
 </body>

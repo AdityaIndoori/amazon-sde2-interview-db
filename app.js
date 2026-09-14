@@ -8,7 +8,6 @@
   let database;
   const collections = {};
   let view = "strict";
-  let campaigns;
   let reports = new Map();
   let visibleRows = [];
   let sort = { key: "frequency", direction: "desc" };
@@ -17,7 +16,6 @@
   const studyKey = "interview-fieldnotes.study.v1";
   let study = { version: 1, marks: Object.create(null), views: [] };
   let storageAvailable = true;
-  let research;
 
   function storageNotice(message) {
     storageAvailable = false;
@@ -125,10 +123,6 @@
     return link;
   }
 
-  function artifactLink(path) {
-    if (typeof path !== "string" || !/^[a-zA-Z0-9_./-]+$/.test(path) || path.startsWith("/") || path.split("/").some(part => !part || part === "." || part === "..")) return element("span", "Evidence artifact unavailable: unsafe path");
-    return safeLink(path, new URL(path, new URL("./", location.href)).href);
-  }
 
   function roundLabel(round) {
     return round === null ? "Unconfirmed" : `R${round}`;
@@ -144,27 +138,7 @@
     $("collection-switch").value = view;
     controls.round.querySelector("fieldset").disabled = unconfirmed;
     controls.round.classList.toggle("round-disabled", unconfirmed);
-    $("stat-question-label").textContent = all ? "question entries · both collections" : unconfirmed ? "questions · round unconfirmed" : "question–round pairs · verified";
-    $("collection-note").textContent = all
-      ? "All: verified and unconfirmed rows are shown together, not merged. Each row keeps its evidence status and frequency; shared reports count once in the summary. Selecting numbered rounds excludes unconfirmed rows. Study marks remain attached to their original collection."
-      : unconfirmed
-      ? "Round unconfirmed: these accounts verify an SDE II / L5 final loop, but do not establish the question’s round number. No round is inferred. Round choices are ignored here and retained for Round verified; frequencies remain separate."
-      : "Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number. Frequencies are never combined across collections.";
-    $("date-window").textContent = `${dateLabel(database.metadata.startDate)} – ${dateLabel(database.metadata.endDate)} · ${all ? "Both question collections" : unconfirmed ? "Final loop · round unconfirmed" : "Rounds 1–4 · round verified"}`;
-    $("frequency-definition").textContent = all
-      ? "Row frequencies stay separate for verified and unconfirmed questions. The distinct-report summary deduplicates shared accounts across both collections; frequencies are not merged across evidence statuses."
-      : unconfirmed
-      ? "Frequency is the number of distinct candidate reports for a question with an unconfirmed final-loop round. It does not include round-verified reports. Cross-posts and repeated mentions do not add to the count; this is not an estimate of Amazon’s asking rate."
-      : database.metadata.frequencyDefinition;
-    $("download-description").textContent = all ? "Export selection above downloads a combined CSV. Full JSON and SQLite downloads remain separate for each collection to preserve their evidence contracts." : `Full downloads include only the round-${unconfirmed ? "unconfirmed" : "verified"} collection, regardless of the active filters.`;
-    for (const format of ["json", "sqlite"]) {
-      const link = $(`download-${format}`);
-      link.href = `data/${unconfirmed ? "unconfirmed" : "database"}.${format}`;
-      link.setAttribute("aria-label", `Full round-${unconfirmed ? "unconfirmed" : "verified"} ${format.toUpperCase()} download`);
-      link.textContent = `${all ? "Verified" : "Full"} ${format.toUpperCase()} ↓`;
-      $(`download-unconfirmed-${format}`).hidden = !all;
-    }
-    if (database.metadata.generatedAt) $("generated-at").textContent = `Active collection generated ${dateLabel(database.metadata.generatedAt.slice(0, 10))}`;
+    $("collection-note").textContent = unconfirmed ? "Round numbers are unknown; round filters do not apply." : all ? "Numbered round filters exclude unconfirmed questions." : "";
   }
 
   function dateLabel(date) {
@@ -428,23 +402,17 @@
       control.querySelector(".selection-label").textContent = control === controls.round && view === "unconfirmed" ? "Not applied · choices retained" : selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
       control.querySelector(".filter-clear").disabled = selected.length === 0;
     }
+    const advancedCount = ["topic", "quality", "location", "year", "basis"].filter(key => state[key].length).length + Number(state.min > 1);
+    document.querySelector(".advanced-filters > summary").textContent = advancedCount ? `More filters · ${advancedCount} active` : "More filters";
     visibleRows = matchingRows(state);
     sortRows(visibleRows);
     renderRows(visibleRows);
     const reportIds = new Set();
-    const locations = new Set();
-    let occurrenceCount = 0;
     for (const row of visibleRows) {
       for (const item of row.occurrences) {
         reportIds.add(item.reportId);
-        if (item.location && item.location !== "Not stated") locations.add(item.location);
-        occurrenceCount += 1;
       }
     }
-    $("stat-questions").textContent = visibleRows.length.toLocaleString();
-    $("stat-reports").textContent = reportIds.size.toLocaleString();
-    $("stat-occurrences").textContent = occurrenceCount.toLocaleString();
-    $("stat-locations").textContent = locations.size.toLocaleString();
     $("result-summary").textContent = `${view === "all" ? "All collections" : view === "unconfirmed" ? "Round unconfirmed" : "Round verified"} · ${visibleRows.length.toLocaleString()} of ${database.questions.length.toLocaleString()} ${view === "all" ? "question entries" : view === "unconfirmed" ? "questions" : "question–round pairs"} · ${reportIds.size.toLocaleString()} distinct reports`;
     $("question-table").hidden = !visibleRows.length;
     $("empty-state").hidden = !!visibleRows.length;
@@ -454,32 +422,6 @@
     if (updateURL) saveURL(state);
   }
 
-  function coverageView(coverage) {
-    const container = $("coverage-content");
-    container.replaceChildren();
-    let queryCount = 0;
-    let excludedCount = 0;
-    for (const slice of coverage) {
-      queryCount += slice.queries.length;
-      excludedCount += slice.excluded.length;
-      const section = element("section", null, "coverage-slice");
-      section.append(element("h3", slice.slice));
-      if (slice.searchedAt) section.append(element("p", `Searched ${dateLabel(slice.searchedAt)}`));
-      if (slice.limitations.length) section.append(list(slice.limitations, (text) => element("span", text)));
-      const queries = element("details");
-      queries.append(element("summary", `${slice.queries.length} documented search queries`), list(slice.queries, (text) => element("span", text)));
-      const exclusions = element("details");
-      exclusions.append(element("summary", `${slice.excluded.length} excluded or uncertain sources`), list(slice.excluded, (item) => {
-        const wrapper = element("div");
-        wrapper.append(safeLink(item.title || item.url || "Source", item.url), element("div", item.reason));
-        return wrapper;
-      }));
-      section.append(queries, exclusions);
-      container.append(section);
-    }
-    if (!coverage.length) container.append(element("p", "No search coverage entries are present in this database."));
-    $("coverage-summary").textContent = `${queryCount} queries · ${excludedCount} exclusions`;
-  }
 
   function downloadCSV() {
     if (!visibleRows.length) return;
@@ -519,135 +461,6 @@
     render();
   }
 
-  function renderLedger() {
-    if (!campaigns) return;
-    const country = $("ledger-country").value;
-    const status = $("ledger-status").value;
-    const matches = campaigns.filter(campaign => (!country || campaign.country === country) && (!status || campaign.status === status));
-    const outcomes = {
-      "admitted-evidence": "Admitted evidence",
-      "no-candidates-returned": "No candidates returned · not evidence of absence",
-      "inspected-no-admissions": "Inspected sources · no admissions",
-      unresolved: "Unresolved leads",
-      failed: "Search failed · no coverage conclusion",
-    };
-    const fragment = document.createDocumentFragment();
-    for (const campaign of matches) {
-      const row = element("tr");
-      const scope = element("td");
-      scope.append(element("strong", campaign.country), element("p", `${dateLabel(campaign.startDate)} – ${dateLabel(campaign.endDate)}`), element("span", campaign.id, "date-basis"));
-      const execution = element("td");
-      execution.append(element("strong", campaign.status === "failed" ? "Failed" : "Completed"), element("p", campaign.provider), element("p", `Searched at ${campaign.searchedAt}`));
-      const outcome = element("td");
-      outcome.append(element("p", outcomes[campaign.outcome] || campaign.outcome));
-      if (campaign.error) outcome.append(element("p", `Error: ${campaign.error}`));
-      const evidence = element("td");
-      const details = element("details", null, "evidence");
-      details.append(element("summary", `${campaign.queries.length} queries · ${campaign.sources.length} sources`));
-      details.append(element("h4", "Search queries"), list(campaign.queries, query => element("span", query)));
-      const artifact = element("p", "Evidence artifact: ");
-      artifact.append(artifactLink(campaign.artifact));
-      details.append(artifact, element("h4", "Source dispositions"));
-      if (!campaign.sources.length) details.append(element("p", "No source dispositions recorded. This does not establish that no relevant interviews exist."));
-      details.append(list(campaign.sources, source => {
-        const item = element("div");
-        item.append(safeLink(source.url, source.url), element("p", `Disposition: ${source.disposition}`), element("p", source.reason));
-        if (source.reportId) item.append(element("p", `Report: ${source.reportId}`));
-        return item;
-      }));
-      evidence.append(details);
-      row.append(scope, execution, outcome, evidence);
-      fragment.append(row);
-    }
-    $("ledger-rows").replaceChildren(fragment);
-    $("ledger-results").hidden = !matches.length;
-    $("ledger-summary").textContent = !campaigns.length
-      ? "No structured campaigns have been recorded. Historical search notes below do not imply exhaustive coverage."
-      : !matches.length ? "No documented campaigns match these ledger filters. This is not evidence that no interviews occurred."
-        : `${matches.length} of ${campaigns.length} documented campaigns · scope is research activity, not interview coverage`;
-  }
-
-  function renderQueue() {
-    if (!research) return;
-    const status = $("queue-status").value;
-    const matches = research.queue.filter(candidate => !status || candidate.status === status);
-    $("queue-records").replaceChildren(...matches.map(candidate => {
-      const article = element("article", null, "research-record");
-      const heading = element("h4");
-      heading.append(safeLink(candidate.title || candidate.url, candidate.url));
-      article.append(heading, element("p", `${candidate.status} · Discovered ${candidate.discoveredAt}${candidate.publishedDate ? ` · Published ${candidate.publishedDate}` : ""}`), element("p", `Candidate: ${candidate.id}`, "record-reference"));
-      if (candidate.reason) article.append(element("p", candidate.reason));
-      if (candidate.reportId) article.append(element("p", `Admitted report reference: ${candidate.reportId}`, "record-reference"));
-      article.append(element("p", `Discovery runs: ${candidate.runIds.join(", ")}`, "record-reference"));
-      return article;
-    }));
-    $("queue-summary").textContent = `${matches.length} of ${research.queue.length} review candidates${matches.length ? "" : " · No candidates match this status"}. Queue entries are not question counts.`;
-  }
-
-  async function loadResearch() {
-    try {
-      const data = await fetchData("data/research-status.json");
-      if (!data || typeof data.cutoff !== "string" || !Array.isArray(data.queue) || !Array.isArray(data.runs) || !Array.isArray(data.history)
-        || !data.queue.every(item => item && typeof item.id === "string" && typeof item.url === "string" && ["pending", "rejected", "duplicate", "accepted"].includes(item.status) && Array.isArray(item.runIds))
-        || !data.runs.every(item => item && typeof item.id === "string" && Array.isArray(item.queries))
-        || !data.history.every(item => item && typeof item.id === "string" && Array.isArray(item.changes) && item.changes.every(change => change && typeof change.id === "string" && typeof change.collection === "string"))) throw new Error("The research status does not match the documented format.");
-      research = data;
-      $("research-watermark").textContent = `Last successful research: ${data.lastResearchedAt || "None recorded"} · Corpus cutoff: ${dateLabel(data.cutoff)}`;
-      $("research-status").textContent = `Last research attempt: ${data.lastAttemptedAt || "None recorded"}. Failed attempts do not advance the successful research date. The corpus cutoff is separate from discovery activity.`;
-      renderQueue();
-      $("discovery-runs").replaceChildren(...data.runs.slice().reverse().map(run => {
-        const article = element("article", null, "research-record");
-        article.append(element("h4", `${run.status} · ${run.id}`), element("p", `Started ${run.startedAt}${run.completedAt ? ` · Completed ${run.completedAt}` : ""}`), element("p", `Search scope: ${run.country} · ${run.startDate} – ${run.endDate}`));
-        if (run.error) article.append(element("p", `Failure: ${run.error}`));
-        const queries = element("details", null, "evidence");
-        queries.append(element("summary", `${run.queries.length} search queries`), list(run.queries, query => element("span", query)));
-        article.append(queries);
-        if (run.artifact) article.append(artifactLink(run.artifact));
-        return article;
-      }));
-      if (!data.runs.length) $("discovery-runs").append(element("p", "No incremental discovery runs recorded."));
-      $("record-history").replaceChildren(...data.history.slice().reverse().map(release => {
-        const article = element("article", null, "research-record");
-        article.append(element("h4", `${release.date} · ${release.summary}`), element("p", `Release: ${release.id}`, "record-reference"));
-        if (!release.changes.length) article.append(element("p", "No record-level changes in this release."));
-        else {
-          const changes = element("details", null, "evidence");
-          changes.append(element("summary", `${release.changes.length} record changes`));
-          changes.addEventListener("toggle", () => {
-            if (!changes.open || changes.dataset.loaded) return;
-            changes.dataset.loaded = "true";
-          for (const change of release.changes) {
-            const record = element("div", null, "history-change");
-            record.append(element("p", `${change.type} · ${change.collection} · ${change.id}`, "record-reference"));
-            if (change.fields?.length) record.append(element("p", `Changed fields: ${change.fields.join(", ")}`));
-            if (["strict", "unconfirmed"].includes(change.collection) && change.type !== "removed") {
-              const url = new URL(location.pathname, location.origin);
-              url.searchParams.set("view", change.collection);
-              url.searchParams.set("q", change.id);
-              record.append(safeLink("Find current record", url.href));
-            }
-            for (const key of ["before", "after"]) {
-              if (change[key] === undefined) continue;
-              const snapshot = element("details", null, "evidence");
-              snapshot.append(element("summary", key === "before" ? "Before" : "After"), element("pre", JSON.stringify(change[key], null, 2)));
-              record.append(snapshot);
-            }
-            changes.append(record);
-          }
-          });
-          article.append(changes);
-        }
-        return article;
-      }));
-      if (!data.history.length) $("record-history").append(element("p", "No record releases recorded."));
-      $("research-content").hidden = false;
-    } catch (error) {
-      research = undefined;
-      $("research-content").hidden = true;
-      $("research-watermark").textContent = `Last successful research: unavailable · Corpus cutoff: ${dateLabel(collections.strict?.metadata.endDate || "2026-09-13")}`;
-      $("research-status").textContent = `Optional research status unavailable: ${error.message} Questions remain independently available. Reload the page to retry.`;
-    }
-  }
 
   async function fetchData(path) {
     const response = await fetch(path);
@@ -670,28 +483,13 @@
     $("results").setAttribute("aria-busy", "true");
     $("result-summary").textContent = "Loading the research database…";
     $("retry").disabled = true;
-    const [strictResult, unconfirmedResult, ledgerResult] = await Promise.allSettled([
+    const [strictResult, unconfirmedResult] = await Promise.allSettled([
       fetchData("data/database.json").then(data => validateCollection(data)),
       fetchData("data/unconfirmed.json").then(data => validateCollection(data, true)),
-      fetchData("data/research-ledger.json"),
     ]);
-    try {
-      if (ledgerResult.status === "rejected") throw ledgerResult.reason;
-      const data = ledgerResult.value;
-      if (!Array.isArray(data?.campaigns) || !data.campaigns.every(campaign => campaign && Array.isArray(campaign.queries) && Array.isArray(campaign.sources) && campaign.sources.every(source => source && typeof source.url === "string"))) throw new Error("The ledger does not match the documented format.");
-      campaigns = data.campaigns;
-      $("ledger-country").replaceChildren(new Option("All countries", ""), ...uniqueSorted(campaigns.map(campaign => campaign.country)).map(country => new Option(country, country)));
-      $("ledger-filters").disabled = false;
-      renderLedger();
-    } catch (error) {
-      campaigns = undefined;
-      $("ledger-filters").disabled = true;
-      $("ledger-results").hidden = true;
-      $("ledger-summary").textContent = `Research ledger unavailable: ${error.message} No coverage conclusion can be drawn. Reload the page to retry.`;
-    }
     if (unconfirmedResult.status === "fulfilled") {
       collections.unconfirmed = unconfirmedResult.value;
-      $("auxiliary-status").textContent = "The round-unconfirmed collection is separate from round-verified counts and downloads.";
+      $("auxiliary-status").textContent = "";
     } else {
       delete collections.unconfirmed;
       $("auxiliary-status").textContent = `Round unconfirmed unavailable: ${unconfirmedResult.reason.message} Round verified remains available. Reload the page to retry.`;
@@ -714,8 +512,6 @@
       populateChoices("location", occurrences.map(item => item.location || "Not stated"));
       populateChoices("year", occurrences.map(item => item.date.slice(0, 4)));
       populateChoices("basis", ["interview", "publication"], basisLabel);
-      if (data.metadata.disclaimer) $("disclaimer").textContent = data.metadata.disclaimer;
-      coverageView(data.coverage);
       restoreURL();
       render(false);
       $("view-strict").disabled = false;
@@ -797,15 +593,12 @@
       $("study-status").textContent = "Clipboard unavailable. Copy the selected public URL above; it contains no personal study progress.";
     }
   });
-  $("queue-status").addEventListener("change", renderQueue);
   $("collection-switch").addEventListener("change", event => {
     if (event.target.name !== "view") return;
     clearTimeout(searchTimer);
     selectCollection(event.target.value);
     render();
   });
-  $("ledger-country").addEventListener("change", renderLedger);
-  $("ledger-status").addEventListener("change", renderLedger);
   $("filters").addEventListener("submit", (event) => event.preventDefault());
   controls.q.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => render(), 120); });
   for (const [key, control] of Object.entries(controls)) {
@@ -825,5 +618,4 @@
   $("retry").addEventListener("click", load);
   window.addEventListener("popstate", () => { if (database) { restoreURL(); render(false); } });
   load();
-  loadResearch();
 })();
