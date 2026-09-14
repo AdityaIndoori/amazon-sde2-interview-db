@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0a0a0f">
   <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
   <title>Amazon SDE II · Interview fieldnotes</title>
-  <link rel="stylesheet" href="styles.css?v=d46eeb669ff8">
-  <script src="app.js?v=7d6e516dbb01" defer></script>
+  <link rel="stylesheet" href="styles.css?v=ccfce7040091">
+  <script src="app.js?v=4cd93707a0b1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#results">Skip to questions</a>
@@ -33,7 +33,7 @@
       </section>
 
       <section class="stats" aria-label="Current selection statistics">
-        <div><strong id="stat-questions">—</strong><span>question–round pairs</span></div>
+        <div><strong id="stat-questions">—</strong><span id="stat-question-label">question–round pairs · verified</span></div>
         <div><strong id="stat-reports">—</strong><span>distinct candidate reports</span></div>
         <div><strong id="stat-occurrences">—</strong><span>matching occurrences</span></div>
         <div><strong id="stat-locations">—</strong><span>stated countries</span></div>
@@ -44,6 +44,15 @@
           <div><p class="eyebrow">01 / The question index</p><h2 id="explore-heading">Find your focus.</h2></div>
           <button id="reset" type="button" class="text-button" disabled>Reset filters</button>
         </div>
+        <fieldset id="collection-switch" class="collection-switch" aria-describedby="collection-note auxiliary-status">
+          <legend>Question collection</legend>
+          <div class="collection-options">
+            <label><input id="view-strict" type="radio" name="view" value="strict" checked disabled><span>Round verified</span></label>
+            <label><input id="view-unconfirmed" type="radio" name="view" value="unconfirmed" disabled><span>Round unconfirmed</span></label>
+          </div>
+        </fieldset>
+        <p id="collection-note" class="filter-note">Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number.</p>
+        <p id="auxiliary-status" class="availability-note" role="status">Loading the separate round-unconfirmed collection…</p>
         <form id="filters" class="filters" role="search" aria-label="Filter interview questions">
           <fieldset id="filter-fields" disabled>
             <legend class="sr-only">Question filters</legend>
@@ -92,16 +101,29 @@
         <div class="method-grid">
           <article><h3>Count reports, not repetitions</h3><p id="frequency-definition">Frequency is the number of distinct candidate reports for a question in a particular round. Cross-posts and repeated mentions do not add to the count. It is not an estimate of Amazon’s asking rate.</p></article>
           <article><h3>Preserve the date evidence</h3><p>Interview dates take precedence. When unavailable, publication dates are explicitly labeled. Month- and year-only dates retain that precision; no exact interview day is inferred.</p></article>
-          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops, rounds 1–4 only. Online assessments, phone screens, internal transfers, and other levels are excluded. Explicit OA/screen numbering offsets are documented in the evidence. Locations are countries only; “Not stated” means no country could be established from the report.</p></article>
+          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops only. Round verified requires a supported position in rounds 1–4; Round unconfirmed verifies the final-loop stage but leaves the ordinal unknown. Online assessments, phone screens, internal transfers, and other levels are excluded. Locations are countries only; “Not stated” means the report does not establish a country.</p></article>
         </div>
+        <section class="campaign-ledger" aria-labelledby="ledger-heading" aria-describedby="ledger-note">
+          <h3 id="ledger-heading">Scoped research campaigns</h3>
+          <p id="ledger-note">A ledger of documented research activity, not exhaustive interview coverage. Country and dates describe the search scope, never an interview’s location or date. These controls are independent of question filters.</p>
+          <fieldset id="ledger-filters" class="ledger-filters" disabled>
+            <legend class="sr-only">Filter research campaigns</legend>
+            <div><label for="ledger-country">Search country</label><select id="ledger-country"><option value="">All countries</option></select></div>
+            <div><label for="ledger-status">Execution status</label><select id="ledger-status"><option value="">All statuses</option><option value="completed">Completed</option><option value="failed">Failed</option></select></div>
+          </fieldset>
+          <p id="ledger-summary" role="status" aria-live="polite">Loading the research ledger…</p>
+          <div id="ledger-results" class="table-wrap" tabindex="0" role="region" aria-label="Research campaigns; horizontally scrollable" hidden>
+            <table class="ledger-table"><caption class="sr-only">Documented campaign scope, execution and source decisions. Expand the evidence column for queries and dispositions.</caption><thead><tr><th scope="col">Search scope</th><th scope="col">Execution</th><th scope="col">Outcome</th><th scope="col">Queries & evidence</th></tr></thead><tbody id="ledger-rows"></tbody></table>
+          </div>
+        </section>
         <details class="coverage-panel">
-          <summary>Search coverage, exclusions & limitations <span id="coverage-summary"></span></summary>
+          <summary>Historical search notes, exclusions & limitations <span id="coverage-summary"></span></summary>
           <div class="coverage-body"><p>Coverage reflects the searches documented below, not a complete inventory of Amazon interviews. Source access gaps and ambiguous reports remain visible rather than being filled in.</p><div id="coverage-content"><p>Coverage details load with the database.</p></div></div>
         </details>
       </section>
       <section class="downloads" aria-labelledby="downloads-heading">
-        <div><h2 id="downloads-heading">Take the evidence with you.</h2><p>Full-corpus downloads include all records, regardless of the active filters.</p></div>
-        <div class="download-links"><a class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a></div>
+        <div><h2 id="downloads-heading">Take the evidence with you.</h2><p id="download-description">Full downloads include the round-verified collection, regardless of the active filters.</p></div>
+        <div class="download-links"><a id="download-json" class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a id="download-sqlite" class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a></div>
       </section>
     </main>
     <footer><p>Independent research. Not affiliated with or endorsed by Amazon.</p><p id="generated-at">Source evidence stays attached to every question.</p></footer>

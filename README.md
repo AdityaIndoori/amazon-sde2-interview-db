@@ -26,6 +26,10 @@ The table exposes the requested schema:
 |---|---|---|---|---|---|---|
 | Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Countries only, or Not stated |
 
+The default **Round verified** collection remains 586 rows, 635 occurrences and 136 reports. **Round unconfirmed** is a separate collection of 3 questions from 2 accounts whose SDE II final-loop stage is supported but whose question ordinals are missing. It never changes verified-round frequencies. Open it with `?view=unconfirmed`; the round filter is disabled and ignored, while its selected values are retained for switching back. Reset in this view clears applicable filters but keeps those dormant round choices. Counts and JSON/SQLite/CSV downloads always refer to the active collection.
+
+The **Scoped research campaigns** ledger records actual search scopes, providers, execution dates, queries, evidence artifacts and per-source decisions. Its country/status filters are independent of question filters. Search scope never supplies a candidate country or interview date. Four initial runs include two Exa searches with unresolved leads and two original-source recovery inspections. Missing campaigns and empty search results do not establish that interviews did not occur.
+
 - Search question text, topic, source title/URL and evidence.
 - Select multiple rounds, topics, countries, years and date types using checkboxes. Within a filter selections combine with OR; different filters combine with AND. No selections means all values. Each group has a Clear selection button; minimum frequency remains numeric.
 - Sort every column; date sorting uses the latest displayed date.
@@ -43,15 +47,20 @@ The table exposes the requested schema:
 ```sh
 bun run build
 bun run check
+bun test
 ```
 
-`build` validates and combines research files, applies the explicit normalization registry, deduplicates report/question occurrences, and writes three artifacts:
+`build` validates the strict research corpus and a separate supplemental compiler. The strict artifacts remain:
 
 - [`data/database.json`](data/database.json): complete provenance-rich browser dataset, including reports and research coverage.
 - [`data/database.csv`](data/database.csv): seven-column spreadsheet view. Formula-like cells are escaped for spreadsheet safety.
 - [`data/database.sqlite`](data/database.sqlite): relational database with reports, questions, occurrences, metadata and research coverage. `question_database` is the requested aggregated view.
 
+- `data/unconfirmed.json`, `data/unconfirmed.csv`, `data/unconfirmed.sqlite`: separate final-loop questions with `round: null` and mandatory uncertainty evidence. CSV displays `Unconfirmed`, not R0.
+- [`data/research-ledger.json`](data/research-ledger.json): validated campaign scopes, source dispositions and derived outcomes. Source references and repository artifacts are checked during build/check.
+
 `check` verifies unique IDs, source references, counts, occurrence provenance, SQLite integrity/foreign keys, and agreement between JSON, CSV and SQLite.
+The focused compiler suite tests collection isolation, canonical deduplication, promotion collisions, invalid dates, missing uncertainty and misleading campaign outcomes. There is no TypeScript/typecheck command in this plain-JavaScript project.
 
 Example SQLite queries:
 
@@ -79,12 +88,18 @@ index.html, app.js, styles.css   Static viewer; no trackers or remote assets
 assets/fonts/                   Self-hosted variable fonts and SIL license notices
 PLAN.md                          Detailed implementation and research plan
 METHODOLOGY.md                   Evidence, date, round and counting policies
+RESEARCH_EXPANSION_PLAN.md       Self-grilled decision tree and acceptance spec
 data/research/*.json             Source-of-truth research and exclusion ledger
 data/assay/**/*.json             Assay evidence certificates and retrieval failures
 data/exa/**/*.json               Exa search/fetch responses and source verification
 data/research.schema.json        Machine-readable contribution format
 data/normalization.json          Reviewed question aliases and adjudications
 data/database.{json,csv,sqlite}  Generated database exports
+data/unconfirmed/               Supplemental source inputs (never strict counts)
+data/campaigns/                 Explicit scoped research-run inputs
+data/campaign-evidence/         Retained source/search evidence for campaign runs
+data/unconfirmed.{json,csv,sqlite} Separate round-unconfirmed exports
+data/research-ledger.json       Generated scoped campaign ledger
 scripts/build.js                Deterministic corpus compiler
 scripts/check.js                Data integrity and export checks
 scripts/serve.js                Local static preview server
@@ -100,6 +115,8 @@ scripts/serve.js                Local static preview server
 5. Use the existing canonical key only for an equivalent question. Keep uncertain variants report-specific; keep low-level implementation and high-level architecture questions distinct.
 6. Record cross-posts as aliases, not extra independent reports. Use `normalization.json` for reviewed equivalence and exclusion decisions.
 7. Run `bun run build` and `bun run check`, inspect the resulting rows in the viewer, and commit the research and generated artifacts together.
+
+If only the final-loop ordinal is unknown, use `data/unconfirmed/*.json` with `data/unconfirmed.schema.json`: retain all other admission evidence, `round: null`, and a precise `roundUncertainty`. Do not put generic or screening-ambiguous leads here. To promote a source/question, add supported numbered evidence to strict inputs and remove the supplemental entry in the same change; the compiler rejects source+canonical-question collisions. Campaign inputs follow `data/campaign.schema.json`, one run per file. Record every returned source as verified, unconfirmed, duplicate, excluded or unresolved; do not invent closed dispositions to make a search look complete.
 
 The window is a fixed research snapshot, not a live feed. To extend it, update the cutoff in `scripts/build.js`, plan/methodology scope and initial HTML text, then research and validate new sources. Do not simply relabel old data as current.
 

@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "title": "Amazon SDE II Interview Question Atlas",
+    "startDate": "2025-01-01",
+    "endDate": "2026-09-13",
+    "generatedAt": "2026-09-13",
+    "frequencyDefinition": "Distinct candidate reports mentioning this final-loop question without a verified round number; cross-posts count once. Separate from round-verified frequencies.",
+    "disclaimer": "Publicly reported experiences only. Discovery is not exhaustive and candidate accounts are not independently authenticated. Missing dates or locations are never inferred. Publication dates are labeled separately from interview dates.",
+    "reportCount": 2,
+    "questionCount": 3,
+    "occurrenceCount": 3,
+    "collection": "unconfirmed"
+  },
+  "questions": [
+    {
+      "id": "u-calculator-lld-unspecified",
+      "round": null,
+      "question": "Code a calculator in a low-level design interview; supported operations and parsing rules are not disclosed.",
+      "topic": "Low-level design / Parsing",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-09-01",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "jointaro-4487fd77",
+          "title": "Amazon Software Engineer II SDE2 Interview Experience — United States",
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/"
+        }
+      ],
+      "locations": [
+        "United States"
+      ],
+      "occurrences": [
+        {
+          "reportId": "jointaro-4487fd77",
+          "date": "2025-09-01",
+          "dateBasis": "publication",
+          "location": "United States",
+          "evidence": "Questions: Code a calculator in an LLD interview.",
+          "reportedQuestion": "Code a calculator in a low-level design interview; supported operations and parsing rules are not disclosed.",
+          "reportedTopic": "Low-level design / Parsing",
+          "sourceRound": "LLD interview (ordinal not supplied)",
+          "roundMappingNote": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round.",
+          "roundUncertainty": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round."
+        }
+      ]
+    },
+    {
+      "id": "u-design-google-drive",
+      "round": null,
+      "question": "Design Google Drive or Dropbox.",
+      "topic": "System design / File storage",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-05-24",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-8290590",
+          "title": "SDE - 2 | Amazon Interview Loop | On Site | Bangalore",
+          "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-8290590",
+          "date": "2026-05-24",
+          "dateBasis": "publication",
+          "location": "India",
+          "evidence": "Questions asked were: Google Drive / Dropbox (HLD)",
+          "reportedQuestion": "Design Google Drive or Dropbox.",
+          "reportedTopic": "System design / File storage",
+          "sourceRound": "HLD (one of two completed onsite rounds)",
+          "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2.",
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2."
+        }
+      ]
+    },
+    {
+      "id": "u-bus-routes",
+      "round": null,
+      "question": "Solve Bus Routes: find the minimum number of buses needed to travel between stops.",
+      "topic": "Graphs / BFS",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-05-24",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-8290590",
+          "title": "SDE - 2 | Amazon Interview Loop | On Site | Bangalore",
+          "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-8290590",
+          "date": "2026-05-24",
+          "dateBasis": "publication",
+          "location": "India",
+          "evidence": "Coding DSA : Bus Routes (Leetcode Hard)",
+          "reportedQuestion": "Solve Bus Routes: find the minimum number of buses needed to travel between stops.",
+          "reportedTopic": "Graphs / BFS",
+          "sourceRound": "Coding DSA (one of two completed onsite rounds)",
+          "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2.",
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2."
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "leetcode-8290590",
+      "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "title": "SDE - 2 | Amazon Interview Loop | On Site | Bangalore",
+      "role": "SDE II",
+      "location": "India",
+      "date": "2026-05-24",
+      "dateBasis": "publication",
+      "publishedDate": "2026-05-24",
+      "interviewDate": null,
+      "stageEvidence": "Title explicitly SDE-2 Amazon Interview Loop. Author: I recently attended one of the Amazon interview drives on site in Bangalore. Two of my rounds (HLD and Coding DSA) were held on site and ... remaining2 rounds ... virtually. Original rendered page displays May24,2026.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "HLD (one of two completed onsite rounds)",
+          "key": "design-google-drive",
+          "question": "Design Google Drive or Dropbox.",
+          "topic": "System design / File storage",
+          "evidence": "Questions asked were: Google Drive / Dropbox (HLD)",
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2.",
+          "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2.",
+          "date": "2026-05-24",
+          "dateBasis": "publication"
+        },
+        {
+          "round": null,
+          "sourceRound": "Coding DSA (one of two completed onsite rounds)",
+          "key": "bus-routes",
+          "question": "Solve Bus Routes: find the minimum number of buses needed to travel between stops.",
+          "topic": "Graphs / BFS",
+          "evidence": "Coding DSA : Bus Routes (Leetcode Hard)",
+          "roundUncertainty": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2.",
+          "roundMappingNote": "The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2.",
+          "date": "2026-05-24",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "recovered-final-loops"
+      ]
+    },
+    {
+      "id": "jointaro-4487fd77",
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "retrievedVia": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "title": "Amazon Software Engineer II SDE2 Interview Experience — United States",
+      "role": "SDE II",
+      "location": "United States",
+      "date": "2025-09-01",
+      "dateBasis": "publication",
+      "publishedDate": "2025-09-01",
+      "interviewDate": null,
+      "stageEvidence": "Page heading Software Engineer II SDE2 Interview Experience — United States; date September1,2025. Process: The Amazon SDE2 loop interview consisted of four rounds. Hosted candidate narrative, not independently authenticated.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "LLD interview (ordinal not supplied)",
+          "key": "calculator-lld-unspecified",
+          "question": "Code a calculator in a low-level design interview; supported operations and parsing rules are not disclosed.",
+          "topic": "Low-level design / Parsing",
+          "evidence": "Questions: Code a calculator in an LLD interview.",
+          "roundUncertainty": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round.",
+          "roundMappingNote": "The four-round loop is confirmed, but the calculator question is not mapped to a numbered round.",
+          "date": "2025-09-01",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "recovered-final-loops"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "slice": "recovered-final-loops",
+      "queries": [],
+      "excluded": [],
+      "limitations": [
+        "Final-loop questions in this collection have no verified round number."
+      ]
+    }
+  ]
+}

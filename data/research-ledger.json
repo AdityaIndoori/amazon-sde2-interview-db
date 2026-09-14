@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Scoped research campaign ledger",
+    "campaignCount": 4,
+    "coverageDefinition": "Documented search activity, not exhaustive interview coverage. Campaign country and dates describe search scope, never admitted record metadata."
+  },
+  "campaigns": [
+    {
+      "id": "india-late-2025-gap-pass",
+      "country": "India",
+      "startDate": "2025-10-01",
+      "endDate": "2025-12-31",
+      "searchedAt": "2026-09-14",
+      "provider": "Exa",
+      "queries": [
+        "First-person candidate account of Amazon SDE II L5 final interview loop in India during October November December 2025 with actual coding or system design questions"
+      ],
+      "artifact": "data/campaign-evidence/india-late-2025-gap-pass.json",
+      "status": "completed",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/yasir-arafat-sharfi_amazon-sde2-interviewexperience-activity-7411035075385163778-8KgX",
+          "disposition": "duplicate",
+          "reason": "Existing original report; publication December2025, exact April interview year and country not established.",
+          "reportId": "linkedin-7411035075385163778"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7409809033982820353-kHIA",
+          "disposition": "excluded",
+          "reason": "Same-author repost series has unresolved chronology and screening offsets; no new evidence resolves prior exclusion."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/pawan-jindal_amazon-interviewexperience-systemdesign-activity-7400108261531684864-oWeH",
+          "disposition": "duplicate",
+          "reason": "Existing source; no new prompt or country evidence.",
+          "reportId": "linkedin-7400108261531684864"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/chetan-raj-58703b27a_amazon-amazoninterview-atlassian-activity-7389669980038057985-99Oq",
+          "disposition": "excluded",
+          "reason": "Source describes process but no actual interview questions."
+        },
+        {
+          "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-2025-interview-exp",
+          "disposition": "duplicate",
+          "reason": "Mirror of existing rate-limiter/DJ/vending/min-max-character account; no new independent report."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/rahulks9460_amazoninterview-sde2-systemdesign-activity-7397256807641120768-5T3S",
+          "disposition": "duplicate",
+          "reason": "Existing original file-index/rental/notification account; country remains unstated.",
+          "reportId": "linkedin-7397256807641120768"
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonemployees/comments/1oe4q65/amazon_sde_2india_interview_loop_done_what_are_my/",
+          "disposition": "unresolved",
+          "reason": "Retrieved text cuts off during HLD; visible portion has no specific question. Need complete original inspection before disposition can be finalized."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/haritha-nagubady_amazon-aws-sde2-activity-7388741318719565824-lb9E",
+          "disposition": "excluded",
+          "reason": "Author explicitly labels listed problems generic representations, not exact questions asked."
+        }
+      ],
+      "outcome": "unresolved"
+    },
+    {
+      "id": "round-recovery-jointaro-4487fd77",
+      "country": "United States",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31",
+      "searchedAt": "2026-09-14",
+      "provider": "Original source inspection",
+      "queries": [
+        "Reinspect known final-loop exclusion https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/ for exact question evidence and round uncertainty"
+      ],
+      "artifact": "data/campaign-evidence/round-recovery.json",
+      "status": "completed",
+      "sources": [
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+          "disposition": "unconfirmed",
+          "reason": "Final-loop stage, role, date and concrete question verified; numbered round not stated.",
+          "reportId": "jointaro-4487fd77"
+        }
+      ],
+      "outcome": "admitted-evidence"
+    },
+    {
+      "id": "round-recovery-leetcode-8290590",
+      "country": "India",
+      "startDate": "2026-01-01",
+      "endDate": "2026-09-13",
+      "searchedAt": "2026-09-14",
+      "provider": "Original source inspection",
+      "queries": [
+        "Reinspect known final-loop exclusion https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/ for exact question evidence and round uncertainty"
+      ],
+      "artifact": "data/campaign-evidence/round-recovery.json",
+      "status": "completed",
+      "sources": [
+        {
+          "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+          "disposition": "unconfirmed",
+          "reason": "Final-loop stage, role, date and concrete question verified; numbered round not stated.",
+          "reportId": "leetcode-8290590"
+        }
+      ],
+      "outcome": "admitted-evidence"
+    },
+    {
+      "id": "us-2026-gap-pass",
+      "country": "United States",
+      "startDate": "2026-01-01",
+      "endDate": "2026-09-13",
+      "searchedAt": "2026-09-14",
+      "provider": "Exa",
+      "queries": [
+        "First-person Amazon SDE II L5 final onsite interview experience in United States during 2026, with specific coding or system design questions, including accounts that do not number the rounds"
+      ],
+      "artifact": "data/campaign-evidence/us-2026-gap-pass.json",
+      "status": "completed",
+      "sources": [
+        {
+          "url": "https://dev.to/interviewshow-cs/amazon-sde-interview-experience-2026-seattle-onsite-team-match-coding-genai-questions-47j0",
+          "disposition": "excluded",
+          "reason": "Role only SDE/student context; SDEII level not established."
+        },
+        {
+          "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+          "disposition": "unresolved",
+          "reason": "Unattributed commercial-publisher narrative; final-loop wording exists but independent candidate provenance/country unresolved."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonemployees/comments/1sa8ehi/amazon_sde_2_l5_5_yoe_interview_experience_deets/",
+          "disposition": "excluded",
+          "reason": "Previously investigated promotional repost with inconsistent substituted questions; no new original evidence."
+        },
+        {
+          "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+          "disposition": "duplicate",
+          "reason": "Existing original candidate report; country remains Not stated, not US from search scope.",
+          "reportId": "shraddhaarora-amazon-sde2-2026"
+        },
+        {
+          "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+          "disposition": "excluded",
+          "reason": "Previously investigated promotional narrative and altered same-author syndications; no independently corroborated account."
+        },
+        {
+          "url": "https://www.reddit.com/r/DeveloperJobs/comments/1ss042w/my_amazon_interview_experience_sde2_3_yoe/",
+          "disposition": "excluded",
+          "reason": "Copies existing auction/Zepto narrative with substituted coding questions; not a new independent account."
+        },
+        {
+          "url": "https://interviewexperiences.in/experience/amazon/l5-sde-2-amazon-interview-experience-nit-28-yoe",
+          "disposition": "unresolved",
+          "reason": "Potential new hosted account; indexed narrative differs from existing Hyderabad report. Requires original provenance verification; not admitted from extracted listing."
+        },
+        {
+          "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+          "disposition": "duplicate",
+          "reason": "Existing partially admitted account. Conflicting early order remains; country India, not scope country.",
+          "reportId": "medium-b1f8b0a69de5"
+        }
+      ],
+      "outcome": "unresolved"
+    }
+  ]
+}

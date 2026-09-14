@@ -1,0 +1,21 @@
+{
+  "inspectedAt": "2026-09-14",
+  "method": "Direct public reader and public rendering, no authenticated access",
+  "sources": [
+    {
+      "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "dateEvidence": "Original page displays May24,2026 twice.",
+      "stageQuote": "Two of my rounds (HLD and Coding DSA) were held on site and I was told that the remaining 2 rounds will be set up virtually.",
+      "questionQuote": "Questions asked were: Google Drive / Dropbox (HLD); Coding DSA : Bus Routes (Leetcode Hard)",
+      "decision": "Admit only to round-unconfirmed collection: SDE2 final-loop stage and countryIndia are established, but neither chronological ordinal is supplied."
+    },
+    {
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "dateEvidence": "Page heading Software Engineer II SDE2 Interview Experience — United States; displayed date September1,2025.",
+      "stageQuote": "The Amazon SDE2 loop interview consisted of four rounds",
+      "questionQuote": "Code a calculator in an LLD interview.",
+      "decision": "Admit only to round-unconfirmed collection; exact ordinal and calculator semantics are not supplied."
+    }
+  ]
+}

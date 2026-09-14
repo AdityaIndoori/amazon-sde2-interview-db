@@ -1,0 +1,57 @@
+{
+  "id": "us-2026-gap-pass",
+  "country": "United States",
+  "startDate": "2026-01-01",
+  "endDate": "2026-09-13",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "First-person Amazon SDE II L5 final onsite interview experience in United States during 2026, with specific coding or system design questions, including accounts that do not number the rounds"
+  ],
+  "artifact": "data/campaign-evidence/us-2026-gap-pass.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde-interview-experience-2026-seattle-onsite-team-match-coding-genai-questions-47j0",
+      "disposition": "excluded",
+      "reason": "Role only SDE/student context; SDEII level not established."
+    },
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+      "disposition": "unresolved",
+      "reason": "Unattributed commercial-publisher narrative; final-loop wording exists but independent candidate provenance/country unresolved."
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1sa8ehi/amazon_sde_2_l5_5_yoe_interview_experience_deets/",
+      "disposition": "excluded",
+      "reason": "Previously investigated promotional repost with inconsistent substituted questions; no new original evidence."
+    },
+    {
+      "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "disposition": "duplicate",
+      "reportId": "shraddhaarora-amazon-sde2-2026",
+      "reason": "Existing original candidate report; country remains Not stated, not US from search scope."
+    },
+    {
+      "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+      "disposition": "excluded",
+      "reason": "Previously investigated promotional narrative and altered same-author syndications; no independently corroborated account."
+    },
+    {
+      "url": "https://www.reddit.com/r/DeveloperJobs/comments/1ss042w/my_amazon_interview_experience_sde2_3_yoe/",
+      "disposition": "excluded",
+      "reason": "Copies existing auction/Zepto narrative with substituted coding questions; not a new independent account."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/l5-sde-2-amazon-interview-experience-nit-28-yoe",
+      "disposition": "unresolved",
+      "reason": "Potential new hosted account; indexed narrative differs from existing Hyderabad report. Requires original provenance verification; not admitted from extracted listing."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "disposition": "duplicate",
+      "reportId": "medium-b1f8b0a69de5",
+      "reason": "Existing partially admitted account. Conflicting early order remains; country India, not scope country."
+    }
+  ]
+}

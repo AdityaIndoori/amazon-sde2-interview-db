@@ -1,0 +1,58 @@
+{
+  "id": "india-late-2025-gap-pass",
+  "country": "India",
+  "startDate": "2025-10-01",
+  "endDate": "2025-12-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "First-person candidate account of Amazon SDE II L5 final interview loop in India during October November December 2025 with actual coding or system design questions"
+  ],
+  "artifact": "data/campaign-evidence/india-late-2025-gap-pass.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/yasir-arafat-sharfi_amazon-sde2-interviewexperience-activity-7411035075385163778-8KgX",
+      "disposition": "duplicate",
+      "reportId": "linkedin-7411035075385163778",
+      "reason": "Existing original report; publication December2025, exact April interview year and country not established."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7409809033982820353-kHIA",
+      "disposition": "excluded",
+      "reason": "Same-author repost series has unresolved chronology and screening offsets; no new evidence resolves prior exclusion."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/pawan-jindal_amazon-interviewexperience-systemdesign-activity-7400108261531684864-oWeH",
+      "disposition": "duplicate",
+      "reportId": "linkedin-7400108261531684864",
+      "reason": "Existing source; no new prompt or country evidence."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/chetan-raj-58703b27a_amazon-amazoninterview-atlassian-activity-7389669980038057985-99Oq",
+      "disposition": "excluded",
+      "reason": "Source describes process but no actual interview questions."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-2025-interview-exp",
+      "disposition": "duplicate",
+      "reason": "Mirror of existing rate-limiter/DJ/vending/min-max-character account; no new independent report."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/rahulks9460_amazoninterview-sde2-systemdesign-activity-7397256807641120768-5T3S",
+      "disposition": "duplicate",
+      "reportId": "linkedin-7397256807641120768",
+      "reason": "Existing original file-index/rental/notification account; country remains unstated."
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1oe4q65/amazon_sde_2india_interview_loop_done_what_are_my/",
+      "disposition": "unresolved",
+      "reason": "Retrieved text cuts off during HLD; visible portion has no specific question. Need complete original inspection before disposition can be finalized."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/haritha-nagubady_amazon-aws-sde2-activity-7388741318719565824-lb9E",
+      "disposition": "excluded",
+      "reason": "Author explicitly labels listed problems generic representations, not exact questions asked."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "round-recovery-leetcode-8290590",
+  "country": "India",
+  "startDate": "2026-01-01",
+  "endDate": "2026-09-13",
+  "searchedAt": "2026-09-14",
+  "provider": "Original source inspection",
+  "queries": [
+    "Reinspect known final-loop exclusion https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/ for exact question evidence and round uncertainty"
+  ],
+  "artifact": "data/campaign-evidence/round-recovery.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-8290590",
+      "reason": "Final-loop stage, role, date and concrete question verified; numbered round not stated."
+    }
+  ]
+}

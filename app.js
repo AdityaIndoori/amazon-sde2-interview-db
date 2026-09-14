@@ -6,6 +6,9 @@
   const controls = { q: $("search"), round: $("round"), topic: $("topic"), location: $("location"), year: $("year"), basis: $("basis"), min: $("minimum") };
   const sortKeys = ["round", "question", "topic", "frequency", "dates", "sources", "locations"];
   let database;
+  const collections = {};
+  let view = "strict";
+  let campaigns;
   let reports = new Map();
   let visibleRows = [];
   let sort = { key: "frequency", direction: "desc" };
@@ -32,6 +35,42 @@
     link.rel = "noopener noreferrer";
     link.title = `${label} (opens in a new tab)`;
     return link;
+  }
+
+  function artifactLink(path) {
+    if (typeof path !== "string" || !/^[a-zA-Z0-9_./-]+$/.test(path) || path.startsWith("/") || path.split("/").some(part => !part || part === "." || part === "..")) return element("span", "Evidence artifact unavailable: unsafe path");
+    return safeLink(path, new URL(path, new URL("./", location.href)).href);
+  }
+
+  function roundLabel(round) {
+    return round === null ? "Unconfirmed" : `R${round}`;
+  }
+
+  function selectCollection(nextView) {
+    view = nextView === "unconfirmed" && collections.unconfirmed ? "unconfirmed" : "strict";
+    database = collections[view];
+    if (!database) return;
+    reports = new Map(database.reports.map(report => [report.id, report]));
+    const unconfirmed = view === "unconfirmed";
+    $("view-strict").checked = !unconfirmed;
+    $("view-unconfirmed").checked = unconfirmed;
+    controls.round.querySelector("fieldset").disabled = unconfirmed;
+    controls.round.classList.toggle("round-disabled", unconfirmed);
+    $("stat-question-label").textContent = unconfirmed ? "questions · round unconfirmed" : "question–round pairs · verified";
+    $("collection-note").textContent = unconfirmed
+      ? "Round unconfirmed: these accounts verify an SDE II / L5 final loop, but do not establish the question’s round number. No round is inferred. Round choices are ignored here and retained for Round verified; frequencies remain separate."
+      : "Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number. Frequencies are never combined across collections.";
+    $("date-window").textContent = `${dateLabel(database.metadata.startDate)} – ${dateLabel(database.metadata.endDate)} · ${unconfirmed ? "Final loop · round unconfirmed" : "Rounds 1–4 · round verified"}`;
+    $("frequency-definition").textContent = unconfirmed
+      ? "Frequency is the number of distinct candidate reports for a question with an unconfirmed final-loop round. It does not include round-verified reports. Cross-posts and repeated mentions do not add to the count; this is not an estimate of Amazon’s asking rate."
+      : database.metadata.frequencyDefinition;
+    $("download-description").textContent = `Full downloads include only the round-${unconfirmed ? "unconfirmed" : "verified"} collection, regardless of the active filters.`;
+    for (const format of ["json", "sqlite"]) {
+      const link = $(`download-${format}`);
+      link.href = `data/${unconfirmed ? "unconfirmed" : "database"}.${format}`;
+      link.setAttribute("aria-label", `Full round-${unconfirmed ? "unconfirmed" : "verified"} ${format.toUpperCase()} download`);
+    }
+    if (database.metadata.generatedAt) $("generated-at").textContent = `Active collection generated ${dateLabel(database.metadata.generatedAt.slice(0, 10))}`;
   }
 
   function dateLabel(date) {
@@ -85,6 +124,7 @@
 
   function restoreURL() {
     const params = new URLSearchParams(location.search);
+    selectCollection(params.get("view"));
     for (const [key, control] of Object.entries(controls)) {
       const value = params.get(key) || (key === "min" ? "1" : "");
       if (control.hasAttribute("data-multiple")) {
@@ -100,7 +140,8 @@
 
   function saveURL(state) {
     const url = new URL(location.href);
-    for (const key of [...Object.keys(controls), "sort", "dir"]) url.searchParams.delete(key);
+    for (const key of [...Object.keys(controls), "sort", "dir", "view"]) url.searchParams.delete(key);
+    if (view === "unconfirmed") url.searchParams.set("view", view);
     for (const [key, value] of Object.entries(state)) {
       if (Array.isArray(value)) {
         for (const selected of value) url.searchParams.append(key, selected);
@@ -131,16 +172,16 @@
     const terms = state.q.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const rows = [];
     for (const question of database.questions) {
-      if (state.round.length && !state.round.includes(String(question.round))) continue;
+      if (view === "strict" && state.round.length && !state.round.includes(String(question.round))) continue;
       if (state.topic.length && !state.topic.includes(question.topic)) continue;
-      const questionText = `${question.question} ${question.topic} R${question.round}`.toLocaleLowerCase();
+      const questionText = `${question.question} ${question.topic} ${roundLabel(question.round)}`.toLocaleLowerCase();
       const occurrences = question.occurrences.filter((item) => {
         if (state.year.length && !state.year.includes(item.date.slice(0, 4))) return false;
         if (state.location.length && !state.location.includes(item.location || "Not stated")) return false;
         if (state.basis.length && !state.basis.includes(item.dateBasis)) return false;
         if (!terms.length) return true;
         const source = sourceFor(question, item.reportId);
-        const text = `${questionText} ${item.evidence} ${item.location} ${item.date} ${source.title} ${source.url}`.toLocaleLowerCase();
+        const text = `${questionText} ${item.evidence} ${item.roundUncertainty || ""} ${item.roundMappingNote || ""} ${item.location} ${item.date} ${source.title} ${source.url}`.toLocaleLowerCase();
         return terms.every((term) => text.includes(term));
       });
       if (!occurrences.length) continue;
@@ -193,10 +234,11 @@
         const article = element("article", null, "evidence-item");
         const heading = element("h3");
         heading.append(safeLink(source.title || occurrence.reportId, source.url));
-        article.append(heading, element("p", `Round ${row.round} · ${dateLabel(occurrence.date)} · ${basisLabel(occurrence.dateBasis)} · ${occurrence.location || "Not stated"}`), element("blockquote", occurrence.evidence));
+        article.append(heading, element("p", `${row.round === null ? "Round unconfirmed" : `Round ${row.round}`} · ${dateLabel(occurrence.date)} · ${basisLabel(occurrence.dateBasis)} · ${occurrence.location || "Not stated"}`), element("blockquote", occurrence.evidence));
         if (occurrence.reportedQuestion && occurrence.reportedQuestion !== row.question) article.append(element("p", `Reported prompt: ${occurrence.reportedQuestion}`));
         if (occurrence.sourceRound) article.append(element("p", `Original label: ${occurrence.sourceRound}`, "date-basis"));
-        if (occurrence.roundMappingNote) article.append(element("p", occurrence.roundMappingNote, "date-basis"));
+        if (row.round === null) article.append(element("p", `Why the round is unconfirmed: ${occurrence.roundUncertainty || occurrence.roundMappingNote}`, "round-uncertainty"));
+        else if (occurrence.roundMappingNote) article.append(element("p", occurrence.roundMappingNote, "date-basis"));
         if (source.stageEvidence) {
           const context = element("details", null, "source-context");
           context.append(element("summary", "Role, stage & source context"), element("blockquote", source.stageEvidence));
@@ -219,7 +261,7 @@
     for (const row of rows) {
       const tr = element("tr");
       const round = element("td");
-      round.append(element("span", `R${row.round}`, "round-badge"));
+      round.append(element("span", roundLabel(row.round), "round-badge"));
       const question = element("td");
       question.append(element("p", row.question, "question-text"), evidenceView(row));
       const topic = element("td");
@@ -250,7 +292,7 @@
     for (const control of Object.values(controls)) {
       if (!control.hasAttribute("data-multiple")) continue;
       const selected = [...control.querySelectorAll("input:checked")].map(input => input.nextElementSibling.textContent);
-      control.querySelector(".selection-label").textContent = selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
+      control.querySelector(".selection-label").textContent = control === controls.round && view === "unconfirmed" ? "Not applied · choices retained" : selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
       control.querySelector(".filter-clear").disabled = selected.length === 0;
     }
     visibleRows = matchingRows(state);
@@ -270,7 +312,7 @@
     $("stat-reports").textContent = reportIds.size.toLocaleString();
     $("stat-occurrences").textContent = occurrenceCount.toLocaleString();
     $("stat-locations").textContent = locations.size.toLocaleString();
-    $("result-summary").textContent = `${visibleRows.length.toLocaleString()} of ${database.questions.length.toLocaleString()} question–round pairs · ${reportIds.size.toLocaleString()} distinct reports`;
+    $("result-summary").textContent = `${view === "unconfirmed" ? "Round unconfirmed" : "Round verified"} · ${visibleRows.length.toLocaleString()} of ${database.questions.length.toLocaleString()} ${view === "unconfirmed" ? "questions" : "question–round pairs"} · ${reportIds.size.toLocaleString()} distinct reports`;
     $("question-table").hidden = !visibleRows.length;
     $("empty-state").hidden = !!visibleRows.length;
     $("table-hint").hidden = !visibleRows.length;
@@ -316,7 +358,7 @@
     };
     const records = [["Round", "Question", "Topic", "Frequency", "Dates", "Sources", "Locations"]];
     for (const row of visibleRows) records.push([
-      `R${row.round}`, row.question, row.topic, row.frequency,
+      roundLabel(row.round), row.question, row.topic, row.frequency,
       row.dates.map((item) => `${item.date} (${item.basis})`).join("; "),
       row.sources.map((source) => `${source.title} — ${source.url}`).join("; "),
       row.locations.join("; "),
@@ -325,7 +367,7 @@
     const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
     const link = element("a");
     link.href = url;
-    link.download = "amazon-sde2-filtered-questions.csv";
+    link.download = `amazon-sde2-${view === "unconfirmed" ? "unconfirmed" : "round-verified"}-filtered-questions.csv`;
     document.body.append(link);
     link.click();
     link.remove();
@@ -335,6 +377,7 @@
   function reset() {
     clearTimeout(searchTimer);
     for (const [key, control] of Object.entries(controls)) {
+      if (key === "round" && view === "unconfirmed") continue;
       if (control.hasAttribute("data-multiple")) {
         for (const input of control.querySelectorAll("input")) input.checked = false;
       } else control.value = key === "min" ? "1" : "";
@@ -343,35 +386,124 @@
     render();
   }
 
+  function renderLedger() {
+    if (!campaigns) return;
+    const country = $("ledger-country").value;
+    const status = $("ledger-status").value;
+    const matches = campaigns.filter(campaign => (!country || campaign.country === country) && (!status || campaign.status === status));
+    const outcomes = {
+      "admitted-evidence": "Admitted evidence",
+      "no-candidates-returned": "No candidates returned · not evidence of absence",
+      "inspected-no-admissions": "Inspected sources · no admissions",
+      unresolved: "Unresolved leads",
+      failed: "Search failed · no coverage conclusion",
+    };
+    const fragment = document.createDocumentFragment();
+    for (const campaign of matches) {
+      const row = element("tr");
+      const scope = element("td");
+      scope.append(element("strong", campaign.country), element("p", `${dateLabel(campaign.startDate)} – ${dateLabel(campaign.endDate)}`), element("span", campaign.id, "date-basis"));
+      const execution = element("td");
+      execution.append(element("strong", campaign.status === "failed" ? "Failed" : "Completed"), element("p", campaign.provider), element("p", `Searched at ${campaign.searchedAt}`));
+      const outcome = element("td");
+      outcome.append(element("p", outcomes[campaign.outcome] || campaign.outcome));
+      if (campaign.error) outcome.append(element("p", `Error: ${campaign.error}`));
+      const evidence = element("td");
+      const details = element("details", null, "evidence");
+      details.append(element("summary", `${campaign.queries.length} queries · ${campaign.sources.length} sources`));
+      details.append(element("h4", "Search queries"), list(campaign.queries, query => element("span", query)));
+      const artifact = element("p", "Evidence artifact: ");
+      artifact.append(artifactLink(campaign.artifact));
+      details.append(artifact, element("h4", "Source dispositions"));
+      if (!campaign.sources.length) details.append(element("p", "No source dispositions recorded. This does not establish that no relevant interviews exist."));
+      details.append(list(campaign.sources, source => {
+        const item = element("div");
+        item.append(safeLink(source.url, source.url), element("p", `Disposition: ${source.disposition}`), element("p", source.reason));
+        if (source.reportId) item.append(element("p", `Report: ${source.reportId}`));
+        return item;
+      }));
+      evidence.append(details);
+      row.append(scope, execution, outcome, evidence);
+      fragment.append(row);
+    }
+    $("ledger-rows").replaceChildren(fragment);
+    $("ledger-results").hidden = !matches.length;
+    $("ledger-summary").textContent = !campaigns.length
+      ? "No structured campaigns have been recorded. Historical search notes below do not imply exhaustive coverage."
+      : !matches.length ? "No documented campaigns match these ledger filters. This is not evidence that no interviews occurred."
+        : `${matches.length} of ${campaigns.length} documented campaigns · scope is research activity, not interview coverage`;
+  }
+
+  async function fetchData(path) {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error(`${path} returned HTTP ${response.status}.`);
+    return response.json();
+  }
+
+  function validateCollection(data, unconfirmed = false) {
+    if (!data?.metadata || !Array.isArray(data.questions) || !Array.isArray(data.reports) || !Array.isArray(data.coverage)
+      || !data.questions.every(question => question && typeof question.question === "string" && Array.isArray(question.sources) && Array.isArray(question.occurrences)
+        && (!unconfirmed || question.round === null)
+        && question.occurrences.every(item => item && typeof item.date === "string" && (!unconfirmed || (typeof item.roundUncertainty === "string" && item.roundUncertainty.trim()))))) {
+      throw new Error("The collection does not match the documented viewer format.");
+    }
+    return data;
+  }
+
   async function load() {
     $("load-error").hidden = true;
     $("results").setAttribute("aria-busy", "true");
     $("result-summary").textContent = "Loading the research database…";
     $("retry").disabled = true;
+    const [strictResult, unconfirmedResult, ledgerResult] = await Promise.allSettled([
+      fetchData("data/database.json").then(data => validateCollection(data)),
+      fetchData("data/unconfirmed.json").then(data => validateCollection(data, true)),
+      fetchData("data/research-ledger.json"),
+    ]);
     try {
-      const response = await fetch("data/database.json");
-      if (!response.ok) throw new Error(`Database request returned HTTP ${response.status}.`);
-      const data = await response.json();
-      if (!data.metadata || !Array.isArray(data.questions) || !Array.isArray(data.reports) || !Array.isArray(data.coverage)) throw new Error("The database does not match the documented viewer format.");
-      database = data;
-      reports = new Map(database.reports.map((report) => [report.id, report]));
-      const occurrences = database.questions.flatMap((question) => question.occurrences);
-      populateChoices("round", database.questions.map((question) => String(question.round)), (value) => `Round ${value}`);
-      populateChoices("topic", database.questions.map((question) => question.topic));
-      populateChoices("location", occurrences.map((item) => item.location || "Not stated"));
-      populateChoices("year", occurrences.map((item) => item.date.slice(0, 4)));
+      if (ledgerResult.status === "rejected") throw ledgerResult.reason;
+      const data = ledgerResult.value;
+      if (!Array.isArray(data?.campaigns) || !data.campaigns.every(campaign => campaign && Array.isArray(campaign.queries) && Array.isArray(campaign.sources) && campaign.sources.every(source => source && typeof source.url === "string"))) throw new Error("The ledger does not match the documented format.");
+      campaigns = data.campaigns;
+      $("ledger-country").replaceChildren(new Option("All countries", ""), ...uniqueSorted(campaigns.map(campaign => campaign.country)).map(country => new Option(country, country)));
+      $("ledger-filters").disabled = false;
+      renderLedger();
+    } catch (error) {
+      campaigns = undefined;
+      $("ledger-filters").disabled = true;
+      $("ledger-results").hidden = true;
+      $("ledger-summary").textContent = `Research ledger unavailable: ${error.message} No coverage conclusion can be drawn. Reload the page to retry.`;
+    }
+    if (unconfirmedResult.status === "fulfilled") {
+      collections.unconfirmed = unconfirmedResult.value;
+      $("auxiliary-status").textContent = "The round-unconfirmed collection is separate from round-verified counts and downloads.";
+    } else {
+      delete collections.unconfirmed;
+      $("auxiliary-status").textContent = `Round unconfirmed unavailable: ${unconfirmedResult.reason.message} Round verified remains available. Reload the page to retry.`;
+    }
+    try {
+      if (strictResult.status === "rejected") throw strictResult.reason;
+      collections.strict = strictResult.value;
+      const data = collections.strict;
+      const questions = Object.values(collections).flatMap(collection => collection.questions);
+      const occurrences = questions.flatMap(question => question.occurrences);
+      populateChoices("round", data.questions.map(question => String(question.round)), value => `Round ${value}`);
+      populateChoices("topic", questions.map(question => question.topic));
+      populateChoices("location", occurrences.map(item => item.location || "Not stated"));
+      populateChoices("year", occurrences.map(item => item.date.slice(0, 4)));
       populateChoices("basis", ["interview", "publication"], basisLabel);
-      $("date-window").textContent = `${dateLabel(data.metadata.startDate)} – ${dateLabel(data.metadata.endDate)} · Rounds 1–4`;
       if (data.metadata.disclaimer) $("disclaimer").textContent = data.metadata.disclaimer;
-      if (data.metadata.frequencyDefinition) $("frequency-definition").textContent = data.metadata.frequencyDefinition;
-      if (data.metadata.generatedAt) $("generated-at").textContent = `Database generated ${dateLabel(data.metadata.generatedAt.slice(0, 10))}`;
       coverageView(data.coverage);
       restoreURL();
       render(false);
+      $("view-strict").disabled = false;
+      $("view-unconfirmed").disabled = !collections.unconfirmed;
       $("filter-fields").disabled = false;
     } catch (error) {
       database = undefined;
       visibleRows = [];
+      $("view-strict").disabled = true;
+      $("view-unconfirmed").disabled = true;
       $("filter-fields").disabled = true;
       $("reset").disabled = true;
       $("export-csv").disabled = true;
@@ -387,6 +519,14 @@
     }
   }
 
+  $("collection-switch").addEventListener("change", event => {
+    if (event.target.name !== "view") return;
+    clearTimeout(searchTimer);
+    selectCollection(event.target.value);
+    render();
+  });
+  $("ledger-country").addEventListener("change", renderLedger);
+  $("ledger-status").addEventListener("change", renderLedger);
   $("filters").addEventListener("submit", (event) => event.preventDefault());
   controls.q.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => render(), 120); });
   for (const [key, control] of Object.entries(controls)) {

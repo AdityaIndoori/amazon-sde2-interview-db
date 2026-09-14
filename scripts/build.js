@@ -1,7 +1,8 @@
 import { Database } from 'bun:sqlite';
-import { mkdir, readdir, readFile, rename, rm } from 'node:fs/promises';
+import { mkdir, readdir, readFile, realpath, rename, rm, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { join } from 'node:path';
+import { isAbsolute, join, relative, sep } from 'node:path';
+import { compileResearchExpansion } from './research-expansion.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dataDir = join(root, 'data');
@@ -145,6 +146,20 @@ const metadata = {
   occurrenceCount: questions.reduce((n, q) => n + q.occurrences.length, 0),
 };
 const database = { metadata, questions, reports, coverage };
+const readInputs = async name => {
+  const directory = join(dataDir, name);
+  await mkdir(directory, { recursive: true });
+  const inputs = (await readdir(directory)).filter(file => file.endsWith('.json')).sort();
+  return Promise.all(inputs.map(async file => JSON.parse(await readFile(join(directory, file), 'utf8'))));
+};
+const [slices, campaigns] = await Promise.all([readInputs('unconfirmed'), readInputs('campaigns')]);
+const { unconfirmed, ledger } = compileResearchExpansion({ slices, strict: database, normalization, campaigns });
+const realRoot = await realpath(root);
+for (const campaign of ledger.campaigns) {
+  const artifact = await realpath(join(root, campaign.artifact));
+  const path = relative(realRoot, artifact);
+  if (isAbsolute(path) || path === '..' || path.startsWith(`..${sep}`) || !(await stat(artifact)).isFile()) fail(`Campaign artifact must be a repository file: ${campaign.artifact}`);
+}
 await Bun.write(join(dataDir, 'database.json'), `${JSON.stringify(database, null, 2)}\n`);
 const headers = ['Round', 'Question', 'Topic', 'Frequency', 'List of dates', 'List of sources', 'List of locations'];
 const csvRows = questions.map(q => [q.round, q.question, q.topic, q.frequency, q.dates.map(d => `${d.date} (${d.basis})`).join('; '), q.sources.map(s => s.url).join('; '), q.locations.join('; ')]);
@@ -184,3 +199,42 @@ if (db.query('PRAGMA integrity_check').get().integrity_check !== 'ok') fail('SQL
 db.close();
 await rename(tmpPath, join(dataDir, 'database.sqlite'));
 console.log(`Built ${questions.length} question/round rows, ${metadata.occurrenceCount} occurrences, ${reports.length} independent reports from ${files.length} research slices.`);
+await Bun.write(join(dataDir, 'unconfirmed.json'), `${JSON.stringify(unconfirmed, null, 2)}\n`);
+await Bun.write(join(dataDir, 'research-ledger.json'), `${JSON.stringify(ledger, null, 2)}\n`);
+const unconfirmedCsvRows = unconfirmed.questions.map(q => ['Unconfirmed', q.question, q.topic, q.frequency, q.dates.map(d => `${d.date} (${d.basis})`).join('; '), q.sources.map(s => s.url).join('; '), q.locations.join('; ')]);
+await Bun.write(join(dataDir, 'unconfirmed.csv'), '\uFEFF' + [headers, ...unconfirmedCsvRows].map(row => row.map(csvCell).join(',')).join('\r\n') + '\r\n');
+const supplementalTmpPath = join(dataDir, 'unconfirmed.sqlite.tmp');
+await rm(supplementalTmpPath, { force: true });
+const supplementalDb = new Database(supplementalTmpPath);
+supplementalDb.exec(`
+  PRAGMA foreign_keys = ON;
+  CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+  CREATE TABLE reports (id TEXT PRIMARY KEY, title TEXT NOT NULL, url TEXT NOT NULL UNIQUE, retrieved_via TEXT, role TEXT NOT NULL, location TEXT NOT NULL, date TEXT NOT NULL, date_basis TEXT NOT NULL CHECK(date_basis IN ('interview','publication')), published_date TEXT, interview_date TEXT, stage_evidence TEXT NOT NULL, aliases_json TEXT NOT NULL, details_json TEXT NOT NULL);
+  CREATE TABLE questions (id TEXT PRIMARY KEY, round INTEGER CHECK(round IS NULL), question TEXT NOT NULL, topic TEXT NOT NULL);
+  CREATE TABLE occurrences (question_id TEXT NOT NULL REFERENCES questions(id), report_id TEXT NOT NULL REFERENCES reports(id), date TEXT NOT NULL, date_basis TEXT NOT NULL CHECK(date_basis IN ('interview','publication')), location TEXT NOT NULL, evidence TEXT NOT NULL, source_round TEXT NOT NULL, round_mapping_note TEXT NOT NULL, reported_question TEXT NOT NULL, reported_topic TEXT NOT NULL, round_uncertainty TEXT NOT NULL CHECK(length(trim(round_uncertainty)) > 0), PRIMARY KEY(question_id, report_id));
+  CREATE TABLE research_coverage (slice TEXT PRIMARY KEY, details_json TEXT NOT NULL);
+  CREATE INDEX occurrences_date ON occurrences(date);
+  CREATE INDEX occurrences_location ON occurrences(location);
+  CREATE VIEW question_database AS SELECT q.id, q.round AS Round, q.question AS Question, q.topic AS Topic, (SELECT COUNT(*) FROM occurrences o WHERE o.question_id=q.id) AS Frequency,
+    (SELECT json_group_array(json_object('date', d.date, 'basis', d.date_basis)) FROM (SELECT DISTINCT date,date_basis FROM occurrences WHERE question_id=q.id ORDER BY date DESC) d) AS Dates,
+    (SELECT json_group_array(r.url) FROM occurrences o JOIN reports r ON r.id=o.report_id WHERE o.question_id=q.id) AS Sources,
+    (SELECT json_group_array(location) FROM (SELECT DISTINCT location FROM occurrences WHERE question_id=q.id ORDER BY location)) AS Locations FROM questions q;
+`);
+const supplementalMeta = supplementalDb.prepare('INSERT INTO metadata VALUES (?, ?)');
+const supplementalReport = supplementalDb.prepare('INSERT INTO reports VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+const supplementalQuestion = supplementalDb.prepare('INSERT INTO questions VALUES (?, ?, ?, ?)');
+const supplementalOccurrence = supplementalDb.prepare('INSERT INTO occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+const supplementalCoverage = supplementalDb.prepare('INSERT INTO research_coverage VALUES (?, ?)');
+supplementalDb.transaction(() => {
+  for (const [key, value] of Object.entries(unconfirmed.metadata)) supplementalMeta.run(key, JSON.stringify(value));
+  for (const r of unconfirmed.reports) supplementalReport.run(r.id, r.title, r.url, r.retrievedVia ?? null, r.role, r.location, r.date, r.dateBasis, r.publishedDate, r.interviewDate, r.stageEvidence, JSON.stringify(r.aliases), JSON.stringify(r));
+  for (const q of unconfirmed.questions) {
+    supplementalQuestion.run(q.id, null, q.question, q.topic);
+    for (const o of q.occurrences) supplementalOccurrence.run(q.id, o.reportId, o.date, o.dateBasis, o.location, o.evidence, o.sourceRound, o.roundMappingNote, o.reportedQuestion, o.reportedTopic, o.roundUncertainty);
+  }
+  for (const c of unconfirmed.coverage) supplementalCoverage.run(c.slice, JSON.stringify(c));
+})();
+if (supplementalDb.query('PRAGMA integrity_check').get().integrity_check !== 'ok') fail('Unconfirmed SQLite integrity failure');
+supplementalDb.close();
+await rename(supplementalTmpPath, join(dataDir, 'unconfirmed.sqlite'));
+console.log(`Built ${unconfirmed.questions.length} unconfirmed rows, ${unconfirmed.metadata.occurrenceCount} occurrences, ${unconfirmed.reports.length} reports and ${ledger.campaigns.length} scoped campaigns.`);

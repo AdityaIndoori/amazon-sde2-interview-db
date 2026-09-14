@@ -1,0 +1,21 @@
+{
+  "id": "round-recovery-jointaro-4487fd77",
+  "country": "United States",
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Original source inspection",
+  "queries": [
+    "Reinspect known final-loop exclusion https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/ for exact question evidence and round uncertainty"
+  ],
+  "artifact": "data/campaign-evidence/round-recovery.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "disposition": "unconfirmed",
+      "reportId": "jointaro-4487fd77",
+      "reason": "Final-loop stage, role, date and concrete question verified; numbered round not stated."
+    }
+  ]
+}

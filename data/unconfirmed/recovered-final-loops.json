@@ -1,0 +1,38 @@
+{
+  "slice": "recovered-final-loops",
+  "reports": [
+    {
+      "id": "leetcode-8290590",
+      "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "title": "SDE - 2 | Amazon Interview Loop | On Site | Bangalore",
+      "role": "SDE II",
+      "location": "India",
+      "date": "2026-05-24",
+      "dateBasis": "publication",
+      "publishedDate": "2026-05-24",
+      "interviewDate": null,
+      "stageEvidence": "Title explicitly SDE-2 Amazon Interview Loop. Author: I recently attended one of the Amazon interview drives on site in Bangalore. Two of my rounds (HLD and Coding DSA) were held on site and ... remaining2 rounds ... virtually. Original rendered page displays May24,2026.",
+      "questions": [
+        {"round":null,"sourceRound":"HLD (one of two completed onsite rounds)","key":"design-google-drive","question":"Design Google Drive or Dropbox.","topic":"System design / File storage","evidence":"Questions asked were: Google Drive / Dropbox (HLD)","roundUncertainty":"The author lists two completed onsite interviews but does not state their order or numbered positions. HLD cannot safely be assigned R1 or R2."},
+        {"round":null,"sourceRound":"Coding DSA (one of two completed onsite rounds)","key":"bus-routes","question":"Solve Bus Routes: find the minimum number of buses needed to travel between stops.","topic":"Graphs / BFS","evidence":"Coding DSA : Bus Routes (Leetcode Hard)","roundUncertainty":"The author lists two completed onsite interviews but does not state their order or numbered positions. Coding cannot safely be assigned R1 or R2."}
+      ]
+    },
+    {
+      "id": "jointaro-4487fd77",
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "retrievedVia": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-engineer-ii-sde2-united-states-september-1-2025-no-offer-negative-4487fd77/",
+      "title": "Amazon Software Engineer II SDE2 Interview Experience — United States",
+      "role": "SDE II",
+      "location": "United States",
+      "date": "2025-09-01",
+      "dateBasis": "publication",
+      "publishedDate": "2025-09-01",
+      "interviewDate": null,
+      "stageEvidence": "Page heading Software Engineer II SDE2 Interview Experience — United States; date September1,2025. Process: The Amazon SDE2 loop interview consisted of four rounds. Hosted candidate narrative, not independently authenticated.",
+      "questions": [
+        {"round":null,"sourceRound":"LLD interview (ordinal not supplied)","key":"calculator-lld-unspecified","question":"Code a calculator in a low-level design interview; supported operations and parsing rules are not disclosed.","topic":"Low-level design / Parsing","evidence":"Questions: Code a calculator in an LLD interview.","roundUncertainty":"The four-round loop is confirmed, but the calculator question is not mapped to a numbered round."}
+      ]
+    }
+  ]
+}

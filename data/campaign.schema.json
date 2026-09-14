@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scoped public-source research campaign run",
+  "type": "object",
+  "required": ["id", "country", "startDate", "endDate", "searchedAt", "provider", "queries", "artifact", "status", "sources"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "country": {"type": "string", "minLength": 1, "description": "Canonical country from normalization.json; search scope only."},
+    "startDate": {"type": "string", "format": "date"},
+    "endDate": {"type": "string", "format": "date"},
+    "searchedAt": {"type": "string", "anyOf": [{"format": "date"}, {"format": "date-time"}]},
+    "provider": {"type": "string", "minLength": 1},
+    "queries": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "artifact": {"type": "string", "pattern": "^[a-zA-Z0-9_][a-zA-Z0-9_./-]*$", "description": "Existing regular file inside the repository. Compiler rejects hidden, traversal, empty and credential-like path segments; build/check additionally reject escaping symlinks."},
+    "status": {"enum": ["completed", "failed"]},
+    "error": {"type": "string", "minLength": 1},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "disposition", "reason"],
+        "properties": {
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "disposition": {"enum": ["verified", "unconfirmed", "duplicate", "excluded", "unresolved"]},
+          "reason": {"type": "string", "minLength": 1},
+          "reportId": {"type": "string", "minLength": 1}
+        },
+        "if": {"properties": {"disposition": {"enum": ["verified", "unconfirmed"]}}},
+        "then": {"required": ["reportId"]}
+      }
+    }
+  },
+  "if": {"properties": {"status": {"const": "failed"}}},
+  "then": {"required": ["error"]}
+}

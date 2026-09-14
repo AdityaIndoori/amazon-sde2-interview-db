@@ -44,7 +44,7 @@ Original pages were read directly where possible. Public rendering through Jina 
 
 ## Admission and exclusions
 
-An accepted account must establish:
+An account admitted to the default Round verified collection must establish:
 
 1. Amazon software-development applicant level SDE II / L5. An interviewer's seniority is not the applicant's level. A Brazil account explicitly labels L5 as Senior locally; it is admitted by L5, not silently treated as L6.
 2. External recruiting/application context, or an ordinary external-hire-style account with no internal-transfer evidence. Not every anonymous author explicitly names a current employer; that is a confidence limitation, not independently verified employment history.
@@ -57,6 +57,8 @@ Rejected/downleveled candidates are included according to the level they intervi
 Some partial prompts remain useful evidence: a candidate may say “3Sum variant” without the changed constraints. Such rows explicitly say the details were not supplied; they are not a runnable exact reconstruction and are not merged with an unrelated variant. Exact code, solutions and private candidate contact information are not collected.
 
 A report whose technical-screen/final-loop distinction remains ambiguous is retained in the uncertainty ledger rather than included in frequency counts. The Pragadheeshwaran Medium account is one such adjudication; its disclosed questions remain in research data and generated exclusion details, but not the primary table.
+
+The separate Round unconfirmed collection relaxes only requirement4's numbered position, not final-loop stage. It currently contains3 questions from2 accounts: Google Drive/Dropbox and Bus Routes from a May24,2026 Bangalore report, and calculator LLD from a September1,2025 US report. All use explicit null rounds, written uncertainty reasons and separate exports/frequencies. These were previously excluded solely for ordinal ambiguity; their historical exclusion records remain an audit trail. Unverified leads and screening-ambiguous accounts stay outside both question collections.
 
 ## Dates
 
@@ -99,6 +101,10 @@ There are six stated countries: Brazil, Canada, India, Ireland, Spain and United
 Round and topic filters select question rows. Round, topic, country, year and date basis support checkbox multi-selection: OR within a filter, AND between filters, no selection means unrestricted. Search, year, country and date basis filter individual occurrences; at least one selected value from each active filter must match the same occurrence. The viewer then rebuilds frequency, dates, sources and locations and finally applies minimum frequency. This prevents false combinations across unrelated reports. Repeated URL parameters preserve multiple selections; single-value links remain valid.
 
 Every column is sortable. Dates sort by latest visible date; sources by title; locations alphabetically. CSV export follows current filtering and sorting. Full JSON/SQLite downloads ignore active filters. Both preserve source provenance; SQLite also contains complete report details as JSON. Source text is rendered as text, URLs allow only web protocols, and CSV formula-like values are escaped.
+
+`view=unconfirmed` selects the supplemental collection. Round choices are disabled/ignored but retained for switching back; other filters and same-occurrence semantics remain. Exported CSV uses Unconfirmed in the round column; full downloads target the active collection. No cross-collection frequencies are combined. Promotion requires explicit strict evidence and removal of the same source/question from supplemental input.
+
+Structured campaigns under `data/campaigns/` are distinct from historic free-form query logs. Each records country/date search scope, execution time, provider, actual query, artifact and source dispositions. Completed means the request/inspection ran, not exhaustive coverage. Derived outcomes distinguish admitted evidence, unresolved leads, inspected sources with no admissions, no returned candidates and failed execution. No-candidates and failures never mean no interviews exist. Four initial campaigns cover two targeted Exa windows and two source-recovery inspections; no strict questions were added by those searches. Some returned candidates remain explicitly unresolved.
 
 ## Known coverage gaps
 

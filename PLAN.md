@@ -8,7 +8,7 @@ Public reports cannot prove all questions asked internally. The collection will 
 
 ## Evidence rules
 
-- Include final-loop rounds 1–4 only; exclude online assessments, phone screens, internal transfers, SDE I and SDE III.
+- The default Round verified collection includes final-loop rounds1–4 only. A separately exported Round unconfirmed collection requires the same role/date/source/final-loop evidence but permits a null ordinal with an explicit reason. Both exclude online assessments, phone screens, internal transfers, SDEI and SDEIII.
 - Round means final-loop position 1–4. Preserve original labels in `sourceRound`. Where the author explicitly includes OA/screens in numbering, normalize only an unambiguous final-loop sequence and document the offset in `roundMappingNote`; otherwise exclude ambiguous assignments. Do not assume a fixed topic order or infer a day from a round.
 - Prefer first-person candidate accounts. A rendered copy of an original report is acceptable with retrieval URL retained. Do not bypass authentication or paywalls.
 - Record concise quotations tying each question to its round and retain source-level role, date, location and stage evidence.
@@ -17,6 +17,7 @@ Public reports cannot prove all questions asked internally. The collection will 
 - Record specific behavioral/GenAI questions when supplied, not generic Leadership Principle labels masquerading as questions.
 - A question's frequency is the count of distinct candidate reports for that question and round. Cross-posts are one report; repeated mentions within one report are one occurrence. It is not an estimate of Amazon's asking rate.
 - Merge equivalent questions conservatively, preserving materially different follow-ups as separate questions and preserving all evidence.
+- See RESEARCH_EXPANSION_PLAN.md for the self-grilled supplemental collection, promotion/deduplication rules, structured campaign scopes and acceptance gates. Supplemental counts never enter verified-round frequencies.
 
 ## Architecture and contracts
 
