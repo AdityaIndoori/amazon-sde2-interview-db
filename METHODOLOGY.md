@@ -96,7 +96,7 @@ There are six stated countries: Brazil, Canada, India, Ireland, Spain and United
 
 ## Viewer and export semantics
 
-Round and topic filters select question rows. Search, year, location and date basis filter individual occurrences; all selected conditions must match one occurrence. The viewer then rebuilds frequency, dates, sources and locations and finally applies minimum frequency. This prevents false combinations across unrelated reports.
+Round and topic filters select question rows. Round, topic, country, year and date basis support checkbox multi-selection: OR within a filter, AND between filters, no selection means unrestricted. Search, year, country and date basis filter individual occurrences; at least one selected value from each active filter must match the same occurrence. The viewer then rebuilds frequency, dates, sources and locations and finally applies minimum frequency. This prevents false combinations across unrelated reports. Repeated URL parameters preserve multiple selections; single-value links remain valid.
 
 Every column is sortable. Dates sort by latest visible date; sources by title; locations alphabetically. CSV export follows current filtering and sorting. Full JSON/SQLite downloads ignore active filters. Both preserve source provenance; SQLite also contains complete report details as JSON. Source text is rendered as text, URLs allow only web protocols, and CSV formula-like values are escaped.
 

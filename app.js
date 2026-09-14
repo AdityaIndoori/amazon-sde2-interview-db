@@ -55,18 +55,30 @@
     return reports.get(reportId) || question.sources.find((source) => source.id === reportId) || { id: reportId, title: reportId };
   }
 
-  function populateSelect(id, values, label = (value) => value) {
-    const select = $(id);
-    select.replaceChildren(select.options[0]);
+  function populateChoices(id, values, label = (value) => value) {
+    const control = $(id);
+    const options = control.querySelector(".filter-options");
+    options.replaceChildren(options.querySelector("legend"));
+    const clear = element("button", "Clear selection", "filter-clear");
+    clear.type = "button";
+    clear.addEventListener("click", () => {
+      for (const input of options.querySelectorAll("input")) input.checked = false;
+      render();
+    });
+    options.append(clear);
     for (const value of uniqueSorted(values)) {
-      const option = element("option", label(value));
-      option.value = value;
-      select.append(option);
+      const row = element("label");
+      const input = element("input");
+      input.type = "checkbox";
+      input.name = id;
+      input.value = value;
+      row.append(input, element("span", label(value)));
+      options.append(row);
     }
   }
 
   function stateFromControls() {
-    const state = Object.fromEntries(Object.entries(controls).map(([key, control]) => [key, control.value]));
+    const state = Object.fromEntries(Object.entries(controls).map(([key, control]) => [key, control.hasAttribute("data-multiple") ? [...control.querySelectorAll("input:checked")].map(input => input.value) : control.value]));
     state.min = Math.max(1, Math.floor(Number(state.min) || 1));
     return state;
   }
@@ -75,8 +87,9 @@
     const params = new URLSearchParams(location.search);
     for (const [key, control] of Object.entries(controls)) {
       const value = params.get(key) || (key === "min" ? "1" : "");
-      if (control.tagName === "SELECT") {
-        control.value = [...control.options].some((option) => option.value === value) ? value : "";
+      if (control.hasAttribute("data-multiple")) {
+        const selected = new Set(params.getAll(key));
+        for (const input of control.querySelectorAll("input")) input.checked = selected.has(input.value);
       } else {
         control.value = key === "min" ? String(Math.max(1, Math.floor(Number(value) || 1))) : value;
       }
@@ -89,7 +102,9 @@
     const url = new URL(location.href);
     for (const key of [...Object.keys(controls), "sort", "dir"]) url.searchParams.delete(key);
     for (const [key, value] of Object.entries(state)) {
-      if (value && !(key === "min" && value === 1)) url.searchParams.set(key, value);
+      if (Array.isArray(value)) {
+        for (const selected of value) url.searchParams.append(key, selected);
+      } else if (value && !(key === "min" && value === 1)) url.searchParams.set(key, value);
     }
     if (sort.key !== "frequency" || sort.direction !== "desc") {
       url.searchParams.set("sort", sort.key);
@@ -116,13 +131,13 @@
     const terms = state.q.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const rows = [];
     for (const question of database.questions) {
-      if (state.round && String(question.round) !== state.round) continue;
-      if (state.topic && question.topic !== state.topic) continue;
+      if (state.round.length && !state.round.includes(String(question.round))) continue;
+      if (state.topic.length && !state.topic.includes(question.topic)) continue;
       const questionText = `${question.question} ${question.topic} R${question.round}`.toLocaleLowerCase();
       const occurrences = question.occurrences.filter((item) => {
-        if (state.year && !item.date.startsWith(state.year)) return false;
-        if (state.location && (item.location || "Not stated") !== state.location) return false;
-        if (state.basis && item.dateBasis !== state.basis) return false;
+        if (state.year.length && !state.year.includes(item.date.slice(0, 4))) return false;
+        if (state.location.length && !state.location.includes(item.location || "Not stated")) return false;
+        if (state.basis.length && !state.basis.includes(item.dateBasis)) return false;
         if (!terms.length) return true;
         const source = sourceFor(question, item.reportId);
         const text = `${questionText} ${item.evidence} ${item.location} ${item.date} ${source.title} ${source.url}`.toLocaleLowerCase();
@@ -232,6 +247,12 @@
   function render(updateURL = true) {
     if (!database) return;
     const state = stateFromControls();
+    for (const control of Object.values(controls)) {
+      if (!control.hasAttribute("data-multiple")) continue;
+      const selected = [...control.querySelectorAll("input:checked")].map(input => input.nextElementSibling.textContent);
+      control.querySelector(".selection-label").textContent = selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
+      control.querySelector(".filter-clear").disabled = selected.length === 0;
+    }
     visibleRows = matchingRows(state);
     sortRows(visibleRows);
     renderRows(visibleRows);
@@ -313,7 +334,11 @@
 
   function reset() {
     clearTimeout(searchTimer);
-    for (const [key, control] of Object.entries(controls)) control.value = key === "min" ? "1" : "";
+    for (const [key, control] of Object.entries(controls)) {
+      if (control.hasAttribute("data-multiple")) {
+        for (const input of control.querySelectorAll("input")) input.checked = false;
+      } else control.value = key === "min" ? "1" : "";
+    }
     sort = { key: "frequency", direction: "desc" };
     render();
   }
@@ -331,10 +356,11 @@
       database = data;
       reports = new Map(database.reports.map((report) => [report.id, report]));
       const occurrences = database.questions.flatMap((question) => question.occurrences);
-      populateSelect("round", database.questions.map((question) => String(question.round)), (value) => `Round ${value}`);
-      populateSelect("topic", database.questions.map((question) => question.topic));
-      populateSelect("location", occurrences.map((item) => item.location || "Not stated"));
-      populateSelect("year", occurrences.map((item) => item.date.slice(0, 4)));
+      populateChoices("round", database.questions.map((question) => String(question.round)), (value) => `Round ${value}`);
+      populateChoices("topic", database.questions.map((question) => question.topic));
+      populateChoices("location", occurrences.map((item) => item.location || "Not stated"));
+      populateChoices("year", occurrences.map((item) => item.date.slice(0, 4)));
+      populateChoices("basis", ["interview", "publication"], basisLabel);
       $("date-window").textContent = `${dateLabel(data.metadata.startDate)} – ${dateLabel(data.metadata.endDate)} · Rounds 1–4`;
       if (data.metadata.disclaimer) $("disclaimer").textContent = data.metadata.disclaimer;
       if (data.metadata.frequencyDefinition) $("frequency-definition").textContent = data.metadata.frequencyDefinition;

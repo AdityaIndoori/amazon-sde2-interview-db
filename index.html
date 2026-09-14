@@ -51,16 +51,16 @@
               <input id="search" name="q" type="search" placeholder="Question, topic, source, or evidence…" autocomplete="off">
             </div>
             <div class="filter-grid">
-              <div><label for="round">Round</label><select id="round" name="round"><option value="">All rounds</option></select></div>
-              <div><label for="topic">Topic</label><select id="topic" name="topic"><option value="">All topics</option></select></div>
-              <div><label for="location">Location (country)</label><select id="location" name="location"><option value="">All countries</option></select></div>
-              <div><label for="year">Year</label><select id="year" name="year"><option value="">All years</option></select></div>
-              <div><label for="basis">Date basis</label><select id="basis" name="basis"><option value="">Interview & publication</option><option value="interview">Interview date</option><option value="publication">Publication date</option></select></div>
+              <details class="multi-filter" id="round" data-multiple data-all="All rounds"><summary>Round <span class="selection-label">All rounds</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose rounds</legend></fieldset></details>
+              <details class="multi-filter" id="topic" data-multiple data-all="All topics"><summary>Topic <span class="selection-label">All topics</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose topics</legend></fieldset></details>
+              <details class="multi-filter" id="location" data-multiple data-all="All countries"><summary>Location (country) <span class="selection-label">All countries</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose countries</legend></fieldset></details>
+              <details class="multi-filter" id="year" data-multiple data-all="All years"><summary>Year <span class="selection-label">All years</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose years</legend></fieldset></details>
+              <details class="multi-filter" id="basis" data-multiple data-all="Both date types"><summary>Date basis <span class="selection-label">Both date types</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose date types</legend></fieldset></details>
               <div><label for="minimum">Min. frequency</label><input id="minimum" name="min" type="number" min="1" step="1" value="1" inputmode="numeric"></div>
             </div>
           </fieldset>
         </form>
-        <p class="filter-note">Year, location, and date basis must match the <em>same occurrence</em>. Frequencies, dates, and sources are recalculated for your selection.</p>
+        <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, and date basis must match the <em>same occurrence</em>; counts and exports update accordingly.</p>
 
         <div class="results-toolbar">
           <p id="result-summary" role="status" aria-live="polite" aria-atomic="true">Loading the research database…</p>

@@ -52,6 +52,15 @@ input, select { display: block; width: 100%; height: 41px; min-width: 0; border:
 input[type="search"] { font-size: 14px; height: 44px; }
 input::placeholder { color: #6c7b83; }
 .filter-grid { display: grid; grid-template-columns: .75fr 1.6fr 1.3fr .8fr 1.2fr .65fr; gap: 14px; margin-top: 17px; }
+.filter-grid { align-items: start; }
+.multi-filter { min-width: 0; border: 1px solid #bfccc6; border-radius: 3px; background: white; }
+.multi-filter > summary { padding: 8px 10px; font-size: 11px; font-weight: 650; color: var(--muted); }
+.selection-label { display: block; margin-top: 4px; color: var(--ink); font-size: 12px; font-weight: 400; overflow-wrap: anywhere; }
+.filter-options { max-height: 240px; overflow-y: auto; border-top: 1px solid var(--line); padding: 6px; }
+.filter-options label { display: flex; align-items: flex-start; gap: 8px; padding: 8px 4px; margin: 0; cursor: pointer; color: var(--ink); font-weight: 400; overflow-wrap: anywhere; }
+.filter-options label:hover { background: var(--teal-light); }
+.filter-options input[type="checkbox"] { width: 16px; height: 16px; flex: 0 0 16px; margin: 1px 0 0; padding: 0; accent-color: var(--teal); }
+.filter-clear { margin: 4px; font-size: 11px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 3px; background: var(--paper); }
 .filter-note { font-size: 11px; color: var(--muted); margin: 11px 0 25px; }
 .results-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 16px; }
 .results-toolbar p { font-size: 12px; color: var(--muted); margin-bottom: 0; }

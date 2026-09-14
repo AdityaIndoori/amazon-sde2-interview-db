@@ -73,6 +73,7 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 - reports: canonical reports including question evidence.
 - coverage: search queries, exclusions, limitations by slice.
 - Frequency after filtering counts distinct matching report IDs. Dates, sources and locations shown must derive from the same matching occurrences, not independent cross-matches.
+- Multi-select filter contract: checkbox selections are OR within round/topic/country/year/date-basis groups, AND across groups, and unrestricted when empty. URL state uses repeated query parameters; filtering and CSV exports retain same-occurrence aggregation.
 
 ## Execution sequence
 

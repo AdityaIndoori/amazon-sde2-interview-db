@@ -27,12 +27,12 @@ The table exposes the requested schema:
 | Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Countries only, or Not stated |
 
 - Search question text, topic, source title/URL and evidence.
-- Filter by round, topic, location, year, date basis and minimum frequency.
+- Select multiple rounds, topics, countries, years and date types using checkboxes. Within a filter selections combine with OR; different filters combine with AND. No selections means all values. Each group has a Clear selection button; minimum frequency remains numeric.
 - Sort every column; date sorting uses the latest displayed date.
 - Combine filters at the **same occurrence** level. A question reported in India in 2025 and another country in 2026 does not match India + 2026.
 - Frequencies, dates, source lists, location lists and counts recalculate from matching occurrences.
 - Expand evidence to see quotations, reported prompt, original round label, numbering notes, role/stage context and retrieval/archive provenance.
-- Share the URL to preserve filters/sort. Reset restores the complete table.
+- Share the URL to preserve filters/sort. Multiple selections use repeated parameters, for example `?round=1&round=2&location=India&location=United+States`. Existing single-value URLs still work. Reset restores the complete table.
 - Export the filtered selection as CSV, or download full JSON/SQLite.
 - Narrow screens scroll the table horizontally without overflowing the page.
 
