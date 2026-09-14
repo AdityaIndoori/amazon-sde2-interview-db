@@ -81,3 +81,13 @@ The design frontier is closed for this implementation. Each decision has a conse
 - Desktop/mobile, keyboard, evidence, search, multiselect, empty state and reset verified against actual program.
 - Focused compiler tests and complete data check pass; reproducible rebuild and CI current-artifact checks pass.
 - Two-axis review performed and no unresolved correctness findings; committed and live site verified.
+
+## Implementation and review record
+
+- Delivered separate3-question/2-report supplemental collection and4 scoped campaign runs; strict JSON remained identical to baseline586 rows/136 reports/635 occurrences.
+- Twelve focused regression tests pass. A test for zero-result campaign semantics failed before fixing `inspected-no-admissions` to `no-candidates-returned`; empty discovery is no longer mislabeled as source inspection.
+- Both JSON/CSV/SQLite collections and ledger references/artifacts pass `bun run check`; all seven generated artifacts were reproducible across rebuilds.
+- Browser checks exercised active-collection filters, dormant round retention, unconfirmed CSV, separate downloads, independent ledger filters, mobile390px layout, evidence reasons and auxiliary503 isolation.
+- Standards review: no hard documented-standard or correctness blockers. Shared validators and collection exporters were extracted in response to duplication feedback. Small build/check containment checks and two-view display branches remain deliberately explicit; further abstraction would add machinery without another behavior variant.
+- Spec review: no actionable missing/incorrect requirements found. The local plan is the review specification; no issue-tracker setup was needed.
+- Tests were not all written test-first: concurrent initial compiler cases were added with implementation, while the later empty-campaign edge used a demonstrated red/green cycle. No TypeScript/typecheck target exists; this is plain Bun JavaScript.
