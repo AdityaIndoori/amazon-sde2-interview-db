@@ -141,9 +141,7 @@
     reports = new Map(database.reports.map(report => [report.id, report]));
     const unconfirmed = view === "unconfirmed";
     const all = view === "all";
-    $("view-strict").checked = view === "strict";
-    $("view-all").checked = all;
-    $("view-unconfirmed").checked = unconfirmed;
+    $("collection-switch").value = view;
     controls.round.querySelector("fieldset").disabled = unconfirmed;
     controls.round.classList.toggle("round-disabled", unconfirmed);
     $("stat-question-label").textContent = all ? "question entries · both collections" : unconfirmed ? "questions · round unconfirmed" : "question–round pairs · verified";
@@ -337,7 +335,7 @@
 
   function evidenceView(row) {
     const details = element("details", null, "evidence");
-    details.append(element("summary", `View evidence · ${row.occurrences.length} occurrence${row.occurrences.length === 1 ? "" : "s"}`));
+    details.append(element("summary", "Evidence & context"));
     details.addEventListener("toggle", () => {
       if (!details.open || details.dataset.loaded) return;
       details.dataset.loaded = "true";
@@ -394,7 +392,6 @@
       evidence.open = openEvidence.has(markKey(row));
       question.append(element("p", row.question, "question-text"), badges, studyActions(row));
       if (row.practiceLinks.length) question.append(list(row.practiceLinks, url => safeLink("Practice exact named problem", url)));
-      question.append(evidence);
       const topic = element("td");
       topic.append(element("span", row.category, "category-label"), element("span", row.topic, "topic-label"));
       const frequency = element("td");
@@ -408,7 +405,7 @@
         return wrapper;
       }));
       const sources = element("td");
-      sources.append(list(row.sources, (source) => safeLink(source.title || source.id, source.url)));
+      sources.append(list(row.sources, (source) => safeLink(source.title || source.id, source.url)), evidence);
       const locations = element("td");
       locations.append(list(row.locations, (location) => element("span", location)));
       tr.append(round, question, topic, frequency, dates, sources, locations);

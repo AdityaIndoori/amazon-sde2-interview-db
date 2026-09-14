@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0a0a0f">
   <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
   <title>Amazon SDE II · Interview fieldnotes</title>
-  <link rel="stylesheet" href="styles.css?v=307d883a1836">
-  <script src="app.js?v=55feb3a03e90" defer></script>
+  <link rel="stylesheet" href="styles.css?v=ecc5d39a83b5">
+  <script src="app.js?v=eec1500de3dc" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#results">Skip to questions</a>
@@ -45,16 +45,6 @@
           <div><p class="eyebrow">01 / The question index</p><h2 id="explore-heading">Find your focus.</h2></div>
           <button id="reset" type="button" class="text-button" disabled>Reset filters</button>
         </div>
-        <fieldset id="collection-switch" class="collection-switch" aria-describedby="collection-note auxiliary-status">
-          <legend>Question collection</legend>
-          <div class="collection-options">
-            <label><input id="view-strict" type="radio" name="view" value="strict" checked disabled><span>Round verified</span></label>
-            <label><input id="view-unconfirmed" type="radio" name="view" value="unconfirmed" disabled><span>Round unconfirmed</span></label>
-            <label><input id="view-all" type="radio" name="view" value="all" disabled><span>All</span></label>
-          </div>
-        </fieldset>
-        <p id="collection-note" class="filter-note">Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number.</p>
-        <p id="auxiliary-status" class="availability-note" role="status">Loading the separate round-unconfirmed collection…</p>
         <form id="filters" class="filters" role="search" aria-label="Filter interview questions">
           <fieldset id="filter-fields" disabled>
             <legend class="sr-only">Question filters</legend>
@@ -63,6 +53,7 @@
               <input id="search" name="q" type="search" placeholder="Question, topic, source, or evidence…" autocomplete="off">
             </div>
             <div class="filter-grid">
+              <div><label for="collection-switch">Question collection</label><select id="collection-switch" name="view" aria-describedby="collection-note auxiliary-status"><option id="view-strict" value="strict">Round verified</option><option id="view-unconfirmed" value="unconfirmed" disabled>Round unconfirmed</option><option id="view-all" value="all" disabled>All</option></select></div>
               <details class="multi-filter" id="round" data-multiple data-all="All rounds"><summary>Round <span class="selection-label">All rounds</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose rounds</legend></fieldset></details>
               <details class="multi-filter" id="topic" data-multiple data-all="All topics"><summary>Topic <span class="selection-label">All topics</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose topics</legend></fieldset></details>
               <details class="multi-filter" id="category" data-multiple data-all="All categories"><summary>Category <span class="selection-label">All categories</span></summary><fieldset class="filter-options"><legend class="sr-only">Choose categories</legend></fieldset></details>
@@ -74,6 +65,8 @@
               <div><label for="personal">My study progress</label><select id="personal"><option value="">All questions</option><option value="bookmarked">Bookmarked</option><option value="practiced">Practiced</option><option value="not-practiced">Not practiced</option></select></div>
             </div>
           </fieldset>
+        <p id="collection-note" class="filter-note">Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number.</p>
+        <p id="auxiliary-status" class="availability-note" role="status">Loading the separate round-unconfirmed collection…</p>
         </form>
         <p class="filter-note">Select multiple values using checkboxes. Values within a filter match <strong>any</strong> selection; different filters must <strong>all</strong> match. No selections means all values. Year, country, date basis, and evidence quality must match the <em>same occurrence</em>; counts, badges, practice links, and exports update accordingly. “Exact named” requires curator-backed source evidence; “Described” means a reported description, not a completeness guarantee; “Partial” preserves unspecified variants. Quality does not establish the date or round.</p>
         <section class="study-tools" aria-labelledby="study-heading">
@@ -100,10 +93,10 @@
         </div>
         <div id="load-error" class="notice error" role="alert" hidden><h3>The database could not be loaded.</h3><p id="error-message"></p><button id="retry" type="button" class="button">Try again</button></div>
         <div id="empty-state" class="notice" hidden><h3>No questions in this selection.</h3><p>Try a broader search or reduce the minimum frequency. Unknown locations are listed as “Not stated.”</p><button id="empty-reset" type="button" class="button">Clear all filters</button></div>
-        <p id="table-hint" class="table-hint" hidden>Scroll horizontally for all seven columns. Open a question’s evidence to inspect each matching report.</p>
+        <p id="table-hint" class="table-hint" hidden>Scroll horizontally for all seven columns. Expand evidence in Sources to inspect each matching report.</p>
         <div id="results" class="table-wrap" tabindex="0" role="region" aria-label="Interview questions; horizontally scrollable" aria-describedby="table-hint" aria-busy="true">
           <table id="question-table" hidden>
-            <caption class="sr-only">Publicly reported final-loop questions. Sort with column-header buttons; expand evidence within the question column.</caption>
+            <caption class="sr-only">Publicly reported final-loop questions. Sort with column-header buttons; expand evidence within the Sources column.</caption>
             <thead><tr>
               <th scope="col" aria-sort="none" data-sort="round"><button type="button">Round<span aria-hidden="true">↕</span></button></th>
               <th scope="col" aria-sort="none" data-sort="question"><button type="button">Question<span aria-hidden="true">↕</span></button></th>

@@ -108,12 +108,6 @@ select { width: 100%; min-height: 48px; padding: 10px 14px; border: 1px solid va
 .filter-clear { min-height: 44px; margin: 0 0 4px; width: 100%; font-size: 11px; border: 1px solid var(--border-hover); border-radius: var(--radius-sm); background: transparent; }
 .filter-note { font-size: 12px; color: var(--text-subtle); margin: var(--space-4) 0 var(--space-8); max-width: 920px; }
 .filter-note strong { color: var(--text-secondary); font-weight: 500; }
-.collection-switch legend { font-size: 12px; color: var(--text-secondary); margin-bottom: var(--space-3); }
-.collection-options { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-.collection-options label { display: flex; align-items: center; gap: var(--space-3); min-height: 48px; padding: 12px 16px; border: 1px solid var(--control-border); border-radius: var(--radius-md); background: var(--background-alt); cursor: pointer; margin: 0; }
-.collection-options label:has(input:checked) { color: var(--foreground); border-color: var(--accent); background: var(--accent-muted); }
-.collection-options label:has(input:disabled) { cursor: not-allowed; color: var(--text-subtle); }
-.collection-options input { height: 18px; width: 18px; margin: 0; padding: 0; accent-color: var(--accent); box-shadow: none; }
 #collection-note { margin-bottom: var(--space-3); }
 .availability-note { margin-bottom: var(--space-6); font-size: 12px; color: var(--text-secondary); }
 .round-disabled { border-style: dashed; }

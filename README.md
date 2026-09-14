@@ -33,11 +33,12 @@ The default **Round verified** collection contains 590 rows, 639 occurrences and
 The **Scoped research campaigns** ledger records actual search scopes, providers, execution dates, queries, evidence artifacts and per-source decisions. Its country/status filters are independent of question filters. Search scope never supplies a candidate country or interview date. Sixteen runs now include all nine2026 publication-month windows through September13 for US-targeted discovery, plus source-recovery inspections and prior campaigns. Missing campaigns and empty search results do not establish that interviews did not occur.
 
 - Search question text, topic, source title/URL and evidence.
+- Choose Round verified, Round unconfirmed, or All using the Question collection dropdown inside the search/filter panel.
 - Select multiple rounds, topics, countries, years and date types using checkboxes. Within a filter selections combine with OR; different filters combine with AND. No selections means all values. Each group has a Clear selection button; minimum frequency remains numeric.
 - Sort every column; date sorting uses the latest displayed date.
 - Combine filters at the **same occurrence** level. A question reported in India in 2025 and another country in 2026 does not match India + 2026.
 - Frequencies, dates, source lists, location lists and counts recalculate from matching occurrences.
-- Expand evidence to see quotations, reported prompt, original round label, numbering notes, role/stage context and retrieval/archive provenance.
+- Expand **Evidence & context** in the Sources column to see quotations, reported prompt, original round label, numbering notes, role/stage context and retrieval/archive provenance. Source links remain directly accessible above the details.
 - Share the URL to preserve filters/sort. Multiple selections use repeated parameters, for example `?round=1&round=2&location=India&location=United+States`. Existing single-value URLs still work. Reset restores the complete table.
 - Export the filtered selection as CSV, or download full JSON/SQLite.
 - Narrow screens scroll the table horizontally without overflowing the page.
