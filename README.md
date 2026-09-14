@@ -68,7 +68,7 @@ WHERE o.location = 'Bangalore, India' AND o.date LIKE '2026%';
 
 `reports.details_json` preserves additional source metadata (archive verification, date evidence, aliases and original question records). `occurrences.reported_question` and `reported_topic` preserve report-specific wording alongside canonical labels.
 
-The workflow in `.github/workflows/check.yml` checks committed artifacts, rebuilds, rechecks, and rejects stale generated output. The workflow has not been executed on GitHub; its local build/check commands were verified.
+The workflow in `.github/workflows/check.yml` checks committed artifacts, rebuilds, rechecks, and rejects stale generated output. It passed on GitHub Actions for the initial publication.
 
 ## Repository map
 
@@ -129,6 +129,7 @@ GitHub Pages publishes a public website, even for many private-repository config
 - All three download endpoints returned complete files; URL filter restoration worked under a project subpath.
 - Desktop and 390px mobile screenshots inspected; mobile document width equals viewport width.
 - Fetch-failure fallback observed; normal loaded page showed no JavaScript errors during the exercised navigation.
+- GitHub Actions validation and Pages deployment passed. The live Pages site loaded all 539 rows; Spain + Round 2 filtering returned the expected source-linked Reorganize String question.
 
 Research coverage and remaining evidence gaps are detailed in [METHODOLOGY.md](METHODOLOGY.md) and the in-page coverage panel.
 
