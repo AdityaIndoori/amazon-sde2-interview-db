@@ -1,0 +1,55 @@
+{
+  "id": "recovery-us-second-07",
+  "country": "United States",
+  "startDate": "2026-07-01",
+  "endDate": "2026-07-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa with original public-source inspection",
+  "queries": [
+    "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop July 2026"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-second/july-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde-interview-experience-2026-seattle-onsite-team-match-coding-genai-questions-47j0",
+      "disposition": "unresolved",
+      "reason": "Public DEV API confirms Seattle onsite narrative and publication, but role is only SDE, not SDE II/L5. Service publisher provides no independent candidate attribution. No level inferred from coding format; no fabrication claim."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/anusha-kandagal_amazon-sde-2-interview-experience-2026-activity-7486939540109070336-BQVA",
+      "disposition": "duplicate",
+      "reason": "Same-author LinkedIn summary links existing leetcode-8420230 through lnkd.in/dAcPZyY9 (previously resolved in exa-us). Summary/comments add no new question with round evidence; profile geography not interview country."
+    },
+    {
+      "url": "https://edencapitalcareers.com/interview-guide/amazon",
+      "disposition": "excluded",
+      "reason": "General company interview/preparation guide, not an individual candidate report."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/rajani-tak_recently-i-interviewed-for-an-amazon-sde2-activity-7487716844364210176-zclP",
+      "disposition": "excluded",
+      "reason": "First-person SDE2 process summary names round topics only, no concrete final-loop questions."
+    },
+    {
+      "url": "https://devbrainiac.com/blogs/168/amazon-sde-2-interview-experience-3-years-experience/",
+      "disposition": "unresolved",
+      "reason": "Known retelling of uncertain LeetCode8409230. Public text says Hyderabad/Bengaluru but three post-OA rounds do not establish final-loop sequence; relative Last Month is ambiguous against publication and modification dates. No independent new candidate counted."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/itssiddharthsingh_to-crack-amazon-sde-2-i-focused-on-dsa-activity-7487825233933033476-fL60",
+      "disposition": "excluded",
+      "reason": "Preparation advice and recommended design examples, not questions explicitly reported from a particular final loop."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/itssiddharthsingh_i-interviewed-at-google-twice-and-amazon-activity-7481246245777260545-6IHM",
+      "disposition": "excluded",
+      "reason": "Four-week preparation plan and practice problem list, not questions explicitly asked in a final loop."
+    },
+    {
+      "url": "https://karavine.com/interview-guide/amazon/swe",
+      "disposition": "excluded",
+      "reason": "Generic interview guide and aggregated question bank, not an individual dated candidate report."
+    }
+  ]
+}

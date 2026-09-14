@@ -46,8 +46,8 @@
     },
     {
       "url": "https://www.reddit.com/r/amazonemployees/comments/1oe4q65/amazon_sde_2india_interview_loop_done_what_are_my/",
-      "disposition": "unresolved",
-      "reason": "Retrieved text cuts off during HLD; visible portion has no specific question. Need complete original inspection before disposition can be finalized."
+      "disposition": "excluded",
+      "reason": "Follow-up2026-09-14 recovered complete public-post archive (data/campaign-evidence/recovery-main/lead-inspections.json). Original truncation prevented assessment; complete body now confirms only self-assessed performance and process details, with no actual question disclosed."
     },
     {
       "url": "https://www.linkedin.com/posts/haritha-nagubady_amazon-aws-sde2-activity-7388741318719565824-lb9E",

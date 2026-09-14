@@ -99,8 +99,8 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 ## Execution record
 
 - Repository finalized at `/home/aditya/amazon-sde2-interview-db` (moved out of temporary storage).
-- Delivered 586 question–round rows, 635 occurrences, 136 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested Exa research pass.
-- Recorded 286 discovery/query entries and 1,288 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
+- Delivered 589 verified question–round rows, 639 occurrences and 137 strict reports, plus 31 separate round-unconfirmed questions from 7 reports. Combined unique account count is 143 because one source contributes different questions to both collections.
+- Recorded 297 strict research query/discovery entries, 1,327 exclusion/uncertainty entries and 16 scoped campaigns; coverage limits are explicit in METHODOLOGY.md.
 - Build/check passed; all three artifacts were byte-identical across regeneration.
 - Chromium exercised loaded data, seven sort controls, filters, source/evidence expansion, CSV export, keyboard reset, project-subpath navigation and 390px mobile layout.
 - Git initialized on main; the user subsequently authorized GitHub publication and interactively authenticated as AdityaIndoori. Target: `AdityaIndoori/amazon-sde2-interview-db`, with GitHub Pages from the main branch root.

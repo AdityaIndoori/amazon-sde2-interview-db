@@ -1,0 +1,50 @@
+{
+  "inspectedAt": "2026-09-14",
+  "method": "Five known-exclusion originals inspected with public reader, Exa fetch and original-page browser metadata. No discovery search or authentication.",
+  "artifacts": [
+    "data/campaign-evidence/recovery-unknown/lc7910016-original.json",
+    "data/campaign-evidence/recovery-unknown/lc7272101-original.json",
+    "data/campaign-evidence/recovery-unknown/hissan-original.json",
+    "data/campaign-evidence/recovery-unknown/priority-fetch.json",
+    "data/campaign-evidence/recovery-unknown/lc7910016-rendering.json",
+    "data/campaign-evidence/recovery-unknown/lc7272101-rendering.json",
+    "data/campaign-evidence/recovery-unknown/additional-fetch.json",
+    "data/campaign-evidence/recovery-unknown/lc7910016-browser.json",
+    "data/campaign-evidence/recovery-unknown/lc7272101-browser.json",
+    "data/campaign-evidence/recovery-unknown/lc6467921-browser.json",
+    "data/campaign-evidence/recovery-unknown/lc6558499-browser.json",
+    "data/campaign-evidence/recovery-unknown/lc6467921-rendering.json"
+  ],
+  "sources": [
+    {
+      "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-7910016",
+      "reason": "Recovered nine concrete onsite questions with original publication metadata and Hyderabad country evidence. No ordinal inferred from category headings or first-day HLD/DSA grouping. OA, work-simulation questions, generic LP mentions and unspecified graph DFS/DP prompt are not admitted."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-7272101",
+      "reason": "Recovered nine concrete questions from Breakdown of Onsite, not the separately described phone screen. Original createdAt confirms 2025-10-13 and USA/NYC is explicit. Five onsite categories do not establish overall ordinal positions; null round preserves that uncertainty."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "disposition": "unconfirmed",
+      "reportId": "medium-b1f8b0a69de5",
+      "reason": "Recovered only restaurant token-management LLD with the exact existing strict report ID/date/country. HLD+HM learning-management design is already strict R4 and is not repeated. Intervals/sweep-line/max-meetings are presented as topics, the rainwater variant is unspecified, OA recall lacks its original question, and generic LP counts are not questions; all remain omitted."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-6467921",
+      "reason": "Recovered five concrete questions from explicitly SDE2 full loop in USA in February 2025. Original createdAt confirms February 25 publication; interview month is preferred. Categories have no overall numbering. Undisclosed LPs and noncoding jump-game followups not invented."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-6558499",
+      "reason": "Recovered four concrete questions from direct onsite after OA; Seattle L5/SDE2 explicit. Original createdAt March 20,2025 is separate from March25 update. Coding1–3 category numbering does not place system design in sequence. No OA, generic LPs or later unstructured hiring-manager discussion admitted."
+    }
+  ]
+}

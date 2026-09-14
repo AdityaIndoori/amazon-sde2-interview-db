@@ -1,0 +1,55 @@
+{
+  "id": "recovery-us-first-march",
+  "country": "United States",
+  "startDate": "2026-03-01",
+  "endDate": "2026-03-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle March 2026 actual coding questions system design behavioral rounds"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-first/march-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.reddit.com/r/DeveloperJobs/comments/1rymikf/interview_experience_amazon_sde_2_l5_offerinclined/",
+      "disposition": "excluded",
+      "reason": "Promotional nian2326076 rewrite: retained literal [X weeks] placeholder and PracHub substituted problem link. Existing leetcode-7670163 has matching first-unique/quality-speed narrative with different first problem; no independently verified new candidate."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-selected",
+      "disposition": "duplicate",
+      "reason": "Verbatim mirror of existing leetcode-7670163: random-pointer copy, first unique, food ordering, vending-machine leasing and maximum car passengers. No canonical alias; no reportId attached."
+    },
+    {
+      "url": "https://medium.com/@himanshudimp05/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+      "disposition": "duplicate",
+      "reason": "Alternate Medium author URL for existing medium-c2cd6e71c035, same article ID; no registered alias, so no reportId supplied."
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1rn2rg0/amazon_sde2_loop_sharing_my_experience_what_do_my/",
+      "disposition": "excluded",
+      "reason": "Candidate describes performance and LPs without concrete asked problems; prior archived inspection likewise found no specific recoverable question."
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1s6g3hn/amazon_sde_2_interview_experience_prime_video/",
+      "disposition": "excluded",
+      "reason": "Previously inspected promotional PracHub-linked Prime Video syndication; substituted problems lack independently corroborated originating candidate. Team name is not US country evidence."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-1",
+      "disposition": "duplicate",
+      "reason": "Mirror of existing leetcode-7622801 order-processing/contact-center AI summarization/Twitter account, not an independent candidate or fresh interview date."
+    },
+    {
+      "url": "https://www.desiqna.in/19196/amazon-sde-2-recent-interview-experiences-2026-set-60",
+      "disposition": "duplicate",
+      "reason": "Discovery fingerprint matches existing leetcode-7710904 February2026 account including Car Pooling variant and distributed trips. Syndication is not a registered alias; no reportId attached."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1rqqlel/completed_my_amazon_sde2_loop_3_rounds_went_great/",
+      "disposition": "duplicate",
+      "reason": "Same Reddit post ID as existing reddit-1rqqlel (canonical URL omits slug); no new account or country evidence. Returned URL is not registered alias, so no reportId supplied."
+    }
+  ]
+}

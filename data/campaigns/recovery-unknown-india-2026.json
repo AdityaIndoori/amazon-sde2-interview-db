@@ -1,0 +1,28 @@
+{
+  "id": "recovery-unknown-india-2026",
+  "country": "India",
+  "startDate": "2026-01-01",
+  "endDate": "2026-09-13",
+  "searchedAt": "2026-09-14",
+  "provider": "Original public-source inspection + Exa fetch",
+  "queries": [
+    "Inspect known round-ambiguous original: https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+    "Inspect known round-ambiguous original: https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5"
+  ],
+  "artifact": "data/campaign-evidence/recovery-unknown/inspections.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-7910016",
+      "reason": "Recovered nine concrete onsite questions with original publication metadata and Hyderabad country evidence. No ordinal inferred from category headings or first-day HLD/DSA grouping. OA, work-simulation questions, generic LP mentions and unspecified graph DFS/DP prompt are not admitted."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "disposition": "unconfirmed",
+      "reportId": "medium-b1f8b0a69de5",
+      "reason": "Recovered only restaurant token-management LLD with the exact existing strict report ID/date/country. HLD+HM learning-management design is already strict R4 and is not repeated. Intervals/sweep-line/max-meetings are presented as topics, the rainwater variant is unspecified, OA recall lacks its original question, and generic LP counts are not questions; all remain omitted."
+    }
+  ]
+}

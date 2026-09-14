@@ -1,0 +1,66 @@
+{
+  "id": "recovery-us-second-08",
+  "country": "United States",
+  "startDate": "2026-08-01",
+  "endDate": "2026-08-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa with original public-source inspection",
+  "queries": [
+    "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop August 2026"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-second/august-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+      "disposition": "unresolved",
+      "reason": "Existing unresolved DEV service-publisher lead, owned and reinspected by main recovery slice. No independent candidate attribution established; not declared fabricated and not counted twice."
+    },
+    {
+      "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "disposition": "duplicate",
+      "reason": "Existing strict shraddhaarora-amazon-sde2-2026. Redis/cache, shopping-cart and behavioral questions already represented; illustrative DSA topics and advice are not new questions. Country remains Not stated.",
+      "reportId": "shraddhaarora-amazon-sde2-2026"
+    },
+    {
+      "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+      "disposition": "unresolved",
+      "reason": "Original public page still gates account details and labels SDE II as Mid Level/L4. Indexed snippets cannot resolve level conflict or final-loop question placement. No gate bypass."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7495335641757540352-xUp_",
+      "disposition": "unresolved",
+      "reason": "Original LinkedIn Round3 Splitwise account inspected. Same-author repeated series has previously documented inconsistent interview-year references and unresolved screening offset. This isolated repost does not establish a coherent final-loop date/sequence; profile location not interview country."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazoninterview-sde-datastructures-activity-7494968569500348418-SRx_",
+      "disposition": "unresolved",
+      "reason": "Original LinkedIn Round2 N-ary-tree level/count account inspected. Concrete prompt recovered but isolated ordinal does not distinguish screening from final loop; repeated series chronology remains uncertain. No final-loop position inferred."
+    },
+    {
+      "url": "https://www.teamblind.com/post/amazon-l5-swe-onsite-interview-experience-aug-2026-practicing-leetcode-is-not-enough-to-pass-lhomptel",
+      "disposition": "unresolved",
+      "reason": "Direct Blind fetch returned403; Exa fetch exposes title and commenters alleging title/body mismatch, not original interview body. Commenter accusations are not evidence of fabrication. Cannot verify role, country, stage or questions."
+    },
+    {
+      "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+      "disposition": "excluded",
+      "reason": "Aggregate experience index, not one report. Followed public SDE II card to39a0db separately; L4 entry-level card87ea12 is outside role scope."
+    },
+    {
+      "url": "https://www.interviewsense.org/opportunities/amazon-software-development-engineer-amazon-leo-full-time-redmond-poxklz/",
+      "disposition": "excluded",
+      "reason": "Job opportunity/preparation page for Amazon Leo, not a first-person interview question report."
+    },
+    {
+      "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-39a0db",
+      "disposition": "unresolved",
+      "reason": "Followed public aggregate card. Public original preview identifies SDE II and three back-to-back interviews after OA, but detailed narrative is membership-gated. Public index questions cannot be assigned confidently to final loop rather than OA/screen; no gate bypass."
+    },
+    {
+      "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-87ea12",
+      "disposition": "excluded",
+      "reason": "Linked public index card explicitly describes L4 entry-level role, outside SDE II/L5 scope; no gated detail accessed."
+    }
+  ]
+}

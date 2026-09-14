@@ -1,0 +1,73 @@
+{
+  "slice": "recovery-us-first",
+  "searchedAt": "2026-09-14",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle January 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle February 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle March 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle April 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle May 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE 2 interview Jan Feb 2026 rejected \"ParcelDeliveryService\" \"5000\""
+  ],
+  "reports": [
+    {
+      "id": "linkedin-7457469538344017920",
+      "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr",
+      "retrievedVia": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr",
+      "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+      "role": "SDE II",
+      "location": "Not stated",
+      "publishedDate": "2026-05-05",
+      "interviewDate": null,
+      "date": "2026-05-05",
+      "dateBasis": "publication",
+      "stageEvidence": "\"I recently went through the Amazon SDE2 interview process ... did not result in an offer.\" \"Round 1: Online Assessment\"; \"Round 2: Phone screening ... decides whether you move forward to the onsite/loop interviews.\" Then \"Loop Interviews:\" explicitly contains source rounds 3–6. Original JSON-LD datePublished is 2026-05-05T16:41:31.000Z; no interview date or job country is stated.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 3: Coding – Data Structures & Algorithms",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "shortest-bridge",
+          "question": "Find the minimum number of water cells to flip to connect two islands (Shortest Bridge).",
+          "topic": "Graphs / BFS",
+          "evidence": "\"Loop Interviews: Round 3: Coding – Data Structures & Algorithms (60 mins) https://lnkd.in/gjAJMgNT\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/shortest-bridge/description/."
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 4: Coding – Problem Solving",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "smallest-range-covering-elements-from-k-lists-variant",
+          "question": "Solve a problem similar to finding the smallest range containing at least one element from each of k sorted lists; the report does not specify the variation.",
+          "topic": "Heaps / Sliding window",
+          "evidence": "\"Round 4: Coding – Problem Solving (60 mins) Coding question similar to https://lnkd.in/gYJGT8XU\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/."
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 5: Coding – Logical & Maintainable (LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "library-management-system",
+          "question": "Design a Library Management System.",
+          "topic": "Low-level design",
+          "evidence": "\"Round 5: Coding – Logical & Maintainable (LLD) (60 mins) Design a Library Management System, followed by 2 Leadership Principle questions\"."
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 6: System Design (HLD + LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "design-notification-system",
+          "question": "Design a Notification Service.",
+          "topic": "System design",
+          "evidence": "\"Round 6: System Design (HLD + LLD) (60 mins) Design a Notification Service, followed by 2 Leadership Principle questions\"."
+        }
+      ]
+    }
+  ],
+  "excluded": [],
+  "limitations": [
+    "Five independently date-filtered Exa discovery queries cover publication-month search scopes January–May 2026; these are research activity, not claims about all interviews or interview dates. Each returned result is dispositioned in the corresponding campaign.",
+    "The admitted original does not state job country; location is Not stated, not United States inferred from query or India inferred from author profile.",
+    "Meghana Adiga supplies seven Leadership Principle themes but not concrete question wording or per-round assignments; themes and unnamed LP counts are not expanded into invented questions. OA and phone-screen problems are excluded.",
+    "Original source metadata provides publication date, not an interview date. Search-index dates and syndication dates do not replace original interview chronology.",
+    "No authentication/paywall bypass. Gated mirrors, missing candidate attribution and ambiguous screen/final-loop boundaries remain unresolved rather than weakening supplemental admission."
+  ]
+}

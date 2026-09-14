@@ -1,0 +1,58 @@
+{
+  "id": "recovery-us-second-06",
+  "country": "United States",
+  "startDate": "2026-06-01",
+  "endDate": "2026-06-30",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa with original public-source inspection",
+  "queries": [
+    "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop June 2026"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-second/june-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/",
+      "disposition": "duplicate",
+      "reason": "Existing canonical Redmond report reddit-1uhl798; no new concrete question recovered.",
+      "reportId": "reddit-1uhl798"
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
+      "disposition": "duplicate",
+      "reason": "Existing same-author canonical alias of reddit-1uhl798; not another candidate.",
+      "reportId": "reddit-1uhl798"
+    },
+    {
+      "url": "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/",
+      "disposition": "duplicate",
+      "reason": "Existing same-author canonical alias of reddit-1uhl798; not another candidate.",
+      "reportId": "reddit-1uhl798"
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1uh1bgj/offer_amazon_interview_experience_timeline_oa/",
+      "disposition": "duplicate",
+      "reason": "Full archived public body matches reddit-1uhl798 by author and four exact technical prompts. Newly identified alias proposed to integration owner; no additional occurrence."
+    },
+    {
+      "url": "https://www.reddit.com/r/DSALeetCode/comments/1u8y7ao/amazon_sde2_selected_full_loop_incl_the_new/",
+      "disposition": "unresolved",
+      "reason": "Archived account is a crosspost of the previously investigated nian2326076 narrative. It links PracHub with campaign tracking; independent candidate provenance remains unresolved, not declared fabricated. No country stated and no new frequency counted."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1uh1gv9/offer_amazon_interview_experience_timeline_oa/",
+      "disposition": "duplicate",
+      "reason": "Full archived public body matches reddit-1uhl798; author comments independently say USA and SDE 2. Newly identified alias proposed to integration owner. Precise LP questions were not recalled."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ue6llk/amazon_sde2_interview_experience_ongoing_need/",
+      "disposition": "unresolved",
+      "reason": "Archived body is removed. Public author comments recover Bangalore and two concrete LLD behavioral prompts, but also describe the preceding DSA as an elimination round. Missing loop sequence prevents verified final-loop admission or numbered mapping. See ongoing-comments.json."
+    },
+    {
+      "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+      "disposition": "unresolved",
+      "reason": "Previously investigated nian2326076 promotional account; crosspost1u8y7ao recovered, but independent candidate provenance remains unresolved. No country inferred from subreddit or search scope."
+    }
+  ]
+}

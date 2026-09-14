@@ -1,0 +1,29 @@
+{
+  "id": "recovery-main-open-leads",
+  "country": "Not stated",
+  "startDate": "2025-01-01",
+  "endDate": "2026-09-13",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa and original public source inspection",
+  "queries": [
+    "Reinspect three unresolved campaign leads via original DEV API, Reddit archive and hosted account page",
+    "Amazon L5 SDE-2 NIT 2.8 YOE interview Shuttle Ride Matching Integer Roman PubSub 10k second February 2026",
+    "L5 SDE-2 Amazon Interview experience NIT 2.8 YOE shuttle Roman PubSub (leetcode.com domain)"
+  ],
+  "artifact": "data/campaign-evidence/recovery-main/lead-inspections.json",
+  "status": "completed",
+  "sources": [
+    {"url":"https://www.reddit.com/r/amazonemployees/comments/1oe4q65/amazon_sde_2india_interview_loop_done_what_are_my/","disposition":"excluded","reason":"Full original archived body recovered. No concrete questions, only round performance scores and process discussion; previously truncated lead resolved without adding a question."},
+    {"url":"https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o","disposition":"unresolved","reason":"Complete original DEV API supplies detailed questions but publisher remains a service-promotional account with no candidate attribution, country or original-source link. Cannot establish independent account provenance; no allegation of fabrication."},
+    {"url":"https://interviewexperiences.in/experience/amazon/l5-sde-2-amazon-interview-experience-nit-28-yoe","disposition":"unresolved","reason":"Direct original page gates full narrative; only summary and question-list visible. Two targeted Exa searches did not locate an original candidate publication. No numbered round inferred from list order or indexed gated text."},
+    {"url":"https://leetcode.com/discuss/post/6493437/amazon-sde-2-interview-experience-28-yoe-xmih/","disposition":"duplicate","reportId":"leetcode-6493437","reason":"Fingerprint search returned existing unrelated Chennai account, not the unresolved Hyderabad original."},
+    {"url":"https://www.desiqna.in/19196/amazon-sde-2-recent-interview-experiences-2026-set-60","disposition":"duplicate","reason":"Known February2026 selected-account mirror; not original for shuttle/Roman/PubSub narrative."},
+    {"url":"https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5","disposition":"duplicate","reportId":"medium-b1f8b0a69de5","reason":"Existing different narrative, not fingerprint match."},
+    {"url":"https://interviewexperiences.in/experience/amazon/amazon-sde-2-interview-experience-jan-feb-2026-rejected","disposition":"unresolved","reason":"Secondary hosted account discovered while locating another original; not independently verified in this bounded pass."},
+    {"url":"https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63","disposition":"duplicate","reason":"Known mirror of8096139, not shuttle/Roman/PubSub original."},
+    {"url":"https://leetcode.com/discuss/post/8315111/amazon-l5-sde-2-interview-experience-off-yi2x/","disposition":"duplicate","reportId":"leetcode-8315111","reason":"Existing Gurgaon account, no fingerprint match."},
+    {"url":"https://leetcode.com/discuss/post/6923887/amazon-sde-2-interview-experience-select-rwpm/","disposition":"duplicate","reportId":"leetcode-6923887","reason":"Existing June2025 account."},
+    {"url":"https://leetcode.com/discuss/post/8286346/amazon-sde-2-l5-bangalore-interview-expe-24nl/","disposition":"duplicate","reportId":"leetcode-8286346","reason":"Existing Bangalore account."},
+    {"url":"https://leetcode.com/discuss/post/6961860/amazon-l5-sde-ii-bangalore-june-2025-sel-ocr8/","disposition":"duplicate","reportId":"leetcode-6961860","reason":"Existing June2025 account."}
+  ]
+}

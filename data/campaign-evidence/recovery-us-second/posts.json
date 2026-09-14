@@ -1,0 +1,4 @@
+{
+  "url": "https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1uh1bgj,1uh1gv9,1ue6llk,1u8y7ao&fields=id,title,author,selftext,created_utc,permalink",
+  "text": "URL: https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1uh1bgj,1uh1gv9,1ue6llk,1u8y7ao&fields=id,title,author,selftext,created_utc,permalink\nContent-Type: application/json\nMethod: failed\nNotes: Failed to fetch URL (HTTP 400)\n\n---\n\n"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "recovery-us-first-april",
+  "country": "United States",
+  "startDate": "2026-04-01",
+  "endDate": "2026-04-30",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle April 2026 actual coding questions system design behavioral rounds"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-first/april-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1sjntvn/amazon_sde2_interview_experience/",
+      "disposition": "excluded",
+      "reason": "Previously inspected same nian2326076 promotional syndication with outbound substituted PracHub question. Not a new independently evidenced account."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-ii-interview-experience-need-honest-feedback",
+      "disposition": "duplicate",
+      "reason": "Mirror of existing leetcode-8096139: lost first attempt, tree trimming/trash queue, WhatsApp receipts, FastTag and final coding pair. No canonical alias, no reportId supplied."
+    },
+    {
+      "url": "https://www.desiqna.in/19214/amazon-sde-2-recent-interview-experiences-2026-set-64",
+      "disposition": "unresolved",
+      "reason": "DesiQna indexed excerpt claims loop4 with bracket-validation question, but original candidate attribution unavailable and direct public reader returns heading/metadata without body. Exa fetch also truncates at round2; cannot fully extract or verify new original."
+    },
+    {
+      "url": "https://www.reddit.com/r/DeveloperJobs/comments/1ss042w/my_amazon_interview_experience_sde2_3_yoe/",
+      "disposition": "excluded",
+      "reason": "Previously investigated nian2326076 promotional rewrite of existing leetcode-7477684 auction/quick-commerce narrative with substituted coding questions. Not independent new candidate."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/abhijeetsingh9_amazoninterview-sdeinterview-softwareengineering-activity-7455188080325496832-1unZ",
+      "disposition": "unresolved",
+      "reason": "Direct original candidate post verified, but numbered process does not identify final-loop versus screening boundary. Similar-to Bus Routes/Jump Game references and vague food-delivery/listing example cannot justify inventing stage or exact design question. Job country absent."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shailnitk_amazon-sde2-interviewexperience-activity-7451596733496881152-5pEX",
+      "disposition": "excluded",
+      "reason": "Direct original gives face-to-face4 after OA but technical prompts remain unnamed. LP passage says questions like ownership/failure/conflict; generic examples/themes not exact actually-asked prompts, so no question rows invented."
+    },
+    {
+      "url": "https://www.teamblind.com/post/my-amazon-interview-experience-sde-2-3-yoe-svat3via",
+      "disposition": "excluded",
+      "reason": "Blind copy of existing auction/quick-commerce narrative; public body and related Reddit version are promotional syndications with no independent candidate attribution, not a new account."
+    },
+    {
+      "url": "https://www.reddit.com/r/csMajors/comments/1sf90ix/amazon_interview_experience_sde2/",
+      "disposition": "excluded",
+      "reason": "Previously archived PracHub promotional narrative offers vague library-or-parking-lot example and unnamed BFS/design questions; no concrete reliably reported final-loop problem."
+    }
+  ]
+}

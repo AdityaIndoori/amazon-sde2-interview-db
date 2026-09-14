@@ -1,0 +1,61 @@
+{
+  "id": "recovery-us-first-may",
+  "country": "United States",
+  "startDate": "2026-05-01",
+  "endDate": "2026-05-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle May 2026 actual coding questions system design behavioral rounds"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-first/may-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7458511150725648384--MQY",
+      "disposition": "unresolved",
+      "reason": "Same-author Shivam Somani series repost of Splitwise round3, previously investigated with inconsistent interview-year references and unresolved screen/loop offset. Current profile/campaign country is not job country."
+    },
+    {
+      "url": "https://papersadda.com/article/amazon-sde2-l5-2026-tier3-engineer-real-5-round-loop/",
+      "disposition": "excluded",
+      "reason": "Secondary commentary explicitly describes late2025 Reddit candidate and mixes generic suggested problems with unspecified actual coding/LLD/HLD questions. No new2026 candidate or concrete original question evidence."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr",
+      "disposition": "verified",
+      "reason": "Public named candidate original and JSON-LD publication date verified; OA1/screen2 explicitly precede Loop3–6. Four concrete technical prompts extracted, shortlinks resolved to original LeetCode targets. Job country Not stated; publication date not interview date. LP themes not invented as questions.",
+      "reportId": "linkedin-7457469538344017920"
+    },
+    {
+      "url": "https://www.desiqna.in/19233/amazon-sde-2-recent-interview-experiences-2026-set-66",
+      "disposition": "unresolved",
+      "reason": "Indexed India/Bengaluru R1 article mentions Binary Tree Cameras, but direct reader yields only heading/metadata and full original candidate attribution plus screen/final-loop status remain unverified. No login/paywall bypass."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/itssiddharthsingh_i-cracked-amazon-sde-2-after-3-faang-rejections-activity-7465668732413968384-P4Uu",
+      "disposition": "excluded",
+      "reason": "Preparation strategy and recently-asked practice recommendations, not questions explicitly asked in this candidate own loop."
+    },
+    {
+      "url": "https://www.teamblind.com/post/amazon-sde-interview-experience-epdt6onu",
+      "disposition": "excluded",
+      "reason": "Source states only SDE, not SDEII/L5; promotional narrative and comments disputing provenance. Concrete LLD phrase alone does not establish eligible account."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-sde2-interviewexperience-activity-7457036322680225792-B9lq",
+      "disposition": "unresolved",
+      "reason": "Post says Last year, not2026 interview; prior same-author series has conflicting year references and unresolved screening offset. Do not replace chronology with May2026 publication or combine distinct reposts into invented loop."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ts2gj5/amazon_sde_2_inperson_f2f_loop_upcoming_need/",
+      "disposition": "excluded",
+      "reason": "Upcoming face-to-face loop preparation/logistics request, not report of asked questions."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/bugfree-ai_systemdesign-softwareengineering-interviewprep-activity-7465571608464650240-Opqc",
+      "disposition": "unresolved",
+      "reason": "Related-post lead inspected directly (bugfree-related-lead.json). Corporate Bugfree summary claims a USA SDE2 user experience and device-data min/max design, but no originating candidate URL, original interview date or independently verified candidate narrative. Not admitted from marketing summary."
+    }
+  ]
+}

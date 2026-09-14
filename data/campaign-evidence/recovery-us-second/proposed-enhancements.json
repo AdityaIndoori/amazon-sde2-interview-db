@@ -1,0 +1,15 @@
+{
+  "reportId": "reddit-1uhl798",
+  "action": "Propose adding verified same-author crosspost aliases; integration owner edits shared source",
+  "aliases": [
+    "https://www.reddit.com/r/FAANGrecruiting/comments/1uh1bgj/offer_amazon_interview_experience_timeline_oa/",
+    "https://www.reddit.com/r/leetcode/comments/1uh1gv9/offer_amazon_interview_experience_timeline_oa/"
+  ],
+  "evidence": [
+    "data/campaign-evidence/recovery-us-second/1uh1bgj-original.json",
+    "data/campaign-evidence/recovery-us-second/1uh1gv9-original.json",
+    "data/campaign-evidence/recovery-us-second/crosspost-comments.json"
+  ],
+  "reason": "Same author sundeep_dayalan; four technical questions and final-loop sequence match canonical report. Public comments explicitly say USA and SDE 2. No additional concrete behavioral question recovered.",
+  "unchanged": "Keep canonical source/date/questions; alias discovery adds no question, frequency or candidate."
+}

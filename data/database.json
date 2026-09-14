@@ -6,9 +6,9 @@
     "generatedAt": "2026-09-13",
     "frequencyDefinition": "Distinct candidate reports mentioning this question in this round; cross-posts count once. Not an estimate of Amazon’s actual asking rate.",
     "disclaimer": "Publicly reported experiences only. Discovery is not exhaustive and candidate accounts are not independently authenticated. Missing dates or locations are never inferred. Publication dates are labeled separately from interview dates.",
-    "reportCount": 136,
-    "questionCount": 586,
-    "occurrenceCount": 635
+    "reportCount": 137,
+    "questionCount": 589,
+    "occurrenceCount": 639
   },
   "questions": [
     {
@@ -3531,6 +3531,42 @@
           "reportedTopic": "Intervals / Scheduling",
           "sourceRound": "Round 2",
           "roundMappingNote": "Source includes the online assessment as round 1; final-loop position is source interview number minus one."
+        }
+      ]
+    },
+    {
+      "id": "r1-shortest-bridge",
+      "round": 1,
+      "question": "Find the minimum number of water cells to flip to connect two islands (Shortest Bridge).",
+      "topic": "Graphs / BFS",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-05-05",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "linkedin-7457469538344017920",
+          "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+          "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "linkedin-7457469538344017920",
+          "date": "2026-05-05",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "\"Loop Interviews: Round 3: Coding – Data Structures & Algorithms (60 mins) https://lnkd.in/gjAJMgNT\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/shortest-bridge/description/.",
+          "reportedQuestion": "Find the minimum number of water cells to flip to connect two islands (Shortest Bridge).",
+          "reportedTopic": "Graphs / BFS",
+          "sourceRound": "Round 3: Coding – Data Structures & Algorithms",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop."
         }
       ]
     },
@@ -9391,7 +9427,7 @@
       ]
     },
     {
-      "id": "r2-amazon-locker-lld",
+      "id": "r2-design-amazon-locker",
       "round": 2,
       "question": "Design an Amazon Locker system.",
       "topic": "Low-level design",
@@ -12198,6 +12234,42 @@
       ]
     },
     {
+      "id": "r2-smallest-range-covering-elements-from-k-lists-variant",
+      "round": 2,
+      "question": "Solve a problem similar to finding the smallest range containing at least one element from each of k sorted lists; the report does not specify the variation.",
+      "topic": "Heaps / Sliding window",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-05-05",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "linkedin-7457469538344017920",
+          "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+          "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "linkedin-7457469538344017920",
+          "date": "2026-05-05",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "\"Round 4: Coding – Problem Solving (60 mins) Coding question similar to https://lnkd.in/gYJGT8XU\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/.",
+          "reportedQuestion": "Solve a problem similar to finding the smallest range containing at least one element from each of k sorted lists; the report does not specify the variation.",
+          "reportedTopic": "Heaps / Sliding window",
+          "sourceRound": "Round 4: Coding – Problem Solving",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop."
+        }
+      ]
+    },
+    {
       "id": "r2-minesweeper-variation",
       "round": 2,
       "question": "Solve a problem similar to Minesweeper.",
@@ -13468,6 +13540,42 @@
           "reportedTopic": "System design",
           "sourceRound": "Round 3",
           "roundMappingNote": "Source labels the interview sequence as Round 3; no screening offset applied."
+        }
+      ]
+    },
+    {
+      "id": "r3-library-management-system",
+      "round": 3,
+      "question": "Design a Library Management System.",
+      "topic": "Low-level design",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-05-05",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "linkedin-7457469538344017920",
+          "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+          "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "linkedin-7457469538344017920",
+          "date": "2026-05-05",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "\"Round 5: Coding – Logical & Maintainable (LLD) (60 mins) Design a Library Management System, followed by 2 Leadership Principle questions\".",
+          "reportedQuestion": "Design a Library Management System.",
+          "reportedTopic": "Low-level design",
+          "sourceRound": "Round 5: Coding – Logical & Maintainable (LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop."
         }
       ]
     },
@@ -18597,8 +18705,12 @@
       "round": 4,
       "question": "Design a notification service.",
       "topic": "System design / Notifications",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
+        {
+          "date": "2026-05-05",
+          "basis": "publication"
+        },
         {
           "date": "2025-02",
           "basis": "interview"
@@ -18606,15 +18718,32 @@
       ],
       "sources": [
         {
+          "id": "linkedin-7457469538344017920",
+          "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+          "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr"
+        },
+        {
           "id": "leetcode-6436772",
           "title": "Amazon | SDE2 | FireTV (Bangalore/Chennai) | Feb 2025 [Ghosted]",
           "url": "https://leetcode.com/discuss/post/6436772/amazon-sde2-firetv-bangalorechennai-feb-h5wzc/"
         }
       ],
       "locations": [
-        "India"
+        "India",
+        "Not stated"
       ],
       "occurrences": [
+        {
+          "reportId": "linkedin-7457469538344017920",
+          "date": "2026-05-05",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "\"Round 6: System Design (HLD + LLD) (60 mins) Design a Notification Service, followed by 2 Leadership Principle questions\".",
+          "reportedQuestion": "Design a Notification Service.",
+          "reportedTopic": "System design",
+          "sourceRound": "Round 6: System Design (HLD + LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop."
+        },
         {
           "reportId": "leetcode-6436772",
           "date": "2025-02",
@@ -23008,6 +23137,8 @@
       "id": "reddit-1uhl798",
       "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/",
       "aliases": [
+        "https://www.reddit.com/r/FAANGrecruiting/comments/1uh1bgj/offer_amazon_interview_experience_timeline_oa/",
+        "https://www.reddit.com/r/leetcode/comments/1uh1gv9/offer_amazon_interview_experience_timeline_oa/",
         "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
         "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/"
       ],
@@ -23017,6 +23148,7 @@
       "stageEvidence": "Role: SDE II - Redmond, WA; Application Method: No referrals or cold emails - just basic career portal apply; Day 48: Virtual Onsite Loop - 4 Rounds (15 days after Phone Screen).",
       "eligibility": "External-hire candidate account. Full archived public-post body and publication timestamp verified through Arctic Shift; live Reddit body could not be retrieved. Crossposts by the same author are one report.",
       "verification": "Archived public-post body, not live-body verification. Full selected fields retained in data/exa/us/reddit-original-archive.json.",
+      "aliasEvidence": "Two additional same-author matching crossposts1uh1bgj and1uh1gv9 verified during recovery pass; source texts and author USA/SDE2 replies retained under data/campaign-evidence/recovery-us-second/. These aliases do not add candidate frequency.",
       "location": "United States",
       "locationEvidence": "Role: SDE II - Redmond, WA (United States).",
       "date": "2026-06-28",
@@ -23297,6 +23429,70 @@
       "aliases": [],
       "slices": [
         "2026-h1"
+      ]
+    },
+    {
+      "id": "linkedin-7457469538344017920",
+      "url": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr",
+      "retrievedVia": "https://www.linkedin.com/posts/meghana-adiga-bn_amazon-sde2-interviewexperience-activity-7457469538344017920-Fawr",
+      "title": "My Amazon SDE2 interview experience — Meghana Adiga",
+      "role": "SDE II",
+      "location": "Not stated",
+      "publishedDate": "2026-05-05",
+      "interviewDate": null,
+      "date": "2026-05-05",
+      "dateBasis": "publication",
+      "stageEvidence": "\"I recently went through the Amazon SDE2 interview process ... did not result in an offer.\" \"Round 1: Online Assessment\"; \"Round 2: Phone screening ... decides whether you move forward to the onsite/loop interviews.\" Then \"Loop Interviews:\" explicitly contains source rounds 3–6. Original JSON-LD datePublished is 2026-05-05T16:41:31.000Z; no interview date or job country is stated.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 3: Coding – Data Structures & Algorithms",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "shortest-bridge",
+          "question": "Find the minimum number of water cells to flip to connect two islands (Shortest Bridge).",
+          "topic": "Graphs / BFS",
+          "evidence": "\"Loop Interviews: Round 3: Coding – Data Structures & Algorithms (60 mins) https://lnkd.in/gjAJMgNT\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/shortest-bridge/description/.",
+          "date": "2026-05-05",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 4: Coding – Problem Solving",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "smallest-range-covering-elements-from-k-lists-variant",
+          "question": "Solve a problem similar to finding the smallest range containing at least one element from each of k sorted lists; the report does not specify the variation.",
+          "topic": "Heaps / Sliding window",
+          "evidence": "\"Round 4: Coding – Problem Solving (60 mins) Coding question similar to https://lnkd.in/gYJGT8XU\". The original shortlink interstitial explicitly targets https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/.",
+          "date": "2026-05-05",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 5: Coding – Logical & Maintainable (LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "library-management-system",
+          "question": "Design a Library Management System.",
+          "topic": "Low-level design",
+          "evidence": "\"Round 5: Coding – Logical & Maintainable (LLD) (60 mins) Design a Library Management System, followed by 2 Leadership Principle questions\".",
+          "date": "2026-05-05",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 6: System Design (HLD + LLD)",
+          "roundMappingNote": "Source explicitly labels OA as round 1 and phone screening as round 2, then labels Loop Interviews rounds 3–6. Subtract two to normalize the four final-loop positions; optional candid chat is outside the loop.",
+          "key": "design-notification-system",
+          "question": "Design a Notification Service.",
+          "topic": "System design",
+          "evidence": "\"Round 6: System Design (HLD + LLD) (60 mins) Design a Notification Service, followed by 2 Leadership Principle questions\".",
+          "date": "2026-05-05",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "recovery-us-first"
       ]
     },
     {
@@ -24389,7 +24585,7 @@
           "dateBasis": "publication"
         }
       ],
-      "sourceCaveat": "Previously wholly excluded in 2026-h1.json because early round order conflicts. Only the independently unambiguous fourth round is recovered. Restaurant token-management LLD and DSA descriptions remain excluded; see this slice's exclusion entry.",
+      "sourceCaveat": "Previously wholly excluded because early round order conflicts. The independently unambiguous fourth round remains in the strict collection. Restaurant token-management LLD has now been recovered separately in data/unconfirmed/recovery-unknown.json with no ordinal inferred. Vague DSA descriptions remain excluded; older exclusion entries are historical.",
       "eligibility": "External-hire context reported; candidate account not independently authenticated.",
       "aliases": [],
       "slices": [
@@ -30404,7 +30600,7 @@
           "round": 2,
           "sourceRound": "Round 2",
           "roundMappingNote": "Source numbers the final-loop interviews separately; no offset.",
-          "key": "amazon-locker-lld",
+          "key": "design-amazon-locker",
           "question": "Design an Amazon Locker system.",
           "topic": "Low-level design",
           "evidence": "Round 2 ... One standard LLD problem ... Amazon Locker",
@@ -35911,6 +36107,214 @@
         "Additional UK, Canadian and German queries frequently returned older interviews, salary/preparation posts or already captured accounts, not new qualifying final loops.",
         "Search-provider results were weak; Chromium-rendered Google discovery and public original pages were used. No authentication or paywall bypass.",
         "Expansion does not establish exhaustiveness. Same-author reposts require coherent dates and stage evidence before being merged into a candidate account."
+      ]
+    },
+    {
+      "slice": "recovery-unknown",
+      "searchedAt": "2026-09-14",
+      "queries": [
+        "Known-exclusion original-source inspection: LC7910016, LC7272101, Medium b1f8b0a69de5, LC6467921 and LC6558499; no broad discovery search."
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+          "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered nine concrete onsite questions with original publication metadata and Hyderabad country evidence. No ordinal inferred from category headings or first-day HLD/DSA grouping. OA, work-simulation questions, generic LP mentions and unspecified graph DFS/DP prompt are not admitted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+          "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered nine concrete questions from Breakdown of Onsite, not the separately described phone screen. Original createdAt confirms 2025-10-13 and USA/NYC is explicit. Five onsite categories do not establish overall ordinal positions; null round preserves that uncertainty."
+        },
+        {
+          "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+          "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered only restaurant token-management LLD with the exact existing strict report ID/date/country. HLD+HM learning-management design is already strict R4 and is not repeated. Intervals/sweep-line/max-meetings are presented as topics, the rainwater variant is unspecified, OA recall lacks its original question, and generic LP counts are not questions; all remain omitted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+          "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered five concrete questions from explicitly SDE2 full loop in USA in February 2025. Original createdAt confirms February 25 publication; interview month is preferred. Categories have no overall numbering. Undisclosed LPs and noncoding jump-game followups not invented."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+          "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered four concrete questions from direct onsite after OA; Seattle L5/SDE2 explicit. Original createdAt March 20,2025 is separate from March25 update. Coding1–3 category numbering does not place system design in sequence. No OA, generic LPs or later unstructured hiring-manager discussion admitted."
+        }
+      ],
+      "limitations": [
+        "This bounded pass inspected five known round-ambiguous exclusions only; it makes no claim of exhaustive country or month coverage.",
+        "Nine concrete onsite questions from LC7272101 are retained with null round even though its five-category loop has no overall R1–4 chronology; no question is assigned a guessed ordinal.",
+        "Sources remain candidate self-reports. Original public metadata and content were retained; blocked direct reads and partial Exa fetches were recovered using public original browser pages/renderings, without authentication or gate bypass."
+      ]
+    },
+    {
+      "slice": "recovery-us-first",
+      "searchedAt": "2026-09-14",
+      "queries": [
+        "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle January 2026 actual coding questions system design behavioral rounds",
+        "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle February 2026 actual coding questions system design behavioral rounds",
+        "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle March 2026 actual coding questions system design behavioral rounds",
+        "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle April 2026 actual coding questions system design behavioral rounds",
+        "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle May 2026 actual coding questions system design behavioral rounds",
+        "Amazon SDE 2 interview Jan Feb 2026 rejected \"ParcelDeliveryService\" \"5000\""
+      ],
+      "excluded": [],
+      "limitations": [
+        "Five independently date-filtered Exa discovery queries cover publication-month search scopes January–May 2026; these are research activity, not claims about all interviews or interview dates. Each returned result is dispositioned in the corresponding campaign.",
+        "The admitted original does not state job country; location is Not stated, not United States inferred from query or India inferred from author profile.",
+        "Meghana Adiga supplies seven Leadership Principle themes but not concrete question wording or per-round assignments; themes and unnamed LP counts are not expanded into invented questions. OA and phone-screen problems are excluded.",
+        "Original source metadata provides publication date, not an interview date. Search-index dates and syndication dates do not replace original interview chronology.",
+        "No authentication/paywall bypass. Gated mirrors, missing candidate attribution and ambiguous screen/final-loop boundaries remain unresolved rather than weakening supplemental admission."
+      ]
+    },
+    {
+      "slice": "recovery-us-second",
+      "searchedAt": "2026-09-14",
+      "queries": [
+        "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop June 2026",
+        "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop July 2026",
+        "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop August 2026",
+        "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop September 2026"
+      ],
+      "excluded": [
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/",
+          "reason": "Existing canonical Redmond report reddit-1uhl798; no new concrete question recovered."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
+          "reason": "Existing same-author canonical alias of reddit-1uhl798; not another candidate."
+        },
+        {
+          "url": "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/",
+          "reason": "Existing same-author canonical alias of reddit-1uhl798; not another candidate."
+        },
+        {
+          "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1uh1bgj/offer_amazon_interview_experience_timeline_oa/",
+          "reason": "Full archived public body matches reddit-1uhl798 by author and four exact technical prompts. Newly identified alias proposed to integration owner; no additional occurrence."
+        },
+        {
+          "url": "https://www.reddit.com/r/DSALeetCode/comments/1u8y7ao/amazon_sde2_selected_full_loop_incl_the_new/",
+          "reason": "Archived account is a crosspost of the previously investigated nian2326076 narrative. It links PracHub with campaign tracking; independent candidate provenance remains unresolved, not declared fabricated. No country stated and no new frequency counted."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1uh1gv9/offer_amazon_interview_experience_timeline_oa/",
+          "reason": "Full archived public body matches reddit-1uhl798; author comments independently say USA and SDE 2. Newly identified alias proposed to integration owner. Precise LP questions were not recalled."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1ue6llk/amazon_sde2_interview_experience_ongoing_need/",
+          "reason": "Archived body is removed. Public author comments recover Bangalore and two concrete LLD behavioral prompts, but also describe the preceding DSA as an elimination round. Missing loop sequence prevents verified final-loop admission or numbered mapping. See ongoing-comments.json."
+        },
+        {
+          "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+          "reason": "Previously investigated nian2326076 promotional account; crosspost1u8y7ao recovered, but independent candidate provenance remains unresolved. No country inferred from subreddit or search scope."
+        },
+        {
+          "url": "https://dev.to/interviewshow-cs/amazon-sde-interview-experience-2026-seattle-onsite-team-match-coding-genai-questions-47j0",
+          "reason": "Public DEV API confirms Seattle onsite narrative and publication, but role is only SDE, not SDE II/L5. Service publisher provides no independent candidate attribution. No level inferred from coding format; no fabrication claim."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/anusha-kandagal_amazon-sde-2-interview-experience-2026-activity-7486939540109070336-BQVA",
+          "reason": "Same-author LinkedIn summary links existing leetcode-8420230 through lnkd.in/dAcPZyY9 (previously resolved in exa-us). Summary/comments add no new question with round evidence; profile geography not interview country."
+        },
+        {
+          "url": "https://edencapitalcareers.com/interview-guide/amazon",
+          "reason": "General company interview/preparation guide, not an individual candidate report."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/rajani-tak_recently-i-interviewed-for-an-amazon-sde2-activity-7487716844364210176-zclP",
+          "reason": "First-person SDE2 process summary names round topics only, no concrete final-loop questions."
+        },
+        {
+          "url": "https://devbrainiac.com/blogs/168/amazon-sde-2-interview-experience-3-years-experience/",
+          "reason": "Known retelling of uncertain LeetCode8409230. Public text says Hyderabad/Bengaluru but three post-OA rounds do not establish final-loop sequence; relative Last Month is ambiguous against publication and modification dates. No independent new candidate counted."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/itssiddharthsingh_to-crack-amazon-sde-2-i-focused-on-dsa-activity-7487825233933033476-fL60",
+          "reason": "Preparation advice and recommended design examples, not questions explicitly reported from a particular final loop."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/itssiddharthsingh_i-interviewed-at-google-twice-and-amazon-activity-7481246245777260545-6IHM",
+          "reason": "Four-week preparation plan and practice problem list, not questions explicitly asked in a final loop."
+        },
+        {
+          "url": "https://karavine.com/interview-guide/amazon/swe",
+          "reason": "Generic interview guide and aggregated question bank, not an individual dated candidate report."
+        },
+        {
+          "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+          "reason": "Existing unresolved DEV service-publisher lead, owned and reinspected by main recovery slice. No independent candidate attribution established; not declared fabricated and not counted twice."
+        },
+        {
+          "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+          "reason": "Existing strict shraddhaarora-amazon-sde2-2026. Redis/cache, shopping-cart and behavioral questions already represented; illustrative DSA topics and advice are not new questions. Country remains Not stated."
+        },
+        {
+          "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+          "reason": "Original public page still gates account details and labels SDE II as Mid Level/L4. Indexed snippets cannot resolve level conflict or final-loop question placement. No gate bypass."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7495335641757540352-xUp_",
+          "reason": "Original LinkedIn Round3 Splitwise account inspected. Same-author repeated series has previously documented inconsistent interview-year references and unresolved screening offset. This isolated repost does not establish a coherent final-loop date/sequence; profile location not interview country."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazoninterview-sde-datastructures-activity-7494968569500348418-SRx_",
+          "reason": "Original LinkedIn Round2 N-ary-tree level/count account inspected. Concrete prompt recovered but isolated ordinal does not distinguish screening from final loop; repeated series chronology remains uncertain. No final-loop position inferred."
+        },
+        {
+          "url": "https://www.teamblind.com/post/amazon-l5-swe-onsite-interview-experience-aug-2026-practicing-leetcode-is-not-enough-to-pass-lhomptel",
+          "reason": "Direct Blind fetch returned403; Exa fetch exposes title and commenters alleging title/body mismatch, not original interview body. Commenter accusations are not evidence of fabrication. Cannot verify role, country, stage or questions."
+        },
+        {
+          "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+          "reason": "Aggregate experience index, not one report. Followed public SDE II card to39a0db separately; L4 entry-level card87ea12 is outside role scope."
+        },
+        {
+          "url": "https://www.interviewsense.org/opportunities/amazon-software-development-engineer-amazon-leo-full-time-redmond-poxklz/",
+          "reason": "Job opportunity/preparation page for Amazon Leo, not a first-person interview question report."
+        },
+        {
+          "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-39a0db",
+          "reason": "Followed public aggregate card. Public original preview identifies SDE II and three back-to-back interviews after OA, but detailed narrative is membership-gated. Public index questions cannot be assigned confidently to final loop rather than OA/screen; no gate bypass."
+        },
+        {
+          "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-87ea12",
+          "reason": "Linked public index card explicitly describes L4 entry-level role, outside SDE II/L5 scope; no gated detail accessed."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh",
+          "reason": "Author explicitly says formats only, no specific tasks. Generic technical categories and complexity advice are not concrete interview questions."
+        },
+        {
+          "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+          "reason": "Known expanded retelling of existing leetcode-8499681: package-return drop store, safest-grid path and cross-device configuration design. No new candidate or question; India title not US search evidence."
+        },
+        {
+          "url": "https://campusbuilding.com/company/amazon/jobs/software-dev-engineer-ii/65659/",
+          "reason": "Seattle job listing, not an interview experience."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/tiashabhowmik_maang-sde2-interview-activity-7501267123374231552-MLYJ",
+          "reason": "Frontend SDE2 process overview gives subject areas only; no concrete question supplied."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/bipin-chaudhary-39781b152_amazon-amazoninterview-sde-activity-7501201471502417921-Xdyo",
+          "reason": "Concrete April28 tree-pruning and smart-locker interview via VARITE, but level stated only SDE and final-loop stage not established. March Bar Raiser is a separate attempt; cannot transfer stage evidence."
+        },
+        {
+          "url": "https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds",
+          "reason": "Explicit New Grad account is outside SDE II/L5 role scope."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/maria-preethi-r_amazon-sde-softwareengineering-activity-7500993251844235264-YZOw",
+          "reason": "Original LinkedIn account confirms four-round Amazon loop but only SDE level, with pattern comparisons rather than exact DSA variants. No SDE II/L5 level or interview country established; profile residence not location evidence."
+        },
+        {
+          "url": "https://prachub.com/interview-experiences/amazon-software-engineer-interview-experience-passing-the-sde-ii-phone-screen-after-leadership-and-palindrome-questions",
+          "reason": "Explicit August29 SDE II technical phone screen only; excluded regardless of publication date."
+        }
+      ],
+      "limitations": [
+        "Four month-scoped Exa searches, eight results each; bounded discovery is not exhaustive coverage.",
+        "Search publication-date filters and United States keywords are discovery scope only, never interview date or country evidence.",
+        "No new report met all admission requirements. Original comments and crossposts were inspected without authentication; removed or membership-gated details remain unresolved.",
+        "Original fetches and all32 search results retained under data/campaign-evidence/recovery-us-second; four provider results include indexed excerpts, which are not substitutes for missing original facts."
       ]
     },
     {

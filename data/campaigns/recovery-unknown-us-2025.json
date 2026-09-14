@@ -1,0 +1,35 @@
+{
+  "id": "recovery-unknown-us-2025",
+  "country": "United States",
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Original public-source inspection + Exa fetch",
+  "queries": [
+    "Inspect known round-ambiguous original: https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+    "Inspect known round-ambiguous original: https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+    "Inspect known round-ambiguous original: https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/"
+  ],
+  "artifact": "data/campaign-evidence/recovery-unknown/inspections.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-7272101",
+      "reason": "Recovered nine concrete questions from Breakdown of Onsite, not the separately described phone screen. Original createdAt confirms 2025-10-13 and USA/NYC is explicit. Five onsite categories do not establish overall ordinal positions; null round preserves that uncertainty."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-6467921",
+      "reason": "Recovered five concrete questions from explicitly SDE2 full loop in USA in February 2025. Original createdAt confirms February 25 publication; interview month is preferred. Categories have no overall numbering. Undisclosed LPs and noncoding jump-game followups not invented."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+      "disposition": "unconfirmed",
+      "reportId": "leetcode-6558499",
+      "reason": "Recovered four concrete questions from direct onsite after OA; Seattle L5/SDE2 explicit. Original createdAt March 20,2025 is separate from March25 update. Coding1–3 category numbering does not place system design in sequence. No OA, generic LPs or later unstructured hiring-manager discussion admitted."
+    }
+  ]
+}

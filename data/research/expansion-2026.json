@@ -251,7 +251,7 @@
           "evidence": "HLD+HM round: Asked to design LMS system for companies ... deep dives on DB choice, handling search using elastic search, presigned URLs for better upload/download of content, security aspects and persistent connections for tracking progress."
         }
       ],
-      "sourceCaveat": "Previously wholly excluded in 2026-h1.json because early round order conflicts. Only the independently unambiguous fourth round is recovered. Restaurant token-management LLD and DSA descriptions remain excluded; see this slice's exclusion entry."
+      "sourceCaveat": "Previously wholly excluded because early round order conflicts. The independently unambiguous fourth round remains in the strict collection. Restaurant token-management LLD has now been recovered separately in data/unconfirmed/recovery-unknown.json with no ordinal inferred. Vague DSA descriptions remain excluded; older exclusion entries are historical."
     }
   ],
   "excluded": [

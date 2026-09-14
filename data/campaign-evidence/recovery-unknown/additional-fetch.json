@@ -1,0 +1,22 @@
+{
+  "urls": [
+    "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+    "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/"
+  ],
+  "retrievedAt": "2026-09-14",
+  "response": {
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "# Amazon Interview Expereince - L5 - SDE 2 - Seattle  - Discuss - LeetCode\nURL: https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/\nPublished: 2025-03-20\n\nAmazon Interview Expereince - L5 - SDE 2 - Seattle - Discuss - LeetCode\n\nFor youFor you\n\nMost Votes\n\nAll Time\n\nNewest\n\nNo search result\n\nAmazon Interview Expereince - L5 - SDE 2 - Seattle\n\nAnonymous User\n\n3068\n\n## OA\n\n#### Problem 1:\n\nServers Connected in a ring configuration. Determine the minimum time to tranfer data to all servers from a given server.\n\n#### Problem 2:\n\nVery similar to knapsack problem\n\nOutcome: Passed all test cases on Problem 1 . TLE for 4 test cases in problem 2. Recruiter reached out 2 days later to schedule direct onsite.\n\n---\n\n## Onsite:\n\nEvery round was about 20-30 min Leadership Principles and 30 min coding.\n\nI had examples ready for ~10 Leadership Principles and was able to easily answer them and also handle any followup questions.\n\n#### Coding 1:\n\nLow level programming. Design a package interface and a package manager to install all necassary dependencies.\n\nOutcome: Took some time initially to confirm the structure of the code. Finally landed on one class for a Package(dependencies = List[Package]). Another class PackageManager that determines the order of install for a set of Packages. Basic DFS solution with optimisation resulted in O(n) solution.\n\n#### Coding 2:\n\nDesign a cache for a search system that can have filters.\n\nOutcome: Problem was super vague and took me forever to clarify and get to the details. Was able to only code a very rough solution with lots of comments. The code was not fully functional, but I was able to explain every part of it and the assumptions and working of every function in the class. Used HashMap and Doubly Linked list Basically 4 concepts: Key determination, insert startegy, retrieval strategy and eviction startegy This might have been the bar raiser mostly. Interviewer left me confused on whether I did well or not.\n\n#### Coding 3:\n\nCourse Schedule 2: https://leetcode.com/problems/course-schedule-ii/\n\nOutcome: Very straightforward. Got to the solution quickly. Explained code.\n\n#### System Design:\n\nThe problem was vague but as I discussed more I finally ended up designing an ETL system. Handled cases like long running loads, high scale, retries, logging, write performance, updates, monitoring.\n\nInterviewer was pleased with the final design. The design was like a patch of spaghetti :P.\n\n---\n\nRecieved feedback that I passed one day after onsite. Recruiter confirmed availibilty for Hiring Manager round\n\n---\n\n## Hiring Manager\n\nVery candid discussion about the role, my experience, what I can expect, how I can grow, team structure, workflows etc.\n\n---\n\n## Offer\n\nRecieved callback next day regarding verbal offer numbers\n\nBase: 175K Sign On 1st year: 90K Sign On 2nd year: 70K RSU: 900 units Relocation: 7k\n\n###### TC year 1: ~275K\n\nTried to negotiate but recruiter got back saying that its the highest possible.\n\n## Result\n\nAccepted the offer as the recruiter only gave me 1 day deadline after sending written offer. I found this really stupid and annoying. Felt it was done only to fill their recuiter quota. Was told that if I ask for time, I may not be considered as there are many in pipeline.\n\nA week later I declined the offer as I got competeing offer from Apple and I preferred Apple due to Bay area location and better culture.\n\n16\n\n5\n\nComments (5)\n\nSort by:Best\n\nComment\n\nExplore\n\nMore\n\nCopyright © 2026 LeetCode\n\nUnited States\n\nError fetching https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/: CRAWL_UNKNOWN_ERROR",
+          "_meta": {
+            "searchTime": 1474.5428170002997
+          }
+        }
+      ]
+    },
+    "jsonrpc": "2.0",
+    "id": 8
+  }
+}

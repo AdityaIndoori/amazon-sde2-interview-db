@@ -1,0 +1,56 @@
+{
+  "id": "recovery-us-first-january",
+  "country": "United States",
+  "startDate": "2026-01-01",
+  "endDate": "2026-01-31",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle January 2026 actual coding questions system design behavioral rounds"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-first/january-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b",
+      "disposition": "duplicate",
+      "reason": "Existing medium-2637efdb273b original; no new account or country evidence.",
+      "reportId": "medium-2637efdb273b"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/ravikumar9199_interviewexperience-amazon-backendengineering-activity-7419793472636866560-qZ7e",
+      "disposition": "unresolved",
+      "reason": "Public candidate original and JSON-LD publication date 2026-01-21 verified. Lists OA, Coding, LLD, HLD and Bar Raiser, but never establishes the screen/final-loop boundary; no round ordinal or final-loop membership inferred. Job country absent. Original body retained in ravi-original-raw.json."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/supriyamalkar_amazon-sde2-interview-experience-activity-7423261223728779265-Ke7x",
+      "disposition": "duplicate",
+      "reason": "Same-author announcement of existing Supriya Malkar Medium account medium-2637efdb273b, not an independent candidate. Announcement URL is not a registered canonical alias, so no reportId supplied."
+    },
+    {
+      "url": "https://medium.com/life-with-tech/amazon-sde-2-interview-journey-3-yoe-accepted-offer-6742bc6d7588",
+      "disposition": "unresolved",
+      "reason": "Second-hand member-only TechSam story; accessible OA and recruiter timeline closely resemble existing leetcode-7477684, but full original attribution/loop text unavailable. Do not count a new interview or transfer January publication date to interview date."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/99swati_came-across-an-amazon-sde-2-interview-journey-activity-7421137628915376128-NdMY",
+      "disposition": "unresolved",
+      "reason": "Explicit second-hand takeaways (Came across an Amazon SDE-2 interview journey), with no originating candidate URL and no job country/interview date. Numbered summary is insufficient original provenance."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1qn8ir4/amazon_sde2_interview/",
+      "disposition": "excluded",
+      "reason": "Upcoming Appstore Bangalore interviews and preparation request, not an account of asked final-loop questions."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/99swati_my-friend-raj-recently-went-through-the-activity-7420413496007516160-E_GO",
+      "disposition": "excluded",
+      "reason": "Second-hand friend Raj summary names only interview categories, not specific questions."
+    },
+    {
+      "url": "https://www.desiqna.in/19114/sde-2-interview-exp-30-lpa-kumar-k-january-2026",
+      "disposition": "excluded",
+      "reason": "Narrative covers Gojek, Alphasense, DMG, Kotak, Truemeds and Locus.sh; not an Amazon SDEII final-loop report."
+    }
+  ]
+}

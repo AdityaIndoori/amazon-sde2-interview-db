@@ -26,11 +26,14 @@ It does not establish every question asked inside Amazon. There is no public den
 | Exa historical | 3 | 91 |
 | Exa original blogs | 2 | 2 |
 | Exa US 2026 | 1 | 46 |
-| **Total** | **136** | **1,288** |
+| Recovery: unconfirmed sources | 0 | 5 |
+| Recovery: US January–May | 1 | 0 |
+| Recovery: US June–September | 0 | 34 |
+| **Total strict corpus** | **137** | **1,327** |
 
-The result is **586 question–round rows**, **635 occurrences**, and **523 canonical question identities**. Rows by round: R1 178, R2 161, R3 120, R4 127. Source-level date years: 89 accounts in 2025 and 47 in 2026. There are 229 occurrence dates grounded in interview timing and 406 using explicitly labeled publication fallback.
+The strict result is **589 question–round rows**, **639 occurrences**, and **525 canonical question identities**. Rows by round: R1 179, R2 162, R3 121, R4 127. Source-level date years:89 accounts in2025 and48 in2026. There are229 occurrence dates grounded in interview timing and410 using explicitly labeled publication fallback.
 
-The sixteen files contain 286 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 286 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
+The nineteen strict research files contain297 query/discovery entries, including direct archive API queries. These are a research log, not297 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Structured campaigns separately record scoped requests and source dispositions, with overlap in the historical query ledger. Reddit records3,400 archived posts retrieved across overlapping earlier searches, not3,400 unique qualifying interviews.
 
 Slices are research ownership partitions, not guaranteed interview half-years. Year-only interview dates remain year-only even if publication occurred in a later period. For example, the Prime Video account posted in July 2026 describes joining in April but does not give the interview month; the database does not invent one.
 
@@ -58,7 +61,7 @@ Some partial prompts remain useful evidence: a candidate may say “3Sum variant
 
 A report whose technical-screen/final-loop distinction remains ambiguous is retained in the uncertainty ledger rather than included in frequency counts. The Pragadheeshwaran Medium account is one such adjudication; its disclosed questions remain in research data and generated exclusion details, but not the primary table.
 
-The separate Round unconfirmed collection relaxes only requirement4's numbered position, not final-loop stage. It currently contains3 questions from2 accounts: Google Drive/Dropbox and Bus Routes from a May24,2026 Bangalore report, and calculator LLD from a September1,2025 US report. All use explicit null rounds, written uncertainty reasons and separate exports/frequencies. These were previously excluded solely for ordinal ambiguity; their historical exclusion records remain an audit trail. Unverified leads and screening-ambiguous accounts stay outside both question collections.
+The separate Round unconfirmed collection relaxes only requirement4's numbered position, not final-loop stage. It contains31 questions from7 accounts, including verified US and India loops whose question order is missing or contradictory. All use explicit null rounds, written uncertainty reasons, stage:final-loop and separate exports/frequencies. Historical exclusion entries remain an audit trail of the earlier ordinal restriction. Unverified leads and screening-ambiguous accounts stay outside both question collections. One Hissan account contributes a verified R4LMS question and a different unconfirmed restaurant-token question; combined unique accounts are143, not the sum137+7.
 
 ## Dates
 
@@ -104,7 +107,7 @@ Every column is sortable. Dates sort by latest visible date; sources by title; l
 
 `view=unconfirmed` selects the supplemental collection. Round choices are disabled/ignored but retained for switching back; other filters and same-occurrence semantics remain. Exported CSV uses Unconfirmed in the round column; full downloads target the active collection. No cross-collection frequencies are combined. Promotion requires explicit strict evidence and removal of the same source/question from supplemental input.
 
-Structured campaigns under `data/campaigns/` are distinct from historic free-form query logs. Each records country/date search scope, execution time, provider, actual query, artifact and source dispositions. Completed means the request/inspection ran, not exhaustive coverage. Derived outcomes distinguish admitted evidence, unresolved leads, inspected sources with no admissions, no returned candidates and failed execution. No-candidates and failures never mean no interviews exist. Four initial campaigns cover two targeted Exa windows and two source-recovery inspections; no strict questions were added by those searches. Some returned candidates remain explicitly unresolved.
+Structured campaigns under `data/campaigns/` are distinct from historic free-form query logs. Each records country/date search scope, execution time, provider, actual query, artifact and source dispositions. Completed means the request/inspection ran, not exhaustive coverage. Derived outcomes distinguish admitted evidence, unresolved leads, inspected sources with no admissions, no returned candidates and failed execution. No-candidates and failures never mean no interviews exist. Sixteen campaigns are currently recorded; the latest pass added12 runs and93 per-source dispositions. Some candidates remain explicitly unresolved.
 
 ## Known coverage gaps
 
@@ -145,3 +148,11 @@ This pass added six candidate accounts and24 occurrences (20 new question–roun
 For the first time, a US2026 account met admission criteria: [SDEII Redmond virtual onsite](https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/), published June28,2026. The full public-post archive names SDEII, Redmond WA, external application, a separate screen and four final-loop rounds. Two same-author crossposts are aliases, not independent counts. Live Reddit retrieval failed; archive verification is stated explicitly. The four prompts are inventory stock management, Amazon S3 design, an unspecified anagram problem, and unspecified decoding strings. Exact anagram/encoding variants are not invented. Publication date does not assert the exact interview date.
 
 Exa yielded more new qualifying accounts in this particular pass than the prior Assay pass, but the searches and starting corpus differed; this is not a controlled provider benchmark. Many Exa results were duplicates, wrong-level experiences, promotional retellings or insufficiently attributed sources. Current-profile summaries in fetched LinkedIn content were separated from the actual post body. The corpus remains non-exhaustive, especially for December interview dates and less represented countries.
+
+## Bounded recovery and monthly US pass
+
+The latest pass ran nine separate publication-month searches for US2026 (January–September13), followed plausible originals, revisited three unresolved ledger leads and inspected five otherwise-qualified ordinal-ambiguous accounts. It added one strict report with four occurrences (three new rows) and five supplemental report memberships with28 questions. Four of those supplemental accounts were new to the combined corpus; Hissan already existed in strict. Net gain: five independent accounts across both collections.
+
+The new strict Meghana Adiga account is publication-dated May5,2026, with explicit OA/screen offsets and four loop prompts. Its country is Not stated; a US-targeted query is not country evidence. The verified US2026 count remains one account. Two newly discovered Redmond crossposts were added as aliases to that existing account, preventing duplicate inflation. One equivalent Amazon Locker LLD canonical key was unified across rounds; this changed neither existing per-round frequencies nor row counts. Unspecified variants and materially different designs remain separate.
+
+Original full Reddit text resolved1oe4q65 as excluded because it contains no actual questions. The InterviewShow narrative remains unattributed and the Hyderabad2.8YOE mirror remains without an independently verified original; these were not admitted. Public source access failures, incomplete text and unresolved screening boundaries remain visible rather than being interpreted as evidence of absence. Original snippets, metadata and campaign requests are preserved under `data/campaign-evidence/recovery-*`.

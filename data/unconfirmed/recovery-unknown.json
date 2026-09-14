@@ -1,0 +1,337 @@
+{
+  "slice": "recovery-unknown",
+  "reports": [
+    {
+      "id": "leetcode-7910016",
+      "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "title": "Amazon SDE2 Interview and Compensation",
+      "role": "SDE II",
+      "stage": "final-loop",
+      "location": "India",
+      "date": "2026-04-14",
+      "dateBasis": "publication",
+      "publishedDate": "2026-04-14",
+      "interviewDate": null,
+      "stageEvidence": "Title: Amazon SDE2 Interview and Compensation. After OA: Cleared this round, In person 3 rounds of interviews with Amazon in Hyd office ... only two rounds were taken on that day, HLD and DSA. Separate DSA, LLD, HLD and Bar raiser sections end with Overall Verdict: Hire. Hyd office establishes Hyderabad, India; country is not inferred from the site footer. Original page createdAt: 2026-04-14T15:17:52.196588+00:00.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "DSA",
+          "key": "delete-and-earn",
+          "question": "Choose numbers to maximize the sum of each chosen value times its frequency; choosing x excludes x−1 and x+1.",
+          "topic": "Dynamic programming",
+          "evidence": "Given list of numbers, you have choose numbers in such a way that if you choose x, you cannot choose x+1 or x-1, when you choose x, your score will be increased by value of that number * frequency of the number",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "DSA",
+          "key": "behavior-team-conflict",
+          "question": "Describe a conflict with a peer and how you handled it.",
+          "topic": "Behavioral / Disagreement",
+          "evidence": "Tell me a time when you have conflict with your peer and how did you handle this.",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "DSA",
+          "key": "behavior-resolve-incident-without-support",
+          "question": "Describe resolving an incident when you did not receive enough support.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Tell me when you did not get enough support, how did you solve the incident.",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "LLD",
+          "key": "full-differential-log-backup-lld",
+          "question": "Design a backup system supporting full, differential and log backups.",
+          "topic": "Low-level design / Backups",
+          "evidence": "LLD: Design backup system with three different backup types (full, diff, log)",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "HLD",
+          "key": "behavior-reason-leaving-employer",
+          "question": "Explain why you left your previous employer.",
+          "topic": "Behavioral / Career motivation",
+          "evidence": "HLD ... Why did you leave microsoft.",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "HLD",
+          "key": "best-time-learn-project",
+          "question": "What is the best time to learn about a project?",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "HLD ... What is the best time to learn about the project",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "HLD",
+          "key": "limited-stock-sale-platform",
+          "question": "Design a sales platform that sells exactly K items without overselling, with consistency, availability and low latency.",
+          "topic": "System design / Commerce",
+          "evidence": "Design a sale platform to sell exact K number of items, no overselling, consistent, available low latency.",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "Bar raiser",
+          "key": "behavior-make-customer-happy",
+          "question": "Describe a time you made a customer happy.",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Bar raiser round: Tell me a time when you made customer happy.",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "Bar raiser",
+          "key": "behavior-analyze-tradeoffs-decision",
+          "question": "Describe a decision for which you analyzed trade-offs.",
+          "topic": "Behavioral / Judgment",
+          "evidence": "Tell me a time when you need have analysed tradeoffs and took a decision",
+          "roundUncertainty": "The source groups interviews under DSA, LLD, HLD and Bar raiser without ordinal labels; it explicitly says HLD and DSA happened on the first day, contradicting heading order as chronology. No numbered final-loop position can be verified."
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7272101",
+      "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+      "title": "[USA] | Amazon SDE II Process | Rejected",
+      "role": "SDE II",
+      "stage": "final-loop",
+      "location": "United States",
+      "date": "2025-10-13",
+      "dateBasis": "publication",
+      "publishedDate": "2025-10-13",
+      "interviewDate": null,
+      "stageEvidence": "Completed a process for Amazon SDE II role for NYC ... Process lists Technical Phone Screen separately from Onsite: 2 coding, 1 problem solving, 1 system design, 1 behavioral round with HM. Questions admitted only from Breakdown of Onsite. Title explicitly USA; original page createdAt: 2025-10-13T14:20:40.245611+00:00.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 1",
+          "key": "widest-road-path-truck-weight",
+          "question": "Given bidirectional roads with weight limits and start/end locations, find the maximum truck weight that can travel between them.",
+          "topic": "Graphs / Widest path",
+          "evidence": "Road network data represented as [start, end, weight limit]. Roads go in both directions ... identify the maximum permissible truck weight that would allow you to go from start destination to end destination",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 1",
+          "key": "behavior-technically-complex-project",
+          "question": "Describe a technically complex project and what you learned from it.",
+          "topic": "Behavioral / Dive deep",
+          "evidence": "Tell me about a technically complex project you worked on? What did you learn from the experience?",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 2",
+          "key": "all-dictionary-word-decompositions",
+          "question": "For each word in a large dictionary, return every decomposition into smaller words that also belong to the dictionary.",
+          "topic": "Dynamic programming / Strings",
+          "evidence": "You are given a large list of words (10k+) ... Identify all the possible valid decompositions for each word ... each sub-part is a valid word in the list.",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 2",
+          "key": "behavior-dig-deep-root-cause",
+          "question": "Describe digging deeply into a situation to find the root cause of a problem or bug.",
+          "topic": "Behavioral / Dive deep",
+          "evidence": "Situation that requires me to dig deep into the situation to find out the root cause of problem/ticket/bug",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Problem Solving",
+          "key": "nested-container-item-filtering",
+          "question": "Design item filtering over nested containers by weight and by AND/OR combinations of category and weight; each container holds either other containers or items.",
+          "topic": "Low-level design / Filtering",
+          "evidence": "A container can contain another container or item but not both ... Items have category, weight, color ... Identify all items in a container that have weight > 50 kg ... category AND/OR weight > 50 kg",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Problem Solving",
+          "key": "behavior-unblock-difficult-problem",
+          "question": "Describe a time you unblocked yourself on a difficult problem.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Tell me about a time you had to unblock yourself on a difficult problem?",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Problem Solving",
+          "key": "behavior-step-outside-comfort-zone",
+          "question": "Describe a time you stepped outside your comfort zone.",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Tell me about a time you stepped out of your comfort zone",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — System Design",
+          "key": "design-inventory-management",
+          "question": "Design a warehouse inventory system with real-time updates and accurate customer-facing inventory; support one million SKUs and 100,000 updates per minute.",
+          "topic": "System design / Inventory",
+          "evidence": "Design a system that tracks inventory levels across warehouses ... Handle real time updates ... accurate inventory data for customer facing app ... Support 1M SKUs ... Process 100K inventory updates/minute",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Hiring Manager",
+          "key": "behavior-beyond-responsibility",
+          "question": "Describe work you took on outside your normal responsibilities.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Tell me about a time where I took up something that was out of my area of responsibility",
+          "roundUncertainty": "The account explicitly separates the onsite from phone screening, but its five onsite interviews are grouped by category. Coding 1 and Coding 2 number only coding interviews, not overall positions; no chronology establishes an overall R1–4 assignment."
+        }
+      ]
+    },
+    {
+      "id": "medium-b1f8b0a69de5",
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "retrievedVia": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "title": "Amazon SDE-2 Interview experience-Selected",
+      "role": "SDE II",
+      "stage": "final-loop",
+      "location": "India",
+      "date": "2026-02-05",
+      "dateBasis": "publication",
+      "publishedDate": "2026-02-05",
+      "interviewDate": null,
+      "stageEvidence": "This is for Amazon India SDE-2 (L5) level ... After I cleared the OA, onsite invites were sent ... HLD+HM round ... got the offer after 3 days of last interview. Original article:published_time is 2026-02-05T14:19:37.946Z.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "LLD round",
+          "key": "restaurant-token-management-lld",
+          "question": "Design a restaurant token-management system, including classes, database design, concurrency, APIs and Redis atomic operations.",
+          "topic": "Low-level design / Restaurants",
+          "evidence": "LLD round : Asked to design token management system for restaurant ... classes and DB design, handling contention and concurrency, exhaustive list of APIs and psuedo code for few important APIs, focussed on redis usage for atomic operations",
+          "roundUncertainty": "Onsite status is explicit, but the overview orders DSA, DSA, LLD while detailed sections order DSA-1, LLD, DSA-2. The author says initially LLD and DSA-1 were scheduled without giving their order. The earlier LLD ordinal is therefore unverified; independently verified HLD+HM R4 remains only in the strict collection."
+        }
+      ]
+    },
+    {
+      "id": "leetcode-6467921",
+      "url": "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+      "title": "Amazon | SDE 2 | Loop | USA - Reject",
+      "role": "SDE II",
+      "stage": "final-loop",
+      "location": "United States",
+      "date": "2025-02",
+      "dateBasis": "interview",
+      "publishedDate": "2025-02-25",
+      "interviewDate": "2025-02",
+      "stageEvidence": "Title: Amazon | SDE 2 | Loop | USA - Reject. I did an amazon full loop for SDE2 earlier in February 2025. Original createdAt: 2025-02-25T21:39:36.839237+00:00; interview month is explicitly supplied and preferred.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "Logical and Maintainable — Low level Design Interview",
+          "key": "grocery-cart-ingredient-tax-lld",
+          "question": "Design grocery-cart checkout that calculates basic tax plus extra taxes associated with ingredients in each food item.",
+          "topic": "Low-level design / Commerce",
+          "evidence": "Designe a Grocery Cart Checkout ... a food has a list of ingredients ... cart should check for ingredients that add extra taxes ... total should account for basic tax + ingredient taxes",
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+        },
+        {
+          "round": null,
+          "sourceRound": "System Design — High level design Interview — Bar raiser",
+          "key": "ad-click-aggregation",
+          "question": "Design ad-click aggregation for ten million clicks per minute, advertiser queries within two minutes and ad redirects below 200 milliseconds.",
+          "topic": "System design / Analytics",
+          "evidence": "Design Ad Click Aggregator ... scale up to 10m clicks a minute ... query their click data in real time < 2 minutes ... redirected to ads with minimal latency < 200ms",
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+        },
+        {
+          "round": null,
+          "sourceRound": "Data Structures and Algorithms Interview — Hiring Manager",
+          "key": "wildfire-hex-grid-wind",
+          "question": "Simulate wildfire spreading through brush on a hexagonal grid, including directional wind that increases spread distance in one direction.",
+          "topic": "Graphs / BFS",
+          "evidence": "Rotting oranges ... hexagon shapes instead of squares (6 directional) ... wildfire simulator instead with brushes spreading the fire ... directional windspeed that can make fire spread at a longer variable distance at 1 certain direction",
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+        },
+        {
+          "round": null,
+          "sourceRound": "Problem Solving Interview",
+          "key": "jump-game",
+          "question": "Determine whether the last array index can be reached.",
+          "topic": "Dynamic programming",
+          "evidence": "https://leetcode.com/problems/jump-game/description/ ... finished first jump game - no problem",
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+        },
+        {
+          "round": null,
+          "sourceRound": "Problem Solving Interview",
+          "key": "jump-game-minimum-path",
+          "question": "Solve Jump Game II but return a minimum-jump path rather than only the number of jumps.",
+          "topic": "Arrays / Greedy",
+          "evidence": "https://leetcode.com/problems/jump-game-ii/ ... except output jump path instead of total number of jumps",
+          "roundUncertainty": "The author explicitly calls this a full loop but labels its four interviews only by type, with no overall round numbers or chronological statement. Section order alone does not establish R1–4."
+        }
+      ]
+    },
+    {
+      "id": "leetcode-6558499",
+      "url": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+      "retrievedVia": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+      "title": "Amazon Interview Expereince - L5 - SDE 2 - Seattle",
+      "role": "SDE II",
+      "stage": "final-loop",
+      "location": "United States",
+      "date": "2025-03-20",
+      "dateBasis": "publication",
+      "publishedDate": "2025-03-20",
+      "interviewDate": null,
+      "stageEvidence": "Title explicitly L5 - SDE 2 - Seattle. Recruiter reached out 2 days later to schedule direct onsite. Under Onsite: Coding 1, Coding 2, Coding 3, System Design; received feedback that I passed one day after onsite. Seattle establishes United States, not the site footer. Original createdAt: 2025-03-20T08:00:28.378344+00:00; updatedAt is separately 2025-03-25.",
+      "questions": [
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 1",
+          "key": "package-installation-library",
+          "question": "Design a package interface and package manager that installs packages in dependency order.",
+          "topic": "Low-level design / Graphs",
+          "evidence": "Design a package interface and a package manager to install all necassary dependencies ... Package(dependencies = List[Package]) ... PackageManager that determines the order of install for a set of Packages.",
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 2",
+          "key": "filtered-search-cache-lld",
+          "question": "Design a cache for a search system with filters, addressing cache keys, insertion, retrieval and eviction.",
+          "topic": "Low-level design / Caching",
+          "evidence": "Design a cache for a search system that can have filters ... Key determination, insert startegy, retrieval strategy and eviction startegy",
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — Coding 3",
+          "key": "course-schedule-ii",
+          "question": "Return a valid order in which to complete courses given their prerequisite dependencies.",
+          "topic": "Graphs / Topological sorting",
+          "evidence": "Coding 3: Course Schedule 2: https://leetcode.com/problems/course-schedule-ii/",
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+        },
+        {
+          "round": null,
+          "sourceRound": "Onsite — System Design",
+          "key": "design-etl-pipeline",
+          "question": "Design an ETL system, addressing long-running loads, scale, retries, logging, writes, updates and monitoring.",
+          "topic": "System design / Data pipelines",
+          "evidence": "The problem was vague but as I discussed more I finally ended up designing an ETL system. Handled cases like long running loads, high scale, retries, logging, write performance, updates, monitoring.",
+          "roundUncertainty": "The source identifies a direct onsite after OA and labels the interviews Coding 1, Coding 2, Coding 3 and System Design. Coding labels number that category only; the system-design position in the overall loop is not stated, so no overall R1–4 mapping is verified."
+        }
+      ]
+    }
+  ]
+}

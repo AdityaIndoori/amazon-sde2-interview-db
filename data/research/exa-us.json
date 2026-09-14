@@ -12,6 +12,8 @@
       "id": "reddit-1uhl798",
       "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/",
       "aliases": [
+        "https://www.reddit.com/r/FAANGrecruiting/comments/1uh1bgj/offer_amazon_interview_experience_timeline_oa/",
+        "https://www.reddit.com/r/leetcode/comments/1uh1gv9/offer_amazon_interview_experience_timeline_oa/",
         "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
         "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/"
       ],
@@ -21,6 +23,7 @@
       "stageEvidence": "Role: SDE II - Redmond, WA; Application Method: No referrals or cold emails - just basic career portal apply; Day 48: Virtual Onsite Loop - 4 Rounds (15 days after Phone Screen).",
       "eligibility": "External-hire candidate account. Full archived public-post body and publication timestamp verified through Arctic Shift; live Reddit body could not be retrieved. Crossposts by the same author are one report.",
       "verification": "Archived public-post body, not live-body verification. Full selected fields retained in data/exa/us/reddit-original-archive.json.",
+      "aliasEvidence": "Two additional same-author matching crossposts1uh1bgj and1uh1gv9 verified during recovery pass; source texts and author USA/SDE2 replies retained under data/campaign-evidence/recovery-us-second/. These aliases do not add candidate frequency.",
       "location": "United States",
       "locationEvidence": "Role: SDE II - Redmond, WA (United States).",
       "date": "2026-06-28",

@@ -1,0 +1,55 @@
+{
+  "id": "recovery-us-second-09",
+  "country": "United States",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-13",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa with original public-source inspection",
+  "queries": [
+    "Amazon SDE II L5 United States USA Seattle Redmond interview experience final onsite loop September 2026"
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-second/september-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/rostislav-borovikov-44a0471a7_amazoninterview-systemdesign-softwareengineering-activity-7502651947972190208--JPh",
+      "disposition": "excluded",
+      "reason": "Author explicitly says formats only, no specific tasks. Generic technical categories and complexity advice are not concrete interview questions."
+    },
+    {
+      "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+      "disposition": "duplicate",
+      "reason": "Known expanded retelling of existing leetcode-8499681: package-return drop store, safest-grid path and cross-device configuration design. No new candidate or question; India title not US search evidence."
+    },
+    {
+      "url": "https://campusbuilding.com/company/amazon/jobs/software-dev-engineer-ii/65659/",
+      "disposition": "excluded",
+      "reason": "Seattle job listing, not an interview experience."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tiashabhowmik_maang-sde2-interview-activity-7501267123374231552-MLYJ",
+      "disposition": "excluded",
+      "reason": "Frontend SDE2 process overview gives subject areas only; no concrete question supplied."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/bipin-chaudhary-39781b152_amazon-amazoninterview-sde-activity-7501201471502417921-Xdyo",
+      "disposition": "unresolved",
+      "reason": "Concrete April28 tree-pruning and smart-locker interview via VARITE, but level stated only SDE and final-loop stage not established. March Bar Raiser is a separate attempt; cannot transfer stage evidence."
+    },
+    {
+      "url": "https://prachub.com/interview-experiences/amazon-new-grad-software-engineer-interview-experience-aws-offer-after-four-onsite-rounds",
+      "disposition": "excluded",
+      "reason": "Explicit New Grad account is outside SDE II/L5 role scope."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/maria-preethi-r_amazon-sde-softwareengineering-activity-7500993251844235264-YZOw",
+      "disposition": "unresolved",
+      "reason": "Original LinkedIn account confirms four-round Amazon loop but only SDE level, with pattern comparisons rather than exact DSA variants. No SDE II/L5 level or interview country established; profile residence not location evidence."
+    },
+    {
+      "url": "https://prachub.com/interview-experiences/amazon-software-engineer-interview-experience-passing-the-sde-ii-phone-screen-after-leadership-and-palindrome-questions",
+      "disposition": "excluded",
+      "reason": "Explicit August29 SDE II technical phone screen only; excluded regardless of publication date."
+    }
+  ]
+}

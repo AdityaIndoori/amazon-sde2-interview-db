@@ -1,0 +1,35 @@
+{
+  "slice": "recovery-unknown",
+  "searchedAt": "2026-09-14",
+  "queries": [
+    "Known-exclusion original-source inspection: LC7910016, LC7272101, Medium b1f8b0a69de5, LC6467921 and LC6558499; no broad discovery search."
+  ],
+  "reports": [],
+  "excluded": [
+    {
+      "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered nine concrete onsite questions with original publication metadata and Hyderabad country evidence. No ordinal inferred from category headings or first-day HLD/DSA grouping. OA, work-simulation questions, generic LP mentions and unspecified graph DFS/DP prompt are not admitted."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+      "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered nine concrete questions from Breakdown of Onsite, not the separately described phone screen. Original createdAt confirms 2025-10-13 and USA/NYC is explicit. Five onsite categories do not establish overall ordinal positions; null round preserves that uncertainty."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered only restaurant token-management LLD with the exact existing strict report ID/date/country. HLD+HM learning-management design is already strict R4 and is not repeated. Intervals/sweep-line/max-meetings are presented as topics, the rainwater variant is unspecified, OA recall lacks its original question, and generic LP counts are not questions; all remain omitted."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6467921/amazon-sde-2-loop-usa-reject-by-anonymou-ryqx/",
+      "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered five concrete questions from explicitly SDE2 full loop in USA in February 2025. Original createdAt confirms February 25 publication; interview month is preferred. Categories have no overall numbering. Undisclosed LPs and noncoding jump-game followups not invented."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6558499/amazon-interview-expereince-l5-seattle-b-vmpa/",
+      "reason": "Recovered into the separate round-unconfirmed collection, not strict: Recovered four concrete questions from direct onsite after OA; Seattle L5/SDE2 explicit. Original createdAt March 20,2025 is separate from March25 update. Coding1–3 category numbering does not place system design in sequence. No OA, generic LPs or later unstructured hiring-manager discussion admitted."
+    }
+  ],
+  "limitations": [
+    "This bounded pass inspected five known round-ambiguous exclusions only; it makes no claim of exhaustive country or month coverage.",
+    "Nine concrete onsite questions from LC7272101 are retained with null round even though its five-category loop has no overall R1–4 chronology; no question is assigned a guessed ordinal.",
+    "Sources remain candidate self-reports. Original public metadata and content were retained; blocked direct reads and partial Exa fetches were recovered using public original browser pages/renderings, without authentication or gate bypass."
+  ]
+}

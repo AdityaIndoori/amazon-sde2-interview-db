@@ -18,6 +18,7 @@
     "Not stated": "Not stated"
   },
   "questionAliases": {
+    "amazon-locker-lld": "design-amazon-locker",
     "binary-tree-level-order-traversal": "binary-tree-level-order",
     "longest-substring-without-repeats": "longest-substring-without-repeating",
     "notification-service-hld": "design-notification-system",

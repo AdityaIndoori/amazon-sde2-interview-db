@@ -2,9 +2,9 @@
 
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
-**586 question–round rows · 635 reported occurrences · 136 candidate accounts · 6 stated countries.** These are 523 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
+**589 round-verified rows · 639 reported occurrences · 137 candidate accounts · 6 stated countries.** These are 525 conservatively normalized question identities across rounds. A separate round-unconfirmed collection contains31 questions from7 reports. Counts are public-report frequencies, not Amazon's internal asking rates.
 
-> This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 286 search/query entries and 1,288 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
+> This is not ALL questions asked at Amazon. No public source can establish that. The strict corpus research ledger contains297 query/discovery entries and1,327 exclusion/uncertainty entries; structured campaign logs separately record scoped searches and inspections. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
 
 ## View locally
 
@@ -26,9 +26,9 @@ The table exposes the requested schema:
 |---|---|---|---|---|---|---|
 | Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Countries only, or Not stated |
 
-The default **Round verified** collection remains 586 rows, 635 occurrences and 136 reports. **Round unconfirmed** is a separate collection of 3 questions from 2 accounts whose SDE II final-loop stage is supported but whose question ordinals are missing. It never changes verified-round frequencies. Open it with `?view=unconfirmed`; the round filter is disabled and ignored, while its selected values are retained for switching back. Reset in this view clears applicable filters but keeps those dormant round choices. Counts and JSON/SQLite/CSV downloads always refer to the active collection.
+The default **Round verified** collection contains589 rows,639 occurrences and137 reports. **Round unconfirmed** is a separate collection of31 questions from7 accounts whose SDEII final-loop stage is supported but whose question ordinals are missing. One account contributes different questions to both collections; their unique combined report count is143, not144. Supplemental questions never change verified-round frequencies. Open them with `?view=unconfirmed`; the round filter is disabled and ignored, while its selected values are retained for switching back. Reset in this view clears applicable filters but keeps those dormant round choices. Counts and JSON/SQLite/CSV downloads always refer to the active collection.
 
-The **Scoped research campaigns** ledger records actual search scopes, providers, execution dates, queries, evidence artifacts and per-source decisions. Its country/status filters are independent of question filters. Search scope never supplies a candidate country or interview date. Four initial runs include two Exa searches with unresolved leads and two original-source recovery inspections. Missing campaigns and empty search results do not establish that interviews did not occur.
+The **Scoped research campaigns** ledger records actual search scopes, providers, execution dates, queries, evidence artifacts and per-source decisions. Its country/status filters are independent of question filters. Search scope never supplies a candidate country or interview date. Sixteen runs now include all nine2026 publication-month windows through September13 for US-targeted discovery, plus source-recovery inspections and prior campaigns. Missing campaigns and empty search results do not establish that interviews did not occur.
 
 - Search question text, topic, source title/URL and evidence.
 - Select multiple rounds, topics, countries, years and date types using checkboxes. Within a filter selections combine with OR; different filters combine with AND. No selections means all values. Each group has a Clear selection button; minimum frequency remains numeric.

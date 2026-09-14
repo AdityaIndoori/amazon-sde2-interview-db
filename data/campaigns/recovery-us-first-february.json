@@ -1,0 +1,63 @@
+{
+  "id": "recovery-us-first-february",
+  "country": "United States",
+  "startDate": "2026-02-01",
+  "endDate": "2026-02-28",
+  "searchedAt": "2026-09-14",
+  "provider": "Exa",
+  "queries": [
+    "Amazon SDE II SDE2 L5 external candidate final loop onsite interview experience United States USA Seattle February 2026 actual coding questions system design behavioral rounds",
+    "Amazon SDE 2 interview Jan Feb 2026 rejected \"ParcelDeliveryService\" \"5000\""
+  ],
+  "artifact": "data/campaign-evidence/recovery-us-first/february-search.json",
+  "status": "completed",
+  "sources": [
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-interview-experience-full-loop",
+      "disposition": "duplicate",
+      "reason": "Verbatim mirror of existing leetcode-7576550: disconnect island, rider-finding service, offline download manager and event logging. Mirror is not a registered alias; do not assign a separate account/date."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-interview-experience-jan-feb-2026-rejected",
+      "disposition": "unresolved",
+      "reason": "Potential candidate mirror, but original attribution unavailable and public full experience gates after OA. Visible generated question list cannot establish original per-question final-loop evidence. Follow-up fingerprint search found only this mirror and unrelated parcel advertisement; no new original."
+    },
+    {
+      "url": "https://codesnatch.io/community/interview-experiences/amazon-sde2-loop-what-to-expect",
+      "disposition": "unresolved",
+      "reason": "Previously held CodeSnatch commercial what-to-expect narrative; independent originating candidate unverified, no job country, last spring chronology ambiguous against publication/update timestamps. Not counted as US2026."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "disposition": "duplicate",
+      "reason": "Existing medium-b1f8b0a69de5 Amazon India account; early-round supplemental recovery owned by recovery-unknown, not a new US report.",
+      "reportId": "medium-b1f8b0a69de5"
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+      "disposition": "duplicate",
+      "reason": "Existing leetcode-7576550 original. United States appears only in generic LeetCode site footer, not candidate location evidence.",
+      "reportId": "leetcode-7576550"
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/l5-sde-2-amazon-interview-experience-nit-28-yoe",
+      "disposition": "unresolved",
+      "reason": "Hyderabad hosted narrative lead independently investigated by Main. Public original gates full account; Exa indexed text and generated question list do not resolve original candidate attribution. No acceptance from index alone."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/techpranjal_amazoninterview-sde2-systemdesign-activity-7432694576089354240-tiU0",
+      "disposition": "unresolved",
+      "reason": "Prepflix marketing summary about an unnamed student; no originating candidate account or job-country/date evidence. Named design tasks alone do not meet provenance gate."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1r7m1dh/amazon_sde_intern_interview/",
+      "disposition": "excluded",
+      "reason": "Seattle SDE Intern upcoming interview, not SDEII/L5 external final-loop account."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/dittomart_parceldelivery-localdelivery-chennai-activity-7358024295664472064-fIbg",
+      "disposition": "excluded",
+      "reason": "Unrelated parcel-delivery advertisement returned by follow-up ParcelDeliveryService/5000 fingerprint search; not a candidate interview account. Actual extra query/response preserved in notification-original-search.json."
+    }
+  ]
+}
