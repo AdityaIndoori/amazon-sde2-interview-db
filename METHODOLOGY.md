@@ -83,9 +83,9 @@ Known syndications are aliases or excluded duplicates, including four repeated p
 
 ## Locations
 
-Locations describe the role/interview location stated in the account, not the author's residence, nationality, interviewer location, or a site's footer. Bengaluru/BLR is displayed as Bangalore, India. Broad country-only labels and multi-city uncertainty remain broad. `Not stated` is never guessed.
+Locations are countries only in the database, table, filters and exports. Reported role/interview locations—not author residence, nationality, interviewer location or a site's footer—supply the evidence. The reviewed `locationCountries` mapping collapses Seattle and Austin into United States, Indian cities into India, and Dublin into Ireland. Historical research labels and quotations retain their original wording for auditability. An unmapped label fails the build instead of being guessed.
 
-There are 14 distinct stated labels, not 14 mutually exclusive geographic markets: for example, India and Bangalore, India are different precisions. Filtering matches the displayed label exactly.
+There are six stated countries: Brazil, Canada, India, Ireland, Spain and United States. `Not stated` remains separate when the report does not establish a country. Country normalization does not change independent-report frequencies.
 
 ## Viewer and export semantics
 

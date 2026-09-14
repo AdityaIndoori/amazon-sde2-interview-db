@@ -2,7 +2,7 @@
 
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
-**561 question–round rows · 605 reported occurrences · 128 candidate accounts · 14 stated location labels.** These are 501 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
+**561 question–round rows · 605 reported occurrences · 128 candidate accounts · 6 stated countries.** These are 501 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
 
 > This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 214 search/query entries and 954 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
 
@@ -24,12 +24,12 @@ The table exposes the requested schema:
 
 | Round | Question | Topic | Frequency | List of dates | List of sources | List of locations |
 |---|---|---|---|---|---|---|
-| Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Reported locations or Not stated |
+| Final-loop position 1–4 | Concise reported prompt | Technical/behavioral category | Independent reports for this question and round | Exact/month/year precision, labeled interview or publication | Original account URLs | Countries only, or Not stated |
 
 - Search question text, topic, source title/URL and evidence.
 - Filter by round, topic, location, year, date basis and minimum frequency.
 - Sort every column; date sorting uses the latest displayed date.
-- Combine filters at the **same occurrence** level. A question reported in Chennai in 2025 and somewhere else in 2026 does not match Chennai + 2026.
+- Combine filters at the **same occurrence** level. A question reported in India in 2025 and another country in 2026 does not match India + 2026.
 - Frequencies, dates, source lists, location lists and counts recalculate from matching occurrences.
 - Expand evidence to see quotations, reported prompt, original round label, numbering notes, role/stage context and retrieval/archive provenance.
 - Share the URL to preserve filters/sort. Reset restores the complete table.
@@ -63,7 +63,7 @@ SELECT q.round, q.question, o.date, o.date_basis, o.location, r.url,
 FROM occurrences o
 JOIN questions q ON q.id = o.question_id
 JOIN reports r ON r.id = o.report_id
-WHERE o.location = 'Bangalore, India' AND o.date LIKE '2026%';
+WHERE o.location = 'India' AND o.date LIKE '2026%';
 ```
 
 `reports.details_json` preserves additional source metadata (archive verification, date evidence, aliases and original question records). `occurrences.reported_question` and `reported_topic` preserve report-specific wording alongside canonical labels.
@@ -89,7 +89,7 @@ scripts/serve.js                Local static preview server
 ## Add or correct a report
 
 1. Read the original account and verify applicant level, external-hire context, date, final-loop stage and round order.
-2. Add it to the appropriate research JSON using `data/research.schema.json` and the example in `PLAN.md`. Use `Not stated` for absent locations; never derive location from a username.
+2. Add it to the appropriate research JSON using `data/research.schema.json` and the example in `PLAN.md`. Location is country-only. Use `Not stated` for absent country evidence; never derive location from a username. Add new evidenced country mappings to `normalization.json`; unrecognized labels fail the build. Historical research quotations retain their original wording.
 3. Supply short question/round evidence and original URLs. Retain publicly rendered or archived retrieval URLs if needed. Do not bypass authentication or paywalls.
 4. If a report includes OA/screening in its numbering, record the unambiguous final-loop position and preserve `sourceRound` plus `roundMappingNote`.
 5. Use the existing canonical key only for an equivalent question. Keep uncertain variants report-specific; keep low-level implementation and high-level architecture questions distinct.

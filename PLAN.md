@@ -13,7 +13,7 @@ Public reports cannot prove all questions asked internally. The collection will 
 - Prefer first-person candidate accounts. A rendered copy of an original report is acceptable with retrieval URL retained. Do not bypass authentication or paywalls.
 - Record concise quotations tying each question to its round and retain source-level role, date, location and stage evidence.
 - Interview date is preferred. If unavailable, use publication date explicitly labeled as such. Preserve month/year precision, not invented days. Reports with no usable in-window date stay in the excluded/uncertain ledger.
-- Location comes from the report; missing locations are `Not stated`. Do not infer location from username or nationality.
+- Location is country-only, supported by the report; missing country evidence is `Not stated`. Reviewed country mappings normalize historical source labels at build time, while source quotations retain original wording. Do not infer location from username or nationality.
 - Record specific behavioral/GenAI questions when supplied, not generic Leadership Principle labels masquerading as questions.
 - A question's frequency is the count of distinct candidate reports for that question and round. Cross-posts are one report; repeated mentions within one report are one occurrence. It is not an estimate of Amazon's asking rate.
 - Merge equivalent questions conservatively, preserving materially different follow-ups as separate questions and preserving all evidence.
@@ -40,7 +40,7 @@ Each `data/research/<slice>.json` contains:
     "interviewDate": "2025-03",
     "date": "2025-03",
     "dateBasis": "interview",
-    "location": "Bangalore, India",
+    "location": "India",
     "role": "SDE II",
     "stageEvidence": "Short quotation establishing role and final loop",
     "questions": [{

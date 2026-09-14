@@ -1,4 +1,22 @@
 {
+  "locationCountries": {
+    "Austin, Texas, United States": "United States",
+    "Seattle, United States": "United States",
+    "United States": "United States",
+    "Bangalore / Chennai, India": "India",
+    "Bangalore, India": "India",
+    "Chennai, India": "India",
+    "Gurgaon, India": "India",
+    "Hyderabad, India": "India",
+    "Pune, India": "India",
+    "India": "India",
+    "Dublin, Ireland": "Ireland",
+    "Ireland": "Ireland",
+    "Brazil": "Brazil",
+    "Canada": "Canada",
+    "Spain": "Spain",
+    "Not stated": "Not stated"
+  },
   "questionAliases": {
     "binary-tree-level-order-traversal": "binary-tree-level-order",
     "longest-substring-without-repeats": "longest-substring-without-repeating",

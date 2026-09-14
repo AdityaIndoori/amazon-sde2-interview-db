@@ -34,6 +34,7 @@ if (!files.length) fail('No research inputs found');
 const normalization = JSON.parse(await readFile(join(dataDir, 'normalization.json'), 'utf8'));
 const questionAliases = normalization.questionAliases ?? {};
 const reportAliases = normalization.reportAliases ?? {};
+const countryFor = location => normalization.locationCountries?.[text(location, 'location')] ?? fail(`Unmapped location: ${location}; add its evidenced country to normalization.json`);
 const canonicalKey = key => {
   const seen = new Set();
   while (questionAliases[key]) {
@@ -64,7 +65,7 @@ for (const file of files) {
       role: text(raw.role, 'role'),
       eligibility: text(raw.eligibility ?? 'External-hire context reported; candidate account not independently authenticated.', 'eligibility'),
       stageEvidence: text(raw.stageEvidence, 'role/stage evidence'),
-      location: text(raw.location, 'location'),
+      location: countryFor(raw.location),
       date: date(raw.date, `${id} date`), dateBasis: basis(raw.dateBasis),
       publishedDate: raw.publishedDate ?? null, interviewDate: raw.interviewDate ?? null,
       aliases: raw.aliases ?? [], slices: [slice.slice],

@@ -35,7 +35,7 @@
         <div><strong id="stat-questions">—</strong><span>question–round pairs</span></div>
         <div><strong id="stat-reports">—</strong><span>distinct candidate reports</span></div>
         <div><strong id="stat-occurrences">—</strong><span>matching occurrences</span></div>
-        <div><strong id="stat-locations">—</strong><span>stated locations</span></div>
+        <div><strong id="stat-locations">—</strong><span>stated countries</span></div>
       </section>
 
       <section class="workspace" aria-labelledby="explore-heading">
@@ -53,7 +53,7 @@
             <div class="filter-grid">
               <div><label for="round">Round</label><select id="round" name="round"><option value="">All rounds</option></select></div>
               <div><label for="topic">Topic</label><select id="topic" name="topic"><option value="">All topics</option></select></div>
-              <div><label for="location">Location</label><select id="location" name="location"><option value="">All locations</option></select></div>
+              <div><label for="location">Location (country)</label><select id="location" name="location"><option value="">All countries</option></select></div>
               <div><label for="year">Year</label><select id="year" name="year"><option value="">All years</option></select></div>
               <div><label for="basis">Date basis</label><select id="basis" name="basis"><option value="">Interview & publication</option><option value="interview">Interview date</option><option value="publication">Publication date</option></select></div>
               <div><label for="minimum">Min. frequency</label><input id="minimum" name="min" type="number" min="1" step="1" value="1" inputmode="numeric"></div>
@@ -91,7 +91,7 @@
         <div class="method-grid">
           <article><h3>Count reports, not repetitions</h3><p id="frequency-definition">Frequency is the number of distinct candidate reports for a question in a particular round. Cross-posts and repeated mentions do not add to the count. It is not an estimate of Amazon’s asking rate.</p></article>
           <article><h3>Preserve the date evidence</h3><p>Interview dates take precedence. When unavailable, publication dates are explicitly labeled. Month- and year-only dates retain that precision; no exact interview day is inferred.</p></article>
-          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops, rounds 1–4 only. Online assessments, phone screens, internal transfers, and other levels are excluded. Explicit OA/screen numbering offsets are documented in the evidence. “Not stated” means the report supplied no location.</p></article>
+          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops, rounds 1–4 only. Online assessments, phone screens, internal transfers, and other levels are excluded. Explicit OA/screen numbering offsets are documented in the evidence. Locations are countries only; “Not stated” means no country could be established from the report.</p></article>
         </div>
         <details class="coverage-panel">
           <summary>Search coverage, exclusions & limitations <span id="coverage-summary"></span></summary>
