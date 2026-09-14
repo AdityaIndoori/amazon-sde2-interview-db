@@ -1,0 +1,193 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "discovery",
+    "disclosure": "title_url",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [
+      {
+        "url": "https://amazon.jobs/content/job-categories/software-development",
+        "title": "Software Development - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.amazon.jobs/job_categories/software-development",
+        "title": "Software Development - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/software-development-engineer-2026-us-at-amazon-4443043184",
+        "title": "Software Development Engineer - 2026 (US) at Amazon - LinkedIn",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.extern.com/post/amazon-internship-guide",
+        "title": "Amazon Internship 2027\u20132028: Deadlines & How to Apply | Extern",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://leonstaff.com/blogs/amazon-software-engineer-salary-2026/",
+        "title": "Amazon SDE Salary 2026: The Back-Loaded RSU Trap (SDE1 to ...",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.levels.fyi/companies/amazon/salaries/software-engineer",
+        "title": "Amazon Software Engineer Salary | $188K-$1.46M+ | Levels.fyi",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:08Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      }
+    ],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDEII interview 2026 Austin Boston New York",
+      "executed": [
+        "Amazon SDEII interview 2026 Austin Boston New York"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "none",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 0,
+        "primary_sources": 0,
+        "oldest_crawled_at": null,
+        "newest_crawled_at": null,
+        "excluded_count": 4,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": null,
+      "excluded": [
+        {
+          "url": "https://opportunitiesnexus.com/amazon-sde-internship-2027/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.linkedin.com/in/allensunhaiming",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://aws.amazon.com/events/explore-aws-events/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.bcg.com/",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "verdict": "Discovery observations only; not grounded evidence or source independence"
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0004,
+      "actual": 0.000372,
+      "cache_hits": 0,
+      "tokens_delivered": 186,
+      "budget_remaining": 0.9991688,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_5GFSD53KAK687GP96F1X21BY3K",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 694,
+        "fetch": 0,
+        "assay": 0,
+        "shape": 0
+      },
+      "queries_executed": [
+        "Amazon SDEII interview 2026 Austin Boston New York"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 10,
+          "latency_ms": 694,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://amazon.jobs/content/job-categories/software-development",
+        "https://www.amazon.jobs/job_categories/software-development",
+        "https://www.linkedin.com/jobs/view/software-development-engineer-2026-us-at-amazon-4443043184",
+        "https://www.extern.com/post/amazon-internship-guide",
+        "https://leonstaff.com/blogs/amazon-software-engineer-salary-2026/",
+        "https://www.levels.fyi/companies/amazon/salaries/software-engineer",
+        "https://opportunitiesnexus.com/amazon-sde-internship-2027/",
+        "https://www.linkedin.com/in/allensunhaiming",
+        "https://aws.amazon.com/events/explore-aws-events/",
+        "https://www.bcg.com/"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://opportunitiesnexus.com/amazon-sde-internship-2027/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.linkedin.com/in/allensunhaiming",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://aws.amazon.com/events/explore-aws-events/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.bcg.com/",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "tier_used": [],
+      "tokens_spent": 186,
+      "cache_hits": 0
+    }
+  }
+}

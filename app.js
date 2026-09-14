@@ -188,6 +188,7 @@
           context.append(element("p", `Reported role: ${source.role || "Not stated"}. Interview: ${dateLabel(source.interviewDate)}. Published: ${dateLabel(source.publishedDate)}.`));
           if (source.verification) context.append(element("p", source.verification));
           if (source.dateEvidence) context.append(element("p", `Date evidence: ${source.dateEvidence}`));
+          if (source.locationEvidence) context.append(element("p", `Country evidence: ${source.locationEvidence}`));
           if (source.archiveRetrievalUrl && source.archiveRetrievalUrl !== source.retrievedVia) context.append(safeLink("Archive verification", source.archiveRetrievalUrl));
           if (source.retrievedVia && source.retrievedVia !== source.url) context.append(safeLink("Retrieval copy", source.retrievedVia));
           article.append(context);

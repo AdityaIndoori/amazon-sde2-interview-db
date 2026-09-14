@@ -1,0 +1,190 @@
+{
+  "status": "ok",
+  "kind": "discovery",
+  "disclosure": "title_url",
+  "certificate_version": 2,
+  "request_version": 2,
+  "content_budget_version": 2,
+  "discovery": [
+    {
+      "url": "https://www.hellointerview.com/guides/amazon/l5",
+      "title": "Amazon L5 Interview Guides & Questions (2026)",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1v94649/amazon_sde_new_grad_2026_no_interview/",
+      "title": "Amazon SDE New Grad 2026 - No interview confirmation 5 ... - Reddit",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dQvg8sbDt1Y",
+      "title": "Amazon Interview STAR, L5, Software Development Engineer",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.teamblind.com/company/Amazon/posts/amazon-interview",
+      "title": "Amazon Interview Discussions - Blind",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://medium.com/@emilyhustlenyc/2026-guide-how-to-crack-the-l5-senior-engineer-interview-system-design-behavioral-d6bb109af888",
+      "title": "2026 Guide: How to Crack the L5 Senior Engineer Interview (System ...",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+      "title": "WATCH THIS before your Amazon Interview 2026 - YouTube",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:40:34Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    }
+  ],
+  "summary": null,
+  "failure": null,
+  "query_plan": {
+    "original": "Amazon L5 interview experience June July August 2026",
+    "executed": [
+      "Amazon L5 interview experience June July August 2026"
+    ],
+    "backends": [
+      "searxng"
+    ],
+    "resolved_version": null,
+    "relaxed_constraints": [],
+    "lexical_weight": 0.5,
+    "semantic_weight": 0.5,
+    "expansions": [],
+    "mode": "search"
+  },
+  "claims": [],
+  "conflicts": [],
+  "coverage": {
+    "confidence": "none",
+    "independent_primary_sources": 0,
+    "inputs": {
+      "distinct_hosts": 0,
+      "primary_sources": 0,
+      "oldest_crawled_at": null,
+      "newest_crawled_at": null,
+      "excluded_count": 4,
+      "backends_contributing": 1
+    },
+    "staleness_warning": null,
+    "as_of": null,
+    "excluded": [
+      {
+        "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.finalroundai.com/blog/amazon-sde2-interview-vs-sde1",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://blog.theinterviewguys.com/amazon-interview-questions-and-answers-2/",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.reddit.com/r/amazonsdeprep/new/",
+        "reason": "token_budget: discovery item does not fit"
+      }
+    ],
+    "verdict": "Discovery observations only; not grounded evidence or source independence"
+  },
+  "security": {
+    "envelope": null,
+    "injection_findings": [],
+    "hidden_content_stripped": null,
+    "cloaking_detected": null,
+    "secrets_suppressed": null,
+    "injection_scan_performed": false,
+    "scan_status": "not_run"
+  },
+  "cost": {
+    "estimated": 0.0004,
+    "actual": 0.00037,
+    "cache_hits": 0,
+    "tokens_delivered": 185,
+    "budget_remaining": 0.9946696,
+    "currency": "USD"
+  },
+  "trace": {
+    "trace_id": "asy_N7MDZMG7JN9MPM4J45NC7D5QMP",
+    "replayable_until": "2026-12-14",
+    "latency_ms": {
+      "plan": 0,
+      "discover": 452,
+      "fetch": 0,
+      "assay": 0,
+      "shape": 0
+    },
+    "queries_executed": [
+      "Amazon L5 interview experience June July August 2026"
+    ],
+    "backends_hit": [
+      {
+        "name": "searxng",
+        "healthy": false,
+        "contributed": true,
+        "results": 10,
+        "latency_ms": 451,
+        "error": "provider_partial_failure"
+      }
+    ],
+    "urls_considered": [
+      "https://www.hellointerview.com/guides/amazon/l5",
+      "https://www.reddit.com/r/amazonsdeprep/comments/1v94649/amazon_sde_new_grad_2026_no_interview/",
+      "https://www.youtube.com/watch?v=dQvg8sbDt1Y",
+      "https://www.teamblind.com/company/Amazon/posts/amazon-interview",
+      "https://medium.com/@emilyhustlenyc/2026-guide-how-to-crack-the-l5-senior-engineer-interview-system-design-behavioral-d6bb109af888",
+      "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+      "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "https://www.finalroundai.com/blog/amazon-sde2-interview-vs-sde1",
+      "https://blog.theinterviewguys.com/amazon-interview-questions-and-answers-2/",
+      "https://www.reddit.com/r/amazonsdeprep/new/"
+    ],
+    "urls_dropped": [
+      {
+        "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.finalroundai.com/blog/amazon-sde2-interview-vs-sde1",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://blog.theinterviewguys.com/amazon-interview-questions-and-answers-2/",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.reddit.com/r/amazonsdeprep/new/",
+        "reason": "token_budget: discovery item does not fit"
+      }
+    ],
+    "tier_used": [],
+    "tokens_spent": 185,
+    "cache_hits": 0
+  }
+}

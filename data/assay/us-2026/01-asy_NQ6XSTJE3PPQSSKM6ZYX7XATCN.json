@@ -1,0 +1,192 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "discovery",
+    "disclosure": "title_url",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [
+      {
+        "url": "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+        "title": "Amazon SDE II Interview Experience 2026 - Discuss - LeetCode",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:05Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.reddit.com/r/amazonsdeprep/comments/1ubz7rv/amazon_sde_new_grad_2026_usa_interview_what/",
+        "title": "Amazon SDE New Grad 2026 USA Interview. What should I expect?",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:05Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "title": "SDE II Interview Prep - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:05Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+        "title": "Amazon SDE II Interview Experience (2026) - Exponent",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:05Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+        "title": "Amazon's SDE II Interview (AFFS, Pune) in 2026 \u2014 A Full Breakdown",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:05Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      }
+    ],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE II interview 2026 USA",
+      "executed": [
+        "Amazon SDE II interview 2026 USA"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "none",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 0,
+        "primary_sources": 0,
+        "oldest_crawled_at": null,
+        "newest_crawled_at": null,
+        "excluded_count": 5,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": null,
+      "excluded": [
+        {
+          "url": "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.techprep.app/blog/amazon-interview-process",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://interviewkickstart.com/interview-questions/companies/amazon/sde",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nxjGncCmi3Y",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "verdict": "Discovery observations only; not grounded evidence or source independence"
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0004,
+      "actual": 0.000368,
+      "cache_hits": 0,
+      "tokens_delivered": 184,
+      "budget_remaining": 0.9994016,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_NQ6XSTJE3PPQSSKM6ZYX7XATCN",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 471,
+        "fetch": 0,
+        "assay": 0,
+        "shape": 0
+      },
+      "queries_executed": [
+        "Amazon SDE II interview 2026 USA"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 10,
+          "latency_ms": 471,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+        "https://www.reddit.com/r/amazonsdeprep/comments/1ubz7rv/amazon_sde_new_grad_2026_usa_interview_what/",
+        "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+        "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+        "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+        "https://www.techprep.app/blog/amazon-interview-process",
+        "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+        "https://interviewkickstart.com/interview-questions/companies/amazon/sde",
+        "https://www.youtube.com/watch?v=nxjGncCmi3Y"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.techprep.app/blog/amazon-interview-process",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://interviewkickstart.com/interview-questions/companies/amazon/sde",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nxjGncCmi3Y",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "tier_used": [],
+      "tokens_spent": 184,
+      "cache_hits": 0
+    }
+  }
+}

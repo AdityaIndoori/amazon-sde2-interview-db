@@ -1,0 +1,4 @@
+{
+  "status": "TOOL_ERROR",
+  "error": "MCP failure\nserver: assay\ntool: assay.titles\ntransport: http\nstage: receive\nfailure: http_status\nretryable: no\nmessage: HTTP 429: {\"status\":\"RATE_LIMITED\",\"code\":\"RATE_LIMITED\",\"reason\":\"resource_admission: process request capacity exhausted\",\"retryable\":true,\"retry_after\":60}\ncode: 429\ntrace_id: a3ad0c810faf9b54-SEA\nnext: Check the MCP endpoint and authentication configuration."
+}

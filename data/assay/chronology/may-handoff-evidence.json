@@ -1,0 +1,768 @@
+{
+  "status": "ok",
+  "kind": "evidence",
+  "disclosure": "chunks",
+  "certificate_version": 2,
+  "request_version": 2,
+  "content_budget_version": 2,
+  "discovery": [],
+  "summary": null,
+  "failure": null,
+  "query_plan": {
+    "original": "Amazon SDE II Round 1 AI chat Round 2 flight path weights Round 3 Splitwise Round 4 Asteroid Collision",
+    "executed": [],
+    "backends": [],
+    "resolved_version": null,
+    "relaxed_constraints": [],
+    "lexical_weight": 0.5,
+    "semantic_weight": 0.5,
+    "expansions": [],
+    "mode": "fetch"
+  },
+  "claims": [
+    {
+      "text": "*   **Type:** Graph + Heap\n*   **Question 1:** Find a connecting path between flights (flight booking system scenario).\n*   **Follow-up 1:** Add weights (costs) \u2192 used **Dijkstra\u2019s Algorithm**.\n*   **Follow-up 2:** Handle `to \u2192 from` direction \u2192 made bidirectional graph changes.\n*   Used heap-based implementation, handled edge cases.\n*   **LPs:** Focused on handling ambiguity, delivering results, taking ownership.\n*   **Feedback:** Positive. One of my strongest rounds.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "*   **Type:** Graph + Heap\n*   **Question 1:** Find a connecting path between flights (flight booking system scenario).\n*   **Follow-up 1:** Add weights (costs) \u2192 used **Dijkstra\u2019s Algorithm**.\n*   **Follow-up 2:** Handle `to \u2192 from` direction \u2192 made bidirectional graph changes.\n*   Used heap-based implementation, handled edge cases.\n*   **LPs:** Focused on handling ambiguity, delivering results, taking ownership.\n*   **Feedback:** Positive. One of my strongest rounds.",
+          "char_range": [
+            1353,
+            1826
+          ],
+          "quote_sha256": "9c9ef2ba26b77f20e766d4090a41ec46d67ee2f7dc338b16dd60b5a7cf41e7d1",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Recently interviewed for Amazon's SDE II (L5) role and made it through 4 rounds. I did well in DSA and Leadership Principles, but got a mixed review on **System Design**, which ultimately led to a rejection. Sharing this so others can learn from it.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "Recently interviewed for Amazon's SDE II (L5) role and made it through 4 rounds. I did well in DSA and Leadership Principles, but got a mixed review on **System Design**, which ultimately led to a rejection. Sharing this so others can learn from it.",
+          "char_range": [
+            402,
+            651
+          ],
+          "quote_sha256": "fb27d4a89c634d40094d17ce6813f1f60893f87516718172aa969a3b1691aba5",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Title: \ud83e\uddea My Amazon L5 (SDE II) Interview Experience \u2013 What Went Well and What to Avoid - Discuss - LeetCode",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "Title: \ud83e\uddea My Amazon L5 (SDE II) Interview Experience \u2013 What Went Well and What to Avoid - Discuss - LeetCode",
+          "char_range": [
+            0,
+            107
+          ],
+          "quote_sha256": "202fb8317a77df2b90ebd3ab458ad820bee0d5092386bbb4cda162c00d347135",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "**Interview Format:** 4 rounds \u2013 2 HLD/LLD + 2 DSA + LP questions in all",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "**Interview Format:** 4 rounds \u2013 2 HLD/LLD + 2 DSA + LP questions in all",
+          "char_range": [
+            306,
+            378
+          ],
+          "quote_sha256": "09320a2e4fa9d0aa1effe1e3b277cc033a8667f5e9376117ae1b22232f39d721",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "#### 1\ufe0f\u20e3 Round 1 \u2013 HLD + LP (23rdApril)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "#### 1\ufe0f\u20e3 Round 1 \u2013 HLD + LP (23rdApril)",
+          "char_range": [
+            711,
+            750
+          ],
+          "quote_sha256": "338384c7b8c43a3a9e02f85c12b326f5d1945539169fd1d5608eb079ada9f75a",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "#### 2\ufe0f\u20e3 Round 2 \u2013 DSA + LP (24thApril)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "#### 2\ufe0f\u20e3 Round 2 \u2013 DSA + LP (24thApril)",
+          "char_range": [
+            1312,
+            1351
+          ],
+          "quote_sha256": "7e0679cbc0676d3f4894f6bed2f9cd8b054e9ade518c7ae104421a5553abdcba",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "#### 3\ufe0f\u20e3 Round 3 \u2013 LLD + LP (2nd May)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "#### 3\ufe0f\u20e3 Round 3 \u2013 LLD + LP (2nd May)",
+          "char_range": [
+            1835,
+            1872
+          ],
+          "quote_sha256": "fc04e66ea9299e338118f09e25af0c8a86fed2ae071b174a11c8179f664ac26b",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "#### 4\ufe0f\u20e3 Round 4 \u2013 Bar Raiser (LP + DSA) (19th May)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "#### 4\ufe0f\u20e3 Round 4 \u2013 Bar Raiser (LP + DSA) (19th May)",
+          "char_range": [
+            2549,
+            2600
+          ],
+          "quote_sha256": "081f84088030db2ddbbaf49b116c539eadd8db3132dbf7c8bbbec4907aabcdec",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "**Round Type:** SDM + SDE Interview Loop (L5)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "**Round Type:** SDM + SDE Interview Loop (L5)",
+          "char_range": [
+            259,
+            304
+          ],
+          "quote_sha256": "b3414ed40d8b51ec4ba1d65d01f0ca173e939d665e468aa6b86dfed67b48870d",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "*   **Type:** High-Level System Design\n*   **Question:** \"Design your current AI chat system\"\n*   I explained the architecture I had built in my current role \u2013 real-world experience helped.\n*   Walked through: \n    *   Client \u2192 Gateway \u2192 Services \u2192 Database\n    *   Real-time messaging via WebSocket\n    *   Stateless backend, rate-limiting, vector DB usage, etc.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "*   **Type:** High-Level System Design\n*   **Question:** \"Design your current AI chat system\"\n*   I explained the architecture I had built in my current role \u2013 real-world experience helped.\n*   Walked through: \n    *   Client \u2192 Gateway \u2192 Services \u2192 Database\n    *   Real-time messaging via WebSocket\n    *   Stateless backend, rate-limiting, vector DB usage, etc.",
+          "char_range": [
+            752,
+            1115
+          ],
+          "quote_sha256": "99d0f46a8f6a73bd38a06596cc27c4d4afcc189ca7e375c29fc09a8630dc3b53",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "*   **LPs:** 40 minutes \u2014 covered _Invent & Simplify, Ownership, Bias for Action_.\n*   Focused on scaling an app I had worked on \u2014 taking DAUs from 1k \u2192 25k.\n*   **DSA:** Stack-based problem \u2013 **Asteroid Collision** (LeetCode Medium). \n    *   Solved in under 10 mins with optimal solution.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "*   **LPs:** 40 minutes \u2014 covered _Invent & Simplify, Ownership, Bias for Action_.\n*   Focused on scaling an app I had worked on \u2014 taking DAUs from 1k \u2192 25k.\n*   **DSA:** Stack-based problem \u2013 **Asteroid Collision** (LeetCode Medium). \n    *   Solved in under 10 mins with optimal solution.",
+          "char_range": [
+            2602,
+            2892
+          ],
+          "quote_sha256": "cf677a969de4e014b8f87b2bf9e533fc4e678f7f6d625e66102db46732820d29",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "**Experience Level:** 3.5+ YOE \u2013 Full Stack Developer",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "**Experience Level:** 3.5+ YOE \u2013 Full Stack Developer",
+          "char_range": [
+            204,
+            257
+          ],
+          "quote_sha256": "4769f061b242e8e9b86cbe779ac50be19a556a0a86481d72c805eaeda03826cd",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "*   **Type:** Low-Level Design + Deep Dive\n*   **Question:** Design **Splitwise**: \n    *   Users create groups\n    *   One user pays, others split bill\n    *   View balances and settle-up",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "*   **Type:** Low-Level Design + Deep Dive\n*   **Question:** Design **Splitwise**: \n    *   Users create groups\n    *   One user pays, others split bill\n    *   View balances and settle-up",
+          "char_range": [
+            1874,
+            2062
+          ],
+          "quote_sha256": "e32e77b90a9ffe26a9f73834ff7f79212b5558c92f3c490481bee2f15f7b8129",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "1.   **System Design: Always Start With Checklist**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "1.   **System Design: Always Start With Checklist**",
+          "char_range": [
+            3176,
+            3227
+          ],
+          "quote_sha256": "d1d13c501389f8fb7562bdf195e6dab9111b6535fe7a93dce9f402c230db55a4",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "2.   **Depth Is Key**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "2.   **Depth Is Key**",
+          "char_range": [
+            3420,
+            3441
+          ],
+          "quote_sha256": "ed59ecb2521e287e5d6599e1e3d4198d8aba88b436ed9a2a1bf3e3f6d525481e",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " Amazon values clarity in thought. Instead of racing into the solution, pause to:",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": " Amazon values clarity in thought. Instead of racing into the solution, pause to:",
+          "char_range": [
+            3443,
+            3524
+          ],
+          "quote_sha256": "1509415c037ced37a0721979a9b19fb2f8680bd7a704f51f8c7ad106cbbcfc61",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "3.   **LPs Need Structure**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "3.   **LPs Need Structure**",
+          "char_range": [
+            3631,
+            3658
+          ],
+          "quote_sha256": "2c9d8a509b24a014c11085f124326c681632dded3ed39e5a7c1374cd21beaeb2",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "4.   **Coding Interviews Are Only One Part**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+          "quote": "4.   **Coding Interviews Are Only One Part**",
+          "char_range": [
+            3769,
+            3813
+          ],
+          "quote_sha256": "a778e40c1b5224827e590b27c563f5b81bcba42bfde3babcaf1ba506658205ba",
+          "crawled_at": "2026-09-14T05:44:44Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "c1595c580f8c3289f3be032baa2fb370841f3e3c0d17d12b17e8086157e68dd6",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    }
+  ],
+  "conflicts": [],
+  "coverage": {
+    "confidence": "low",
+    "independent_primary_sources": 0,
+    "inputs": {
+      "distinct_hosts": 1,
+      "primary_sources": 0,
+      "oldest_crawled_at": "2026-09-14T05:44:44Z",
+      "newest_crawled_at": "2026-09-14T05:44:44Z",
+      "excluded_count": 0,
+      "backends_contributing": 0
+    },
+    "staleness_warning": null,
+    "as_of": "2026-09-14T05:44:44Z",
+    "excluded": [],
+    "verdict": null
+  },
+  "security": {
+    "envelope": null,
+    "injection_findings": [],
+    "hidden_content_stripped": null,
+    "cloaking_detected": null,
+    "secrets_suppressed": null,
+    "injection_scan_performed": false,
+    "scan_status": "not_run"
+  },
+  "cost": {
+    "estimated": 0.0041,
+    "actual": 0.00284,
+    "cache_hits": 0,
+    "tokens_delivered": 1170,
+    "budget_remaining": 0.9922936,
+    "currency": "USD"
+  },
+  "trace": {
+    "trace_id": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+    "replayable_until": "2026-12-14",
+    "latency_ms": {
+      "plan": 0,
+      "discover": 0,
+      "fetch": 235,
+      "assay": 0,
+      "shape": 3
+    },
+    "queries_executed": [],
+    "backends_hit": [],
+    "urls_considered": [
+      "https://r.jina.ai/https://leetcode.com/discuss/post/6769948"
+    ],
+    "urls_dropped": [],
+    "tier_used": [
+      {
+        "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+        "tier": "T1",
+        "escalated_from": null
+      }
+    ],
+    "tokens_spent": 1170,
+    "cache_hits": 0
+  }
+}

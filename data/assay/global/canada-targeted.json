@@ -1,0 +1,4 @@
+{
+  "status": "TOOL_ERROR",
+  "error": "MCP failure\nserver: assay\ntool: assay.search\ntransport: http\nstage: protocol\nfailure: json_rpc\nretryable: no\nmessage: MCP error -32602: site operand must be a hostname\ncode: -32602\ntrace_id: a3ad0da20d0e0c1a-SEA\nnext: Address the server-reported MCP error before retrying."
+}

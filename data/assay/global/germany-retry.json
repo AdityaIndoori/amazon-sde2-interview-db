@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "discovery",
+    "disclosure": "title_url",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [
+      {
+        "url": "https://www.linkedin.com/posts/udit-gupta-ug0510_tier-3-college-to-amazon-sde-the-interview-activity-7438891145679507456-0Nri",
+        "title": "Amazon Interview Process: Insider's Guide to Succeeding at Amazon",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:21Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "title": "SDE II Interview Prep - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:21Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.linkedin.com/posts/shailnitk_amazon-sde-2-interview-experience-dsa-activity-7438539439611539456-gFNz",
+        "title": "Amazon SDE-2 Interview Experience: Process, Coding, and Bar ...",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:21Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.jobtestprep.com/amazon-online-assessment",
+        "title": "Amazon OA SDE [2026]: Guide, Questions & Prep - JobTestPrep",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:21Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.linkedin.com/posts/piyushnirala_amazon-interviewexperience-systemdesign-activity-7371636735505666048-Zx-x",
+        "title": "My Amazon SDE2 Interview Experience | Piyush Nirala - LinkedIn",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:21Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      }
+    ],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE2 Germany interview experience 2025 2026",
+      "executed": [
+        "Amazon SDE2 Germany interview experience 2025 2026"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "none",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 0,
+        "primary_sources": 0,
+        "oldest_crawled_at": null,
+        "newest_crawled_at": null,
+        "excluded_count": 3,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": null,
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/6390329/amazon-dublin-sde-2-interview-experience-chwx/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DRJ3odsgL02/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://medium.com/nybles/amazon-applied-scientist-intern-interview-experience-ml-challenge-2025-5092441d0b2e",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "verdict": "Discovery observations only; not grounded evidence or source independence"
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0004,
+      "actual": 0.00038,
+      "cache_hits": 0,
+      "tokens_delivered": 190,
+      "budget_remaining": 0.9987984,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_CC92NRG7JMGCEHW7AF26NEG6Z5",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 1238,
+        "fetch": 0,
+        "assay": 0,
+        "shape": 0
+      },
+      "queries_executed": [
+        "Amazon SDE2 Germany interview experience 2025 2026"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 8,
+          "latency_ms": 1238,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://www.linkedin.com/posts/udit-gupta-ug0510_tier-3-college-to-amazon-sde-the-interview-activity-7438891145679507456-0Nri",
+        "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "https://www.linkedin.com/posts/shailnitk_amazon-sde-2-interview-experience-dsa-activity-7438539439611539456-gFNz",
+        "https://www.jobtestprep.com/amazon-online-assessment",
+        "https://www.linkedin.com/posts/piyushnirala_amazon-interviewexperience-systemdesign-activity-7371636735505666048-Zx-x",
+        "https://leetcode.com/discuss/post/6390329/amazon-dublin-sde-2-interview-experience-chwx/",
+        "https://www.instagram.com/reel/DRJ3odsgL02/",
+        "https://medium.com/nybles/amazon-applied-scientist-intern-interview-experience-ml-challenge-2025-5092441d0b2e"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://leetcode.com/discuss/post/6390329/amazon-dublin-sde-2-interview-experience-chwx/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DRJ3odsgL02/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://medium.com/nybles/amazon-applied-scientist-intern-interview-experience-ml-challenge-2025-5092441d0b2e",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "tier_used": [],
+      "tokens_spent": 190,
+      "cache_hits": 0
+    }
+  }
+}

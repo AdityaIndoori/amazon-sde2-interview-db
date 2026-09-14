@@ -810,7 +810,8 @@
       "interviewDate": null,
       "date": "2026-03-31",
       "dateBasis": "publication",
-      "location": "Not stated",
+      "location": "India",
+      "locationEvidence": "Author Anonymous User replied 'Hyd,India' on March31,2026 to Mikayil's 'Location?' comment on this original report. Expanded public browser reply verified during Assay follow-up research; not inferred from site footer.",
       "role": "SDE II",
       "stageEvidence": "Went through the Amazon SDE-2 interview loop recently. Round1 HLD cancelled; completed source rounds2–4.",
       "questions": [
@@ -904,7 +905,8 @@
       "interviewDate": null,
       "date": "2026-06-28",
       "dateBasis": "publication",
-      "location": "Not stated",
+      "location": "India",
+      "locationEvidence": "Author Saisampath Mahajan replied 'Nope amazon india' on June28,2026 to Malhar's 'Was this for Amazon US? or some other country?' comment. Expanded public browser reply verified during Assay follow-up research.",
       "role": "SDE II",
       "stageEvidence": "SDE-2 title; sourceRound1 OA, sourceRounds2–5 DSA/LLD/Bar Raiser/HM-HLD.",
       "questions": [

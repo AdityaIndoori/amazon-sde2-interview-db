@@ -1,0 +1,216 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "evidence",
+    "disclosure": "chunks",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE2 interview 2026 United States",
+      "executed": [
+        "Amazon SDE2 interview 2026 United States"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [
+      {
+        "text": "Amazon SDE II Interview Experience + Need Honest Feedback\nHi everyone,\n \nI wanted to share my recent Amazon interview experience and get some honest feedback from the community on my chances moving forward.\n \nHow it started\nI initially took referrals for 5–6 roles, but all of them got canceled. But surprisingly, I later received an OA link from a team I hadn’t even applied to.\n \nSo yeah… a bit unexpected, but I went ahead with it.\n \nOnline Assessment (OA)\n• Q1: Variant of inversion count → I used Fenwick Tree (BIT)\n• Q2: Geometry-based problem\nThe OA went well overall. I’m not sure if there was a simpler approach for Q1, but Fenwick Tree worked.\n \nFirst Attempt – DSA Round (Elimination Round)\nThis round was clearly mentioned as eliminatory.\n• Reverse Linked List in K groups\n• Insert Delete GetRandom O(1) (no duplicates)\n \nI solved both questions, explained approaches, did dry runs, and the interviewer seemed aligned. Leadership principles also went well.\n \nBut here comes the twist…\n \nAfter 2-3 days of no updates, I reached out to",
+        "support": [
+          {
+            "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+            "quote": "Amazon SDE II Interview Experience + Need Honest Feedback\nHi everyone,\n \nI wanted to share my recent Amazon interview experience and get some honest feedback from the community on my chances moving forward.\n \nHow it started\nI initially took referrals for 5–6 roles, but all of them got canceled. But surprisingly, I later received an OA link from a team I hadn’t even applied to.\n \nSo yeah… a bit unexpected, but I went ahead with it.\n \nOnline Assessment (OA)\n• Q1: Variant of inversion count → I used Fenwick Tree (BIT)\n• Q2: Geometry-based problem\nThe OA went well overall. I’m not sure if there was a simpler approach for Q1, but Fenwick Tree worked.\n \nFirst Attempt – DSA Round (Elimination Round)\nThis round was clearly mentioned as eliminatory.\n• Reverse Linked List in K groups\n• Insert Delete GetRandom O(1) (no duplicates)\n \nI solved both questions, explained approaches, did dry runs, and the interviewer seemed aligned. Leadership principles also went well.\n \nBut here comes the twist…\n \nAfter 2-3 days of no updates, I reached out to",
+            "char_range": [
+              0,
+              1045
+            ],
+            "quote_sha256": "8171b4b64ce3f0007d5ace70884019b16b80ccb6638c1b01beab2e833722499c",
+            "crawled_at": "2026-09-14T05:38:28Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "212963547395f1dcb71f50b028ea3547bed21f25c93b4a555d6c4616df076dbf",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "the recruiter and was told:\n• The position got filled\n• My interview feedback was not submitted / lost\n \nAt that point, I genuinely felt a bit deserted, because the round had gone well, but it didn’t even count in the process.\n \nThankfully, the recruiter said she would try to match me with another team, and I agreed to go through the process again.\n \nSecond Attempt – New Team\nThis time, I had 2 rounds scheduled on the same day (DSA + LLD).\n \nRound 1 – DSA\n• Trim a binary tree to make it a complete binary tree + maintain a trash queue → Solved using BFS\n• Number of islands\nBoth were solved cleanly with dry runs and edge cases. LPs went well too.\n \nRound 2 – LLD\nDesign WhatsApp Read Receipts (ticks)\n \nInitially, I approached with design patterns like:\n• Observer\n• State\n• Prototype\n \nBut the interviewer clarified:\n \n“Assume WhatsApp is already built, (observer pattern is already built), just design the feature.”\n \nThen moved to HLD concepts:\n• Data flow of messages\n• Redis Pub/Sub vs Kafka discussion\n• Message storage\n• Handling offline users",
+        "support": [
+          {
+            "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+            "quote": "the recruiter and was told:\n• The position got filled\n• My interview feedback was not submitted / lost\n \nAt that point, I genuinely felt a bit deserted, because the round had gone well, but it didn’t even count in the process.\n \nThankfully, the recruiter said she would try to match me with another team, and I agreed to go through the process again.\n \nSecond Attempt – New Team\nThis time, I had 2 rounds scheduled on the same day (DSA + LLD).\n \nRound 1 – DSA\n• Trim a binary tree to make it a complete binary tree + maintain a trash queue → Solved using BFS\n• Number of islands\nBoth were solved cleanly with dry runs and edge cases. LPs went well too.\n \nRound 2 – LLD\nDesign WhatsApp Read Receipts (ticks)\n \nInitially, I approached with design patterns like:\n• Observer\n• State\n• Prototype\n \nBut the interviewer clarified:\n \n“Assume WhatsApp is already built, (observer pattern is already built), just design the feature.”\n \nThen moved to HLD concepts:\n• Data flow of messages\n• Redis Pub/Sub vs Kafka discussion\n• Message storage\n• Handling offline users",
+            "char_range": [
+              1046,
+              2102
+            ],
+            "quote_sha256": "23362a9506af74741d7f854a267c599cb2e77337a420fd3ebf2c3f7bc6f55c36",
+            "crawled_at": "2026-09-14T05:38:28Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "212963547395f1dcb71f50b028ea3547bed21f25c93b4a555d6c4616df076dbf",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      }
+    ],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "low",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 1,
+        "primary_sources": 0,
+        "oldest_crawled_at": "2026-09-14T05:38:28Z",
+        "newest_crawled_at": "2026-09-14T05:38:28Z",
+        "excluded_count": 4,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": "2026-09-14T05:38:28Z",
+      "excluded": [
+        {
+          "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+          "reason": "all_tiers_failed: no tier produced extractable text for https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/"
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "http_403: target answered HTTP 403"
+        }
+      ],
+      "verdict": null
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0061,
+      "actual": 0.00226,
+      "cache_hits": 0,
+      "tokens_delivered": 880,
+      "budget_remaining": 0.999548,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_P47F3H1RF0FTVRREK4M9D0TM2G",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 940,
+        "fetch": 2258,
+        "assay": 0,
+        "shape": 2
+      },
+      "queries_executed": [
+        "Amazon SDE2 interview 2026 United States"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 5,
+          "latency_ms": 939,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+        "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+        "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+        "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+        "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+          "reason": "all_tiers_failed: no tier produced extractable text for https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/"
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "http_403: target answered HTTP 403"
+        }
+      ],
+      "tier_used": [
+        {
+          "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+          "tier": "T1",
+          "escalated_from": null
+        }
+      ],
+      "tokens_spent": 880,
+      "cache_hits": 0
+    }
+  }
+}

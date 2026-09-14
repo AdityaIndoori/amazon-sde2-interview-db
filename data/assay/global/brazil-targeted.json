@@ -1,0 +1,278 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "evidence",
+    "disclosure": "chunks",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE2 Brasil entrevista 2025",
+      "executed": [
+        "Amazon SDE2 Brasil entrevista 2025"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [
+      {
+        "text": "acontece.\nPor que candidatos brasileiros buscam simuladores com IA em 2025 e 2026\nA busca por simuladores de entrevista com IA no Brasil cresceu em 2025 e 2026 por tres razoes convergentes. A primeira e o aumento das entrevistas virtuais apos a pandemia: a maioria das entrevistas para vagas remotas e hibridas acontece via Google Meet ou Zoom, o que torna ferramentas baseadas em videochamada mais relevantes. A segunda e o crescimento de processos seletivos de empresas americanas e europeias para candidatos brasileiros trabalhando de forma remota, onde a entrevista acontece em ingles e a pressao linguistica adicional aumenta a demanda por pratica previa. A terceira e a democratizacao das ferramentas de IA: em 2025, ferramentas que custavam centenas de dolares por mes passaram a ter versoes gratuitas ou de baixo custo acessiveis para candidatos com renda em reais.\nO desafio especifico do candidato brasileiro e diferente do candidato americano: o processo seletivo no Brasil inclui etapas de RH com perguntas sobre pretensao salarial em reais, disponibilidade para trabalho PJ ou CLT, periodo de aviso previo, e fit cultural com a empresa. Ferramentas calibradas para o mercado americano nao cobrem essas variaveis. Pratique com um simulador de entrevista com IA especifico para vagas no",
+        "support": [
+          {
+            "url": "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+            "quote": "acontece.\nPor que candidatos brasileiros buscam simuladores com IA em 2025 e 2026\nA busca por simuladores de entrevista com IA no Brasil cresceu em 2025 e 2026 por tres razoes convergentes. A primeira e o aumento das entrevistas virtuais apos a pandemia: a maioria das entrevistas para vagas remotas e hibridas acontece via Google Meet ou Zoom, o que torna ferramentas baseadas em videochamada mais relevantes. A segunda e o crescimento de processos seletivos de empresas americanas e europeias para candidatos brasileiros trabalhando de forma remota, onde a entrevista acontece em ingles e a pressao linguistica adicional aumenta a demanda por pratica previa. A terceira e a democratizacao das ferramentas de IA: em 2025, ferramentas que custavam centenas de dolares por mes passaram a ter versoes gratuitas ou de baixo custo acessiveis para candidatos com renda em reais.\nO desafio especifico do candidato brasileiro e diferente do candidato americano: o processo seletivo no Brasil inclui etapas de RH com perguntas sobre pretensao salarial em reais, disponibilidade para trabalho PJ ou CLT, periodo de aviso previo, e fit cultural com a empresa. Ferramentas calibradas para o mercado americano nao cobrem essas variaveis. Pratique com um simulador de entrevista com IA especifico para vagas no",
+            "char_range": [
+              1175,
+              2472
+            ],
+            "quote_sha256": "47980ab0bc71fbff716dd53d958eff57870d4309c1c366c62e11f01d9f331ebd",
+            "crawled_at": "2026-09-14T05:40:02Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "eeef84e4b5729a7b0985c1d6ef48e56fe6889ac7f3c488319e3d135520145066",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "tres cenarios especificos: entrevistas em ingles para vagas remotas em empresas americanas ou europeias, processos seletivos de alta competitividade para vagas bem remuneradas onde a diferenca entre passar e nao passar e pequena, e candidatos com alta ansiedade durante entrevistas ao vivo que se beneficiam de ter um suporte visivel durante a conversa. Para vagas PJ ou CLT em empresas brasileiras conduzidas em portugues por recrutadores locais, as ferramentas gratuitas brasileiras sao suficientes.\nLeia a guia sobre como passar em entrevistas com IA para entender como os processos seletivos automatizados funcionam no Brasil e nos EUA em 2025 e 2026, incluindo as etapas anteriores a entrevista com recrutador humano.\nDicas de uso: como nao soar decorado numa entrevista com IA de pratica\nA armadilha mais comum ao usar simuladores de entrevista com IA e memorizar as respostas geradas pelo simulador e repeti-las textualmente na entrevista real. Recrutadores identificam respostas memorizadas rapidamente: o candidato perde o ritmo natural da conversa, as respostas ficam desconectadas das perguntas de acompanhamento do recrutador, e o candidato nao consegue adaptar a resposta quando o recrutador aprofunda em um ponto especifico.\nO uso correto do simulador e diferente: use-o para identificar os topicos que voce cobre mal",
+        "support": [
+          {
+            "url": "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+            "quote": "tres cenarios especificos: entrevistas em ingles para vagas remotas em empresas americanas ou europeias, processos seletivos de alta competitividade para vagas bem remuneradas onde a diferenca entre passar e nao passar e pequena, e candidatos com alta ansiedade durante entrevistas ao vivo que se beneficiam de ter um suporte visivel durante a conversa. Para vagas PJ ou CLT em empresas brasileiras conduzidas em portugues por recrutadores locais, as ferramentas gratuitas brasileiras sao suficientes.\nLeia a guia sobre como passar em entrevistas com IA para entender como os processos seletivos automatizados funcionam no Brasil e nos EUA em 2025 e 2026, incluindo as etapas anteriores a entrevista com recrutador humano.\nDicas de uso: como nao soar decorado numa entrevista com IA de pratica\nA armadilha mais comum ao usar simuladores de entrevista com IA e memorizar as respostas geradas pelo simulador e repeti-las textualmente na entrevista real. Recrutadores identificam respostas memorizadas rapidamente: o candidato perde o ritmo natural da conversa, as respostas ficam desconectadas das perguntas de acompanhamento do recrutador, e o candidato nao consegue adaptar a resposta quando o recrutador aprofunda em um ponto especifico.\nO uso correto do simulador e diferente: use-o para identificar os topicos que voce cobre mal",
+            "char_range": [
+              8781,
+              10112
+            ],
+            "quote_sha256": "4f50413317e795add5098e61e14d55a51a4e758bf8143e347b603d21f86615de",
+            "crawled_at": "2026-09-14T05:40:02Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "eeef84e4b5729a7b0985c1d6ef48e56fe6889ac7f3c488319e3d135520145066",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "Software Development Engineer II, Amazon External Payments\nDescrição\nAmazon External Payments is building the foundational capabilities for Agentic Payments. As a Software Development Engineer (SDE2), you will own the development of these core building blocks, enabling intelligent agents to complete purchases on behalf of customers. You will collaborate closely with Global Payment Tech to design and deliver payment primitives for wallet integration, tokenisation and agentic deals, set the technical vision for your team, influence the broader technology roadmap, and drive continuous architectural and performance improvements.\nAmazon External Payments is one of Amazon’s fastest-growing businesses. It enables e-commerce websites to accept payments using the payment methods stored in customers’ Amazon.com accounts, allowing users to seamlessly pay for goods and services beyond Amazon. The platform also allows customers to manage preferences and view their off-Amazon transaction history. Hundreds of thousands of users complete millions of transactions worldwide through Amazon Pay. Our teams build software across the entire stack, from customer-facing interfaces to highly scalable backend systems.\nKey job responsibilities\nIf you’re excited to work in a fast-paced, startup-like environment within Amazon and help",
+        "support": [
+          {
+            "url": "https://www.amazon.jobs/pt/jobs/10523659/software-development-engineer-ii-amazon-external-payments",
+            "quote": "Software Development Engineer II, Amazon External Payments\nDescrição\nAmazon External Payments is building the foundational capabilities for Agentic Payments. As a Software Development Engineer (SDE2), you will own the development of these core building blocks, enabling intelligent agents to complete purchases on behalf of customers. You will collaborate closely with Global Payment Tech to design and deliver payment primitives for wallet integration, tokenisation and agentic deals, set the technical vision for your team, influence the broader technology roadmap, and drive continuous architectural and performance improvements.\nAmazon External Payments is one of Amazon’s fastest-growing businesses. It enables e-commerce websites to accept payments using the payment methods stored in customers’ Amazon.com accounts, allowing users to seamlessly pay for goods and services beyond Amazon. The platform also allows customers to manage preferences and view their off-Amazon transaction history. Hundreds of thousands of users complete millions of transactions worldwide through Amazon Pay. Our teams build software across the entire stack, from customer-facing interfaces to highly scalable backend systems.\nKey job responsibilities\nIf you’re excited to work in a fast-paced, startup-like environment within Amazon and help",
+            "char_range": [
+              0,
+              1326
+            ],
+            "quote_sha256": "bb985e62629846f14df9bbdd513083df4fc5f2095dc345598c0a6a962f537c77",
+            "crawled_at": "2026-09-14T05:40:00Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "ed19a69bd66b216e2e9c831aad2c09415676b37270b9387b5705289362a3dd91",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "O Brasil tem mais de 270 buscas mensais por \"simulador de entrevista de emprego com IA\" com taxa de cliques abaixo de 1%, o que indica que candidatos brasileiros estao procurando essas ferramentas mas nao estao encontrando conteudo de qualidade em portugues que as explique. Esta guia compara os melhores simuladores de entrevista com IA disponiveis para candidatos no Brasil em 2026: Gupy, BrazilGPT, Candidatei, SENAI NAI, e Interview CoPilot da Final Round AI, com clareza sobre o que cada um faz e para quem cada um serve.\nResposta Rapida\n- O Gupy e o BrazilGPT sao as opcoes gratuitas mais completas em portugues para pratica antes da entrevista: o Gupy adapta as perguntas ao perfil e a vaga, e o BrazilGPT funciona sem cadastro com feedback em clareza e relevancia.\n- O SENAI NAI e gratuito, desenvolvido com IA do Google Cloud, e disponivel em multiplos idiomas, sendo a melhor opcao para candidatos sem cartao de credito internacional.\n- Interview CoPilot da Final Round AI e o unico simulador que tambem funciona em tempo real durante a entrevista real, nao apenas na pratica previa: escuta o recrutador e gera sugestoes de resposta na sua tela enquanto a conversa",
+        "support": [
+          {
+            "url": "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+            "quote": "O Brasil tem mais de 270 buscas mensais por \"simulador de entrevista de emprego com IA\" com taxa de cliques abaixo de 1%, o que indica que candidatos brasileiros estao procurando essas ferramentas mas nao estao encontrando conteudo de qualidade em portugues que as explique. Esta guia compara os melhores simuladores de entrevista com IA disponiveis para candidatos no Brasil em 2026: Gupy, BrazilGPT, Candidatei, SENAI NAI, e Interview CoPilot da Final Round AI, com clareza sobre o que cada um faz e para quem cada um serve.\nResposta Rapida\n- O Gupy e o BrazilGPT sao as opcoes gratuitas mais completas em portugues para pratica antes da entrevista: o Gupy adapta as perguntas ao perfil e a vaga, e o BrazilGPT funciona sem cadastro com feedback em clareza e relevancia.\n- O SENAI NAI e gratuito, desenvolvido com IA do Google Cloud, e disponivel em multiplos idiomas, sendo a melhor opcao para candidatos sem cartao de credito internacional.\n- Interview CoPilot da Final Round AI e o unico simulador que tambem funciona em tempo real durante a entrevista real, nao apenas na pratica previa: escuta o recrutador e gera sugestoes de resposta na sua tela enquanto a conversa",
+            "char_range": [
+              0,
+              1174
+            ],
+            "quote_sha256": "21f31cfa8208742a3d6585dab9fdf643514606e2cd59029545cb7a001f9d5bc1",
+            "crawled_at": "2026-09-14T05:40:02Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "eeef84e4b5729a7b0985c1d6ef48e56fe6889ac7f3c488319e3d135520145066",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      }
+    ],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "medium",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 2,
+        "primary_sources": 0,
+        "oldest_crawled_at": "2026-09-14T05:40:00Z",
+        "newest_crawled_at": "2026-09-14T05:40:02Z",
+        "excluded_count": 0,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": "2026-09-14T05:40:02Z",
+      "excluded": [],
+      "verdict": null
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0061,
+      "actual": 0.00602,
+      "cache_hits": 0,
+      "tokens_delivered": 1760,
+      "budget_remaining": 0.9948196,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_YEM909QMB7TKG6EWCCJYNK1R4F",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 332,
+        "fetch": 5406,
+        "assay": 0,
+        "shape": 30
+      },
+      "queries_executed": [
+        "Amazon SDE2 Brasil entrevista 2025"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 5,
+          "latency_ms": 331,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "https://www.amazon.jobs/pt/jobs/10523659/software-development-engineer-ii-amazon-external-payments",
+        "https://www.greatfrontend.com/pt-BR/interviews/pricing",
+        "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+        "https://br.linkedin.com/in/kamila-santos-oliveira"
+      ],
+      "urls_dropped": [],
+      "tier_used": [
+        {
+          "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://www.amazon.jobs/pt/jobs/10523659/software-development-engineer-ii-amazon-external-payments",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://www.greatfrontend.com/pt-BR/interviews/pricing",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://br.linkedin.com/in/kamila-santos-oliveira",
+          "tier": "T1",
+          "escalated_from": null
+        }
+      ],
+      "tokens_spent": 1760,
+      "cache_hits": 0
+    }
+  }
+}

@@ -6,9 +6,9 @@
     "generatedAt": "2026-09-13",
     "frequencyDefinition": "Distinct candidate reports mentioning this question in this round; cross-posts count once. Not an estimate of Amazon’s actual asking rate.",
     "disclaimer": "Publicly reported experiences only. Discovery is not exhaustive and candidate accounts are not independently authenticated. Missing dates or locations are never inferred. Publication dates are labeled separately from interview dates.",
-    "reportCount": 128,
-    "questionCount": 561,
-    "occurrenceCount": 605
+    "reportCount": 130,
+    "questionCount": 566,
+    "occurrenceCount": 611
   },
   "questions": [
     {
@@ -2127,6 +2127,42 @@
           "reportedTopic": "System design / Search",
           "sourceRound": "Round 1",
           "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
+      "id": "r1-design-current-ai-chat-system",
+      "round": 1,
+      "question": "Design the AI chat system from your current work.",
+      "topic": "System design / AI chat",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-04-23",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-6769948",
+          "title": "My Amazon L5 (SDE II) Interview Experience – What Went Well and What to Avoid",
+          "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-6769948",
+          "date": "2025-04-23",
+          "dateBasis": "interview",
+          "location": "India",
+          "evidence": "Round 1 – HLD + LP (23rdApril): Question: Design your current AI chat system.",
+          "reportedQuestion": "Design the AI chat system from your current work.",
+          "reportedTopic": "System design / AI chat",
+          "sourceRound": "Round 1 – HLD + LP (23rdApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved."
         }
       ]
     },
@@ -4268,15 +4304,14 @@
         }
       ],
       "locations": [
-        "India",
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 2: DSA; one question related to find median from data stream",
           "reportedQuestion": "Maintain the median of a data stream.",
           "reportedTopic": "Heaps",
@@ -8414,6 +8449,42 @@
       ]
     },
     {
+      "id": "r2-ride-matching-service-lld",
+      "round": 2,
+      "question": "Design a ride-matching service.",
+      "topic": "Low-level design / Ride matching",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-02-22",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7599995",
+          "title": "Amazon SDE 2 | L5 | Hyderabad",
+          "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7599995",
+          "date": "2026-02-22",
+          "dateBasis": "publication",
+          "location": "India",
+          "evidence": "R2: LLD Round — Design a Ride matching Service.",
+          "reportedQuestion": "Design a ride-matching service.",
+          "reportedTopic": "Low-level design / Ride matching",
+          "sourceRound": "R2: LLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1–R4 ending with Bar Raiser. Original numbering retained."
+        }
+      ]
+    },
+    {
       "id": "r2-file-sync-hld",
       "round": 2,
       "question": "Design a scalable file synchronization service.",
@@ -8994,14 +9065,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 3: LLD; Design Amazon music search ... User can search by songs, artists and album ... create playlist ... play, pause and reset",
           "reportedQuestion": "Design Amazon music search by songs/artists/albums, playlists and play/pause/reset operations.",
           "reportedTopic": "Low-level design",
@@ -10205,6 +10276,42 @@
           "reportedTopic": "Low-level design",
           "sourceRound": "LLD / Bar Raiser - 25th September",
           "roundMappingNote": "Four final-loop interviews explicitly listed chronologically under Onsite Loop; ordinal positions1–4 preserve source sequence, excluding separately labeled technical phone screen."
+        }
+      ]
+    },
+    {
+      "id": "r2-connecting-flight-path-weighted-bidirectional",
+      "round": 2,
+      "question": "Find a connecting path between flights; extend the solution to weighted costs and reverse-direction travel.",
+      "topic": "Graphs / Shortest paths",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-04-24",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-6769948",
+          "title": "My Amazon L5 (SDE II) Interview Experience – What Went Well and What to Avoid",
+          "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-6769948",
+          "date": "2025-04-24",
+          "dateBasis": "interview",
+          "location": "India",
+          "evidence": "Round 2 – DSA + LP (24thApril): Find a connecting path between flights (flight booking system scenario). Follow-up1: Add weights (costs) → used Dijkstra’s Algorithm. Follow-up2: Handle to → from direction → made bidirectional graph changes.",
+          "reportedQuestion": "Find a connecting path between flights; extend the solution to weighted costs and reverse-direction travel.",
+          "reportedTopic": "Graphs / Shortest paths",
+          "sourceRound": "Round 2 – DSA + LP (24thApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved."
         }
       ]
     },
@@ -12819,14 +12926,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 4: Bar Raiser (machine coding); Design Amazon distributed CRON job scheduler like (AirFlow)",
           "reportedQuestion": "Design a distributed CRON job scheduler like Airflow.",
           "reportedTopic": "Low-level design / Scheduling",
@@ -13212,6 +13319,42 @@
           "reportedTopic": "Low-level design",
           "sourceRound": "Round 3",
           "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
+      "id": "r3-news-feed-hld",
+      "round": 3,
+      "question": "Design a news feed system.",
+      "topic": "System design",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-02-22",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7599995",
+          "title": "Amazon SDE 2 | L5 | Hyderabad",
+          "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7599995",
+          "date": "2026-02-22",
+          "dateBasis": "publication",
+          "location": "India",
+          "evidence": "R3: HLD Round — Design a News Feed System.",
+          "reportedQuestion": "Design a news feed system.",
+          "reportedTopic": "System design",
+          "sourceRound": "R3: HLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1–R4 ending with Bar Raiser. Original numbering retained."
         }
       ]
     },
@@ -14623,8 +14766,7 @@
         }
       ],
       "locations": [
-        "India",
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
@@ -14642,7 +14784,7 @@
           "reportId": "leetcode-7728145",
           "date": "2026-03-31",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 3 ... designing a rate limiter and its diffierent algorithms token bucket, fixed window, sliding window along with implmentation",
           "reportedQuestion": "Design a rate limiter, compare token bucket/fixed/sliding windows, and implement one algorithm.",
           "reportedTopic": "Low-level design / Rate limiting",
@@ -14972,6 +15114,42 @@
           "reportedTopic": "System design",
           "sourceRound": "Round 3",
           "roundMappingNote": "Source labels the interview sequence as Round 3; no screening offset applied."
+        }
+      ]
+    },
+    {
+      "id": "r3-design-splitwise",
+      "round": 3,
+      "question": "Design Splitwise with groups, shared bills, balances and settlements.",
+      "topic": "Low-level design / Expense sharing",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-05-02",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-6769948",
+          "title": "My Amazon L5 (SDE II) Interview Experience – What Went Well and What to Avoid",
+          "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-6769948",
+          "date": "2025-05-02",
+          "dateBasis": "interview",
+          "location": "India",
+          "evidence": "Round 3 – LLD + LP (2nd May): Design Splitwise: Users create groups; One user pays, others split bill; View balances and settle-up.",
+          "reportedQuestion": "Design Splitwise with groups, shared bills, balances and settlements.",
+          "reportedTopic": "Low-level design / Expense sharing",
+          "sourceRound": "Round 3 – LLD + LP (2nd May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved."
         }
       ]
     },
@@ -17957,14 +18135,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 5; HLD question: Design Web Crawler within 20 mins that to in depth",
           "reportedQuestion": "Design a web crawler in depth.",
           "reportedTopic": "System design / Crawling",
@@ -19554,14 +19732,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-7728145",
           "date": "2026-03-31",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 4 ... LRU cache with TTL",
           "reportedQuestion": "Implement an LRU cache with time-to-live expiration.",
           "reportedTopic": "Caching / Data structures",
@@ -20357,11 +20535,15 @@
       "round": 4,
       "question": "Simulate asteroid collisions.",
       "topic": "Stacks",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
         {
           "date": "2026-01-08",
           "basis": "publication"
+        },
+        {
+          "date": "2025-05-19",
+          "basis": "interview"
         }
       ],
       "sources": [
@@ -20369,9 +20551,15 @@
           "id": "leetcode-7477684",
           "title": "Amazon || SDE - 2 || 3 YOE || Accepted offer",
           "url": "https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/"
+        },
+        {
+          "id": "leetcode-6769948",
+          "title": "My Amazon L5 (SDE II) Interview Experience – What Went Well and What to Avoid",
+          "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/"
         }
       ],
       "locations": [
+        "India",
         "Not stated"
       ],
       "occurrences": [
@@ -20385,6 +20573,17 @@
           "reportedTopic": "Stacks",
           "sourceRound": "Bar raiser",
           "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "reportId": "leetcode-6769948",
+          "date": "2025-05-19",
+          "dateBasis": "interview",
+          "location": "India",
+          "evidence": "Round 4 – Bar Raiser (LP + DSA) (19th May): DSA: Stack-based problem – Asteroid Collision (LeetCode Medium). Follow-up: How would you optimize memory usage?",
+          "reportedQuestion": "Simulate asteroid collisions.",
+          "reportedTopic": "Stacks",
+          "sourceRound": "Round 4 – Bar Raiser (LP + DSA) (19th May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved."
         }
       ]
     },
@@ -20696,14 +20895,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 5; tell me about a time where AI couldnt generate expected code",
           "reportedQuestion": "Tell me about a time AI could not generate the expected code.",
           "reportedTopic": "Generative AI",
@@ -20804,14 +21003,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 5; tell me about a time where you made impossible project, possible",
           "reportedQuestion": "Tell me about a time you made an impossible project possible.",
           "reportedTopic": "Behavioral / Deliver results",
@@ -21092,14 +21291,14 @@
         }
       ],
       "locations": [
-        "Not stated"
+        "India"
       ],
       "occurrences": [
         {
           "reportId": "leetcode-8363946",
           "date": "2026-06-28",
           "dateBasis": "publication",
-          "location": "Not stated",
+          "location": "India",
           "evidence": "Round 5: Hiring manager + HLD; why are you looking out for change",
           "reportedQuestion": "Why are you looking for a job change?",
           "reportedTopic": "Behavioral / Motivation",
@@ -21844,7 +22043,8 @@
       "interviewDate": null,
       "date": "2026-06-28",
       "dateBasis": "publication",
-      "location": "Not stated",
+      "location": "India",
+      "locationEvidence": "Author Saisampath Mahajan replied 'Nope amazon india' on June28,2026 to Malhar's 'Was this for Amazon US? or some other country?' comment. Expanded public browser reply verified during Assay follow-up research.",
       "role": "SDE II",
       "stageEvidence": "SDE-2 title; sourceRound1 OA, sourceRounds2–5 DSA/LLD/Bar Raiser/HM-HLD.",
       "questions": [
@@ -22530,7 +22730,8 @@
       "interviewDate": null,
       "date": "2026-03-31",
       "dateBasis": "publication",
-      "location": "Not stated",
+      "location": "India",
+      "locationEvidence": "Author Anonymous User replied 'Hyd,India' on March31,2026 to Mikayil's 'Location?' comment on this original report. Expanded public browser reply verified during Assay follow-up research; not inferred from site footer.",
       "role": "SDE II",
       "stageEvidence": "Went through the Amazon SDE-2 interview loop recently. Round1 HLD cancelled; completed source rounds2–4.",
       "questions": [
@@ -23077,6 +23278,88 @@
       "aliases": [],
       "slices": [
         "2026-h1"
+      ]
+    },
+    {
+      "id": "leetcode-7599995",
+      "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "title": "Amazon SDE 2 | L5 | Hyderabad",
+      "publishedDate": "2026-02-22",
+      "interviewDate": null,
+      "date": "2026-02-22",
+      "dateBasis": "publication",
+      "location": "India",
+      "role": "SDE II",
+      "stageEvidence": "Title: Amazon SDE 2 | L5 | Hyderabad. Candidate: Hey Everyone, I wanted to share my recent interview experience for SDE 2 (L5) at Amazon. R0: Online Assessment; R1: DSA Round; R2: LLD Round; R3: HLD Round; R4: Bar Raiser; Once all the rounds were over ... she gave the positive news. Public original browser shows Feb 22, 2026 twice; embedded article createdAt=2026-02-22T13:50:29.095412+00:00 and updatedAt=2026-02-22T13:54:26.735250+00:00. Hyderabad in the report title supports India; footer United States is not candidate location. Assay captured questions and headings, while original browser supplied publication date.",
+      "questions": [
+        {
+          "round": 2,
+          "sourceRound": "R2: LLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1–R4 ending with Bar Raiser. Original numbering retained.",
+          "key": "ride-matching-service-lld",
+          "question": "Design a ride-matching service.",
+          "topic": "Low-level design / Ride matching",
+          "evidence": "R2: LLD Round — Design a Ride matching Service.",
+          "assayEvidence": [
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": "**R2: LLD Round**",
+              "charRange": [
+                1287,
+                1304
+              ]
+            },
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": " Design a Ride matching Service.",
+              "charRange": [
+                1306,
+                1338
+              ]
+            }
+          ],
+          "date": "2026-02-22",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "R3: HLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1–R4 ending with Bar Raiser. Original numbering retained.",
+          "key": "news-feed-hld",
+          "question": "Design a news feed system.",
+          "topic": "System design",
+          "evidence": "R3: HLD Round — Design a News Feed System.",
+          "assayEvidence": [
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": "**R3: HLD Round**",
+              "charRange": [
+                1682,
+                1699
+              ]
+            },
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": " Design a News Feed System.",
+              "charRange": [
+                1701,
+                1728
+              ]
+            }
+          ],
+          "date": "2026-02-22",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "assay-chronology"
       ]
     },
     {
@@ -28422,6 +28705,150 @@
       ]
     },
     {
+      "id": "leetcode-6769948",
+      "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+      "title": "My Amazon L5 (SDE II) Interview Experience – What Went Well and What to Avoid",
+      "publishedDate": "2025-05-22",
+      "interviewDate": "2025-04",
+      "date": "2025-04",
+      "dateBasis": "interview",
+      "location": "India",
+      "role": "SDE II",
+      "stageEvidence": "Round Type: SDM + SDE Interview Loop (L5). Interview Format: 4 rounds – 2 HLD/LLD + 2 DSA + LP questions in all. Recently interviewed for Amazon's SDE II (L5) role and made it through 4 rounds. Location: India. Original browser article createdAt2025-05-22T12:50:08.063593+00:00, updatedAt2025-05-23T14:12:27.438526+00:00; original displays May22,2025 and May23,2025. Current recent April23/24, May2/19 interviews are anchored to2025 publication, not later update/search timestamps. Question-level dates preserve individual rounds.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 – HLD + LP (23rdApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "design-current-ai-chat-system",
+          "question": "Design the AI chat system from your current work.",
+          "topic": "System design / AI chat",
+          "evidence": "Round 1 – HLD + LP (23rdApril): Question: Design your current AI chat system.",
+          "date": "2025-04-23",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 1️⃣ Round 1 – HLD + LP (23rdApril)",
+              "charRange": [
+                711,
+                750
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** High-Level System Design\n*   **Question:** \"Design your current AI chat system\"\n*   I explained the architecture I had built in my current role – real-world experience helped.\n*   Walked through: \n    *   Client → Gateway → Services → Database\n    *   Real-time messaging via WebSocket\n    *   Stateless backend, rate-limiting, vector DB usage, etc.",
+              "charRange": [
+                752,
+                1115
+              ]
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 – DSA + LP (24thApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "connecting-flight-path-weighted-bidirectional",
+          "question": "Find a connecting path between flights; extend the solution to weighted costs and reverse-direction travel.",
+          "topic": "Graphs / Shortest paths",
+          "evidence": "Round 2 – DSA + LP (24thApril): Find a connecting path between flights (flight booking system scenario). Follow-up1: Add weights (costs) → used Dijkstra’s Algorithm. Follow-up2: Handle to → from direction → made bidirectional graph changes.",
+          "date": "2025-04-24",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** Graph + Heap\n*   **Question 1:** Find a connecting path between flights (flight booking system scenario).\n*   **Follow-up 1:** Add weights (costs) → used **Dijkstra’s Algorithm**.\n*   **Follow-up 2:** Handle `to → from` direction → made bidirectional graph changes.\n*   Used heap-based implementation, handled edge cases.\n*   **LPs:** Focused on handling ambiguity, delivering results, taking ownership.\n*   **Feedback:** Positive. One of my strongest rounds.",
+              "charRange": [
+                1353,
+                1826
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 2️⃣ Round 2 – DSA + LP (24thApril)",
+              "charRange": [
+                1312,
+                1351
+              ]
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 – LLD + LP (2nd May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "design-splitwise",
+          "question": "Design Splitwise with groups, shared bills, balances and settlements.",
+          "topic": "Low-level design / Expense sharing",
+          "evidence": "Round 3 – LLD + LP (2nd May): Design Splitwise: Users create groups; One user pays, others split bill; View balances and settle-up.",
+          "date": "2025-05-02",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 3️⃣ Round 3 – LLD + LP (2nd May)",
+              "charRange": [
+                1835,
+                1872
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** Low-Level Design + Deep Dive\n*   **Question:** Design **Splitwise**: \n    *   Users create groups\n    *   One user pays, others split bill\n    *   View balances and settle-up",
+              "charRange": [
+                1874,
+                2062
+              ]
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 – Bar Raiser (LP + DSA) (19th May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "asteroid-collision",
+          "question": "Simulate asteroid collisions.",
+          "topic": "Stacks",
+          "evidence": "Round 4 – Bar Raiser (LP + DSA) (19th May): DSA: Stack-based problem – Asteroid Collision (LeetCode Medium). Follow-up: How would you optimize memory usage?",
+          "date": "2025-05-19",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 4️⃣ Round 4 – Bar Raiser (LP + DSA) (19th May)",
+              "charRange": [
+                2549,
+                2600
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **LPs:** 40 minutes — covered _Invent & Simplify, Ownership, Bias for Action_.\n*   Focused on scaling an app I had worked on — taking DAUs from 1k → 25k.\n*   **DSA:** Stack-based problem – **Asteroid Collision** (LeetCode Medium). \n    *   Solved in under 10 mins with optimal solution.",
+              "charRange": [
+                2602,
+                2892
+              ]
+            }
+          ]
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "assay-chronology"
+      ]
+    },
+    {
       "id": "reddit-1kazu6q",
       "url": "https://www.reddit.com/r/leetcode/comments/1kazu6q/",
       "retrievedVia": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=leetcode&title=SDE-2&after=2025-01-01&before=2025-07-01&limit=100&fields=id,title,created_utc,selftext",
@@ -30789,6 +31216,1954 @@
         "DevBrainiac three-years-experience article repeats the distinctive sequence of LeetCode8409230 with extra solutions; both kept outside strict counts because final-loop stage is uncertain. Last Updated is not an interview date.",
         "Medium author Jordan M links many other interview write-ups. First-person wording alone does not independently establish authenticity; no identical earlier original was found in this slice."
       ]
+    },
+    {
+      "slice": "assay-chronology",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE II Round 1 AI chat Round 2 flight path weights Round 3 Splitwise Round 4 Asteroid Collision",
+        "Amazon SDE 2 Hyderabad interview R2 ride matching R3 news feed",
+        "Amazon interview books pages read",
+        "Amazon SDE2 interview books pages read subsets cab booking",
+        "Amazon SDE II 2026 interview India",
+        "Amazon SDE II interview November December 2025 blog",
+        "site:leetcode.com Amazon SDE-2 December 2025",
+        "Amazon SDE2 December 2025 interview",
+        "Amazon L5 interview experience June July August 2026",
+        "Amazon SDE 2 Hyderabad R2 Ride matching Service R3 News Feed System interview",
+        "Amazon SDE2 interview experience after:2025-12-01 before:2026-01-01",
+        "site:leetcode.com/discuss Amazon SDE-2 December 2025 (rejected: site operand must be hostname; corrected to site:leetcode.com)"
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/",
+          "reason": "Partial exclusion: generic LP labels and app-scaling discussion without a precise behavioral question not reconstructed. All four stated technical prompts and flight/memory follow-ups included. Year supplied by original2025 publication context; Assay lacks publication timestamp."
+        },
+        {
+          "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://amazon.jobs/en/jobs/10485388/software-development-engineer-ii-skg-team",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://amazon.jobs/jobs/10429015",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://blog.stackademic.com/i-got-promoted-to-sde-2-at-amazon-after-3-5-years-dont-make-my-mistakes-eeab692d373c",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://blog.theinterviewguys.com/amazon-interview-questions-and-answers-2/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://hnhiring.com/november-2024",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://hnhiring.com/november-2025",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://igotanoffer.com/blogs/tech/amazon-interview-process",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://interviewkickstart.com/blogs/interview-questions/amazon-sde-2-interview-questions",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://jobright.ai/blog/the-ultimate-guide-to-acing-the-amazon-technical-interview/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+          "reason": "Rediscovered existing candidate report; no additional candidate count."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/",
+          "reason": "Linked companion compensation post explicitly links7599995; same candidate, no extra report count. Original public rendering confirms Feb22,2026 and Hyderabad."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "reason": "Partial exclusion: R1 pick/not-pick DP and child-sum tree variants lack identifiable statements; R4 BFS/possible Dijkstra graph variant is unspecified; all Leadership Principles are generic labels. R2/R3 fully extracted."
+        },
+        {
+          "url": "https://medium.com/@emilyhustlenyc/2026-guide-how-to-crack-the-l5-senior-engineer-interview-system-design-behavioral-d6bb109af888",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://medium.com/@harinera3691/amazon-sde-ii-interview-experience-2025-usa-8b6d8c8abc14",
+          "reason": "Rediscovered existing candidate report; no additional candidate count."
+        },
+        {
+          "url": "https://medium.com/@rohitverma_87831/my-interview-experience-at-amazon-offer-sde-ii-6223edbd4fa3",
+          "reason": "Full original inspected: narrative says Back in2017 and In2017 for preparation. Byline Nov26,2023; metadata Jan8,2024. All pre-window despite late2025 query discovery. Not a new2025 report."
+        },
+        {
+          "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+          "reason": "Rediscovered existing candidate report; no additional candidate count."
+        },
+        {
+          "url": "https://medium.com/@srenitha2812/my-amazon-sde-interview-journey-from-application-to-offer-346d2cd4ba93",
+          "reason": "Full original inspected: explicitly Amazon University Talent Acquisition Software Development Engineer (SDE-I). December2025 dates concern OA/follow-up emails; interviews January–February2026. SDE-II refers to interviewer, not candidate. Exclude wrong level."
+        },
+        {
+          "url": "https://mostrecommendedbooks.com/lists/best-job-interview-books",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=13060915",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=25632982",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=27827592",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=27903720",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=40654190",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+          "reason": "Rediscovered existing candidate report; no additional candidate count."
+        },
+        {
+          "url": "https://tutorsbot.com/blog/amazon-software-engineer-jobs-2026-hiring-guide",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://us.amazon.com/Essential-Interview-Questions-Their-Answers-ebook/dp/B0HCM1XWGJ",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://us.amazon.com/Interview-Tomorrow-90-Minute-Workbook-Confidence-ebook/dp/B0HHXPJSH7",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://us.amazon.com/Scrum-Master-Interview-Questions-Answers-ebook/dp/B0H98DCF3C/ref=zg_bsnr_g_154845011_d_sccl_15/000-0000000-0000000?psc=1",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.amazon.com/Behavioral-Interview-Questions-Answers-Preparation-ebook/dp/B083KK6WB4",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.amazon.com/How-Answer-Interview-Questions-Tough-ebook/dp/B00AQ4CAFI",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.amazon.com/interview-books/s?k=interview+books",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.amazon.jobs/en/jobs/10513002/sde-ii-amazon-legal-tech-legal-tech",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.amazon.jobs/en/jobs/3115510/sde2",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.ambitionbox.com/interviews/amazon-interview-questions/sde-2",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.finalroundai.com/blog/amazon-sde2-interview-vs-sde1",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+          "reason": "Previously adjudicated exclusion retained: HTTP 403 prevented original report inspection. Search snippets are not sufficient to verify question-to-round/date/level assignments."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.hellointerview.com/experience/stories/cmeyawqgp006k08ade17zy88t",
+          "reason": "Previously adjudicated exclusion retained: Rediscovered existing exclusion: SDEII success story mentioning December2025 start but no specific numbered interview questions."
+        },
+        {
+          "url": "https://www.hellointerview.com/guides/amazon/l5",
+          "reason": "Previously adjudicated exclusion retained: General interview guide, not a dated first-person final-loop report."
+        },
+        {
+          "url": "https://www.instagram.com/reel/DWRb4cZqd0v/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.interviewhelp.io/blog/posts/amazon_sde2_interview_experience_usa_/",
+          "reason": "Previously adjudicated exclusion retained: Secondary copy of Reddit account; Reddit originals owned by separate slice, not counted independently."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-2-seattle-wa-april-1-2025-no-offer-neutral-42dc8f52/",
+          "reason": "Original inspected: April1,2025 account gives one screening, three coding rounds, one system-design round and Ticketmaster question, but no explicit overall round position for design; no specific coding statement. Later dates belong work-experience recommendations."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/bugfree-ai_amazoninterview-systemdesign-coding-activity-7407966881174761473-3TCx",
+          "reason": "Related original LinkedIn snippet inspected on Saravanan page: third-party Bugfree user experience with search API, package dependency, log storage, but no overall final-loop positions. No independent candidate count."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/piyushnirala_amazon-interviewexperience-systemdesign-activity-7371636735505666048-Zx-x",
+          "reason": "Rediscovered existing candidate report; no additional candidate count."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/raykrueger_how-to-prepare-for-an-amazon-interview-don-activity-7335681967138512896-gjPt",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+          "reason": "Original inspected: first-person failed onsite narrative, but only SDE (not II/L5) and generic DSA/system-design/LP advice. No specific numbered questions. Recommended posts are not evidence for this candidate."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/i-interviewed-amazon-heres-everything-learned-what-you-saquib-khan-lrp9c",
+          "reason": "Full original inspected: October26,2025 article explicitly Software Development Engineer Intern, Jan–June2026 internship. Wrong level."
+        },
+        {
+          "url": "https://www.quora.com/How-do-I-crack-the-Amazon-SDE-2-interview-in-2-months-given-that-I-have-a-basic-knowledge-of-programming-and-4-years-of-experience",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+          "reason": "Plausible title only. Original JSON HTTP403 and public rendering explicitly blocked by Reddit network security. No usable candidate body/date/round evidence; no authentication bypass."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/comments/1v94649/amazon_sde_new_grad_2026_no_interview/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/new/",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.reddit.com/r/developersIndia/comments/1ubk14a/sde2_switch_in_2026_current_market_interview/",
+          "reason": "Original returned Reddit shell without candidate body. General switch/market title cannot establish Amazon final-loop report or numbered questions."
+        },
+        {
+          "url": "https://www.teamblind.com/company/Amazon/posts/amazon-interview",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.teamblind.com/post/is-amazon-to-intuit-down-level-va18bbop",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+          "reason": "Previously adjudicated exclusion retained: Locked experience requiring contribution or membership; visible preview has no round-specific question, and SDEII title conflicts with Mid Level/L4 label. No gate bypass."
+        },
+        {
+          "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=K1gcvgl-iFw",
+          "reason": "July17,2026 video auto-caption transcript inspected. Explicitly retells someone else's LeetCode report, not a distinct candidate: R1 books/pages + subsets, R2 House Robber + Course Schedule, R3 private upload shared to one friend then made public, R4 cab-booking LLD. Candidate applied January/interviewed May onward. No original URL in full video description; two bounded Assay fingerprint queries failed to identify original. Browser video did not reveal readable original frame. Ledger only, not secondhand question counts."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UJ_SIXg3bgE",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dQvg8sbDt1Y",
+          "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        }
+      ],
+      "limitations": [
+        "Bounded chronological pass concentrated on December2025 and remaining2026, including India, unspecified-country originals, Medium, LinkedIn, Reddit, Taro and YouTube. No new qualifying December account was found; the gap remains rather than being filled with stale/reposted/other-level material.",
+        "Assay searxng reported provider_partial_failure even on successful discovery. Date-operator query dropped all five candidates for unknown publication dates and returned UPSTREAM_DEGRADED; switched to textual month/role queries. Site operands require hostname only.",
+        "Assay titles certificates are discovery observations, not evidence. Full certificates retained; accepted claims independently checked against public original body and browser metadata. Certificate claim extraction does not authenticate a candidate or establish completeness.",
+        "Assay direct LeetCode fetch returned403; public original and rendering were readable without login. Browser supplied original date missing from extracted claims. No CAPTCHA or authentication bypass.",
+        "A YouTube retelling remains uncertain because its original report could not be identified with available description and bounded Assay fingerprint searches; no unverified secondhand rows added.",
+        "Assay captures use UTC2026-09-14 while requested research cutoff and searchedAt remain2026-09-13. Capture timestamps are not interview dates.",
+        "Shared service capacity was rate-limited for siblings; requests here were serial. One site-query response initially failed local JSON parsing; corrected query and service error retained. No project validation/build/formatting run."
+      ],
+      "discovery": {
+        "method": "Assay chronology discovery plus original verification",
+        "certificates": [
+          {
+            "certificate": "data/assay/chronology/may-handoff-evidence.json",
+            "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+            "query": "Amazon SDE II Round 1 AI chat Round 2 flight path weights Round 3 Splitwise Round 4 Asteroid Collision",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0041,
+              "actual": 0.00284,
+              "cache_hits": 0,
+              "tokens_delivered": 1170,
+              "budget_remaining": 0.9922936,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/hyderabad-evidence.json",
+            "traceId": "asy_3CWZYWQTNWRDQCJSEK5K4FCYQ4",
+            "query": "Amazon SDE 2 Hyderabad interview R2 ride matching R3 news feed",
+            "status": "BLOCKED_BY_TARGET",
+            "cost": {
+              "estimated": 0.0041,
+              "actual": 0,
+              "cache_hits": 0,
+              "tokens_delivered": 0,
+              "budget_remaining": 0.9948196,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/video-fingerprint-titles.json",
+            "traceId": "asy_JM9SJ84AD9KA7Z3FPGZZCCTY1S",
+            "query": "Amazon interview books pages read",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.00037,
+              "cache_hits": 0,
+              "tokens_delivered": 185,
+              "budget_remaining": 0.9928616,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/video-original-titles.json",
+            "traceId": "asy_N405WE0X77YTYF7AM4FJY5QXVW",
+            "query": "Amazon SDE2 interview books pages read subsets cab booking",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.000372,
+              "cache_hits": 0,
+              "tokens_delivered": 186,
+              "budget_remaining": 0.9929356,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/2026-india-titles.json",
+            "traceId": "asy_XYRJSBXAFA4C2ERD7NZ5824C5Z",
+            "query": "Amazon SDE II 2026 interview India",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.000354,
+              "cache_hits": 0,
+              "tokens_delivered": 177,
+              "budget_remaining": 0.9989504,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/december-leetcode-titles.json",
+            "traceId": null,
+            "query": null,
+            "status": "TOOL_ERROR",
+            "cost": null
+          },
+          {
+            "certificate": "data/assay/chronology/late2025-blog-titles.json",
+            "traceId": "asy_1YEXMTR2BQFXD0MC567W4YXD4R",
+            "query": "Amazon SDE II interview November December 2025 blog",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.00038,
+              "cache_hits": 0,
+              "tokens_delivered": 190,
+              "budget_remaining": 0.9947436,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/december-leetcode-host-titles.json",
+            "traceId": "asy_R3HCC9592DN9V37AR8398VD0T3",
+            "query": "site:leetcode.com Amazon SDE-2 December 2025",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.000084,
+              "cache_hits": 0,
+              "tokens_delivered": 42,
+              "budget_remaining": 0.9938428,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/december-titles.json",
+            "traceId": "asy_YQYNPFJPG199D4S6DGRSBPDA3X",
+            "query": "Amazon SDE2 December 2025 interview",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.000352,
+              "cache_hits": 0,
+              "tokens_delivered": 176,
+              "budget_remaining": 0.9990212,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/2026-l5-titles.json",
+            "traceId": "asy_N7MDZMG7JN9MPM4J45NC7D5QMP",
+            "query": "Amazon L5 interview experience June July August 2026",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0004,
+              "actual": 0.00037,
+              "cache_hits": 0,
+              "tokens_delivered": 185,
+              "budget_remaining": 0.9946696,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/hyderabad-rendered-evidence.json",
+            "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+            "query": "Amazon SDE 2 Hyderabad R2 Ride matching Service R3 News Feed System interview",
+            "status": "ok",
+            "cost": {
+              "estimated": 0.0041,
+              "actual": 0.002192,
+              "cache_hits": 0,
+              "tokens_delivered": 846,
+              "budget_remaining": 0.9942312,
+              "currency": "USD"
+            }
+          },
+          {
+            "certificate": "data/assay/chronology/december-date-search.json",
+            "traceId": "asy_58FNX347CFPXTXYANJ1C5M815E",
+            "query": "Amazon SDE2 interview experience after:2025-12-01 before:2026-01-01",
+            "status": "UPSTREAM_DEGRADED",
+            "cost": {
+              "estimated": 0.0061,
+              "actual": 0,
+              "cache_hits": 0,
+              "tokens_delivered": 0,
+              "budget_remaining": 0.9993224,
+              "currency": "USD"
+            }
+          }
+        ],
+        "originalLogicalCostUsd": 0.007313999999999999,
+        "costBasis": "Sum of certificate.cost.actual across retained unique logical certificates; error without cost excluded, no replay counted. Three preflight estimates (1800 tokens) each returned USD0.0015. Search calls capped at USD0.05.",
+        "deduplication": "Compared all existing research IDs, URLs, exclusions, normalization and generated database. Kept historical December repost7402617 exclusion and stale-date exclusions intact; companion7599790 not counted.",
+        "sourceVerification": [
+          {
+            "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+            "method": "Public original browser and r.jina.ai rendering",
+            "createdAt": "2026-02-22T13:50:29.095412+00:00",
+            "updatedAt": "2026-02-22T13:54:26.735250+00:00",
+            "assayCertificate": "data/assay/chronology/hyderabad-rendered-evidence.json",
+            "note": "Question text and round headings have separate exact certificate spans. No date inferred from title search, update date or footer country."
+          }
+        ]
+      }
+    },
+    {
+      "slice": "assay-global",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE II brazil interview experience 2025 2026",
+        "Amazon SDE2 London 2026 interview",
+        "Amazon SDE2 Canada 2025 site:leetcode.com/discuss",
+        "Amazon SDE II germany interview experience 2025 2026",
+        "Amazon SDE2 Germany interview experience 2025 2026",
+        "Amazon SDE II uk interview experience 2025 2026",
+        "Amazon SDE II ireland interview experience 2025 2026",
+        "Amazon SDE2 Brasil entrevista 2025",
+        "Amazon SDE Brazil interview experience",
+        "Amazon L5 Spain interview 2025 2026",
+        "Amazon SDE2 Spain interview experience 2025 2026",
+        "Amazon SDE2 Canada 2025 site:leetcode.com",
+        "Amazon SDE2 Berlin interview 2025",
+        "Amazon SDE II Germany interview experience",
+        "Amazon L5 London interview experience",
+        "Amazon SDE2 Madrid 2025 interview",
+        "Amazon SDE2 Ireland interview experience 2025 2026",
+        "Amazon SDE II Spain interview experience",
+        "Amazon SDE2 UK interview experience 2025",
+        "Amazon SDE II spain interview experience 2025 2026",
+        "Amazon SDE II Canada interview experience",
+        "Amazon SDE2 Dublin 2026 interview",
+        "Amazon interview locker recommendation ratio finder decreasing path",
+        "Amazon interview getPackage putPackage decreasing path ratio",
+        "Amazon L5 Brazil interview 2025 2026",
+        "Amazon SDE II Canada interview experience 2025 2026"
+      ],
+      "excluded": [
+        {
+          "url": "https://medium.com/@yushanttyagi/how-i-got-an-sde2-offer-from-amazon-london-interview-experience-3dbbf54d843b",
+          "reason": "Full original published Dec14,2024, outside window; explicitly internal transfer: I work as a SDE2 @ Amazon India; Internal interview process."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/aishwarya-mahapatra_my-amazon-dublin-sde-interview-experience-activity-7314158965897019393-ofFq",
+          "reason": "Original establishes Dublin SDE and three coding/LP rounds, but never identifies candidate level as SDEII/L5. Cannot infer level from query."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/piyushnirala_amazon-interviewexperience-systemdesign-activity-7371636735505666048-Zx-x",
+          "reason": "Duplicate existing linkedin-7371636735505666048. Full original gives no Germany evidence; country in discovery query is not location evidence."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shailnitk_amazon-sde-2-interview-experience-dsa-activity-7438539439611539456-gFNz",
+          "reason": "Links to video92scEWSR66c; not independent account."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=92scEWSR66c",
+          "reason": "Public auto-generated transcript reviewed in full: upload2026-03-14, SDE2four-loop account, but technical question identities omitted. Behavioral prompts are general examples, not clearly actual questions assigned to a numbered round. Country not stated."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/cracking-amazon-sde-2-l5-interview-my-journey-success-krishna-mundra-wpq3c",
+          "reason": "Links to Medium77cc7e3d5e1e, not independent account."
+        },
+        {
+          "url": "https://medium.com/@23krishna.mundra/amazon-sde-2-l5-interview-experience-77cc7e3d5e1e",
+          "reason": "Full original reviewed: SDE2/L5, Apr6,2025 display publication, four virtual onsite loops but no specific question, only generic DSA/LLD/HLD/LP guidance. Tagged Amazon India, not Spain."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pmuBH5xUOmA",
+          "reason": "Full public transcript reviewed: March2025 SDE2 account numbers four interviews after recruiter says selected for screening round. No separate screening/final-loop boundary established; excluded ambiguous round mapping. Country not stated."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/ashad-shaikh_amazon-amazoninterview-softwareengineering-activity-7362782267527573504-H9FJ",
+          "reason": "Original explicitly says Edinburgh-based SDE role in2024, outside window. No specific final-loop questions and level not established."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/vinay20kumar_interviewexperience-amazon-techinterviews-activity-7379991044991553536-z3dz",
+          "reason": "Original establishes Amazon London and three numbered rounds with concrete questions but never identifies candidate level as SDEII/L5."
+        },
+        {
+          "url": "https://medium.com/@tanujchaniyari/from-tier-3-college-to-amazon-dublin-8489fce8adbb",
+          "retrievedVia": "https://r.jina.ai/https://medium.com/@tanujchaniyari/from-tier-3-college-to-amazon-dublin-8489fce8adbb",
+          "reason": "Public rendered original published June30,2022; interview March30,2022. Outside window."
+        },
+        {
+          "url": "https://medium.com/@bhargavacharanreddy/amazon-sde-2-l5-interview-experience-and-tips-resources-for-interview-prep-9e7602c32176",
+          "reason": "Full original displayed Jul7,2024 and metadata2024-07-17. Both dates outside window."
+        },
+        {
+          "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+          "reason": "2025 newsletter rewrites LeetCode1078674: identical uncommon locker getPackage/putPackage, recommendation, decreasing ski-slope path with broken microphone, and ratio-finder sequence. Newsletter date is not original candidate date. Original has no usable in-window date in retrieved text; not a new report or UK/Canada evidence."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/1078674/amazon-sde2-north-america-reject/",
+          "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/1078674/",
+          "reason": "Original underlying Roundz rewrite recovered, but retrieval has no usable interview/publication date. Degree in math and comp eng in Canada is education, not job country; NorthAmerica not a country."
+        },
+        {
+          "url": "https://www.reddit.com/r/cscareerquestionsEU/comments/1laiy3x/amazon_dublin_sde2_interview_process_what_to/",
+          "reason": "Discovery title asks what to expect and prepare, not completed final-loop questions; direct original retrieval returned Reddit gate."
+        },
+        {
+          "url": "https://www.glassdoor.co.uk/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonemployees/comments/1u46n7a/amazon_sde2_reject_despite_a_nearperfect_dsa/",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: No concrete, reliably numbered final-loop question supplied; preparation, outcome discussion, vague topics, or ambiguous stage/role."
+        },
+        {
+          "url": "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Assay received HTTP403; no report-level evidence retrieved."
+        },
+        {
+          "url": "https://www.glassdoor.co.uk/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Assay received HTTP403; no report-level evidence retrieved."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/udit-gupta-ug0510_tier-3-college-to-amazon-sde-the-interview-activity-7438891145679507456-0Nri",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.jobtestprep.com/amazon-online-assessment",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6390329/amazon-dublin-sde-2-interview-experience-chwx/",
+          "reason": "Duplicate existing canonical report leetcode-6390329."
+        },
+        {
+          "url": "https://www.instagram.com/reel/DRJ3odsgL02/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://medium.com/nybles/amazon-applied-scientist-intern-interview-experience-ml-challenge-2025-5092441d0b2e",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.amazon.jobs/pt/jobs/10523659/software-development-engineer-ii-amazon-external-payments",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.greatfrontend.com/pt-BR/interviews/pricing",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.finalroundai.com/blog/simulador-entrevista-emprego-ia-brasil",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://br.linkedin.com/in/kamila-santos-oliveira",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonemployees/comments/1ol1edl/mass_layoffs_in_amazon_spain_madrid_barcelonas/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.graduatesfirst.com/amazon-assessment-tests",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.amazon.jobs/content/en/career-programs/pathways",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ce97H-JMBW8",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.jobtestprep.com/amazon-hiring-process",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/management-consultant/locations/spain",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.icrea.cat/cvs/17566/raul-jimenez-tellado/",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1kjj6ox/amazon_sde_new_grad_2025_specialized_updates/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Interview-Questions-E6036.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.quora.com/What-are-some-tips-for-preparing-for-an-interview-with-Amazon-as-an-entry-level-software-engineer-not-SDE-1",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.glassdoor.co.in/Interview/Amazon-Web-Services-Data-Center-Engineer-Interview-Questions-EI_IE7470741.0,19_KO20,40.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=44434576",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.reddit.com/r/cscareerquestionsEU/comments/1gb0tzd/amazon_graduate_sde_interview_process/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/1411413/amazon-sde-berlin-reject/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://medium.com/@shristythakur2003/amazon-germany-swe-internship-process-selected-64819242b3b1",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/99swati_came-across-an-amazon-sde-2-interview-journey-activity-7421137628915376128-NdMY",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Google-Interview-Questions-E9079.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.quora.com/Should-I-be-asking-non-technical-questions-in-an-Amazon-SDE-intern-phone-interview",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/479413/nda-google-facebook-amazon-l5-e5-l5-london-dec-2019-offer/",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.hellointerview.com/guides/amazon/l5",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Previously adjudicated exclusion retained: General interview guide, not a dated first-person final-loop report."
+        },
+        {
+          "url": "https://clevercoder.net/2017/09/13/amazon-uk-passed-interview/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/2642219/Amazon-or-SDE2-L5-or-London-UK-or-Sep-2022-Offer/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1–4 account. No question attribution from title."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cj33YCgdgnc",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+          "reason": "Duplicate existing canonical report medium-57655fab76b8."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/6530123/",
+          "reason": "Duplicate existing canonical report leetcode-6530123."
+        },
+        {
+          "url": "https://www.glassdoor.ie/Interview/Amazon-Interview-Questions-E6036.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/software-engineer/locations/london-metro-area",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/2121447/amazon-sde2-spain-2022/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1s469bh/amazon_business_sde2_spain/",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Body removed/deleted/empty; no verifiable question evidence."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/my-amazon-sde-2-interview-experience-jinesh-shah",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6706138/amazon-sde-ii-final-loop-experience-by-a-svnh/",
+          "reason": "Previously excluded; country discovery supplied no new resolving evidence. Prior reason: Four final-loop interview types described without ordinal mapping; most technical questions also vague or unspecified."
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/interview-experiences/amazon-interview-experience-for-sde2-3-years-exp/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+          "reason": "Duplicate existing canonical report reddit-1ig72d0."
+        },
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/1978773/amazon-sde-2-toronto-canada-march-2022-offer-downlevel/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-i-vancouver-bc-september-2-2025-no-offer-positive-1310f1a2/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.quora.com/I-recently-had-an-interview-with-Amazon-for-an-SDE-2-role-in-Hyderabad-Ive-completed-the-onsite-interviews-but-didnt-hear-back-from-the-recruiter-How-long-should-I-wait-before-I-give-up-hope",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.glassdoor.ie/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://amazon.jobs/en/job_categories/software-development",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://amazon.jobs/jobs/10530939",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.amazon.jobs/en/jobs/10501415/hardware-technical-program-manager-product-development-ring-blink-accessories-l5",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/solution-architect/locations/brazil",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.linkedin.com/in/kristen-curcio-593807186",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.facebook.com/kendrasantoscowboys/posts/last-night-was-such-a-memorable-one-for-the-megeds-that-i-want-to-document-it-fo/1411100627345243/",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.finalroundai.com/blog/where-do-you-see-yourself-in-5-years-dfc9e",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.facebook.com/iamalvinsebetero/videos/best-in-swimsuit-performances-top-15-miss-cosmo-2025/831960676314582/",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1phjvel/amazon_sde_intern_interview_experience_canada/",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://dev.to/manyoffer_career/the-amazon-interview-process-in-2026-every-round-decoded-with-copy-paste-scripts-33pl",
+          "reason": "Discovery-only candidate not established as a new in-window SDEII final-loop report; country query does not establish location. Not counted."
+        },
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        },
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-New-Grad-Software-Development-Engineer-Interview-Questions-EI_IE6036.0,6_KO7,45.htm",
+          "reason": "Discovery returned a hiring/salary/preparation/index or unrelated page, not a verified new first-person SDEII final-loop report. No row extracted."
+        }
+      ],
+      "limitations": [
+        "Bounded country-specific Assay pass covered Canada, UK, Germany, Ireland, Spain and Brazil using SDEII, SDE2 and L5 variants, 2025/2026 terms, city variants, and a Portuguese Brasil/entrevista query. No genuinely new qualifying country report was established; no location was force-assigned.",
+        "Assay searxng frequently reported provider_partial_failure and returned generic preparation, hiring, salaries or unrelated pages. Span citation certifies fetched text, not relevance, applicant authenticity, interview date or geographic truth.",
+        "Initial concurrent discovery caused five HTTP429 resource-admission failures; later requests were serialized. One later429, one rejected site operand containing a path, and one aborted request are preserved as TOOL_ERROR. Dates were screened on originals, not discovery query terms.",
+        "Assay title-only calls omitted some observations for their internal token ceiling; trace.urls_considered and coverage.excluded preserve discovery omissions. Plausible candidates from omitted observations were also checked.",
+        "Public originals and public auto-generated YouTube transcripts supplied role/stage/date context. No authentication, paywall or CAPTCHA bypass was attempted. Newsletter re-publication dates were not substituted for unavailable original candidate dates.",
+        "Assay service timestamps use2026-09-14 UTC while requested corpus cutoff remains2026-09-13; no post-cutoff report accepted."
+      ],
+      "discovery": {
+        "provider": "Assay",
+        "scopeCountries": [
+          "Canada",
+          "United Kingdom",
+          "Germany",
+          "Ireland",
+          "Spain",
+          "Brazil"
+        ],
+        "outcome": "No new qualifying reports or country corrections; public originals resolved plausible discoveries into duplicates, out-of-window accounts, ambiguous level/stage, or unspecified questions.",
+        "calls": [
+          {
+            "certificate": "data/assay/global/brazil-discovery.json",
+            "query": "Amazon SDE II brazil interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/uk-targeted.json",
+            "query": "Amazon SDE2 London 2026 interview",
+            "status": "BLOCKED_BY_TARGET",
+            "traceId": "asy_YNBHE1J78HHF078F9QNSJYDB7M",
+            "costUsd": 0,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/canada-targeted.json",
+            "query": "Amazon SDE2 Canada 2025 site:leetcode.com/discuss",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/germany-discovery.json",
+            "query": "Amazon SDE II germany interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/germany-retry.json",
+            "query": "Amazon SDE2 Germany interview experience 2025 2026",
+            "status": "ok",
+            "traceId": "asy_CC92NRG7JMGCEHW7AF26NEG6Z5",
+            "costUsd": 0.00038,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/uk-discovery.json",
+            "query": "Amazon SDE II uk interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/ireland-discovery.json",
+            "query": "Amazon SDE II ireland interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/brazil-targeted.json",
+            "query": "Amazon SDE2 Brasil entrevista 2025",
+            "status": "ok",
+            "traceId": "asy_YEM909QMB7TKG6EWCCJYNK1R4F",
+            "costUsd": 0.00602,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/brazil-simple.json",
+            "query": "Amazon SDE Brazil interview experience",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/spain-l5.json",
+            "query": "Amazon L5 Spain interview 2025 2026",
+            "status": "ok",
+            "traceId": "asy_H6WR9B71CKPM52V487CGKHSQEZ",
+            "costUsd": 0.000388,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/spain-retry.json",
+            "query": "Amazon SDE2 Spain interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/canada-site-retry.json",
+            "query": "Amazon SDE2 Canada 2025 site:leetcode.com",
+            "status": "UPSTREAM_DEGRADED",
+            "traceId": "asy_JQG476BYT5NSP8K4MYDECBYAFC",
+            "costUsd": 0,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/germany-targeted.json",
+            "query": "Amazon SDE2 Berlin interview 2025",
+            "status": "ok",
+            "traceId": "asy_BXH6DW6AKZ86B2JR9S4ZVCJ1N5",
+            "costUsd": 0.00402,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/germany-simple.json",
+            "query": "Amazon SDE II Germany interview experience",
+            "status": "ok",
+            "traceId": "asy_BEYD9QEFAZ7GAFKR0XVDDYJJS9",
+            "costUsd": 0.000348,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/uk-simple.json",
+            "query": "Amazon L5 London interview experience",
+            "status": "ok",
+            "traceId": "asy_DKNHET5N4EGF6AHT4886EQPGVT",
+            "costUsd": 0.000394,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/spain-targeted.json",
+            "query": "Amazon SDE2 Madrid 2025 interview",
+            "status": "ok",
+            "traceId": "asy_9680WZX888E2ZPPYTQHQN4EG37",
+            "costUsd": 0.004316,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/ireland-retry.json",
+            "query": "Amazon SDE2 Ireland interview experience 2025 2026",
+            "status": "ok",
+            "traceId": "asy_FFENVXMPXDZKHVZ4ZJHEDDXMDT",
+            "costUsd": 0.000338,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/spain-simple.json",
+            "query": "Amazon SDE II Spain interview experience",
+            "status": "ok",
+            "traceId": "asy_ZJ5E8CV0J2XFYQ4WAPXKMPC17X",
+            "costUsd": 0.00035,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/uk-retry.json",
+            "query": "Amazon SDE2 UK interview experience 2025",
+            "status": "ok",
+            "traceId": "asy_3GZ4F9V409NJ89V77NQJHY0PHH",
+            "costUsd": 0.00038,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/spain-discovery.json",
+            "query": "Amazon SDE II spain interview experience 2025 2026",
+            "status": "TOOL_ERROR",
+            "traceId": null,
+            "costUsd": null,
+            "kind": "tool_error"
+          },
+          {
+            "certificate": "data/assay/global/canada-simple.json",
+            "query": "Amazon SDE II Canada interview experience",
+            "status": "ok",
+            "traceId": "asy_JN2YQJMS0Y05AYHZXN88WNVTWA",
+            "costUsd": 0.000398,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/ireland-targeted.json",
+            "query": "Amazon SDE2 Dublin 2026 interview",
+            "status": "ok",
+            "traceId": "asy_MPH9QC2D34X9SBPGJCJSVY4DEE",
+            "costUsd": 0.00184,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/roundz-evidence.json",
+            "query": "Amazon interview locker recommendation ratio finder decreasing path",
+            "status": "ok",
+            "traceId": "asy_JRJR03PNGKAK95213PQCZF8441",
+            "costUsd": 0.00402,
+            "kind": "evidence"
+          },
+          {
+            "certificate": "data/assay/global/roundz-origin-discovery.json",
+            "query": "Amazon interview getPackage putPackage decreasing path ratio",
+            "status": "ok",
+            "traceId": "asy_CBSBB08KCEAB2TJ0AAGQWX2CWJ",
+            "costUsd": 0.000144,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/brazil-l5.json",
+            "query": "Amazon L5 Brazil interview 2025 2026",
+            "status": "ok",
+            "traceId": "asy_Z6P7DH2CQM0GX5E3R9NQ54TAR8",
+            "costUsd": 0.000322,
+            "kind": "discovery"
+          },
+          {
+            "certificate": "data/assay/global/canada-discovery.json",
+            "query": "Amazon SDE II Canada interview experience 2025 2026",
+            "status": "ok",
+            "traceId": "asy_3DETZ2KS9KJE3DK3C4DE10D1DS",
+            "costUsd": 0.000364,
+            "kind": "discovery"
+          }
+        ],
+        "cost": {
+          "currency": "USD",
+          "reportedLogicalCostUsd": 0.024022,
+          "callsWithoutReportedCost": 8,
+          "perSearchBudgetUsd": 0.05,
+          "searchTokenBudget": 1800,
+          "preflight": {
+            "query": "Amazon SDE II Canada interview experience 2025 2026",
+            "tokenBudget": 1800,
+            "estimatedUsd": 0.0015
+          },
+          "note": "Sum of certificate.cost.actual once per logical trace; transport errors have unknown cost, not assumed zero. No idempotent replays counted."
+        }
+      }
+    },
+    {
+      "slice": "assay-pilot",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE II interview experience United States 2026 after:2026-01-01 before:2026-09-14",
+        "Amazon SDE2 interview 2026 United States"
+      ],
+      "excluded": [
+        {
+          "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+          "reason": "Assay returned supported excerpts but the account duplicates existing leetcode-8096139 (complete-tree trimming, islands and WhatsApp read receipts). The search term United States does not establish country. Not counted as a new report."
+        },
+        {
+          "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+          "reason": "Assay all retrieval tiers failed to produce extractable text; no question evidence from this call."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "Assay received HTTP403; no report-level evidence retrieved."
+        },
+        {
+          "url": "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+          "reason": "Assay received HTTP403; no report-level evidence retrieved."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "reason": "Assay received HTTP403; no report-level evidence retrieved."
+        }
+      ],
+      "limitations": [
+        "Initial date-bounded titles call returned UPSTREAM_DEGRADED from the searxng backend, not an empty search proving absence of reports.",
+        "Simplified search returned two supported excerpts from one duplicate account, with low coverage confidence and zero independently classified primary sources. Original-source checking is still required.",
+        "Assay source capture timestamp is 2026-09-14 UTC; the corpus interview/publication cutoff remains 2026-09-13.",
+        "Assay quote hashes and spans establish traceability to fetched content, not the authenticity of a candidate account or the correctness of its location and dates."
+      ],
+      "discovery": {
+        "tool": "Assay",
+        "certificateFiles": [
+          "data/assay/pilot/us-2026.json"
+        ],
+        "traceIds": [
+          "asy_P47F3H1RF0FTVRREK4M9D0TM2G",
+          "asy_925VJVWAW7KMY4XANR7JH7H3XW"
+        ],
+        "actualUsd": 0.00226,
+        "costNote": "Original logical search cost; idempotent certificate replay not charged again. Failed initial discovery reported zero actual cost."
+      }
+    },
+    {
+      "slice": "assay-us-2026",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE II interview 2026 USA",
+        "Amazon L5 interview 2026 Seattle",
+        "Amazon SDE2 interview 2026 United States",
+        "Amazon SDEII interview 2026 Austin Boston New York",
+        "AWS SDE2 interview 2026 US",
+        "Amazon SDE II 2026 interview applicant country location United States USA Seattle final loop rounds",
+        "Amazon SDE2 2026 US site:leetcode.com",
+        "Amazon SDE II 2026 USA site:reddit.com",
+        "Amazon L5 2026 Seattle interview experience site:leetcode.com",
+        "Amazon SDE2 2026 Bellevue interview",
+        "Amazon SDE2 2026 Austin interview experience",
+        "Amazon SDE II 2026 New York interview experience",
+        "Amazon SDEII 2026 UnitedStates interview",
+        "Amazon SDE2 2026 AWS Ads interview US",
+        "Amazon SDE2 2026 US site:leetcode.com/discuss"
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+          "title": "Amazon SDE II Interview Experience 2026 - Discuss - LeetCode",
+          "reason": "Duplicate existing leetcode-8457154; no additional candidate report."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/comments/1ubz7rv/amazon_sde_new_grad_2026_usa_interview_what/",
+          "title": "Amazon SDE New Grad 2026 USA Interview. What should I expect?",
+          "reason": "Wrong/ambiguous level or prospective application-status thread, not established external SDEII final-loop report."
+        },
+        {
+          "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+          "title": "SDE II Interview Prep - Amazon Careers",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+          "title": "Amazon SDE II Interview Experience (2026) - Exponent",
+          "reason": "Existing exclusion: membership-gated details; SDE II title conflicts with L4 label; no accessible exact questions/rounds."
+        },
+        {
+          "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+          "title": "Amazon's SDE II Interview (AFFS, Pune) in 2026 — A Full Breakdown",
+          "reason": "Title states AFFS, Pune; non-US lead sent to global slice, not counted here."
+        },
+        {
+          "url": "https://www.hellointerview.com/guides/amazon/l5",
+          "title": "Amazon L5 Interview Guides & Questions (2026)",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-L5-Interview-Questions-EI_IE6036.0,6_KO7,27.htm",
+          "title": "Amazon Software Engineer L5 Interview Experience & Questions",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://www.datainterview.com/blog/amazon-data-scientist-interview",
+          "title": "Amazon Data Scientist Guide (2026): Job, Salary & Interviews",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://blog.fastapply.co/how-to-get-a-job-at-amazon-in-2026",
+          "title": "How to Get a Job at Amazon in 2026: Leadership Principles & Bar ...",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.interviewquery.com/guides/amazon-ml-engineer",
+          "title": "Amazon ML Engineer Interview Guide (2026)",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.mariogerard.com/amazon-tpm-interview-questions-with-answers/",
+          "title": "Amazon TPM Interview Questions for 2026 (With Answers)",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+          "title": "Amazon SDE II Interview Experience 2026: DSA, LLD, HLD and Bar ...",
+          "reason": "Original returned Reddit shell; Assay found no relevant inspected evidence. Exact primary account, country and round/date facts unavailable."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "title": "Amazon Software Development Engineer II interview questions",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7710904",
+          "title": "Amazon | SDE2 | Feb 2026 [Selected] - Discuss - LeetCode",
+          "reason": "Duplicate existing leetcode-7710904; no additional candidate report."
+        },
+        {
+          "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+          "title": "Amazon | SDE 2 | Recent Interview Experiences | 2026 | Set-63",
+          "reason": "DesiQna mirror duplicates existing leetcode-8096139; no additional report."
+        },
+        {
+          "url": "https://amazon.jobs/content/job-categories/software-development",
+          "title": "Software Development - Amazon Careers",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.amazon.jobs/job_categories/software-development",
+          "title": "Software Development - Amazon Careers",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.linkedin.com/jobs/view/software-development-engineer-2026-us-at-amazon-4443043184",
+          "title": "Software Development Engineer - 2026 (US) at Amazon - LinkedIn",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.extern.com/post/amazon-internship-guide",
+          "title": "Amazon Internship 2027–2028: Deadlines & How to Apply | Extern",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://leonstaff.com/blogs/amazon-software-engineer-salary-2026/",
+          "title": "Amazon SDE Salary 2026: The Back-Loaded RSU Trap (SDE1 to ...",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/software-engineer",
+          "title": "Amazon Software Engineer Salary | $188K-$1.46M+ | Levels.fyi",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+          "title": "Amazon Interview Experience|SDE-2|2026 | by Code Prismo - Medium",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nxjGncCmi3Y",
+          "title": "Amazon Interview Experience 2026 | Amazon Interview SDE 2",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/comments/1u41925/amazon_sde_2026_us_role_no_longer_in_consideration/",
+          "title": "Amazon SDE 2026 US role - \" No Longer in Consideration\" - Reddit",
+          "reason": "Wrong/ambiguous level or prospective application-status thread, not established external SDEII final-loop report."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6769948",
+          "title": "My Amazon L5 (SDE II) Interview Experience - LeetCode",
+          "reason": "Original explicitly Location: India, not US. Newly discovered account sent to chronology slice for year verification and extraction; not counted in this slice."
+        },
+        {
+          "url": "https://leetcode.com/discuss/interview-experience/5608898/Amazon-or-L5-or-Seattle-or-Aug-2024/",
+          "title": "Amazon | L5 | Seattle | Aug 2024 - Discuss - LeetCode",
+          "reason": "Title explicitly August 2024, outside window."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+          "title": "Amazon SDE 2 Interview Experience & Questions - Glassdoor",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/",
+          "title": "Amazon Interview Questions (2026) - Join Taro Premium",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1ks1efd/amazon_auta_sde_i_interview_tracker_lets_share/",
+          "title": "Amazon AUTA SDE I Interview Tracker – Let's Share Timelines and ...",
+          "reason": "Wrong/ambiguous level or prospective application-status thread, not established external SDEII final-loop report."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-Interview-Questions-EI_IE6036.0,6_KO7,36.htm",
+          "title": "Amazon Software Development Engineer interview questions",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,27.htm",
+          "title": "Amazon Software Engineer II Interview Experience & Questions",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1hw60ju/amazon_sde2_interview_experience_usa/",
+          "title": "Amazon SDE2 interview experience [USA] : r/leetcode - Reddit",
+          "reason": "Existing exclusion: December 12–13, 2024 interviews despite January 2025 publication; outside window."
+        },
+        {
+          "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+          "title": "Interview Experience — SDE-2 at Amazon (Accepted offer) - Medium",
+          "reason": "Duplicate existing medium-57655fab76b8 (2025-04-06), not a new 2026 report."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+          "title": "Amazon SDE 2 | Interview Experience (REJECTED) | My Resources",
+          "reason": "Duplicate existing leetcode-6898756; no additional candidate report."
+        },
+        {
+          "url": "https://prachub.com/interview-guide/amazon-agentic-ai-engineer-interview-questions-guide-2026",
+          "title": "Amazon Agentic AI Engineer Interview Questions & Guide 2026",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+          "title": "Amazon SDE 2 Full Interview Loop: Questions, Feedback and ...",
+          "reason": "Shared discovered account assigned to chronology slice; not independently counted here."
+        },
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "title": "Amazon SDE 2 Interview (questions, process, prep) - IGotAnOffer",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+          "title": "Amazon Software Development Engineer (SDE) Interview ...",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+          "title": "Amazon Software Engineer II SDE2 Interview Experience & Questions",
+          "reason": "Aggregate interview listing, not an individually verified role/date/country/round candidate report; no listing text converted to a report."
+        },
+        {
+          "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview",
+          "title": "Amazon Software Development Engineer (SDE) Interview Guide",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/ec007_amazon-is-hiring-software-developer-interns-activity-7429712942255865857-OyPG",
+          "title": "Amazon Software Developer Intern Interview Prep Guide - LinkedIn",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        },
+        {
+          "url": "https://www.reddit.com/r/amazonsdeprep/",
+          "title": "r/amazonsdeprep - Reddit",
+          "reason": "Careers, preparation guide, salary page, community index or other non-primary-account discovery; not a candidate final-loop report."
+        }
+      ],
+      "limitations": [
+        "Focused US2026 pass did not establish a new qualifying US report; this is not evidence that no such interviews occurred.",
+        "Assay searxng backend reported provider_partial_failure; titles are discovery only and country terms often matched global site footers or unrelated sources.",
+        "Assay fixed-URL search returned NO_RESULTS_EXIST; two LeetCode originals403, Reddit shell. No authentication/CAPTCHA bypass attempted.",
+        "All25 existing2026 Not stated reports were revisited through originals and rendered copies; Reddit comments and some nested LeetCode replies remain unavailable/uninspected. Two expanded author replies support India, not United States.",
+        "Python execution timeout reset transient state. Six full logical certificates recovered; eight other title-query discovery arrays recovered without certificate envelope/cost/trace. Parent explicitly directed no paid re-fetch solely to reconstruct envelopes.",
+        "Assay timestamps are UTC2026-09-14 while user-requested corpus cutoff/searchedAt is2026-09-13. No post-cutoff report accepted."
+      ],
+      "discovery": {
+        "provider": "Assay",
+        "certificates": [
+          {
+            "path": "data/assay/us-2026/01-asy_NQ6XSTJE3PPQSSKM6ZYX7XATCN.json",
+            "traceId": "asy_NQ6XSTJE3PPQSSKM6ZYX7XATCN",
+            "query": "Amazon SDE II interview 2026 USA",
+            "actualUsd": 0.000368
+          },
+          {
+            "path": "data/assay/us-2026/02-asy_2E5ABHNT11SRM0BRG9FPSE9ANB.json",
+            "traceId": "asy_2E5ABHNT11SRM0BRG9FPSE9ANB",
+            "query": "Amazon L5 interview 2026 Seattle",
+            "actualUsd": 0.000396
+          },
+          {
+            "path": "data/assay/us-2026/03-asy_7TQ1ZX4NHYPP7SK70XYGDGXKM7.json",
+            "traceId": "asy_7TQ1ZX4NHYPP7SK70XYGDGXKM7",
+            "query": "Amazon SDE2 interview 2026 United States",
+            "actualUsd": 0.000396
+          },
+          {
+            "path": "data/assay/us-2026/04-asy_5GFSD53KAK687GP96F1X21BY3K.json",
+            "traceId": "asy_5GFSD53KAK687GP96F1X21BY3K",
+            "query": "Amazon SDEII interview 2026 Austin Boston New York",
+            "actualUsd": 0.000372
+          },
+          {
+            "path": "data/assay/us-2026/05-asy_PHR878K8M6NAZC4K5VVEAF66Y2.json",
+            "traceId": "asy_PHR878K8M6NAZC4K5VVEAF66Y2",
+            "query": "AWS SDE2 interview 2026 US",
+            "actualUsd": 0.000386
+          },
+          {
+            "path": "data/assay/us-2026/06-asy_MGDW6FKR90FXXBATS137PWJJDN.json",
+            "traceId": "asy_MGDW6FKR90FXXBATS137PWJJDN",
+            "query": "Amazon SDE II 2026 interview applicant country location United States USA Seattle final loop rounds",
+            "actualUsd": 0.0005
+          }
+        ],
+        "cost": {
+          "currency": "USD",
+          "knownLogicalActual": 0.002418,
+          "complete": false,
+          "note": "Known actual sum covers retained six complete certificates only. Eight discovery logical costs lost with envelope; not assumed zero. No idempotent replay charged or counted.",
+          "estimate": {
+            "query": "Amazon SDE II interview 2026 USA",
+            "tokenBudget": 1800,
+            "estimatedUsd": 0.0015
+          }
+        },
+        "discoveryOnlyRecovered": [
+          {
+            "query": "Amazon SDE2 2026 US site:leetcode.com",
+            "discoveries": [
+              {
+                "url": "https://leetcode.com/discuss/post/7710904",
+                "title": "Amazon | SDE2 | Feb 2026 [Selected] - Discuss - LeetCode",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:22Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDE II 2026 USA site:reddit.com",
+            "discoveries": [
+              {
+                "url": "https://www.reddit.com/r/amazonsdeprep/comments/1u41925/amazon_sde_2026_us_role_no_longer_in_consideration/",
+                "title": "Amazon SDE 2026 US role - \" No Longer in Consideration\" - Reddit",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:22Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon L5 2026 Seattle interview experience site:leetcode.com",
+            "discoveries": [
+              {
+                "url": "https://leetcode.com/discuss/post/6769948",
+                "title": "My Amazon L5 (SDE II) Interview Experience - LeetCode",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:23Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://leetcode.com/discuss/interview-experience/5608898/Amazon-or-L5-or-Seattle-or-Aug-2024/",
+                "title": "Amazon | L5 | Seattle | Aug 2024 - Discuss - LeetCode",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:23Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDE2 2026 Bellevue interview",
+            "discoveries": [
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+                "title": "Amazon SDE 2 Interview Experience & Questions - Glassdoor",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.jointaro.com/interviews/companies/amazon/",
+                "title": "Amazon Interview Questions (2026) - Join Taro Premium",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+                "title": "SDE II Interview Prep - Amazon Careers",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.reddit.com/r/leetcode/comments/1ks1efd/amazon_auta_sde_i_interview_tracker_lets_share/",
+                "title": "Amazon AUTA SDE I Interview Tracker – Let's Share Timelines and ...",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-Interview-Questions-EI_IE6036.0,6_KO7,36.htm",
+                "title": "Amazon Software Development Engineer interview questions",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDE2 2026 Austin interview experience",
+            "discoveries": [
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,27.htm",
+                "title": "Amazon Software Engineer II Interview Experience & Questions",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+                "title": "Amazon SDE 2 Interview Experience & Questions - Glassdoor",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.reddit.com/r/leetcode/comments/1hw60ju/amazon_sde2_interview_experience_usa/",
+                "title": "Amazon SDE2 interview experience [USA] : r/leetcode - Reddit",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+                "title": "Interview Experience — SDE-2 at Amazon (Accepted offer) - Medium",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+                "title": "SDE II Interview Prep - Amazon Careers",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:43Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDE II 2026 New York interview experience",
+            "discoveries": [
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+                "title": "Amazon Software Development Engineer II interview questions",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.reddit.com/r/amazonsdeprep/comments/1ubz7rv/amazon_sde_new_grad_2026_usa_interview_what/",
+                "title": "Amazon SDE New Grad 2026 USA Interview. What should I expect?",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+                "title": "Amazon SDE 2 | Interview Experience (REJECTED) | My Resources",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+                "title": "Interview Experience — SDE-2 at Amazon (Accepted offer) - Medium",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://prachub.com/interview-guide/amazon-agentic-ai-engineer-interview-questions-guide-2026",
+                "title": "Amazon Agentic AI Engineer Interview Questions & Guide 2026",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDEII 2026 UnitedStates interview",
+            "discoveries": [
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+                "title": "Amazon Software Development Engineer II interview questions",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+                "title": "Amazon SDE 2 Full Interview Loop: Questions, Feedback and ...",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+                "title": "Amazon's SDE II Interview (AFFS, Pune) in 2026 — A Full Breakdown",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+                "title": "Amazon SDE 2 Interview (questions, process, prep) - IGotAnOffer",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+                "title": "Amazon Software Development Engineer (SDE) Interview ...",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:44Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          },
+          {
+            "query": "Amazon SDE2 2026 AWS Ads interview US",
+            "discoveries": [
+              {
+                "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+                "title": "SDE II Interview Prep - Amazon Careers",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+                "title": "Amazon SDE 2 Interview (questions, process, prep) - IGotAnOffer",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+                "title": "Amazon Software Engineer II SDE2 Interview Experience & Questions",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview",
+                "title": "Amazon Software Development Engineer (SDE) Interview Guide",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.linkedin.com/posts/ec007_amazon-is-hiring-software-developer-interns-activity-7429712942255865857-OyPG",
+                "title": "Amazon Software Developer Intern Interview Prep Guide - LinkedIn",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              },
+              {
+                "url": "https://www.reddit.com/r/amazonsdeprep/",
+                "title": "r/amazonsdeprep - Reddit",
+                "backend": "searxng",
+                "observed_at": "2026-09-14T05:39:45Z",
+                "crawled_at": null,
+                "published_at": null,
+                "modified_at": null
+              }
+            ],
+            "failure": null
+          }
+        ],
+        "errors": [
+          {
+            "query": "Amazon SDE2 2026 US site:leetcode.com/discuss",
+            "code": "-32602",
+            "reason": "site operand must be a hostname",
+            "recovery": "Retried corrected site:leetcode.com."
+          },
+          {
+            "query": "Amazon SDE2 2026 Bellevue interview",
+            "code": "429",
+            "reason": "resource_admission: process request capacity exhausted",
+            "retryAfter": 60,
+            "note": "Later serial call succeeded; initial error retained as an access/capacity limitation."
+          }
+        ],
+        "unknownLocationRechecks": [
+          {
+            "reportId": "reddit-1vz16fx",
+            "url": "https://www.reddit.com/r/leetcode/comments/1vz16fx/",
+            "retrievedVia": "https://r.jina.ai/https://www.reddit.com/r/leetcode/comments/1vz16fx/",
+            "result": "Original yielded shell; public rendered copy returned403. Comments unavailable; country remains unknown, not a negative finding about the underlying source."
+          },
+          {
+            "reportId": "reddit-1vz5nzu",
+            "url": "https://www.reddit.com/r/amazonemployees/comments/1vz5nzu/",
+            "retrievedVia": "https://r.jina.ai/https://www.reddit.com/r/amazonemployees/comments/1vz5nzu/",
+            "result": "Original yielded shell; public rendered copy returned403. Comments unavailable; country remains unknown, not a negative finding about the underlying source."
+          },
+          {
+            "reportId": "leetcode-8468910",
+            "url": "https://leetcode.com/discuss/post/8468910/amazon-sde-2-interview-experience-4-roun-i38r/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8468910/amazon-sde-2-interview-experience-4-roun-i38r/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "reddit-1vpockt",
+            "url": "https://www.reddit.com/r/amazonemployees/comments/1vpockt/",
+            "retrievedVia": "https://r.jina.ai/https://www.reddit.com/r/amazonemployees/comments/1vpockt/",
+            "result": "Original yielded shell; public rendered copy returned403. Comments unavailable; country remains unknown, not a negative finding about the underlying source."
+          },
+          {
+            "reportId": "leetcode-8452606",
+            "url": "https://leetcode.com/discuss/post/8452606/amazon-interview-experience-5-yoe-automa-nlwf/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8452606/amazon-interview-experience-5-yoe-automa-nlwf/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "medium-c01839b6d87d",
+            "url": "https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d",
+            "retrievedVia": "https://r.jina.ai/https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-8457154",
+            "url": "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "reddit-1uiqngp",
+            "url": "https://www.reddit.com/r/amazonemployees/comments/1uiqngp/",
+            "retrievedVia": "https://r.jina.ai/https://www.reddit.com/r/amazonemployees/comments/1uiqngp/",
+            "result": "Original yielded shell; public rendered copy returned403. Comments unavailable; country remains unknown, not a negative finding about the underlying source."
+          },
+          {
+            "reportId": "leetcode-8363946",
+            "url": "https://leetcode.com/discuss/post/8363946/amazon-sde-2-experience-by-user3981po-nwlw/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8363946/amazon-sde-2-experience-by-user3981po-nwlw/",
+            "result": "Expanded direct location question in original browser; author confirms India; proposed correction below."
+          },
+          {
+            "reportId": "leetcode-8293814",
+            "url": "https://leetcode.com/discuss/post/8293814/amazon-sde2-interview-experience-by-anon-wi0f/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8293814/amazon-sde2-interview-experience-by-anon-wi0f/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-8096139",
+            "url": "https://leetcode.com/discuss/post/8096139/amazon-sde-ii-interview-experience-need-qrubb/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8096139/amazon-sde-ii-interview-experience-need-qrubb/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-7878487",
+            "url": "https://leetcode.com/discuss/post/7878487/amazon-sde2-selected-by-anonymous_user-c0zq/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7878487/amazon-sde2-selected-by-anonymous_user-c0zq/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "leetcode-7815146",
+            "url": "https://leetcode.com/discuss/post/7815146/rant-on-amazon-sde-ii-interview-process-xl98c/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7815146/rant-on-amazon-sde-ii-interview-process-xl98c/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-7787615",
+            "url": "https://leetcode.com/discuss/post/7787615/amazon-sde-2-experience-and-compensation-9419/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7787615/amazon-sde-2-experience-and-compensation-9419/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "leetcode-7728145",
+            "url": "https://leetcode.com/discuss/post/7728145/amazon-sde2-interview-experience-by-anon-atwr/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7728145/amazon-sde2-interview-experience-by-anon-atwr/",
+            "result": "Expanded direct location question in original browser; author confirms India; proposed correction below."
+          },
+          {
+            "reportId": "leetcode-7671704",
+            "url": "https://leetcode.com/discuss/post/7671704/amazon-swe-2-interview-verdict-rejected-lzd4o/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7671704/amazon-swe-2-interview-verdict-rejected-lzd4o/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "leetcode-7670163",
+            "url": "https://leetcode.com/discuss/post/7670163/amazon-sde-2-selected-by-anonymous_user-7rq8/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7670163/amazon-sde-2-selected-by-anonymous_user-7rq8/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "reddit-1rqqlel",
+            "url": "https://www.reddit.com/r/leetcode/comments/1rqqlel/",
+            "retrievedVia": "https://r.jina.ai/https://www.reddit.com/r/leetcode/comments/1rqqlel/",
+            "result": "Original yielded shell; public rendered copy returned403. Comments unavailable; country remains unknown, not a negative finding about the underlying source."
+          },
+          {
+            "reportId": "leetcode-7622801",
+            "url": "https://leetcode.com/discuss/post/7622801/amazon-sde-2-by-anonymous_user-u9pj/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7622801/amazon-sde-2-by-anonymous_user-u9pj/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "medium-c2cd6e71c035",
+            "url": "https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+            "retrievedVia": "https://r.jina.ai/https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-7576550",
+            "url": "https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "leetcode-7710904",
+            "url": "https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-7515006",
+            "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          },
+          {
+            "reportId": "leetcode-7477684",
+            "url": "https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/",
+            "result": "Original and public rendered copy inspected; no explicit applicant US country found. Generic LeetCode country footer, interviewer location and currency are not applicant evidence."
+          },
+          {
+            "reportId": "leetcode-7554515",
+            "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/",
+            "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/",
+            "result": "Public rendered top-level comments inspected including continuation; nested replies are not exhaustively inspected. No applicant US country found."
+          }
+        ],
+        "countryCorrections": [
+          {
+            "reportId": "leetcode-8363946",
+            "url": "https://leetcode.com/discuss/post/8363946/amazon-sde-2-experience-by-user3981po-nwlw/",
+            "from": "Not stated",
+            "location": "India",
+            "evidence": "Author Saisampath Mahajan replied on Jun 28, 2026: \"Nope amazon india\" to \"Was this for Amazon US? or some other country?\".",
+            "roleEvidence": "Amazon SDE-2 Experience",
+            "dateEvidence": "Jun 28, 2026 (publication and reply)",
+            "stageEvidence": "Round 1: OA Cleared; Round 2: DSA; Round 3: LLD; Round 4: Bar Raiser (machine coding); Round 5: Hiring manager + HLD",
+            "retrievalMethod": "Public original browser; dynamically expanded country reply; not supplied by Assay certificate."
+          },
+          {
+            "reportId": "leetcode-7728145",
+            "url": "https://leetcode.com/discuss/post/7728145/amazon-sde2-interview-experience-by-anon-atwr/",
+            "from": "Not stated",
+            "location": "India",
+            "evidence": "Anonymous User replied on Mar 31, 2026: \"Hyd,India\" to Mikayil: \"Location?\".",
+            "roleEvidence": "Amazon SDE2 Interview Experience; Went through the Amazon SDE-2 interview loop recently.",
+            "dateEvidence": "Mar 31, 2026 (publication and reply)",
+            "stageEvidence": "Existing accepted report records Round1 HLD cancelled and completed source rounds2–4.",
+            "retrievalMethod": "Public original browser; dynamically expanded country reply; not supplied by Assay certificate."
+          }
+        ],
+        "observations": [
+          {
+            "reportId": "leetcode-8468910",
+            "quote": "This final round is with some Engineering Leader from USA .",
+            "decision": "Interviewer location is not candidate/job country."
+          },
+          {
+            "reportId": "leetcode-7576550",
+            "quote": "store team and hyd loc?",
+            "decision": "Commenter question with collapsed replies is not confirmation; no correction."
+          },
+          {
+            "reportId": "leetcode-7878487",
+            "quote": "broo from which place u r from are u from india",
+            "decision": "Commenter question is not confirmation; no correction."
+          }
+        ]
+      }
     },
     {
       "slice": "expansion-2026",

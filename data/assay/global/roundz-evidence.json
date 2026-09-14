@@ -1,0 +1,239 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "evidence",
+    "disclosure": "chunks",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon interview locker recommendation ratio finder decreasing path",
+      "executed": [],
+      "backends": [],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "fetch"
+    },
+    "claims": [
+      {
+        "text": "focusing primarily on medium and hard-level questions that often appear in interviews. I also watched a number of system design videos on YouTube to get a better grasp of high-level architecture patterns.\nTo get a better feel for the process, I did three mock interviews with friends who already work at Amazon. These sessions were incredibly helpful for simulating the real interview pressure and fine-tuning how I framed my answers.\nThe most time-consuming part was preparing for Leadership Principles (LPs). I didn’t want to leave anything to chance, so I made sure to go through nearly every possible behavioral question and crafted detailed responses for each one. This part of the prep was easily the most draining, but I knew it would be crucial.\nInterview Rounds\nRound 1: OOP Design\nDuration: 60 Minutes\nDifficulty Level: Medium\nExperience:\nThis round focused on Object-Oriented Programming and system design at a smaller scale. I was asked to design an Amazon Locker System and implement two specific methods: getPackage() and putPackage().\nThe problem was fairly standard and didn’t involve any unexpected twists. The interviewer was collaborative",
+        "support": [
+          {
+            "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+            "quote": "focusing primarily on medium and hard-level questions that often appear in interviews. I also watched a number of system design videos on YouTube to get a better grasp of high-level architecture patterns.\nTo get a better feel for the process, I did three mock interviews with friends who already work at Amazon. These sessions were incredibly helpful for simulating the real interview pressure and fine-tuning how I framed my answers.\nThe most time-consuming part was preparing for Leadership Principles (LPs). I didn’t want to leave anything to chance, so I made sure to go through nearly every possible behavioral question and crafted detailed responses for each one. This part of the prep was easily the most draining, but I knew it would be crucial.\nInterview Rounds\nRound 1: OOP Design\nDuration: 60 Minutes\nDifficulty Level: Medium\nExperience:\nThis round focused on Object-Oriented Programming and system design at a smaller scale. I was asked to design an Amazon Locker System and implement two specific methods: getPackage() and putPackage().\nThe problem was fairly standard and didn’t involve any unexpected twists. The interviewer was collaborative",
+            "char_range": [
+              1125,
+              2282
+            ],
+            "quote_sha256": "d3dcf1d8ca681c2703dff802fdb67e8658587a38c494ea577011e071b2d5d576",
+            "crawled_at": "2026-09-14T05:42:07Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "f1efe0cce62b7dbcb8e6a1466774efec1abe73b13c352a6df22ecf08074478f2",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "Summary\n📌 Job Role: Software Development Engineer\n🔢 Number of Rounds: 4\n📜 Offer Status: Rejected\n📍 Location: North America\n👤 Candidate Name: Not disclosing due to signed NDA\nInterview Process\nI wasn't even actively job hunting at the time. Amazon recruiters had been reaching out for a while, and I eventually decided to treat it as interview practice. I had an initial conversation with the recruiter and we set up a date for the Online Assessment (OA).\nThe OA itself was fairly standard—one of the problems was based on identifying duplicates in logs, and the other was a variation of the “rotting oranges” problem. I didn’t find either particularly difficult and cleared this part without any issues.\nTwo days later, the recruiter followed up to schedule the onsite interview. Since I hadn’t been studying or prepping recently, I tried to buy myself as much prep time as possible and managed to schedule the onsite interview 30 days out. The onsite interview consisted of 4 rounds in total.\nPreparation Guide\nI started preparing about three weeks before the onsite. During that time, I solved around 60 Leetcode problems,",
+        "support": [
+          {
+            "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+            "quote": "Summary\n📌 Job Role: Software Development Engineer\n🔢 Number of Rounds: 4\n📜 Offer Status: Rejected\n📍 Location: North America\n👤 Candidate Name: Not disclosing due to signed NDA\nInterview Process\nI wasn't even actively job hunting at the time. Amazon recruiters had been reaching out for a while, and I eventually decided to treat it as interview practice. I had an initial conversation with the recruiter and we set up a date for the Online Assessment (OA).\nThe OA itself was fairly standard—one of the problems was based on identifying duplicates in logs, and the other was a variation of the “rotting oranges” problem. I didn’t find either particularly difficult and cleared this part without any issues.\nTwo days later, the recruiter followed up to schedule the onsite interview. Since I hadn’t been studying or prepping recently, I tried to buy myself as much prep time as possible and managed to schedule the onsite interview 30 days out. The onsite interview consisted of 4 rounds in total.\nPreparation Guide\nI started preparing about three weeks before the onsite. During that time, I solved around 60 Leetcode problems,",
+            "char_range": [
+              0,
+              1124
+            ],
+            "quote_sha256": "c3eec78fe7f3dbd04cb5b4208aaab98d61a9adb477e57b9f4ea0f0e3f3c15412",
+            "crawled_at": "2026-09-14T05:42:07Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "f1efe0cce62b7dbcb8e6a1466774efec1abe73b13c352a6df22ecf08074478f2",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "were any projects I’d worked on that I hadn’t gotten a chance to talk about yet. I gave a quick summary, and that wrapped up the interview.\nKey Learnings:\nDon’t underestimate fatigue—it can seriously impact your performance. Also, questions that seem deceptively simple can often trip you up if you’re not mentally sharp. Always take care of your pacing and rest leading into the final rounds.\nFinal Thoughts\nAlthough I didn’t receive an offer, I walked away from the experience with a much clearer understanding of Amazon’s interview process and the type of rigor they expect, especially around Leadership Principles. A few takeaways for others:\n- Amazon LPs are not a formality. Be ready to dive deep and defend your actions and decisions.\n- Practice under time constraints. Simulate full-length interview sessions to build stamina.\n- Mock interviews help. Especially with peers from the target company—they’ll give you valuable insights.\n- Stay steady, even when the interview dynamic isn’t ideal. A difficult interviewer shouldn't break your focus.\n- System design doesn’t have to",
+        "support": [
+          {
+            "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+            "quote": "were any projects I’d worked on that I hadn’t gotten a chance to talk about yet. I gave a quick summary, and that wrapped up the interview.\nKey Learnings:\nDon’t underestimate fatigue—it can seriously impact your performance. Also, questions that seem deceptively simple can often trip you up if you’re not mentally sharp. Always take care of your pacing and rest leading into the final rounds.\nFinal Thoughts\nAlthough I didn’t receive an offer, I walked away from the experience with a much clearer understanding of Amazon’s interview process and the type of rigor they expect, especially around Leadership Principles. A few takeaways for others:\n- Amazon LPs are not a formality. Be ready to dive deep and defend your actions and decisions.\n- Practice under time constraints. Simulate full-length interview sessions to build stamina.\n- Mock interviews help. Especially with peers from the target company—they’ll give you valuable insights.\n- Stay steady, even when the interview dynamic isn’t ideal. A difficult interviewer shouldn't break your focus.\n- System design doesn’t have to",
+            "char_range": [
+              5731,
+              6815
+            ],
+            "quote_sha256": "2c9a211fadbece73a81cb5e1af5aa18499811fdf62a957c061915300814f0e3d",
+            "crawled_at": "2026-09-14T05:42:07Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "f1efe0cce62b7dbcb8e6a1466774efec1abe73b13c352a6df22ecf08074478f2",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "Learnings:\nHaving a structured approach to system design is essential. Start with requirements, then move into components, bottlenecks, and optimizations. Practice drawing from real-world systems to make your designs more grounded.\nRound 3: Bar Raiser\nDuration: 60 Minutes\nDifficulty Level: Hard\nExperience:\nThis was a tough round—not just technically, but also due to how it was conducted. The interviewer had both a broken mic and heavily accented English, which made it hard to follow anything he was saying. It immediately put me on edge.\nWe started with Leadership Principles. He asked three behavioral questions, but took an unusually deep dive on one of them to the point where the follow-up questions stopped making sense. It honestly felt like he was trying to pick holes rather than understand my experience.\nWith about 25 minutes left, we switched to coding. The question was a variation of Longest Increasing Path in a Matrix, but instead of increasing, it was the longest decreasing path. The interviewer gave a long and mostly unhelpful analogy involving ski slopes before revealing the actual problem.\nI mistakenly tried to solve it using BFS before realizing that",
+        "support": [
+          {
+            "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+            "quote": "Learnings:\nHaving a structured approach to system design is essential. Start with requirements, then move into components, bottlenecks, and optimizations. Practice drawing from real-world systems to make your designs more grounded.\nRound 3: Bar Raiser\nDuration: 60 Minutes\nDifficulty Level: Hard\nExperience:\nThis was a tough round—not just technically, but also due to how it was conducted. The interviewer had both a broken mic and heavily accented English, which made it hard to follow anything he was saying. It immediately put me on edge.\nWe started with Leadership Principles. He asked three behavioral questions, but took an unusually deep dive on one of them to the point where the follow-up questions stopped making sense. It honestly felt like he was trying to pick holes rather than understand my experience.\nWith about 25 minutes left, we switched to coding. The question was a variation of Longest Increasing Path in a Matrix, but instead of increasing, it was the longest decreasing path. The interviewer gave a long and mostly unhelpful analogy involving ski slopes before revealing the actual problem.\nI mistakenly tried to solve it using BFS before realizing that",
+            "char_range": [
+              3455,
+              4634
+            ],
+            "quote_sha256": "c23557e4e1dca790a437716585e1168ff4311e5ca15d6faa01becb1b17c2b3eb",
+            "crawled_at": "2026-09-14T05:42:07Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "f1efe0cce62b7dbcb8e6a1466774efec1abe73b13c352a6df22ecf08074478f2",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      }
+    ],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "low",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 1,
+        "primary_sources": 0,
+        "oldest_crawled_at": "2026-09-14T05:42:07Z",
+        "newest_crawled_at": "2026-09-14T05:42:07Z",
+        "excluded_count": 0,
+        "backends_contributing": 0
+      },
+      "staleness_warning": null,
+      "as_of": "2026-09-14T05:42:07Z",
+      "excluded": [],
+      "verdict": null
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0041,
+      "actual": 0.00402,
+      "cache_hits": 0,
+      "tokens_delivered": 1760,
+      "budget_remaining": 0.9930388,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_JRJR03PNGKAK95213PQCZF8441",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 0,
+        "fetch": 185,
+        "assay": 0,
+        "shape": 4
+      },
+      "queries_executed": [],
+      "backends_hit": [],
+      "urls_considered": [
+        "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1"
+      ],
+      "urls_dropped": [],
+      "tier_used": [
+        {
+          "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+          "tier": "T1",
+          "escalated_from": null
+        }
+      ],
+      "tokens_spent": 1760,
+      "cache_hits": 0
+    }
+  }
+}

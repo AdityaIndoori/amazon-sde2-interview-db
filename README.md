@@ -2,9 +2,9 @@
 
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
-**561 question–round rows · 605 reported occurrences · 128 candidate accounts · 6 stated countries.** These are 501 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
+**566 question–round rows · 611 reported occurrences · 130 candidate accounts · 6 stated countries.** These are 505 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
 
-> This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 214 search/query entries and 954 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
+> This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 269 search/query entries and 1,149 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
 
 ## View locally
 
@@ -77,6 +77,7 @@ index.html, app.js, styles.css   Static viewer; no trackers or remote assets
 PLAN.md                          Detailed implementation and research plan
 METHODOLOGY.md                   Evidence, date, round and counting policies
 data/research/*.json             Source-of-truth research and exclusion ledger
+data/assay/**/*.json             Assay evidence certificates and retrieval failures
 data/research.schema.json        Machine-readable contribution format
 data/normalization.json          Reviewed question aliases and adjudications
 data/database.{json,csv,sqlite}  Generated database exports

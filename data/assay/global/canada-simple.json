@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "discovery",
+    "disclosure": "title_url",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [
+      {
+        "url": "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+        "title": "Received Offer - Amazon SDE II (Canada) : r/leetcode - Reddit",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:41:11Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.glassdoor.ca/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+        "title": "Amazon Software Engineer II SDE2 Interview Questions - Glassdoor",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:41:11Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "title": "SDE II Interview Prep - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:41:11Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://leetcode.com/discuss/interview-experience/1978773/amazon-sde-2-toronto-canada-march-2022-offer-downlevel/",
+        "title": "Amazon | SDE-2 | Toronto, Canada | March 2022 [Offer Downlevel]",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:41:11Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.glassdoor.ca/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+        "title": "Amazon SDE 2 Interview Questions | Glassdoor",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:41:11Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      }
+    ],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE II Canada interview experience",
+      "executed": [
+        "Amazon SDE II Canada interview experience"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "none",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 0,
+        "primary_sources": 0,
+        "oldest_crawled_at": null,
+        "newest_crawled_at": null,
+        "excluded_count": 3,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": null,
+      "excluded": [
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-i-vancouver-bc-september-2-2025-no-offer-positive-1310f1a2/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.quora.com/I-recently-had-an-interview-with-Amazon-for-an-SDE-2-role-in-Hyderabad-Ive-completed-the-onsite-interviews-but-didnt-hear-back-from-the-recruiter-How-long-should-I-wait-before-I-give-up-hope",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "verdict": "Discovery observations only; not grounded evidence or source independence"
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0004,
+      "actual": 0.000398,
+      "cache_hits": 0,
+      "tokens_delivered": 199,
+      "budget_remaining": 0.9941516,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_JN2YQJMS0Y05AYHZXN88WNVTWA",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 459,
+        "fetch": 0,
+        "assay": 0,
+        "shape": 0
+      },
+      "queries_executed": [
+        "Amazon SDE II Canada interview experience"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 8,
+          "latency_ms": 456,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+        "https://www.glassdoor.ca/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+        "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "https://leetcode.com/discuss/interview-experience/1978773/amazon-sde-2-toronto-canada-march-2022-offer-downlevel/",
+        "https://www.glassdoor.ca/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+        "https://www.glassdoor.ca/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+        "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-i-vancouver-bc-september-2-2025-no-offer-positive-1310f1a2/",
+        "https://www.quora.com/I-recently-had-an-interview-with-Amazon-for-an-SDE-2-role-in-Hyderabad-Ive-completed-the-onsite-interviews-but-didnt-hear-back-from-the-recruiter-How-long-should-I-wait-before-I-give-up-hope"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://www.glassdoor.ca/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-i-vancouver-bc-september-2-2025-no-offer-positive-1310f1a2/",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.quora.com/I-recently-had-an-interview-with-Amazon-for-an-SDE-2-role-in-Hyderabad-Ive-completed-the-onsite-interviews-but-didnt-hear-back-from-the-recruiter-How-long-should-I-wait-before-I-give-up-hope",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "tier_used": [],
+      "tokens_spent": 199,
+      "cache_hits": 0
+    }
+  }
+}

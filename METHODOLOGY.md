@@ -19,11 +19,15 @@ It does not establish every question asked inside Amazon. There is no public den
 | Late-2025 expansion | 4 | 17 |
 | 2026 recovery expansion | 5 | 29 |
 | Expanded source audit | 0 | 7 |
-| **Total** | **128** | **954** |
+| Assay chronology | 2 | 64 |
+| Assay global countries | 0 | 84 |
+| Assay pilot | 0 | 5 |
+| Assay US 2026 | 0 | 42 |
+| **Total** | **130** | **1,149** |
 
-The result is **561 question–round rows**, **605 occurrences**, and **501 canonical question identities**. Rows by round: R1 172, R2 155, R3 113, R4 121. Source-level date years: 85 accounts in 2025 and 43 in 2026. There are 225 occurrence dates grounded in interview timing and 380 using explicitly labeled publication fallback.
+The result is **566 question–round rows**, **611 occurrences**, and **505 canonical question identities**. Rows by round: R1 173, R2 157, R3 115, R4 121. Source-level date years: 86 accounts in 2025 and 44 in 2026. There are 229 occurrence dates grounded in interview timing and 382 using explicitly labeled publication fallback.
 
-The nine files contain 214 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 214 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
+The thirteen files contain 269 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 269 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
 
 Slices are research ownership partitions, not guaranteed interview half-years. Year-only interview dates remain year-only even if publication occurred in a later period. For example, the Prime Video account posted in July 2026 describes joining in April but does not give the interview month; the database does not invent one.
 
@@ -112,3 +116,13 @@ After initial publication, an additional public-source research pass added nine 
 The January/February CodingKaro index yielded three previously uncaptured original LeetCode accounts. A previously excluded Medium account was partially recovered: both conflicting early-order descriptions independently place HLD+HM fourth, so only that LMS question was admitted. Other uncertain positions remain excluded. A new backend Medium account disclosed parking-lot and Ticketmaster design rounds. Older exclusion entries remain an audit history; the expansion entries record later recovery decisions.
 
 The additional geographic/same-author checks found no reliable new account: a 2025 LinkedIn post explicitly referred to the previous year, while related later promotional posts could not establish a coherent interview timeline. It was not admitted by simply treating a republication date as an interview date.
+
+## Assay-assisted research pass
+
+User-requested Assay research covered US2026, Canada, United Kingdom, Germany, Ireland, Spain, Brazil, and chronological gaps. Titles discovery, cost-capped evidence searches and public original-page checks produced two new India accounts: [May2025 L5 loop](https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/) and [February2026 Hyderabad loop](https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/). These add six occurrences and five question–round rows. All twelve retained question/round quotation supports were matched against saved certificate trace IDs, URLs, quotes and character ranges.
+
+The pass also revisited 25 country-unknown2026 reports. Expanded original author replies established India for leetcode-8363946 ("Nope amazon india") and leetcode-7728145 ("Hyd,India"). These are browser-verified source corrections, not Assay-classified geographic guesses. Their `locationEvidence` is visible in expanded source context. No new US2026 account qualified; the gap remains explicit.
+
+Forty-five JSON certificate/error artifacts are retained under `data/assay/`. Thirty-six distinct complete certificate traces report a combined logical cost of USD0.036014. This is not a complete billing total: some failed calls report no cost, and eight additional US discovery envelopes were lost after a worker reset; their recovered discovery arrays and limitation are retained in coverage. Idempotent pilot replay is not double-counted. Source capture timestamps can be September14 UTC while the interview/publication cutoff remains September13.
+
+Assay's searxng backend returned partial failures, rate limits, irrelevant hiring/preparation pages and duplicate accounts. Date filters sometimes rejected undated results rather than establishing that no reports exist. A quotation certificate proves correspondence to fetched text, not candidate authenticity, country, date or relevance. Original publication dates, stage context and country replies remain essential. Public video retellings without a traceable dated original were not admitted. No paywall or authentication gate was bypassed.

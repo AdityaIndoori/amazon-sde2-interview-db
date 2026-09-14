@@ -1,0 +1,768 @@
+{
+  "status": "ok",
+  "kind": "evidence",
+  "disclosure": "chunks",
+  "certificate_version": 2,
+  "request_version": 2,
+  "content_budget_version": 2,
+  "discovery": [],
+  "summary": null,
+  "failure": null,
+  "query_plan": {
+    "original": "Amazon SDE 2 Hyderabad R2 Ride matching Service R3 News Feed System interview",
+    "executed": [],
+    "backends": [],
+    "resolved_version": null,
+    "relaxed_constraints": [],
+    "lexical_weight": 0.5,
+    "semantic_weight": 0.5,
+    "expansions": [],
+    "mode": "fetch"
+  },
+  "claims": [
+    {
+      "text": "Offer Details : [https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/](https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/)\n",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "Offer Details : [https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/](https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/)\n",
+          "char_range": [
+            3341,
+            3538
+          ],
+          "quote_sha256": "7472296efd64d9eff02506a23eadf3de622129de4ca74606313b43319c327ada",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Title: Amazon SDE 2 | L5 | Hyderabad - Discuss - LeetCode",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "Title: Amazon SDE 2 | L5 | Hyderabad - Discuss - LeetCode",
+          "char_range": [
+            0,
+            57
+          ],
+          "quote_sha256": "c49788137c7226ff24063d1cb2268ecaf5125220e5d36dc76f35a8e5967def77",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "URL Source: https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "URL Source: https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "char_range": [
+            59,
+            159
+          ],
+          "quote_sha256": "ede0054c10b7a80cfb1a4361db290720a91e648354222c947d3e0f7759f67f03",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Markdown Content:\nHey Everyone, I wanted to share my recent interview experience for SDE 2 (L5) at Amazon.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "Markdown Content:\nHey Everyone, I wanted to share my recent interview experience for SDE 2 (L5) at Amazon.",
+          "char_range": [
+            161,
+            267
+          ],
+          "quote_sha256": "18140dce182f1babc5e73be20f1471eae917fc7d645fd211c3118f2310e7a6c4",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "A recruiter called me and asked if I was still interested for SDE 2 role at Amazon. I had applied multiple times, with and without referral. I gave and cleared an OA last year August but didn't get any update after that.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "A recruiter called me and asked if I was still interested for SDE 2 role at Amazon. I had applied multiple times, with and without referral. I gave and cleared an OA last year August but didn't get any update after that.",
+          "char_range": [
+            483,
+            703
+          ],
+          "quote_sha256": "929382bdddb578a0fe908b3c627de5881eec31f21fa47a0c85bc2805fe9fe35d",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " Design a Ride matching Service.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " Design a Ride matching Service.",
+          "char_range": [
+            1306,
+            1338
+          ],
+          "quote_sha256": "8c11167ec935493775a201c423611fd8aee2793f765693b5c0de0ca5c78d6e69",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " Design a News Feed System.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " Design a News Feed System.",
+          "char_range": [
+            1701,
+            1728
+          ],
+          "quote_sha256": "da85eba20c06e0ce53bc90a8d3f1bc0d7a84a5938febfd4d0fc638b92f1d3969",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " Current Role : SDE 2 (got promoted in Nov last year)",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " Current Role : SDE 2 (got promoted in Nov last year)",
+          "char_range": [
+            428,
+            481
+          ],
+          "quote_sha256": "3d1d9eebd8e06e20cf11b3a6300e6a80ae630600d74cec60ff9fb1f56504007a",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Once all the rounds were over, I wasn't sure I would be receiving the offer. But next day when I followed up with the HR, she gave the positive news. The HLD round panelist would be my manager and he was impressed by the interview and really pushed for my profile.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "Once all the rounds were over, I wasn't sure I would be receiving the offer. But next day when I followed up with the HR, she gave the positive news. The HLD round panelist would be my manager and he was impressed by the interview and really pushed for my profile.",
+          "char_range": [
+            2651,
+            2915
+          ],
+          "quote_sha256": "a8cd3c6bdd5bbb4e88ce9a7e663f52f5be876997dcae67408e2d4f671b9b0264",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " YOE : 2 years 8 months",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " YOE : 2 years 8 months",
+          "char_range": [
+            346,
+            369
+          ],
+          "quote_sha256": "facbcee5e907ff7c4c6ae6254e2b1b11973bfd33ba9b043427ecf3f90fa4a64c",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " I dont remember the actual questions since I gave this OA long back. There were 2 DSA questions as far as I remember.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " I dont remember the actual questions since I gave this OA long back. There were 2 DSA questions as far as I remember.",
+          "char_range": [
+            878,
+            996
+          ],
+          "quote_sha256": "5465e70a6fc263b2b609247b5afe80bbf20b87b4df441c5e7786b2bf8c42387f",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " 2 DSA questions based on DP and Trees.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " 2 DSA questions based on DP and Trees.",
+          "char_range": [
+            1024,
+            1063
+          ],
+          "quote_sha256": "0a5469f8774f8de9503fa8294873ef79ad5b8a6363f1c7ed49483ac6306e82fd",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "**R2: LLD Round**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "**R2: LLD Round**",
+          "char_range": [
+            1287,
+            1304
+          ],
+          "quote_sha256": "64a0b7176726f8f62edcc7d727027b6267c1149bae9e0ad40902dd97aa48c516",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": " Followed by questions on 2 Leadership Principles.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": " Followed by questions on 2 Leadership Principles.",
+          "char_range": [
+            1340,
+            1390
+          ],
+          "quote_sha256": "b373bd8fbab559966e8b7d9826bf74357c009f8427066860c8d17147718e012a",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "**R3: HLD Round**",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "**R3: HLD Round**",
+          "char_range": [
+            1682,
+            1699
+          ],
+          "quote_sha256": "c8f05f71cab0c8baed79c3ccb2ea779506bc7bea4bdde03b8fe9a0944c3e1521",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "Followed by same, questions on 2 LPs and this time I had prepared really well for this.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "Followed by same, questions on 2 LPs and this time I had prepared really well for this.",
+          "char_range": [
+            1813,
+            1900
+          ],
+          "quote_sha256": "9b0e373b80a1ff0d16f1b500cbeae28c25b29eb249a27128e87d117609604646",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "I would advice to be well prepared with Leadership Principles as I think Amazon interviews really consider what we answer for LPs. My friend advised the same to me, I used to take it lightly. But I understood this after the LLD round.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "I would advice to be well prepared with Leadership Principles as I think Amazon interviews really consider what we answer for LPs. My friend advised the same to me, I used to take it lightly. But I understood this after the LLD round.",
+          "char_range": [
+            2957,
+            3191
+          ],
+          "quote_sha256": "d3e3a346b6d3cb363e5e14cb47125dba1e7c1e81ef61ac36e2f36e44dd018d84",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    },
+    {
+      "text": "The HR also can make or break your interview process. I really appreciate her involvement in the process throughout, she is really awesome.",
+      "support": [
+        {
+          "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+          "quote": "The HR also can make or break your interview process. I really appreciate her involvement in the process throughout, she is really awesome.",
+          "char_range": [
+            3193,
+            3332
+          ],
+          "quote_sha256": "917af701cc7185ba3c4e4141f3b8236b8667fbda6a5faf5f35639f77ad0c1052",
+          "crawled_at": "2026-09-14T05:40:37Z",
+          "served_from": "live",
+          "fetch_tier": "T1",
+          "source_class": "unknown",
+          "content_sha256": "61754bc0ea712c84b305108b7b1c510ca659e36213f1af96cc4b906d736186e1",
+          "trust": {
+            "primary": null,
+            "slop_score": null,
+            "editorial": null
+          },
+          "fetch_context": {
+            "geo": "unknown",
+            "user_agent_class": "assay-bot",
+            "cookies_used": false,
+            "ab_bucket": null
+          },
+          "published_at": null,
+          "modified_at": null,
+          "published_at_inferred": false,
+          "served_from_cache_at": null,
+          "archive_capture_at": null
+        }
+      ],
+      "independent_sources": 1,
+      "confidence": "low",
+      "circular_cluster": null
+    }
+  ],
+  "conflicts": [],
+  "coverage": {
+    "confidence": "low",
+    "independent_primary_sources": 0,
+    "inputs": {
+      "distinct_hosts": 1,
+      "primary_sources": 0,
+      "oldest_crawled_at": "2026-09-14T05:40:37Z",
+      "newest_crawled_at": "2026-09-14T05:40:37Z",
+      "excluded_count": 0,
+      "backends_contributing": 0
+    },
+    "staleness_warning": null,
+    "as_of": "2026-09-14T05:40:37Z",
+    "excluded": [],
+    "verdict": null
+  },
+  "security": {
+    "envelope": null,
+    "injection_findings": [],
+    "hidden_content_stripped": null,
+    "cloaking_detected": null,
+    "secrets_suppressed": null,
+    "injection_scan_performed": false,
+    "scan_status": "not_run"
+  },
+  "cost": {
+    "estimated": 0.0041,
+    "actual": 0.002192,
+    "cache_hits": 0,
+    "tokens_delivered": 846,
+    "budget_remaining": 0.9942312,
+    "currency": "USD"
+  },
+  "trace": {
+    "trace_id": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+    "replayable_until": "2026-12-14",
+    "latency_ms": {
+      "plan": 0,
+      "discover": 0,
+      "fetch": 860,
+      "assay": 0,
+      "shape": 15
+    },
+    "queries_executed": [],
+    "backends_hit": [],
+    "urls_considered": [
+      "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/"
+    ],
+    "urls_dropped": [],
+    "tier_used": [
+      {
+        "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+        "tier": "T1",
+        "escalated_from": null
+      }
+    ],
+    "tokens_spent": 846,
+    "cache_hits": 0
+  }
+}

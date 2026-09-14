@@ -1,0 +1,678 @@
+{
+  "slice": "assay-chronology",
+  "searchedAt": "2026-09-13",
+  "queries": [
+    "Amazon SDE II Round 1 AI chat Round 2 flight path weights Round 3 Splitwise Round 4 Asteroid Collision",
+    "Amazon SDE 2 Hyderabad interview R2 ride matching R3 news feed",
+    "Amazon interview books pages read",
+    "Amazon SDE2 interview books pages read subsets cab booking",
+    "Amazon SDE II 2026 interview India",
+    "Amazon SDE II interview November December 2025 blog",
+    "site:leetcode.com Amazon SDE-2 December 2025",
+    "Amazon SDE2 December 2025 interview",
+    "Amazon L5 interview experience June July August 2026",
+    "Amazon SDE 2 Hyderabad R2 Ride matching Service R3 News Feed System interview",
+    "Amazon SDE2 interview experience after:2025-12-01 before:2026-01-01",
+    "site:leetcode.com/discuss Amazon SDE-2 December 2025 (rejected: site operand must be hostname; corrected to site:leetcode.com)"
+  ],
+  "reports": [
+    {
+      "id": "leetcode-6769948",
+      "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+      "title": "My Amazon L5 (SDE II) Interview Experience \u2013 What Went Well and What to Avoid",
+      "publishedDate": "2025-05-22",
+      "interviewDate": "2025-04",
+      "date": "2025-04",
+      "dateBasis": "interview",
+      "location": "India",
+      "role": "SDE II",
+      "stageEvidence": "Round Type: SDM + SDE Interview Loop (L5). Interview Format: 4 rounds \u2013 2 HLD/LLD + 2 DSA + LP questions in all. Recently interviewed for Amazon's SDE II (L5) role and made it through 4 rounds. Location: India. Original browser article createdAt2025-05-22T12:50:08.063593+00:00, updatedAt2025-05-23T14:12:27.438526+00:00; original displays May22,2025 and May23,2025. Current recent April23/24, May2/19 interviews are anchored to2025 publication, not later update/search timestamps. Question-level dates preserve individual rounds.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 \u2013 HLD + LP (23rdApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "design-current-ai-chat-system",
+          "question": "Design the AI chat system from your current work.",
+          "topic": "System design / AI chat",
+          "evidence": "Round 1 \u2013 HLD + LP (23rdApril): Question: Design your current AI chat system.",
+          "date": "2025-04-23",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 1\ufe0f\u20e3 Round 1 \u2013 HLD + LP (23rdApril)",
+              "charRange": [
+                711,
+                750
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** High-Level System Design\n*   **Question:** \"Design your current AI chat system\"\n*   I explained the architecture I had built in my current role \u2013 real-world experience helped.\n*   Walked through: \n    *   Client \u2192 Gateway \u2192 Services \u2192 Database\n    *   Real-time messaging via WebSocket\n    *   Stateless backend, rate-limiting, vector DB usage, etc.",
+              "charRange": [
+                752,
+                1115
+              ]
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 \u2013 DSA + LP (24thApril)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "connecting-flight-path-weighted-bidirectional",
+          "question": "Find a connecting path between flights; extend the solution to weighted costs and reverse-direction travel.",
+          "topic": "Graphs / Shortest paths",
+          "evidence": "Round 2 \u2013 DSA + LP (24thApril): Find a connecting path between flights (flight booking system scenario). Follow-up1: Add weights (costs) \u2192 used Dijkstra\u2019s Algorithm. Follow-up2: Handle to \u2192 from direction \u2192 made bidirectional graph changes.",
+          "date": "2025-04-24",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** Graph + Heap\n*   **Question 1:** Find a connecting path between flights (flight booking system scenario).\n*   **Follow-up 1:** Add weights (costs) \u2192 used **Dijkstra\u2019s Algorithm**.\n*   **Follow-up 2:** Handle `to \u2192 from` direction \u2192 made bidirectional graph changes.\n*   Used heap-based implementation, handled edge cases.\n*   **LPs:** Focused on handling ambiguity, delivering results, taking ownership.\n*   **Feedback:** Positive. One of my strongest rounds.",
+              "charRange": [
+                1353,
+                1826
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 2\ufe0f\u20e3 Round 2 \u2013 DSA + LP (24thApril)",
+              "charRange": [
+                1312,
+                1351
+              ]
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 \u2013 LLD + LP (2nd May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "design-splitwise",
+          "question": "Design Splitwise with groups, shared bills, balances and settlements.",
+          "topic": "Low-level design / Expense sharing",
+          "evidence": "Round 3 \u2013 LLD + LP (2nd May): Design Splitwise: Users create groups; One user pays, others split bill; View balances and settle-up.",
+          "date": "2025-05-02",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 3\ufe0f\u20e3 Round 3 \u2013 LLD + LP (2nd May)",
+              "charRange": [
+                1835,
+                1872
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **Type:** Low-Level Design + Deep Dive\n*   **Question:** Design **Splitwise**: \n    *   Users create groups\n    *   One user pays, others split bill\n    *   View balances and settle-up",
+              "charRange": [
+                1874,
+                2062
+              ]
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 \u2013 Bar Raiser (LP + DSA) (19th May)",
+          "roundMappingNote": "Explicit four-round SDEII/L5 interview loop. No screening offset; individual round date preserved.",
+          "key": "asteroid-collision",
+          "question": "Simulate asteroid collisions.",
+          "topic": "Stacks",
+          "evidence": "Round 4 \u2013 Bar Raiser (LP + DSA) (19th May): DSA: Stack-based problem \u2013 Asteroid Collision (LeetCode Medium). Follow-up: How would you optimize memory usage?",
+          "date": "2025-05-19",
+          "dateBasis": "interview",
+          "assayEvidence": [
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "#### 4\ufe0f\u20e3 Round 4 \u2013 Bar Raiser (LP + DSA) (19th May)",
+              "charRange": [
+                2549,
+                2600
+              ]
+            },
+            {
+              "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/6769948",
+              "quote": "*   **LPs:** 40 minutes \u2014 covered _Invent & Simplify, Ownership, Bias for Action_.\n*   Focused on scaling an app I had worked on \u2014 taking DAUs from 1k \u2192 25k.\n*   **DSA:** Stack-based problem \u2013 **Asteroid Collision** (LeetCode Medium). \n    *   Solved in under 10 mins with optimal solution.",
+              "charRange": [
+                2602,
+                2892
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7599995",
+      "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "title": "Amazon SDE 2 | L5 | Hyderabad",
+      "publishedDate": "2026-02-22",
+      "interviewDate": null,
+      "date": "2026-02-22",
+      "dateBasis": "publication",
+      "location": "India",
+      "role": "SDE II",
+      "stageEvidence": "Title: Amazon SDE 2 | L5 | Hyderabad. Candidate: Hey Everyone, I wanted to share my recent interview experience for SDE 2 (L5) at Amazon. R0: Online Assessment; R1: DSA Round; R2: LLD Round; R3: HLD Round; R4: Bar Raiser; Once all the rounds were over ... she gave the positive news. Public original browser shows Feb 22, 2026 twice; embedded article createdAt=2026-02-22T13:50:29.095412+00:00 and updatedAt=2026-02-22T13:54:26.735250+00:00. Hyderabad in the report title supports India; footer United States is not candidate location. Assay captured questions and headings, while original browser supplied publication date.",
+      "questions": [
+        {
+          "round": 2,
+          "sourceRound": "R2: LLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1\u2013R4 ending with Bar Raiser. Original numbering retained.",
+          "key": "ride-matching-service-lld",
+          "question": "Design a ride-matching service.",
+          "topic": "Low-level design / Ride matching",
+          "evidence": "R2: LLD Round \u2014 Design a Ride matching Service.",
+          "assayEvidence": [
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": "**R2: LLD Round**",
+              "charRange": [
+                1287,
+                1304
+              ]
+            },
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": " Design a Ride matching Service.",
+              "charRange": [
+                1306,
+                1338
+              ]
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "sourceRound": "R3: HLD Round",
+          "roundMappingNote": "R0 is explicitly OA; the four interviews are explicitly R1\u2013R4 ending with Bar Raiser. Original numbering retained.",
+          "key": "news-feed-hld",
+          "question": "Design a news feed system.",
+          "topic": "System design",
+          "evidence": "R3: HLD Round \u2014 Design a News Feed System.",
+          "assayEvidence": [
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": "**R3: HLD Round**",
+              "charRange": [
+                1682,
+                1699
+              ]
+            },
+            {
+              "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+              "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+              "quote": " Design a News Feed System.",
+              "charRange": [
+                1701,
+                1728
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://leetcode.com/discuss/post/6769948/my-amazon-l5-sde-ii-interview-experience-2cj2/",
+      "reason": "Partial exclusion: generic LP labels and app-scaling discussion without a precise behavioral question not reconstructed. All four stated technical prompts and flight/memory follow-ups included. Year supplied by original2025 publication context; Assay lacks publication timestamp."
+    },
+    {
+      "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://amazon.jobs/en/jobs/10485388/software-development-engineer-ii-skg-team",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://amazon.jobs/jobs/10429015",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://blog.stackademic.com/i-got-promoted-to-sde-2-at-amazon-after-3-5-years-dont-make-my-mistakes-eeab692d373c",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://blog.theinterviewguys.com/amazon-interview-questions-and-answers-2/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://hnhiring.com/november-2024",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://hnhiring.com/november-2025",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://igotanoffer.com/blogs/tech/amazon-interview-process",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://interviewkickstart.com/blogs/interview-questions/amazon-sde-2-interview-questions",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://jobright.ai/blog/the-ultimate-guide-to-acing-the-amazon-technical-interview/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+      "reason": "Rediscovered existing candidate report; no additional candidate count."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7599790/amazon-sde-2-l5-hyderabad-by-anonymous_u-kb1i/",
+      "reason": "Linked companion compensation post explicitly links7599995; same candidate, no extra report count. Original public rendering confirms Feb22,2026 and Hyderabad."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "reason": "Partial exclusion: R1 pick/not-pick DP and child-sum tree variants lack identifiable statements; R4 BFS/possible Dijkstra graph variant is unspecified; all Leadership Principles are generic labels. R2/R3 fully extracted."
+    },
+    {
+      "url": "https://medium.com/@emilyhustlenyc/2026-guide-how-to-crack-the-l5-senior-engineer-interview-system-design-behavioral-d6bb109af888",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://medium.com/@harinera3691/amazon-sde-ii-interview-experience-2025-usa-8b6d8c8abc14",
+      "reason": "Rediscovered existing candidate report; no additional candidate count."
+    },
+    {
+      "url": "https://medium.com/@rohitverma_87831/my-interview-experience-at-amazon-offer-sde-ii-6223edbd4fa3",
+      "reason": "Full original inspected: narrative says Back in2017 and In2017 for preparation. Byline Nov26,2023; metadata Jan8,2024. All pre-window despite late2025 query discovery. Not a new2025 report."
+    },
+    {
+      "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+      "reason": "Rediscovered existing candidate report; no additional candidate count."
+    },
+    {
+      "url": "https://medium.com/@srenitha2812/my-amazon-sde-interview-journey-from-application-to-offer-346d2cd4ba93",
+      "reason": "Full original inspected: explicitly Amazon University Talent Acquisition Software Development Engineer (SDE-I). December2025 dates concern OA/follow-up emails; interviews January\u2013February2026. SDE-II refers to interviewer, not candidate. Exclude wrong level."
+    },
+    {
+      "url": "https://mostrecommendedbooks.com/lists/best-job-interview-books",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=13060915",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=25632982",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=27827592",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=27903720",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=40654190",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://r.jina.ai/https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+      "reason": "Rediscovered existing candidate report; no additional candidate count."
+    },
+    {
+      "url": "https://tutorsbot.com/blog/amazon-software-engineer-jobs-2026-hiring-guide",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://us.amazon.com/Essential-Interview-Questions-Their-Answers-ebook/dp/B0HCM1XWGJ",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://us.amazon.com/Interview-Tomorrow-90-Minute-Workbook-Confidence-ebook/dp/B0HHXPJSH7",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://us.amazon.com/Scrum-Master-Interview-Questions-Answers-ebook/dp/B0H98DCF3C/ref=zg_bsnr_g_154845011_d_sccl_15/000-0000000-0000000?psc=1",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.amazon.com/Behavioral-Interview-Questions-Answers-Preparation-ebook/dp/B083KK6WB4",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.amazon.com/How-Answer-Interview-Questions-Tough-ebook/dp/B00AQ4CAFI",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.amazon.com/interview-books/s?k=interview+books",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.amazon.jobs/en/jobs/10513002/sde-ii-amazon-legal-tech-legal-tech",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.amazon.jobs/en/jobs/3115510/sde2",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.ambitionbox.com/interviews/amazon-interview-questions/sde-2",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.finalroundai.com/blog/amazon-sde2-interview-vs-sde1",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+      "reason": "Previously adjudicated exclusion retained: HTTP 403 prevented original report inspection. Search snippets are not sufficient to verify question-to-round/date/level assignments."
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.hellointerview.com/experience/stories/cmeyawqgp006k08ade17zy88t",
+      "reason": "Previously adjudicated exclusion retained: Rediscovered existing exclusion: SDEII success story mentioning December2025 start but no specific numbered interview questions."
+    },
+    {
+      "url": "https://www.hellointerview.com/guides/amazon/l5",
+      "reason": "Previously adjudicated exclusion retained: General interview guide, not a dated first-person final-loop report."
+    },
+    {
+      "url": "https://www.instagram.com/reel/DWRb4cZqd0v/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.interviewhelp.io/blog/posts/amazon_sde2_interview_experience_usa_/",
+      "reason": "Previously adjudicated exclusion retained: Secondary copy of Reddit account; Reddit originals owned by separate slice, not counted independently."
+    },
+    {
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-2-seattle-wa-april-1-2025-no-offer-neutral-42dc8f52/",
+      "reason": "Original inspected: April1,2025 account gives one screening, three coding rounds, one system-design round and Ticketmaster question, but no explicit overall round position for design; no specific coding statement. Later dates belong work-experience recommendations."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/bugfree-ai_amazoninterview-systemdesign-coding-activity-7407966881174761473-3TCx",
+      "reason": "Related original LinkedIn snippet inspected on Saravanan page: third-party Bugfree user experience with search API, package dependency, log storage, but no overall final-loop positions. No independent candidate count."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/piyushnirala_amazon-interviewexperience-systemdesign-activity-7371636735505666048-Zx-x",
+      "reason": "Rediscovered existing candidate report; no additional candidate count."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/raykrueger_how-to-prepare-for-an-amazon-interview-don-activity-7335681967138512896-gjPt",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+      "reason": "Original inspected: first-person failed onsite narrative, but only SDE (not II/L5) and generic DSA/system-design/LP advice. No specific numbered questions. Recommended posts are not evidence for this candidate."
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/i-interviewed-amazon-heres-everything-learned-what-you-saquib-khan-lrp9c",
+      "reason": "Full original inspected: October26,2025 article explicitly Software Development Engineer Intern, Jan\u2013June2026 internship. Wrong level."
+    },
+    {
+      "url": "https://www.quora.com/How-do-I-crack-the-Amazon-SDE-2-interview-in-2-months-given-that-I-have-a-basic-knowledge-of-programming-and-4-years-of-experience",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+      "reason": "Plausible title only. Original JSON HTTP403 and public rendering explicitly blocked by Reddit network security. No usable candidate body/date/round evidence; no authentication bypass."
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1v94649/amazon_sde_new_grad_2026_no_interview/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/new/",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.reddit.com/r/developersIndia/comments/1ubk14a/sde2_switch_in_2026_current_market_interview/",
+      "reason": "Original returned Reddit shell without candidate body. General switch/market title cannot establish Amazon final-loop report or numbered questions."
+    },
+    {
+      "url": "https://www.teamblind.com/company/Amazon/posts/amazon-interview",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.teamblind.com/post/is-amazon-to-intuit-down-level-va18bbop",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+      "reason": "Previously adjudicated exclusion retained: Locked experience requiring contribution or membership; visible preview has no round-specific question, and SDEII title conflicts with Mid Level/L4 label. No gate bypass."
+    },
+    {
+      "url": "https://www.tryexponent.com/guides/amazon-software-development-engineer-interview/experiences",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ftl23DGg6n8",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=K1gcvgl-iFw",
+      "reason": "July17,2026 video auto-caption transcript inspected. Explicitly retells someone else's LeetCode report, not a distinct candidate: R1 books/pages + subsets, R2 House Robber + Course Schedule, R3 private upload shared to one friend then made public, R4 cab-booking LLD. Candidate applied January/interviewed May onward. No original URL in full video description; two bounded Assay fingerprint queries failed to identify original. Browser video did not reveal readable original frame. Ledger only, not secondhand question counts."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UJ_SIXg3bgE",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dQvg8sbDt1Y",
+      "reason": "Discovery-only lead not accepted: search result is a preparation guide, employment listing, general forum/index, commercial resource or otherwise does not establish a dated first-person external SDEII R1\u20134 account. No question attribution from title."
+    }
+  ],
+  "limitations": [
+    "Bounded chronological pass concentrated on December2025 and remaining2026, including India, unspecified-country originals, Medium, LinkedIn, Reddit, Taro and YouTube. No new qualifying December account was found; the gap remains rather than being filled with stale/reposted/other-level material.",
+    "Assay searxng reported provider_partial_failure even on successful discovery. Date-operator query dropped all five candidates for unknown publication dates and returned UPSTREAM_DEGRADED; switched to textual month/role queries. Site operands require hostname only.",
+    "Assay titles certificates are discovery observations, not evidence. Full certificates retained; accepted claims independently checked against public original body and browser metadata. Certificate claim extraction does not authenticate a candidate or establish completeness.",
+    "Assay direct LeetCode fetch returned403; public original and rendering were readable without login. Browser supplied original date missing from extracted claims. No CAPTCHA or authentication bypass.",
+    "A YouTube retelling remains uncertain because its original report could not be identified with available description and bounded Assay fingerprint searches; no unverified secondhand rows added.",
+    "Assay captures use UTC2026-09-14 while requested research cutoff and searchedAt remain2026-09-13. Capture timestamps are not interview dates.",
+    "Shared service capacity was rate-limited for siblings; requests here were serial. One site-query response initially failed local JSON parsing; corrected query and service error retained. No project validation/build/formatting run."
+  ],
+  "coverage": {
+    "method": "Assay chronology discovery plus original verification",
+    "certificates": [
+      {
+        "certificate": "data/assay/chronology/may-handoff-evidence.json",
+        "traceId": "asy_B0ZF6E6VXCQX9TR5SG348RBX3X",
+        "query": "Amazon SDE II Round 1 AI chat Round 2 flight path weights Round 3 Splitwise Round 4 Asteroid Collision",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0041,
+          "actual": 0.00284,
+          "cache_hits": 0,
+          "tokens_delivered": 1170,
+          "budget_remaining": 0.9922936,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/hyderabad-evidence.json",
+        "traceId": "asy_3CWZYWQTNWRDQCJSEK5K4FCYQ4",
+        "query": "Amazon SDE 2 Hyderabad interview R2 ride matching R3 news feed",
+        "status": "BLOCKED_BY_TARGET",
+        "cost": {
+          "estimated": 0.0041,
+          "actual": 0.0,
+          "cache_hits": 0,
+          "tokens_delivered": 0,
+          "budget_remaining": 0.9948196,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/video-fingerprint-titles.json",
+        "traceId": "asy_JM9SJ84AD9KA7Z3FPGZZCCTY1S",
+        "query": "Amazon interview books pages read",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.00037,
+          "cache_hits": 0,
+          "tokens_delivered": 185,
+          "budget_remaining": 0.9928616,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/video-original-titles.json",
+        "traceId": "asy_N405WE0X77YTYF7AM4FJY5QXVW",
+        "query": "Amazon SDE2 interview books pages read subsets cab booking",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.000372,
+          "cache_hits": 0,
+          "tokens_delivered": 186,
+          "budget_remaining": 0.9929356,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/2026-india-titles.json",
+        "traceId": "asy_XYRJSBXAFA4C2ERD7NZ5824C5Z",
+        "query": "Amazon SDE II 2026 interview India",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.000354,
+          "cache_hits": 0,
+          "tokens_delivered": 177,
+          "budget_remaining": 0.9989504,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/december-leetcode-titles.json",
+        "traceId": null,
+        "query": null,
+        "status": "TOOL_ERROR",
+        "cost": null
+      },
+      {
+        "certificate": "data/assay/chronology/late2025-blog-titles.json",
+        "traceId": "asy_1YEXMTR2BQFXD0MC567W4YXD4R",
+        "query": "Amazon SDE II interview November December 2025 blog",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.00038,
+          "cache_hits": 0,
+          "tokens_delivered": 190,
+          "budget_remaining": 0.9947436,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/december-leetcode-host-titles.json",
+        "traceId": "asy_R3HCC9592DN9V37AR8398VD0T3",
+        "query": "site:leetcode.com Amazon SDE-2 December 2025",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 8.4e-05,
+          "cache_hits": 0,
+          "tokens_delivered": 42,
+          "budget_remaining": 0.9938428,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/december-titles.json",
+        "traceId": "asy_YQYNPFJPG199D4S6DGRSBPDA3X",
+        "query": "Amazon SDE2 December 2025 interview",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.000352,
+          "cache_hits": 0,
+          "tokens_delivered": 176,
+          "budget_remaining": 0.9990212,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/2026-l5-titles.json",
+        "traceId": "asy_N7MDZMG7JN9MPM4J45NC7D5QMP",
+        "query": "Amazon L5 interview experience June July August 2026",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0004,
+          "actual": 0.00037,
+          "cache_hits": 0,
+          "tokens_delivered": 185,
+          "budget_remaining": 0.9946696,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/hyderabad-rendered-evidence.json",
+        "traceId": "asy_M0ZAQWZP8KKJWYTEWT89GYAA04",
+        "query": "Amazon SDE 2 Hyderabad R2 Ride matching Service R3 News Feed System interview",
+        "status": "ok",
+        "cost": {
+          "estimated": 0.0041,
+          "actual": 0.002192,
+          "cache_hits": 0,
+          "tokens_delivered": 846,
+          "budget_remaining": 0.9942312,
+          "currency": "USD"
+        }
+      },
+      {
+        "certificate": "data/assay/chronology/december-date-search.json",
+        "traceId": "asy_58FNX347CFPXTXYANJ1C5M815E",
+        "query": "Amazon SDE2 interview experience after:2025-12-01 before:2026-01-01",
+        "status": "UPSTREAM_DEGRADED",
+        "cost": {
+          "estimated": 0.0061,
+          "actual": 0.0,
+          "cache_hits": 0,
+          "tokens_delivered": 0,
+          "budget_remaining": 0.9993224,
+          "currency": "USD"
+        }
+      }
+    ],
+    "originalLogicalCostUsd": 0.007313999999999999,
+    "costBasis": "Sum of certificate.cost.actual across retained unique logical certificates; error without cost excluded, no replay counted. Three preflight estimates (1800 tokens) each returned USD0.0015. Search calls capped at USD0.05.",
+    "deduplication": "Compared all existing research IDs, URLs, exclusions, normalization and generated database. Kept historical December repost7402617 exclusion and stale-date exclusions intact; companion7599790 not counted.",
+    "sourceVerification": [
+      {
+        "url": "https://leetcode.com/discuss/post/7599995/amazon-sde-2-l5-hyderabad-by-anonymous_u-kxf5/",
+        "method": "Public original browser and r.jina.ai rendering",
+        "createdAt": "2026-02-22T13:50:29.095412+00:00",
+        "updatedAt": "2026-02-22T13:54:26.735250+00:00",
+        "assayCertificate": "data/assay/chronology/hyderabad-rendered-evidence.json",
+        "note": "Question text and round headings have separate exact certificate spans. No date inferred from title search, update date or footer country."
+      }
+    ]
+  }
+}

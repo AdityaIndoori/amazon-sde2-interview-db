@@ -1,0 +1,189 @@
+{
+  "status": "ok",
+  "kind": "discovery",
+  "disclosure": "title_url",
+  "certificate_version": 2,
+  "request_version": 2,
+  "content_budget_version": 2,
+  "discovery": [
+    {
+      "url": "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+      "title": "Amazon SDE 2 Full Interview Loop: Questions, Feedback and ...",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:39:13Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://medium.com/@harinera3691/amazon-sde-ii-interview-experience-2025-usa-8b6d8c8abc14",
+      "title": "Amazon SDE II interview experience \u2014 2025 USA - Medium",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:39:13Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+      "title": "Amazon SDE 2 Interview Experience & Questions - Glassdoor",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:39:13Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://www.hellointerview.com/experience/stories/cmeyawqgp006k08ade17zy88t",
+      "title": "Amazon Mid-level Success Story - Hello Interview",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:39:13Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+      "title": "Amazon SDE 2 | Interview Experience (REJECTED) | My Resources",
+      "backend": "searxng",
+      "observed_at": "2026-09-14T05:39:13Z",
+      "crawled_at": null,
+      "published_at": null,
+      "modified_at": null
+    }
+  ],
+  "summary": null,
+  "failure": null,
+  "query_plan": {
+    "original": "Amazon SDE2 December 2025 interview",
+    "executed": [
+      "Amazon SDE2 December 2025 interview"
+    ],
+    "backends": [
+      "searxng"
+    ],
+    "resolved_version": null,
+    "relaxed_constraints": [],
+    "lexical_weight": 0.5,
+    "semantic_weight": 0.5,
+    "expansions": [],
+    "mode": "search"
+  },
+  "claims": [],
+  "conflicts": [],
+  "coverage": {
+    "confidence": "none",
+    "independent_primary_sources": 0,
+    "inputs": {
+      "distinct_hosts": 0,
+      "primary_sources": 0,
+      "oldest_crawled_at": null,
+      "newest_crawled_at": null,
+      "excluded_count": 5,
+      "backends_contributing": 1
+    },
+    "staleness_warning": null,
+    "as_of": null,
+    "excluded": [
+      {
+        "url": "https://interviewkickstart.com/blogs/interview-questions/amazon-sde-2-interview-questions",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.ambitionbox.com/interviews/amazon-interview-questions/sde-2",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.glassdoor.com/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-2-seattle-wa-april-1-2025-no-offer-neutral-42dc8f52/",
+        "reason": "token_budget: discovery item does not fit"
+      }
+    ],
+    "verdict": "Discovery observations only; not grounded evidence or source independence"
+  },
+  "security": {
+    "envelope": null,
+    "injection_findings": [],
+    "hidden_content_stripped": null,
+    "cloaking_detected": null,
+    "secrets_suppressed": null,
+    "injection_scan_performed": false,
+    "scan_status": "not_run"
+  },
+  "cost": {
+    "estimated": 0.0004,
+    "actual": 0.000352,
+    "cache_hits": 0,
+    "tokens_delivered": 176,
+    "budget_remaining": 0.9990212,
+    "currency": "USD"
+  },
+  "trace": {
+    "trace_id": "asy_YQYNPFJPG199D4S6DGRSBPDA3X",
+    "replayable_until": "2026-12-14",
+    "latency_ms": {
+      "plan": 0,
+      "discover": 1286,
+      "fetch": 0,
+      "assay": 0,
+      "shape": 0
+    },
+    "queries_executed": [
+      "Amazon SDE2 December 2025 interview"
+    ],
+    "backends_hit": [
+      {
+        "name": "searxng",
+        "healthy": false,
+        "contributed": true,
+        "results": 10,
+        "latency_ms": 1286,
+        "error": "provider_partial_failure"
+      }
+    ],
+    "urls_considered": [
+      "https://www.reddit.com/r/AskProgrammers/comments/1w21dy4/amazon_sde_2_full_interview_loop_questions/",
+      "https://medium.com/@harinera3691/amazon-sde-ii-interview-experience-2025-usa-8b6d8c8abc14",
+      "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+      "https://www.hellointerview.com/experience/stories/cmeyawqgp006k08ade17zy88t",
+      "https://leetcode.com/discuss/post/6898756/amazon-sde-2-interview-experience-4-mont-fslv/",
+      "https://interviewkickstart.com/blogs/interview-questions/amazon-sde-2-interview-questions",
+      "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+      "https://www.ambitionbox.com/interviews/amazon-interview-questions/sde-2",
+      "https://www.glassdoor.com/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+      "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-2-seattle-wa-april-1-2025-no-offer-neutral-42dc8f52/"
+    ],
+    "urls_dropped": [
+      {
+        "url": "https://interviewkickstart.com/blogs/interview-questions/amazon-sde-2-interview-questions",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.ambitionbox.com/interviews/amazon-interview-questions/sde-2",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.glassdoor.com/Interview/Amazon-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,11.htm",
+        "reason": "token_budget: discovery item does not fit"
+      },
+      {
+        "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/sde-2-seattle-wa-april-1-2025-no-offer-neutral-42dc8f52/",
+        "reason": "token_budget: discovery item does not fit"
+      }
+    ],
+    "tier_used": [],
+    "tokens_spent": 176,
+    "cache_hits": 0
+  }
+}

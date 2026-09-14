@@ -1,0 +1,286 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "evidence",
+    "disclosure": "chunks",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon SDE2 Madrid 2025 interview",
+      "executed": [
+        "Amazon SDE2 Madrid 2025 interview"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [
+      {
+        "text": "Securing an Amazon SDE II (Software Development Engineer II) role requires mastery of advanced coding, scalable system design, and Amazon's Leadership Principles. This guide provides everything you need to prepare for Amazon's rigorous mid-level interview process, including 50+ coding and system design examples, behavioral frameworks, and insider strategies to stand out in 2025.\nTable of Contents\nAmazon SDE II Role Explained\nResponsibilities & Expectations\n- Ownership: Lead end-to-end feature development (e.g., design, deploy, monitor).\n- Mentorship: Guide junior engineers in code reviews and technical decisions.\n- Cross-Team Collaboration: Partner with product managers, QA, and DevOps teams.\n- Operational Excellence: Optimize latency, cost, and scalability of services.\nAutonomy:\n- Operate independently with minimal supervision.\n- Drive technical decisions (e.g., choosing between DynamoDB vs. Aurora).\nSDE I vs. SDE II vs. SDE III\n| Level | Scope | Design Expectations | \n|---|---|---|\n| SDE I | Task-focused | Basic class/module design |",
+        "support": [
+          {
+            "url": "https://www.onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+            "quote": "Securing an Amazon SDE II (Software Development Engineer II) role requires mastery of advanced coding, scalable system design, and Amazon's Leadership Principles. This guide provides everything you need to prepare for Amazon's rigorous mid-level interview process, including 50+ coding and system design examples, behavioral frameworks, and insider strategies to stand out in 2025.\nTable of Contents\nAmazon SDE II Role Explained\nResponsibilities & Expectations\n- Ownership: Lead end-to-end feature development (e.g., design, deploy, monitor).\n- Mentorship: Guide junior engineers in code reviews and technical decisions.\n- Cross-Team Collaboration: Partner with product managers, QA, and DevOps teams.\n- Operational Excellence: Optimize latency, cost, and scalability of services.\nAutonomy:\n- Operate independently with minimal supervision.\n- Drive technical decisions (e.g., choosing between DynamoDB vs. Aurora).\nSDE I vs. SDE II vs. SDE III\n| Level | Scope | Design Expectations | \n|---|---|---|\n| SDE I | Task-focused | Basic class/module design |",
+            "char_range": [
+              0,
+              1051
+            ],
+            "quote_sha256": "2846db3831495282e221a8f7f1da2d8c77c506e26906a3d7368cb6cb3b77398f",
+            "crawled_at": "2026-09-14T05:39:58Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "1e69402ec419996285a9b71e7260d0cbb23fc282c4e4e5d860f77a88f61b9818",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "II vs. SDE III\n| Aspect | SDE I | SDE II | \n|---|---|---|\n| Coding Focus | Algorithms & basic OOP | Concurrency, distributed systems | \n| System Design | Parking lot, ATM systems | Real-time services, scalable APIs | \n| Behavioral Focus | Task ownership | Cross-team leadership & mentoring | \nFAQs\nQ: Does Amazon SDE II require cloud experience?\nA: While not mandatory, familiarity with AWS (EC2, S3, DynamoDB) is highly advantageous.\nQ: How many LeetCode questions should I solve?\nA: Aim for 150+ Medium/Hard problems, focusing on Amazon's top 50 questions.\nQ: What's the Bar Raiser round?\nA: A holistic evaluation by a senior engineer to ensure you raise the bar on Amazon's standards.\nFor more detailed insights and recent interview experiences, review Onsites.fyi. It offers hundreds of detailed Amazon interview experiences, helping you understand exactly what to expect and how to prepare effectively for the phone screen and onsite rounds at Amazon.\nWant to dive deeper? Check out the complete guide",
+        "support": [
+          {
+            "url": "https://www.onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+            "quote": "II vs. SDE III\n| Aspect | SDE I | SDE II | \n|---|---|---|\n| Coding Focus | Algorithms & basic OOP | Concurrency, distributed systems | \n| System Design | Parking lot, ATM systems | Real-time services, scalable APIs | \n| Behavioral Focus | Task ownership | Cross-team leadership & mentoring | \nFAQs\nQ: Does Amazon SDE II require cloud experience?\nA: While not mandatory, familiarity with AWS (EC2, S3, DynamoDB) is highly advantageous.\nQ: How many LeetCode questions should I solve?\nA: Aim for 150+ Medium/Hard problems, focusing on Amazon's top 50 questions.\nQ: What's the Bar Raiser round?\nA: A holistic evaluation by a senior engineer to ensure you raise the bar on Amazon's standards.\nFor more detailed insights and recent interview experiences, review Onsites.fyi. It offers hundreds of detailed Amazon interview experiences, helping you understand exactly what to expect and how to prepare effectively for the phone screen and onsite rounds at Amazon.\nWant to dive deeper? Check out the complete guide",
+            "char_range": [
+              5125,
+              6131
+            ],
+            "quote_sha256": "5c4619bedd9bf86d2502d2540ed17b3108a7cd2df407cdc79724ae1f60a472bd",
+            "crawled_at": "2026-09-14T05:39:58Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "1e69402ec419996285a9b71e7260d0cbb23fc282c4e4e5d860f77a88f61b9818",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": "to Amazon's Software Engineer Interview Process for a comprehensive overview on all aspects of interviewing at Amazon.\nAdditional Resources\nNote: This guide is based on publicly available information and insights from candidates who have undergone the Amazon interview process.",
+        "support": [
+          {
+            "url": "https://www.onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+            "quote": "to Amazon's Software Engineer Interview Process for a comprehensive overview on all aspects of interviewing at Amazon.\nAdditional Resources\nNote: This guide is based on publicly available information and insights from candidates who have undergone the Amazon interview process.",
+            "char_range": [
+              6132,
+              6409
+            ],
+            "quote_sha256": "d73593d22a5d3f5bca57d776dfdd464c67e09b4df45eca96ffbfd3c3184eb6f3",
+            "crawled_at": "2026-09-14T05:39:58Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "1e69402ec419996285a9b71e7260d0cbb23fc282c4e4e5d860f77a88f61b9818",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      },
+      {
+        "text": ".\nYou’ll have the chance to discuss your experiences and expertise in several areas that help us determine success at Amazon.\nThese areas include both technical competencies and non-technical competencies that are based off of our Leadership Principles, which different interviewers will be assigned to evaluate.\nDownload video transcript\nAt Amazon, designing software systems is unique due to our size and speed of change. Expect at least one question on software systems design.\nYour interviewer will ask questions related to your design, and you should ask questions to complete and validate your design.\nLearn how to approach, analyze, and solve technical questions in your interview.\nLearn how to approach high-level design in your interview.\nExpect to be asked to write syntactically correct code—no pseudo code. If you feel a bit rusty coding without an IDE or coding in a specific language, it’s a good idea to dust off the cobwebs and get comfortable coding with Livecode.\nThe most important thing a SDE does at Amazon is write scalable, robust, and well-tested code. These are the main evaluation criteria. Also check for edge cases and validate that no bad input",
+        "support": [
+          {
+            "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+            "quote": ".\nYou’ll have the chance to discuss your experiences and expertise in several areas that help us determine success at Amazon.\nThese areas include both technical competencies and non-technical competencies that are based off of our Leadership Principles, which different interviewers will be assigned to evaluate.\nDownload video transcript\nAt Amazon, designing software systems is unique due to our size and speed of change. Expect at least one question on software systems design.\nYour interviewer will ask questions related to your design, and you should ask questions to complete and validate your design.\nLearn how to approach, analyze, and solve technical questions in your interview.\nLearn how to approach high-level design in your interview.\nExpect to be asked to write syntactically correct code—no pseudo code. If you feel a bit rusty coding without an IDE or coding in a specific language, it’s a good idea to dust off the cobwebs and get comfortable coding with Livecode.\nThe most important thing a SDE does at Amazon is write scalable, robust, and well-tested code. These are the main evaluation criteria. Also check for edge cases and validate that no bad input",
+            "char_range": [
+              2372,
+              3545
+            ],
+            "quote_sha256": "d1aa5aa99a2bc5388f452bf1f6e45e4580c9c7d9334c579c482c67d7dcfd2151",
+            "crawled_at": "2026-09-14T05:39:59Z",
+            "served_from": "live",
+            "fetch_tier": "T1",
+            "source_class": "unknown",
+            "content_sha256": "6ed5bf4b8a64deff02ecfdf4eb91e30b165f994eabb6659ab0c32083f9355142",
+            "trust": {
+              "primary": null,
+              "slop_score": null,
+              "editorial": null
+            },
+            "fetch_context": {
+              "geo": "unknown",
+              "user_agent_class": "assay-bot",
+              "cookies_used": false,
+              "ab_bucket": null
+            },
+            "published_at": null,
+            "modified_at": null,
+            "published_at_inferred": false,
+            "served_from_cache_at": null,
+            "archive_capture_at": null
+          }
+        ],
+        "independent_sources": 1,
+        "confidence": "low",
+        "circular_cluster": null
+      }
+    ],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "medium",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 2,
+        "primary_sources": 0,
+        "oldest_crawled_at": "2026-09-14T05:39:58Z",
+        "newest_crawled_at": "2026-09-14T05:39:59Z",
+        "excluded_count": 2,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": "2026-09-14T05:39:59Z",
+      "excluded": [
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+          "reason": "http_403: target answered HTTP 403"
+        }
+      ],
+      "verdict": null
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0061,
+      "actual": 0.004316,
+      "cache_hits": 0,
+      "tokens_delivered": 1408,
+      "budget_remaining": 0.9960236,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_9680WZX888E2ZPPYTQHQN4EG37",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 348,
+        "fetch": 2539,
+        "assay": 0,
+        "shape": 4
+      },
+      "queries_executed": [
+        "Amazon SDE2 Madrid 2025 interview"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 5,
+          "latency_ms": 347,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+        "https://www.youtube.com/watch?v=cj33YCgdgnc",
+        "https://onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+        "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+        "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://igotanoffer.com/en/advice/amazon-sde-2-interview",
+          "reason": "http_403: target answered HTTP 403"
+        },
+        {
+          "url": "https://medium.com/@saiteja.dasari123/interview-experience-sde-2-at-amazon-accepted-offer-57655fab76b8",
+          "reason": "http_403: target answered HTTP 403"
+        }
+      ],
+      "tier_used": [
+        {
+          "url": "https://www.youtube.com/watch?v=cj33YCgdgnc",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://onsites.fyi/blog/article/amazon-sde-ii-software-engineer-interview-questions",
+          "tier": "T1",
+          "escalated_from": null
+        },
+        {
+          "url": "https://amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep",
+          "tier": "T1",
+          "escalated_from": null
+        }
+      ],
+      "tokens_spent": 1408,
+      "cache_hits": 0
+    }
+  }
+}

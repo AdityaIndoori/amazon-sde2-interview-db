@@ -20,7 +20,9 @@ Public reports cannot prove all questions asked internally. The collection will 
 
 ## Architecture and contracts
 
-No frontend framework, account, server database or paid API. Bun builds checked-in JSON, CSV and SQLite from provenance-rich JSON research files. HTML/CSS/JavaScript reads generated JSON. GitHub Pages can serve the repository root unchanged.
+The published viewer requires no frontend framework, account, server database or paid API. Bun builds checked-in JSON, CSV and SQLite from provenance-rich JSON research files. HTML/CSS/JavaScript reads generated JSON. GitHub Pages serves the repository root unchanged. Optional research tooling now includes user-requested Assay discovery and evidence retrieval, with costs and certificates retained separately from the runtime.
+
+Assay expansion: evaluate a cost-capped pilot, research US2026/global-country/chronological gaps independently, preserve full certificates under `data/assay/`, admit only source-verified additions, retain ambiguous leads and failures in coverage, rebuild/verify exports, then publish and inspect the live site. Certificate quotation spans prove correspondence to fetched text, not candidate authenticity or exhaustive coverage.
 
 ### Research file contract
 
@@ -93,8 +95,8 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 ## Execution record
 
 - Repository finalized at `/home/aditya/amazon-sde2-interview-db` (moved out of temporary storage).
-- Delivered 561 question–round rows, 605 occurrences, 128 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested expanded public-source research pass.
-- Recorded 214 discovery/query entries and 954 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
+- Delivered 566 question–round rows, 611 occurrences, 130 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested Assay research pass.
+- Recorded 269 discovery/query entries and 1,149 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
 - Build/check passed; all three artifacts were byte-identical across regeneration.
 - Chromium exercised loaded data, seven sort controls, filters, source/evidence expansion, CSV export, keyboard reset, project-subpath navigation and 390px mobile layout.
 - Git initialized on main; the user subsequently authorized GitHub publication and interactively authenticated as AdityaIndoori. Target: `AdityaIndoori/amazon-sde2-interview-db`, with GitHub Pages from the main branch root.

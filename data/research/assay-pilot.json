@@ -1,0 +1,44 @@
+{
+  "slice": "assay-pilot",
+  "searchedAt": "2026-09-13",
+  "queries": [
+    "Amazon SDE II interview experience United States 2026 after:2026-01-01 before:2026-09-14",
+    "Amazon SDE2 interview 2026 United States"
+  ],
+  "reports": [],
+  "excluded": [
+    {
+      "url": "https://www.desiqna.in/19212/amazon-sde-2-recent-interview-experiences-2026-set-63",
+      "reason": "Assay returned supported excerpts but the account duplicates existing leetcode-8096139 (complete-tree trimming, islands and WhatsApp read receipts). The search term United States does not establish country. Not counted as a new report."
+    },
+    {
+      "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1vn54vj/amazon_sde_ii_interview_experience_2026_dsa_lld/",
+      "reason": "Assay all retrieval tiers failed to produce extractable text; no question evidence from this call."
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-II-Interview-Questions-EI_IE6036.0,6_KO7,39.htm",
+      "reason": "Assay received HTTP403; no report-level evidence retrieved."
+    },
+    {
+      "url": "https://prachub.com/interview-guide/amazon-software-engineer-interview-guide",
+      "reason": "Assay received HTTP403; no report-level evidence retrieved."
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-Software-Engineer-II-SDE2-Interview-Questions-EI_IE6036.0,6_KO7,32.htm",
+      "reason": "Assay received HTTP403; no report-level evidence retrieved."
+    }
+  ],
+  "limitations": [
+    "Initial date-bounded titles call returned UPSTREAM_DEGRADED from the searxng backend, not an empty search proving absence of reports.",
+    "Simplified search returned two supported excerpts from one duplicate account, with low coverage confidence and zero independently classified primary sources. Original-source checking is still required.",
+    "Assay source capture timestamp is 2026-09-14 UTC; the corpus interview/publication cutoff remains 2026-09-13.",
+    "Assay quote hashes and spans establish traceability to fetched content, not the authenticity of a candidate account or the correctness of its location and dates."
+  ],
+  "coverage": {
+    "tool": "Assay",
+    "certificateFiles": ["data/assay/pilot/us-2026.json"],
+    "traceIds": ["asy_P47F3H1RF0FTVRREK4M9D0TM2G", "asy_925VJVWAW7KMY4XANR7JH7H3XW"],
+    "actualUsd": 0.00226,
+    "costNote": "Original logical search cost; idempotent certificate replay not charged again. Failed initial discovery reported zero actual cost."
+  }
+}

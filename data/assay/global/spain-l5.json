@@ -1,0 +1,175 @@
+{
+  "status": "ok",
+  "certificate": {
+    "status": "ok",
+    "kind": "discovery",
+    "disclosure": "title_url",
+    "certificate_version": 2,
+    "request_version": 2,
+    "content_budget_version": 2,
+    "discovery": [
+      {
+        "url": "https://www.reddit.com/r/amazonemployees/comments/1ol1edl/mass_layoffs_in_amazon_spain_madrid_barcelonas/",
+        "title": "Mass layoffs in Amazon Spain (Madrid & Barcelona's corpo offices ...",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.linkedin.com/pulse/cracking-amazon-sde-2-l5-interview-my-journey-success-krishna-mundra-wpq3c",
+        "title": "Cracking the Amazon SDE-2 (L5) Interview: My Journey to Success",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.graduatesfirst.com/amazon-assessment-tests",
+        "title": "Amazon Assessment Tests & Interviews 2026/27 Practice Guide.",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.amazon.jobs/content/en/career-programs/pathways",
+        "title": "Amazon Pathways - Amazon Careers",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Ce97H-JMBW8",
+        "title": "Pass the Amazon Hiring Test! (2026 VERSION!) - YouTube",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      },
+      {
+        "url": "https://www.jobtestprep.com/amazon-hiring-process",
+        "title": "Amazon Hiring Process: What to Expect in Each Step [2026]",
+        "backend": "searxng",
+        "observed_at": "2026-09-14T05:39:38Z",
+        "crawled_at": null,
+        "published_at": null,
+        "modified_at": null
+      }
+    ],
+    "summary": null,
+    "failure": null,
+    "query_plan": {
+      "original": "Amazon L5 Spain interview 2025 2026",
+      "executed": [
+        "Amazon L5 Spain interview 2025 2026"
+      ],
+      "backends": [
+        "searxng"
+      ],
+      "resolved_version": null,
+      "relaxed_constraints": [],
+      "lexical_weight": 0.5,
+      "semantic_weight": 0.5,
+      "expansions": [],
+      "mode": "search"
+    },
+    "claims": [],
+    "conflicts": [],
+    "coverage": {
+      "confidence": "none",
+      "independent_primary_sources": 0,
+      "inputs": {
+        "distinct_hosts": 0,
+        "primary_sources": 0,
+        "oldest_crawled_at": null,
+        "newest_crawled_at": null,
+        "excluded_count": 2,
+        "backends_contributing": 1
+      },
+      "staleness_warning": null,
+      "as_of": null,
+      "excluded": [
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/management-consultant/locations/spain",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.icrea.cat/cvs/17566/raul-jimenez-tellado/",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "verdict": "Discovery observations only; not grounded evidence or source independence"
+    },
+    "security": {
+      "envelope": null,
+      "injection_findings": [],
+      "hidden_content_stripped": null,
+      "cloaking_detected": null,
+      "secrets_suppressed": null,
+      "injection_scan_performed": false,
+      "scan_status": "not_run"
+    },
+    "cost": {
+      "estimated": 0.0004,
+      "actual": 0.000388,
+      "cache_hits": 0,
+      "tokens_delivered": 194,
+      "budget_remaining": 0.998602,
+      "currency": "USD"
+    },
+    "trace": {
+      "trace_id": "asy_H6WR9B71CKPM52V487CGKHSQEZ",
+      "replayable_until": "2026-12-14",
+      "latency_ms": {
+        "plan": 0,
+        "discover": 511,
+        "fetch": 0,
+        "assay": 0,
+        "shape": 0
+      },
+      "queries_executed": [
+        "Amazon L5 Spain interview 2025 2026"
+      ],
+      "backends_hit": [
+        {
+          "name": "searxng",
+          "healthy": false,
+          "contributed": true,
+          "results": 8,
+          "latency_ms": 510,
+          "error": "provider_partial_failure"
+        }
+      ],
+      "urls_considered": [
+        "https://www.reddit.com/r/amazonemployees/comments/1ol1edl/mass_layoffs_in_amazon_spain_madrid_barcelonas/",
+        "https://www.linkedin.com/pulse/cracking-amazon-sde-2-l5-interview-my-journey-success-krishna-mundra-wpq3c",
+        "https://www.graduatesfirst.com/amazon-assessment-tests",
+        "https://www.amazon.jobs/content/en/career-programs/pathways",
+        "https://www.youtube.com/watch?v=Ce97H-JMBW8",
+        "https://www.jobtestprep.com/amazon-hiring-process",
+        "https://www.levels.fyi/companies/amazon/salaries/management-consultant/locations/spain",
+        "https://www.icrea.cat/cvs/17566/raul-jimenez-tellado/"
+      ],
+      "urls_dropped": [
+        {
+          "url": "https://www.levels.fyi/companies/amazon/salaries/management-consultant/locations/spain",
+          "reason": "token_budget: discovery item does not fit"
+        },
+        {
+          "url": "https://www.icrea.cat/cvs/17566/raul-jimenez-tellado/",
+          "reason": "token_budget: discovery item does not fit"
+        }
+      ],
+      "tier_used": [],
+      "tokens_spent": 194,
+      "cache_hits": 0
+    }
+  }
+}
