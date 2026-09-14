@@ -35,6 +35,8 @@ The table exposes the requested schema:
 - Share the URL to preserve filters/sort. Multiple selections use repeated parameters, for example `?round=1&round=2&location=India&location=United+States`. Existing single-value URLs still work. Reset restores the complete table.
 - Export the filtered selection as CSV, or download full JSON/SQLite.
 - Narrow screens scroll the table horizontally without overflowing the page.
+- Minimalist Dark styling uses layered slate surfaces, amber accents, subtle glass/glow effects and locally hosted Space Grotesk, Inter and JetBrains Mono. Shared CSS tokens control color, type, spacing, radius and elevation. Font licenses are included under `assets/fonts/`.
+- Motion respects `prefers-reduced-motion`; interactive controls have amber focus states and 44px targets. Muted text is lightened from the supplied palette to preserve contrast. The table has a bounded scrolling viewport and sticky sortable headers.
 
 ## Database and reproducibility
 
@@ -74,6 +76,7 @@ The workflow in `.github/workflows/check.yml` checks committed artifacts, rebuil
 
 ```text
 index.html, app.js, styles.css   Static viewer; no trackers or remote assets
+assets/fonts/                   Self-hosted variable fonts and SIL license notices
 PLAN.md                          Detailed implementation and research plan
 METHODOLOGY.md                   Evidence, date, round and counting policies
 data/research/*.json             Source-of-truth research and exclusion ledger
