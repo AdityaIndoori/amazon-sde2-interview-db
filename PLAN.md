@@ -24,6 +24,8 @@ The published viewer requires no frontend framework, account, server database or
 
 Assay expansion: evaluate a cost-capped pilot, research US2026/global-country/chronological gaps independently, preserve full certificates under `data/assay/`, admit only source-verified additions, retain ambiguous leads and failures in coverage, rebuild/verify exports, then publish and inspect the live site. Certificate quotation spans prove correspondence to fetched text, not candidate authenticity or exhaustive coverage.
 
+Exa expansion: connect to the official hosted MCP endpoint, inspect its live tool schemas, use structured date-filtered semantic search and content fetch, preserve response artifacts under `data/exa/`, verify original applicant/round/country/date evidence and deduplicate cross-posts, then rebuild and publish only qualified records. No API key or persistent harness configuration change was needed for the observed hosted endpoint; search-provider geography is not source-country evidence.
+
 ### Research file contract
 
 Each `data/research/<slice>.json` contains:
@@ -95,8 +97,8 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 ## Execution record
 
 - Repository finalized at `/home/aditya/amazon-sde2-interview-db` (moved out of temporary storage).
-- Delivered 566 question–round rows, 611 occurrences, 130 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested Assay research pass.
-- Recorded 269 discovery/query entries and 1,149 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
+- Delivered 586 question–round rows, 635 occurrences, 136 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested Exa research pass.
+- Recorded 286 discovery/query entries and 1,288 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
 - Build/check passed; all three artifacts were byte-identical across regeneration.
 - Chromium exercised loaded data, seven sort controls, filters, source/evidence expansion, CSV export, keyboard reset, project-subpath navigation and 390px mobile layout.
 - Git initialized on main; the user subsequently authorized GitHub publication and interactively authenticated as AdityaIndoori. Target: `AdityaIndoori/amazon-sde2-interview-db`, with GitHub Pages from the main branch root.

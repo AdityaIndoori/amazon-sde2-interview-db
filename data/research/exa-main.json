@@ -1,0 +1,55 @@
+{
+  "slice": "exa-main",
+  "searchedAt": "2026-09-13",
+  "queries": ["First-person Amazon SDE II L5 final onsite interview experience in the United States in 2026 with coding and system design questions"],
+  "reports": [
+    {
+      "id": "medium-2637efdb273b",
+      "url": "https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b",
+      "retrievedVia": "https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b",
+      "title": "Amazon SDE2 Interview Experience — Supriya Malkar",
+      "publishedDate": "2026-01-31",
+      "interviewDate": null,
+      "date": "2026-01-31",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Recently, I had the opportunity to interview with Amazon for SDE2 role. Source Round1 explicitly Phone Screening; heading Loop Rounds starts sourceRound2, followed by sourceRounds3–5. Original meta article:published_time2026-01-31T06:46:08.866Z.",
+      "roundMappingNote": "Source Round1 is phone screening, excluded; sourceRounds2–5 map to final-loop1–4.",
+      "questions": [
+        {"round":1,"sourceRound":"Round 2: DSA + Leadership Principle","key":"longest-continuous-subarray-absolute-difference-limit","question":"Find the longest continuous subarray whose absolute difference between any two elements is at most a given limit.","topic":"Arrays / Sliding window","evidence":"Loop Rounds: Round 2 ... Longest Continuous Subarray With Absolute Difference ≤ Limit"},
+        {"round":1,"sourceRound":"Round 2: DSA + Leadership Principle","key":"regular-expression-matching","question":"Solve Regular Expression Matching.","topic":"Dynamic programming / Strings","evidence":"Loop Rounds: Round 2 ... 2.Regular Expression Matching"},
+        {"round":2,"sourceRound":"Round 3: DSA + Leadership Principle","key":"stream-top-k-frequent-numbers","question":"Implement a class that returns the top k most frequent numbers from a stream of integers.","topic":"Heaps / Frequency tracking","evidence":"Round 3 ... From a stream of integers, return top k most frequent numbersComplete the class"},
+        {"round":3,"sourceRound":"Round 4: LLD + LP","key":"file-metadata-extensible-hundreds-filters","question":"Design extensible file-metadata filtering by prefix, size threshold and extension, supporting potentially hundreds of conditions.","topic":"Low-level design / Filesystems","evidence":"Round 4 ... manage file metadata with flexible filtering ... prefix ... size less than a threshold ... extension ... potentially hundreds ... extensible, scalable, and follow SOLID principles."},
+        {"round":3,"sourceRound":"Round 4: LLD + LP","key":"overcome-work-challenges","question":"Describe significant obstacles while delivering a project and how you overcame them.","topic":"Behavioral","evidence":"Round 4 ... Tell me about a time when you faced significant obstacles while delivering a project and how you overcame them."},
+        {"round":4,"sourceRound":"Round 5: HLD","key":"spotify-services-api-design","question":"Design Spotify: establish requirements, estimate capacity, identify services, and design APIs and high-level service classes.","topic":"System design / Music streaming","evidence":"Round 5: HLD ... Design Spotify ... Functional requirements and non functional requirements ... Back of the envelope estimation ... services ... APIs ... classes on a high level"}
+      ]
+    },
+    {
+      "id": "shraddhaarora-amazon-sde2-2026",
+      "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "retrievedVia": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "title": "Amazon Interview Experience [SDE 2] — Shraddha Arora",
+      "publishedDate": "2026-08-01",
+      "interviewDate": null,
+      "date": "2026-08-01",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "I recently went through the Amazon SDE II interview loop. Four rounds, roughly one hour each, all in one day. Original meta published_time2026-08-01T22:35:37.347Z. Only explicitly reported prompts admitted; advisory examples excluded.",
+      "questions": [
+        {"round":2,"sourceRound":"Round 2: HLD + GenAI Fluency + Leadership Principles","key":"redis-like-cache-simplified-types","question":"Design a Redis-like cache system, scoped to simpler data structures.","topic":"System design / Caching","evidence":"Round 2 ... Technical: Design a cache system like Redis, scoped to simpler data structures for the round."},
+        {"round":3,"sourceRound":"Round 3: LLD + Leadership Principles","key":"shopping-cart-inventory-coupons-no-payment","question":"Design an Amazon shopping cart with items, inventory, cart management and coupons; payment is out of scope.","topic":"Low-level design / Commerce","evidence":"Round 3 ... Technical: Design an Amazon shopping cart — items, inventory, cart management, coupons. Payment was explicitly out of scope."},
+        {"round":4,"sourceRound":"Round 4: Bar Raiser","key":"ambiguous-problem-no-owner","question":"Describe how you navigated an ambiguous problem with no clear owner.","topic":"Behavioral / Ownership","evidence":"Round 4 ... The questions I got centered around: how I navigated ambiguous problems with no clear owner"},
+        {"round":4,"sourceRound":"Round 4: Bar Raiser","key":"unrequested-improvements-ownership","question":"Describe identifying and driving improvements that nobody asked you to make.","topic":"Behavioral / Ownership","evidence":"Round 4 ... how I identified and drove improvements no one asked me to"},
+        {"round":4,"sourceRound":"Round 4: Bar Raiser","key":"disagreement-direction-handling","question":"Describe a time you disagreed with a direction and how you handled it.","topic":"Behavioral / Disagreement","evidence":"Round 4 ... moments where I disagreed with a direction and how I handled it."}
+      ]
+    }
+  ],
+  "excluded": [
+    {"url":"https://shraddhaarora.com/blog/amazon-interview-experience-sde-2","reason":"Partial exclusion: R1 multi-source BFS and array logic are topics, not disclosed problems. Detailed suggested design approaches and 'expect questions like' GenAI advice are not asserted as actual asked questions. Country is unstated; US search term/image filename does not establish it."},
+    {"url":"https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b","reason":"Partial exclusion: sourceRound1 is explicitly phone screening. Other LP headings without exact questions are omitted. No country inferred from author name/profile."}
+  ],
+  "limitations": ["Exa discovery date/country relevance does not establish interview date or country. Original first-person public pages independently read for metadata, scope and questions.","Initial Exa15-result search includes duplicates, other levels and promotional retellings; these are handed to US slice or matched against existing corpus, not all admitted.","Original author narratives are self-reports, not independently authenticated employment records. No API key or account credential was required for the observed hosted MCP calls; cost was not reported."],
+  "coverage": {"provider":"Exa hosted MCP","endpoint":"https://mcp.exa.ai/mcp","resultFiles":["data/exa/us-2026-search.json","data/exa/main-original-fetch.json"],"requestId":"a4e01da4b362c85a2fb644702bfa716e","originalVerification":"Direct read of both original pages including publication metadata, corroborated by Exa web_fetch_exa","cost":"Not exposed by response; not assumed zero"}
+}

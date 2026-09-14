@@ -23,11 +23,14 @@ It does not establish every question asked inside Amazon. There is no public den
 | Assay global countries | 0 | 84 |
 | Assay pilot | 0 | 5 |
 | Assay US 2026 | 0 | 42 |
-| **Total** | **130** | **1,149** |
+| Exa historical | 3 | 91 |
+| Exa original blogs | 2 | 2 |
+| Exa US 2026 | 1 | 46 |
+| **Total** | **136** | **1,288** |
 
-The result is **566 question–round rows**, **611 occurrences**, and **505 canonical question identities**. Rows by round: R1 173, R2 157, R3 115, R4 121. Source-level date years: 86 accounts in 2025 and 44 in 2026. There are 229 occurrence dates grounded in interview timing and 382 using explicitly labeled publication fallback.
+The result is **586 question–round rows**, **635 occurrences**, and **523 canonical question identities**. Rows by round: R1 178, R2 161, R3 120, R4 127. Source-level date years: 89 accounts in 2025 and 47 in 2026. There are 229 occurrence dates grounded in interview timing and 406 using explicitly labeled publication fallback.
 
-The thirteen files contain 269 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 269 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
+The sixteen files contain 286 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 286 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
 
 Slices are research ownership partitions, not guaranteed interview half-years. Year-only interview dates remain year-only even if publication occurred in a later period. For example, the Prime Video account posted in July 2026 describes joining in April but does not give the interview month; the database does not invent one.
 
@@ -126,3 +129,13 @@ The pass also revisited 25 country-unknown2026 reports. Expanded original author
 Forty-five JSON certificate/error artifacts are retained under `data/assay/`. Thirty-six distinct complete certificate traces report a combined logical cost of USD0.036014. This is not a complete billing total: some failed calls report no cost, and eight additional US discovery envelopes were lost after a worker reset; their recovered discovery arrays and limitation are retained in coverage. Idempotent pilot replay is not double-counted. Source capture timestamps can be September14 UTC while the interview/publication cutoff remains September13.
 
 Assay's searxng backend returned partial failures, rate limits, irrelevant hiring/preparation pages and duplicate accounts. Date filters sometimes rejected undated results rather than establishing that no reports exist. A quotation certificate proves correspondence to fetched text, not candidate authenticity, country, date or relevance. Original publication dates, stage context and country replies remain essential. Public video retellings without a traceable dated original were not admitted. No paywall or authentication gate was bypassed.
+
+## Exa-assisted research pass
+
+Exa was accessed through its documented hosted MCP endpoint, using the live `web_search_advanced_exa` and `web_fetch_exa` schemas. No API key or persistent tool-configuration change was needed for the observed calls. Search/fetch responses and original verification are retained under `data/exa/`; costs were not exposed and are not assumed zero.
+
+This pass added six candidate accounts and24 occurrences (20 new question–round rows). Three late2025 LinkedIn originals and two2026 original blogs had no explicit interview country and remain Not stated. Profile location enrichment, country search terms and image filenames were not accepted as job-country evidence.
+
+For the first time, a US2026 account met admission criteria: [SDEII Redmond virtual onsite](https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/), published June28,2026. The full public-post archive names SDEII, Redmond WA, external application, a separate screen and four final-loop rounds. Two same-author crossposts are aliases, not independent counts. Live Reddit retrieval failed; archive verification is stated explicitly. The four prompts are inventory stock management, Amazon S3 design, an unspecified anagram problem, and unspecified decoding strings. Exact anagram/encoding variants are not invented. Publication date does not assert the exact interview date.
+
+Exa yielded more new qualifying accounts in this particular pass than the prior Assay pass, but the searches and starting corpus differed; this is not a controlled provider benchmark. Many Exa results were duplicates, wrong-level experiences, promotional retellings or insufficiently attributed sources. Current-profile summaries in fetched LinkedIn content were separated from the actual post body. The corpus remains non-exhaustive, especially for December interview dates and less represented countries.

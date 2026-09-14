@@ -1,0 +1,913 @@
+{
+  "slice": "exa-historical",
+  "searchedAt": "2026-09-14",
+  "queries": [
+    "A candidate describing their Amazon SDE II L5 final interview loop in October November or December 2025, including the coding problem in each onsite round and the system design interview question",
+    "First person Amazon AWS SDE II L5 software engineer interview experience 2025 2026 in Canada Vancouver Toronto United Kingdom London Germany Berlin Ireland Dublin Luxembourg Spain Poland Romania, onsite final loop round coding system design questions",
+    "I interviewed for Amazon SDE 2 software development engineer II L5 in October November December 2025 and here is my final onsite loop round 1 round 2 round 3 round 4 experience",
+    "Detailed personal interview experience Amazon SDE II L5 Germany Berlin Luxembourg Poland Gdansk Romania Bucharest Spain Madrid Ireland Dublin 2025 2026 final interview rounds asked me coding low level design",
+    "A software engineer sharing Amazon SDE II L5 interview experience in Australia Sydney Singapore Japan Tokyo in 2025 or 2026: final onsite loop coding rounds and the system design problem they were asked",
+    "First-person Amazon SDE II L5 final loop interview experience in London United Kingdom or Canada during 2025 and 2026; specific coding and system design questions by round",
+    "Amazon SDE II L5 candidate interview experience: onsite final round coding and system design in London in 2025 or 2026",
+    "Amazon SDE II L5 candidate final onsite interview experience 2025 2026 Australia Sydney Canada Toronto Vancouver coding and design questions",
+    "I completed my Amazon SDE-2 L5 final interview loop in December 2025. My firsthand interview experience with round 1 coding, round 2 low level design, round 3 system design, and bar raiser questions",
+    "Amazon SDE2 candidate interview experience with file search index insert findWithPrefix, vehicle rental service, notification service OR StackOverflow and Orchestrator Layer final interview rounds",
+    "Amazon SDE2 Canada interview 12 years experience return nodes within S distance binary tree meetings food delivery app Uber tic tac toe rejected",
+    "Amazon SDE2 Canada interview \"12 years\" \"Tic\""
+  ],
+  "reports": [
+    {
+      "id": "linkedin-7397256807641120768",
+      "url": "https://www.linkedin.com/posts/rahulks9460_amazoninterview-sde2-systemdesign-activity-7397256807641120768-5T3S",
+      "title": "Amazon sde2 interview experience",
+      "role": "SDE II / L5",
+      "stageEvidence": "I recently completed my interview loop for the SDE2 role at Amazon. Source explicitly lists Round1 coding, Round2 LLD, Round3 HLD and Round4 Bar Raiser.",
+      "eligibility": "Public original body and JSON-LD verified. Publication date from SocialMediaPosting datePublished 2025-11-20T12:57:37.307Z. No interview date or job country is supplied; current profile location from Exa is not used. Round4 contains only generic LP descriptions and is omitted.",
+      "location": "Not stated",
+      "date": "2025-11-20",
+      "dateBasis": "publication",
+      "publishedDate": "2025-11-20",
+      "interviewDate": null,
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 — Problem Solving & Coding",
+          "key": "file-content-index-word-prefix",
+          "question": "Implement a file-content index supporting insert(filePath, text), exact-word search and prefix search returning matching file paths.",
+          "topic": "Tries / Search indexing",
+          "evidence": "Round 1 — Problem Solving & Coding. Problem: Design an index for file search. Each file had a path and some text content (lowercase letters). I had to implement: insert(filePath, text), vector<filePath> find(word), vector<filePath> findWithPrefix(prefix).",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 — Low Level Design (LLD)",
+          "key": "design-vehicle-rental",
+          "question": "Design a vehicle-rental system, starting with two-wheelers and extensible to four-wheelers; address concurrent bookings, payments and inventory updates.",
+          "topic": "Low-level design",
+          "evidence": "Round 2 — Low Level Design (LLD). Problem: Design a vehicle rental service (initially for 2-wheelers but extensible to 4-wheelers). ... Handling concurrency issues: preventing double bookings, avoiding double payments, ensuring consistent inventory updates",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 — High Level Design (HLD), done by hiring manager",
+          "key": "design-notification-system",
+          "question": "Design a notification service supporting push, email and SMS, with message priorities, queues, retry and backoff.",
+          "topic": "System design",
+          "evidence": "Round 3 — High Level Design (HLD), done by hiring manager. Problem: Design a notification service supporting push, email, and SMS. ... Handling different message priorities (e.g., OTP as real-time high-priority) ... retry and backoff strategies",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        }
+      ]
+    },
+    {
+      "id": "linkedin-7400108261531684864",
+      "url": "https://www.linkedin.com/posts/pawan-jindal_amazon-interviewexperience-systemdesign-activity-7400108261531684864-oWeH",
+      "title": "My Amazon SDE-2 Interview Experience —",
+      "role": "SDE II / L5",
+      "stageEvidence": "My Amazon SDE-2 Interview Experience. Sequence: Online Assessment; Screening Round; Data Structures Round; Low-Level Design; High-Level Design; Bar Raiser Round.",
+      "eligibility": "Public original body and JSON-LD verified. Publication date 2025-11-28T09:48:16.886Z. No interview date or job country is supplied. Vague tree problem and LP labels omitted. Similar StackOverflow problem in medium-57655fab76b8 has different HLD and DSA prompts; not a matching narrative.",
+      "location": "Not stated",
+      "date": "2025-11-28",
+      "dateBasis": "publication",
+      "publishedDate": "2025-11-28",
+      "interviewDate": null,
+      "questions": [
+        {
+          "round": 2,
+          "sourceRound": "4 Low-Level Design (LLD)",
+          "key": "stack-overflow-lld",
+          "question": "Design Stack Overflow with class/data models and flows for posts, comments, voting and moderation.",
+          "topic": "Low-level design",
+          "evidence": "Low-Level Design (LLD). Task: Design a complete version of StackOverflow. ... Class design ... Data modeling ... Core flows (post, comment, vote, moderation)",
+          "roundMappingNote": "Source numbers OA as1 and Screening as2; final-loop sequence is3 DSA,4 LLD,5 HLD,6 Bar Raiser. Subtract2."
+        },
+        {
+          "round": 3,
+          "sourceRound": "5 High-Level Design (HLD)",
+          "key": "orchestrator-layer-hld",
+          "question": "Design an orchestrator layer, addressing components, scaling, asynchronous workflows and fault tolerance.",
+          "topic": "System design",
+          "evidence": "High-Level Design (HLD). Task: Design an Orchestrator Layer. ... System components ... Scaling concerns ... Async workflows ... Fault tolerance ... Trade-offs",
+          "roundMappingNote": "Source numbers OA as1 and Screening as2; final-loop sequence is3 DSA,4 LLD,5 HLD,6 Bar Raiser. Subtract2."
+        }
+      ]
+    },
+    {
+      "id": "linkedin-7411035075385163778",
+      "url": "https://www.linkedin.com/posts/yasir-arafat-sharfi_amazon-sde2-interviewexperience-activity-7411035075385163778-8KgX",
+      "title": "Amazon SDE-2 Interview Experience",
+      "role": "SDE II / L5",
+      "stageEvidence": "Interviewed for the Amazon SDE-2 role in April. After clearing the OA, I was invited for 5 interview rounds (face-face). Source lists DSA, Problem Solving, LLD, HLD, Behavioral.",
+      "eligibility": "Public original body and JSON-LD verified. Publication date 2025-12-28T13:27:32.325Z. Body mentions April without a year, so no interview month/year is invented; publication basis retained. No job country stated. Round5 excluded by R1–4 scope.",
+      "location": "Not stated",
+      "date": "2025-12-28",
+      "dateBasis": "publication",
+      "publishedDate": "2025-12-28",
+      "interviewDate": null,
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 – Data Structures & Algorithms",
+          "key": "top-k-frequent-elements",
+          "question": "Find the top-k most frequent elements in a large dataset.",
+          "topic": "Heaps / Frequency counting",
+          "evidence": "Round 1 – Data Structures & Algorithms. Design an efficient solution to find the top-K frequent elements from a large dataset.",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 – Problem Solving (Graphs / Trees)",
+          "key": "lowest-common-ancestor-binary-tree",
+          "question": "Find the lowest common ancestor of two nodes in a binary tree.",
+          "topic": "Trees",
+          "evidence": "Round 2 – Problem Solving (Graphs / Trees). Find the lowest common ancestor (LCA) in a binary tree. ... Focused on edge cases (null nodes, same inputs).",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 – Low Level Design (LLD)",
+          "key": "design-parking-lot",
+          "question": "Design a parking lot system with vehicle, parking slot and ticket entities, extensibility and edge cases.",
+          "topic": "Low-level design",
+          "evidence": "Round 3 – Low Level Design (LLD). Design a parking lot system. ... Defined entities (Vehicle, ParkingSlot, Ticket) ... basic extensibility. Discussed scalability and edge cases.",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 – High Level Design (HLD)",
+          "key": "design-url-shortener",
+          "question": "Design a URL shortener, including APIs, schema, collisions, scalability and caching.",
+          "topic": "System design",
+          "evidence": "Round 4 – High Level Design (HLD). Design a URL Shortener. ... APIs, database schema, hashing vs encoding, scalability, collision handling, and caching (Redis).",
+          "roundMappingNote": "Source numbers the final interviews separately; no screening offset."
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://www.linkedin.com/posts/haritha-nagubady_amazon-aws-sde2-activity-7388741318719565824-lb9E",
+      "reason": "Original publicly read: author explicitly says problems are generic representations, not the exact ones asked. Excluded rather than counting substituted practice questions.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7409809033982820353-kHIA",
+      "reason": "Same-author Shivam Somani series has unresolved screening offsets and contradictory interview years; December Round1 post says Last year, implying2024. Existing source audit also flags this series; isolated rounds not admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json",
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-2025-interview-exp",
+      "reason": "Mirror/rewrite of existing late-2025 account (rate limiter, DJ songs, vending aggregation, min/max character structure); no new candidate count.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json",
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/chetan-raj-58703b27a_amazon-amazoninterview-atlassian-activity-7389669980038057985-99Oq",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1oe4q65/amazon_sde_2india_interview_loop_done_what_are_my/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json",
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/dishajindgar_amazon-interviewexperience-systemdesign-activity-7397246664614400000-erKP",
+      "reason": "Second-hand promotional retelling (brother/friend), not a verified original candidate narrative. No country inferred from the poster profile; not admitted in this original-source pass.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-systemdesign-highleveldesign-activity-7410563376407445504-KKS9",
+      "reason": "Same-author Shivam Somani series has unresolved screening offsets and contradictory interview years; December Round1 post says Last year, implying2024. Existing source audit also flags this series; isolated rounds not admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json",
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/aiswarya-d-85042b192_amazon-aws-amazonsde-activity-7396318677702336512-zl1i",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/anjalikumari22_interviewexperience-amazon-sde-activity-7389151770146549760-BmNn",
+      "reason": "Second-hand promotional retelling (brother/friend), not a verified original candidate narrative. No country inferred from the poster profile; not admitted in this original-source pass.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1oa8mbz/amazon_l5_interview_experience/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/bhavukkalra-software-engineer_my-latest-amazon-interview-experience-ctc-activity-7396389218299670528-DdMH",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/saravanan-k06_sde-java-developer-activity-7404131929664405504-g5hs",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/01-late-2025.json",
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-68-amazon-sde2-l5",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-110-amazon-sde2-l5",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+      "reason": "Already captured canonical Reddit account or known crosspost; no new candidate count.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/08-australia-canada-filter.json",
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1kzutkk/onsite_on_aws_dublin_sde2_reject/",
+      "reason": "Already captured canonical Reddit account or known crosspost; no new candidate count.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json"
+      ]
+    },
+    {
+      "url": "https://codesnatch.io/community/interview-experiences/amazon-sde2-loop-what-to-expect",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/08-australia-canada-filter.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+      "reason": "Repeated nian2326076 promotional narratives across subreddits. Some duplicate LC8315111 and existing prior audit notes internally inconsistent substituted questions. No new distinct candidate inferred, and subreddit region is not country evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-182-amazon-sde2-l5",
+      "reason": "Body dates the OA May2022:2025 newsletter publication does not make the older interview eligible.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b",
+      "reason": "Already baseline or concurrently handled by Main (including Supriya Malkar/Shraddha Arora); no duplicate record written in historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/08-australia-canada-filter.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1uafek1/rejected_after_aws_sde2_l5_full_loop_recruiter/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-selected",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "reason": "Already baseline or concurrently handled by Main (including Supriya Malkar/Shraddha Arora); no duplicate record written in historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://papersadda.com/article/amazon-sde2-l5-2026-tier3-engineer-real-5-round-loop/",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/10-crosspost-audit.json",
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-82-amazon-sde2",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@nitiaanrj/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+      "reason": "Already baseline or concurrently handled by Main (including Supriya Malkar/Shraddha Arora); no duplicate record written in historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/02-non-us.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1p8fyxx/amazon_sde_2_interview_experience_bangalore/",
+      "reason": "Already captured canonical Reddit account or known crosspost; no new candidate count.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/developersIndia/comments/1p8g2x2/amazon_sde_2_interview_experience_rejected_how_do/",
+      "reason": "Already captured canonical Reddit account or known crosspost; no new candidate count.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1pcw5p7/loop_interview/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-interview-experience",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.codinginterview.com/guide/amazon-sde-interview/",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1opf7dj/upcoming_amazon_sdeii_loop_interview/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/InterviewCoderHQ/comments/1pm6p8m/amazon_interview_l3_lc_hard_dp_system_design/",
+      "reason": "Wrong level (SDEI/L3) or online assessment, outside external SDEII/L5 final-loop scope.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json",
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://shubhamrajkumawat.medium.com/my-amazon-sde-ii-interview-experience-from-dp-on-trees-to-infection-spread-in-binary-trees-9c82471f8210",
+      "reason": "Existing audit: initial60-minute technical interview, not established final-loop round; inconsistent date references. No new question admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.linkjob.ai/interview-questions/amazon-coding-interview/",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json",
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@gautamabhishek87000/my-amazon-interview-experience-a5fe855a38c8",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1op2edp/upcoming_amazon_sdeii_loop_interview/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://placementpapers.app/amazon/interview-experience/",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ol7npo/finally_amazon_sde_2/",
+      "reason": "No specific R1–4 question recoverable from this discovery result; preparation, outcome or generic round/LP descriptions only. Reddit original access was blocked for1ol7npo, so comments not treated as verified evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/03-late-2025-forums.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-interview-experience-full-loop",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8315111/amazon-l5-sde-2-interview-experience-off-yi2x/",
+      "reason": "Already baseline or concurrently handled by Main (including Supriya Malkar/Shraddha Arora); no duplicate record written in historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/l5-sde-2-amazon-interview-experience-nit-28-yoe",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "reason": "Already baseline or concurrently handled by Main (including Supriya Malkar/Shraddha Arora); no duplicate record written in historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-ii-interview-experience-need-honest-feedback",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json",
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-interview-experience-jan-feb-2026-rejected",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json",
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://codingcareer.de/en/guides/amazon-interview-germany",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json"
+      ]
+    },
+    {
+      "url": "https://www.desiqna.in/19196/amazon-sde-2-recent-interview-experiences-2026-set-60",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/04-europe.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1sa8ehi/amazon_sde_2_l5_5_yoe_interview_experience_deets/",
+      "reason": "Repeated nian2326076 promotional narratives across subreddits. Some duplicate LC8315111 and existing prior audit notes internally inconsistent substituted questions. No new distinct candidate inferred, and subreddit region is not country evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/cscareerquestionsOCE/comments/1sjntfb/amazon_sde2_interview_experience/",
+      "reason": "Repeated nian2326076 promotional narratives across subreddits. Some duplicate LC8315111 and existing prior audit notes internally inconsistent substituted questions. No new distinct candidate inferred, and subreddit region is not country evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1s6g3hn/amazon_sde_2_interview_experience_prime_video/",
+      "reason": "Rediscovered mirror/rewrite or already researched2026 account; outside late2025 original ownership, not separately counted.",
+      "discoveryFiles": [
+        "data/exa/historical/05-apac.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/DSALeetCode/comments/1u8y7ao/amazon_sde2_selected_full_loop_incl_the_new/",
+      "reason": "Repeated nian2326076 promotional narratives across subreddits. Some duplicate LC8315111 and existing prior audit notes internally inconsistent substituted questions. No new distinct candidate inferred, and subreddit region is not country evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/05-apac.json",
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://jayvanzyl.me/amazon-sde-interview/",
+      "reason": "US2026 mirror discovery belongs to ExaUS; not counted by historical slice.",
+      "discoveryFiles": [
+        "data/exa/historical/05-apac.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/DeveloperJobs/comments/1ss042w/my_amazon_interview_experience_sde2_3_yoe/",
+      "reason": "Repeated nian2326076 promotional narratives across subreddits. Some duplicate LC8315111 and existing prior audit notes internally inconsistent substituted questions. No new distinct candidate inferred, and subreddit region is not country evidence.",
+      "discoveryFiles": [
+        "data/exa/historical/06-uk-canada.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/roundz-ai_amazonsde2l5-activity-7341306477355159553-X6xe",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@amitbhardwaj2609/how-i-got-my-amazon-offer-5d43dc8e22f1",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/vinay20kumar_interviewexperience-amazon-techinterviews-activity-7379991044991553536-z3dz",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.interviewsense.org/opportunities/amazon-software-development-engineer-rufus-on-detail-page-full-time-london-dqa7kj/",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/kaustav-saha-961ab469_every-system-design-round-i-bombed-had-the-activity-7437876444589989890-TYJx",
+      "reason": "Preparation/SEO/promotional or example-based source rather than independently verified original candidate report; not admitted. DEV interviewshow is owned/reviewed by ExaUS.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amitbhardwaj2609_amazon-amazoninterview-interviewexperience-activity-7454253821976948737-UmNq",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/aniruddha-gharat-2024741b4_amazon-sde-softwareengineering-activity-7470209383352909824-R9xH",
+      "reason": "Wrong level (SDEI/L3) or online assessment, outside external SDEII/L5 final-loop scope.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@YodgorbekKomilo/my-experience-interviewing-for-an-amazon-android-software-engineer-role-in-london-c91d784ffd7d",
+      "reason": "Role level SDE II/L5 is not established for this interview in the available narrative; cannot infer it from experience, compensation, another employer role or another article.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nishant-ware-ab944a344_amazon-amazonjobs-amazonsde-activity-7492776827606798336-qvGo",
+      "reason": "Wrong level (SDEI/L3) or online assessment, outside external SDEII/L5 final-loop scope.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/aman-naredi_amazon-sdeinterview-softwareengineering-activity-7309944069911138307-3J_p",
+      "reason": "Wrong level (SDEI/L3) or online assessment, outside external SDEII/L5 final-loop scope.",
+      "discoveryFiles": [
+        "data/exa/historical/07-london-filter.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-191-amazon-software-sde2-l5",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/08-australia-canada-filter.json",
+        "data/exa/historical/12-canada-republication-audit.json",
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-amazon-sde2-l5-interview1",
+      "reason": "Roundz editorial/anonymous retelling rather than traceable original candidate. No original candidate publication/interview date established; fresh newsletter publication alone cannot resolve stale-repost risk. Search for original Canada account remained inconclusive.",
+      "discoveryFiles": [
+        "data/exa/historical/08-australia-canada-filter.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-sde2-interviewexperience-activity-7411079112594743296-4VBa",
+      "reason": "December2025 post says Last year, implying2024; same-author series has unresolved round-offset and chronology issues.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/aditya-singh-8a8424166_softwareengineering-amazon-interviewexperience-activity-7409738729654968321-6YY5",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/gchandana99_opentowork-amazonsde-softwareengineer-activity-7409017301632462848-KchN",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/vaibhavsingh18_amazon-interviewexperience-hiring-activity-7403524175644024832-rfgO",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/sameer-bhardwaj1298_this-software-engineer-got-a-downgraded-offer-activity-7409201318789320705-A_Ng",
+      "reason": "Wrong level or internship/early-career interview; SDEII/L5 final loop not established.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.apexinterviewer.com/companies/amazon",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@kei.zee/how-i-cracked-the-interview-amazon-system-design-interview-resources-that-actually-matter-d14ba83d2c50",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@yashitz07/amazon-sde-6-months-interview-experience-c01ff9b93110",
+      "reason": "Wrong level or internship/early-career interview; SDEII/L5 final loop not established.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/rt2002_over-the-past-few-days-ive-received-a-lot-activity-7403410069721300992-34jB",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/09-december-candidates.json"
+      ]
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6774605/amazon-sde-2-interview-experience-by-ano-zljs/",
+      "reason": "Wrong level or internship/early-career interview; SDEII/L5 final loop not established.",
+      "discoveryFiles": [
+        "data/exa/historical/10-crosspost-audit.json"
+      ]
+    },
+    {
+      "url": "https://roundz.substack.com/p/interview-experience-55-amazon-sde2-l5",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.desiqna.in/5623/amazon-sde-recent-interview-experiences-canada-2022-set-34",
+      "reason": "Pre-window publication/interview discovered only during deliberate stale-repost audit; not admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8312943/amazon-sde-2-india-interview-experience-a2s2q/",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-vancouver-jul-2022-reject",
+      "reason": "Pre-window publication/interview discovered only during deliberate stale-repost audit; not admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-onsite-experience-lessons-learned",
+      "reason": "Discovery result does not establish a new original SDEII/L5 R1–4 candidate question with usable date; retained as an unverified lead, not counted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/interview-experiences/amazon-interview-experience-sde-2-9/",
+      "reason": "Pre-window publication/interview discovered only during deliberate stale-repost audit; not admitted.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/interview-experiences/amazon-interview-experience-for-a-sde-2/",
+      "reason": "Wrong level or internship/early-career interview; SDEII/L5 final loop not established.",
+      "discoveryFiles": [
+        "data/exa/historical/12-canada-republication-audit.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/dominickhan",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/siddg97",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/parker-birchard-581782194",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/carlson-hang",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/bbennguyenn",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/mohammed-rasith-s-24565538",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/vignesh4430",
+      "reason": "Profile-only search false positive; no candidate interview narrative.",
+      "discoveryFiles": [
+        "data/exa/historical/14-canada-original.json"
+      ]
+    }
+  ],
+  "limitations": [
+    "Provider: Exa. Twelve advanced searches (at most15 results each), one web_fetch_exa call; full arguments and raw responses retained under data/exa/historical. Search query/result paths are recorded in coverage. No MCP dollar-cost value was returned or invented.",
+    "Bounded gap pass emphasized October–December2025 and non-US country narratives (Canada, United Kingdom, Ireland, Germany, Luxembourg, Spain, Poland, Romania, Australia, Singapore and Japan). Geographic searches often returned unrelated India/not-stated accounts, reposts or generic guides. No new verified non-US country attribution was established in this slice; all three admitted accounts lack interview/job location.",
+    "Original public LinkedIn bodies and original SocialMediaPosting JSON-LD were read independently of Exa snippets for each admission; exact publication dates retained in data/exa/historical/13-original-verification.json. Profile geography and current employment duration from Exa were not used as interview evidence.",
+    "Yasir mentions April without a year. Publication basis2025-12-28 is retained instead of inventing an interview year. His explicitly post-OA face-to-face five-round sequence contributes only positions1–4; Round5 is out of scope.",
+    "Pawan numbers OA and screening before four remaining rounds; offset minus2 maps source4 LLD to final2 and source5 HLD to final3. Rahul explicitly names his completed loop and four final positions. Generic LP headings and unidentified coding problems do not become questions.",
+    "Haritha original expressly substitutes generic representations for the actual problems; excluded. Shivam December series references Last year and is not combined with inconsistent later reposts. Newsletter publication dates and Last Updated labels are not proof of interview timing. Two deliberately widened2019/2020 searches audit potential older Canada reposts only; no out-of-window result admitted.",
+    "Roundz Canada191 public narrative had specific prompts, but no traceable original candidate chronology; original-search attempts were inconclusive. Do not claim it is proven old or count its new newsletter publication as verified new candidate evidence.",
+    "Reddit original1ol7npo returned a blocked shell. Exa snippets/comments were not enough to admit new round-specific questions. No authentication or paywall bypass was attempted. This pass does not claim exhaustive public coverage."
+  ],
+  "coverage": {
+    "provider": "Exa",
+    "searches": [
+      {
+        "query": "A candidate describing their Amazon SDE II L5 final interview loop in October November or December 2025, including the coding problem in each onsite round and the system design interview question",
+        "resultFile": "data/exa/historical/01-late-2025.json"
+      },
+      {
+        "query": "First person Amazon AWS SDE II L5 software engineer interview experience 2025 2026 in Canada Vancouver Toronto United Kingdom London Germany Berlin Ireland Dublin Luxembourg Spain Poland Romania, onsite final loop round coding system design questions",
+        "resultFile": "data/exa/historical/02-non-us.json"
+      },
+      {
+        "query": "I interviewed for Amazon SDE 2 software development engineer II L5 in October November December 2025 and here is my final onsite loop round 1 round 2 round 3 round 4 experience",
+        "resultFile": "data/exa/historical/03-late-2025-forums.json"
+      },
+      {
+        "query": "Detailed personal interview experience Amazon SDE II L5 Germany Berlin Luxembourg Poland Gdansk Romania Bucharest Spain Madrid Ireland Dublin 2025 2026 final interview rounds asked me coding low level design",
+        "resultFile": "data/exa/historical/04-europe.json"
+      },
+      {
+        "query": "A software engineer sharing Amazon SDE II L5 interview experience in Australia Sydney Singapore Japan Tokyo in 2025 or 2026: final onsite loop coding rounds and the system design problem they were asked",
+        "resultFile": "data/exa/historical/05-apac.json"
+      },
+      {
+        "query": "First-person Amazon SDE II L5 final loop interview experience in London United Kingdom or Canada during 2025 and 2026; specific coding and system design questions by round",
+        "resultFile": "data/exa/historical/06-uk-canada.json"
+      },
+      {
+        "query": "Amazon SDE II L5 candidate interview experience: onsite final round coding and system design in London in 2025 or 2026",
+        "resultFile": "data/exa/historical/07-london-filter.json"
+      },
+      {
+        "query": "Amazon SDE II L5 candidate final onsite interview experience 2025 2026 Australia Sydney Canada Toronto Vancouver coding and design questions",
+        "resultFile": "data/exa/historical/08-australia-canada-filter.json"
+      },
+      {
+        "query": "I completed my Amazon SDE-2 L5 final interview loop in December 2025. My firsthand interview experience with round 1 coding, round 2 low level design, round 3 system design, and bar raiser questions",
+        "resultFile": "data/exa/historical/09-december-candidates.json"
+      },
+      {
+        "query": "Amazon SDE2 candidate interview experience with file search index insert findWithPrefix, vehicle rental service, notification service OR StackOverflow and Orchestrator Layer final interview rounds",
+        "resultFile": "data/exa/historical/10-crosspost-audit.json"
+      },
+      {
+        "query": "Amazon SDE2 Canada interview 12 years experience return nodes within S distance binary tree meetings food delivery app Uber tic tac toe rejected",
+        "resultFile": "data/exa/historical/12-canada-republication-audit.json"
+      },
+      {
+        "query": "Amazon SDE2 Canada interview \"12 years\" \"Tic\"",
+        "resultFile": "data/exa/historical/14-canada-original.json"
+      }
+    ],
+    "fetchFiles": [
+      "data/exa/historical/11-accepted-fetch.json"
+    ],
+    "originalVerificationFile": "data/exa/historical/13-original-verification.json",
+    "discoveredUniqueUrls": 94,
+    "acceptedReports": 3,
+    "acceptedOccurrences": 9,
+    "countryOutcome": "No new country attribution; all additions Not stated"
+  }
+}

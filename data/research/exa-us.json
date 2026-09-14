@@ -1,0 +1,499 @@
+{
+  "slice": "exa-us",
+  "searchedAt": "2026-09-14",
+  "queries": [
+    "First-person Amazon SDE II L5 software engineer interview experience in 2026 United States USA Seattle Bellevue virtual onsite final loop four rounds coding system design",
+    "Candidate recounting AWS Amazon SDE2 SDE II L5 interview experience 2026 USA United States Redmond Austin New York final onsite loop questions",
+    "Amazon SDE2 USA 2026 interview experience final loop",
+    "Amazon SDE II L5 SDE2 interview experience 2026 \"USA\" \"United States\" \"Seattle\" coding design onsite candidate"
+  ],
+  "reports": [
+    {
+      "id": "reddit-1uhl798",
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uhl798/offer_amazon_interview_experience_timeline_oa/",
+      "aliases": [
+        "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
+        "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/"
+      ],
+      "retrievedVia": "https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1uhl798,1uh2nfh,1uh2o0m,1u8y35h,1ss042w,1s6g3hn,1w0cpaj",
+      "title": "[Offer] Amazon Interview Experience & Timeline (OA -> Phone Screen -> Loop)",
+      "role": "SDE II",
+      "stageEvidence": "Role: SDE II - Redmond, WA; Application Method: No referrals or cold emails - just basic career portal apply; Day 48: Virtual Onsite Loop - 4 Rounds (15 days after Phone Screen).",
+      "eligibility": "External-hire candidate account. Full archived public-post body and publication timestamp verified through Arctic Shift; live Reddit body could not be retrieved. Crossposts by the same author are one report.",
+      "verification": "Archived public-post body, not live-body verification. Full selected fields retained in data/exa/us/reddit-original-archive.json.",
+      "location": "United States",
+      "locationEvidence": "Role: SDE II - Redmond, WA (United States).",
+      "date": "2026-06-28",
+      "dateBasis": "publication",
+      "publishedDate": "2026-06-28",
+      "interviewDate": null,
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 (Coding & Deep Dive)",
+          "key": "inventory-stock-management-coding",
+          "question": "Implement inventory stock management; discuss OOP, potential bugs, telemetry, corner cases and dynamic-input dry runs. Specific operations were not disclosed.",
+          "topic": "Low-level design / Inventory",
+          "evidence": "Round 1 (Coding & Deep Dive) ... Technical: Inventory Stock Management ... Discussion Points: Deep OOP concepts, identifying potential bugs, adding telemetry to the code, handling corner cases, and performing a dry run on dynamic inputs",
+          "roundMappingNote": "Source explicitly numbers Virtual Onsite Loop rounds1–4 after separately described OA and phone screen; no offset. Generic LP/GenAI labels excluded."
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 (System Design)",
+          "key": "design-amazon-s3",
+          "question": "Design Amazon S3, including read and write flows.",
+          "topic": "System design / Object storage",
+          "evidence": "Round 2 (System Design) ... Technical: Design Amazon S3 (Whiteboarding) ... Discussion Points: Successfully completed the read and write flows",
+          "roundMappingNote": "Source explicitly numbers Virtual Onsite Loop rounds1–4 after separately described OA and phone screen; no offset. Generic LP/GenAI labels excluded."
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 (Coding + GenAI)",
+          "key": "anagram-unspecified-1uhl798",
+          "question": "Solve the reported “Find the Anagram” coding problem and an extension; exact inputs and variant were not disclosed.",
+          "topic": "Strings / Anagrams",
+          "evidence": "Round 3 (Coding + GenAI) ... Technical: Find the Anagram ... This was followed by a new coding extension based on the same anagram code",
+          "roundMappingNote": "Source explicitly numbers Virtual Onsite Loop rounds1–4 after separately described OA and phone screen; no offset. Generic LP/GenAI labels excluded."
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 (Coding Deep Dive)",
+          "key": "decoding-strings-unspecified-1uhl798",
+          "question": "Solve the reported “Decoding Strings” coding problem; encoding grammar and follow-ups were not disclosed.",
+          "topic": "Strings",
+          "evidence": "Round 4 (Coding Deep Dive) ... Technical: Decoding Strings ... Went very deep into the problem with multiple follow-up questions",
+          "roundMappingNote": "Source explicitly numbers Virtual Onsite Loop rounds1–4 after separately described OA and phone screen; no offset. Generic LP/GenAI labels excluded."
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde-interview-experience-2026-seattle-onsite-team-match-coding-genai-questions-47j0",
+      "title": "Amazon SDE Interview Experience 2026 | Seattle Onsite, Team Match, Coding & GenAI Questions - DEV Community",
+      "reason": "Original DEV API article calls the role only Amazon SDE and discusses current CS courses and school transfer. SDE II/L5 is not established; Seattle does not cure the level gap. Same publisher promotes InterviewShow.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json"
+      ]
+    },
+    {
+      "url": "https://dev.to/interviewshow-cs/amazon-sde2-virtual-onsite-interview-experience-5-rounds-in-one-day-2g9o",
+      "title": "Amazon SDE2 Virtual Onsite Interview Experience: 5 Rounds in One Day - DEV Community",
+      "reason": "Unattributed promotional account, not admitted as independently identifiable candidate report. Original DEV API article explicitly promotes InterviewShow services and is published by interviewshow-cs; its profile publishes many first-person intern/new-grad/senior interview narratives across companies. No candidate attribution or country is supplied. Five explicit rounds exist, but their apparent precision cannot establish provenance; not asserting fabrication.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FullStackDevelopers/comments/1u8y35h/amazon_sde2_l5_selected_full_loop_incl_the_new/",
+      "title": "Amazon SDE-2 (L5) - SELECTED. Full loop incl. the new AI-assisted OA format : r/FullStackDevelopers",
+      "reason": "Archived original is a PracHub promotional narrative with utm_campaign=andy links. Same author nian2326076 published the April21 auction/Zepto story that copies existing leetcode-7477684 while substituting DSA prompts. June18 account not independently corroborated; country absent; no new frequency counted.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://jayvanzyl.me/amazon-sde-interview/",
+      "title": "Amazon SDE Interview – Jay van Zyl @ ecosystem.Ai",
+      "reason": "Original syndication and archived Reddit1w0cpaj both state USA but only Amazon SDE, never SDEII/L5. Do not infer level from four rounds, system-design label, internship or work experience.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-ii-interview-experience-need-honest-feedback",
+      "title": "Amazon Sde Ii + Need Honest Feed - Amazon | Interview Experiences",
+      "reason": "Original currently requires sign-in for complete experience. Public question list lacks round assignments and country. No gated content bypass or list-order-as-round inference.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://shraddhaarora.com/blog/amazon-interview-experience-sde-2",
+      "title": "Amazon Interview Experience [SDE 2] · Shraddha Arora",
+      "reason": "Owned and extracted by main integration slice; not duplicated here.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.teamblind.com/post/amazon-sde-interview-experience-epdt6onu",
+      "title": "Amazon SDE Interview Experience | SWE Interview prep - Blind",
+      "reason": "Original Blind returned HTTP403; Exa discovery title says Amazon SDE, not established SDEII/L5. No admission from snippet.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-selected",
+      "title": "Amazon | Sde 2 | Selected - Amazon | Interview Experiences",
+      "reason": "Public mirror duplicates the distinctive existing leetcode-7670163 sequence (random-pointer list, first unique, food ordering, vending-machine leasing, maximum passengers). Original mirror currently gates full round narrative; no new report or country evidence.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://dev.to/net_programhelp_e160eef28/amazon-sde-virtual-onsite-interview-experience-2026-5c24",
+      "title": "Amazon SDE Virtual Onsite Interview Experience (2026) - DEV Community",
+      "reason": "Original DEV article specifies only Amazon SDE and explicitly addresses New Grad / Intern / SDE1 / SDE2 readers; candidate level and country not established.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.desiqna.in/19196/amazon-sde-2-recent-interview-experiences-2026-set-60",
+      "title": "Amazon | SDE 2 | Recent Interview Experiences | 2026 | Set-60 - Desi QnA",
+      "reason": "Discovery text matches existing leetcode-7710904 February2026 Car Pooling variant/distributed trips account. Live DesiQna reader exposes heading and metadata but not full original narrative. No duplicate or country correction.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/DeveloperJobs/comments/1ss042w/my_amazon_interview_experience_sde2_3_yoe/",
+      "title": "My Amazon Interview Experience (SDE-2) – 3 YOE : r/DeveloperJobs",
+      "reason": "Archived original copies existing leetcode-7477684 auction platform, Zepto NoSQL discussion, Golang interviewer detail, rotting oranges and asteroid collision sequence, but replaces original browser-history/arithmetic DSA with PracHub-linked web-crawler/dependency-order prompts. Syndication with altered questions, not a new candidate.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "title": "Amazon SDE-2 Interview experience-Selected | by Hissan Danish | Medium",
+      "reason": "Already included as medium-b1f8b0a69de5, location India. No new candidate.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://devbrainiac.com/blogs/213/amazon-sde-ii-interview-experience-bangalore-selected-aug-2026/",
+      "title": "Amazon SDE II Interview Experience (Bangalore, Selected)  ~ Aug 2026 ~ DevBrainiac",
+      "reason": "Original DevBrainiac narrative repeats existing leetcode-8499681 package-return drop-store LLD, nearest-store follow-up, safest-grid-path Bar Raiser and cross-device configuration HLD. Expanded explanations and coding examples are not new questions or a new candidate; existing country India retained.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@supriyamalkar07/amazon-sde2-interview-experience-2637efdb273b",
+      "title": "Amazon SDE2 Interview Experience. Recently, I had the opportunity to… | by Supriya Malkar | Medium",
+      "reason": "Owned and extracted by main integration slice; not duplicated here.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json",
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8315111/amazon-l5-sde-2-interview-experience-off-yi2x/",
+      "title": "Amazon | L5 SDE 2 | Interview Experience | Offer - Discuss - LeetCode",
+      "reason": "Already included as leetcode-8315111, location India. No new candidate.",
+      "discoveredIn": [
+        "data/exa/us-2026-search.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonsdeprep/comments/1uh2nfh/offer_amazon_interview_experience_timeline_oa/",
+      "title": "[Offer] Amazon Interview Experience & Timeline (OA -> Phone Screen -> Loop) : r/amazonsdeprep",
+      "reason": "Same author, title and inventory/anagram/decoding loop as accepted reddit-1uhl798; preserved as alias, not another frequency.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1sa8ehi/amazon_sde_2_l5_5_yoe_interview_experience_deets/",
+      "title": "Amazon SDE 2 (L5) | 5 YOE | Interview Experience & Deets : r/amazonemployees",
+      "reason": "Already excluded in reddit.json: promotional traffic-light HLD account has bid/auction follow-ups inconsistent with its substituted prompt. No independent original verification.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://codesnatch.io/community/interview-experiences/amazon-sde2-loop-what-to-expect",
+      "title": "Amazon SDE-2 Loop: What to Expect | Community | CodeSnatch",
+      "reason": "Uncertain provenance on commercial CodeSnatch guide page. Public original labels @sarahwilson but exposes no linked candidate profile or originating post and uses stock avatar; generic what-to-expect framing mixes personal and general loop claims. Interview date only last spring (article Feb28 and updatedAug13), country absent. Do not claim verified US2026 interview or confidently authenticated independent account; held out pending provenance, not asserted fabricated.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/jobsearchhacks/comments/1uh2o0m/offer_amazon_interview_experience_timeline_oa/",
+      "title": "[Offer] Amazon Interview Experience & Timeline (OA -> Phone Screen -> Loop) : r/jobsearchhacks",
+      "reason": "Same author, title and inventory/anagram/decoding loop as accepted reddit-1uhl798; preserved as alias, not another frequency.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@himanshudimp05/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+      "title": "Amazon Interview Experience|SDE-2|2026 | by Himanshu Dhawan | Medium",
+      "reason": "Alternate Medium author URL for existing medium-c2cd6e71c035; same article ID, not new candidate.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1s6g3hn/amazon_sde_2_interview_experience_prime_video/",
+      "title": "Amazon SDE 2 Interview Experience - Prime Video : r/FAANGrecruiting",
+      "reason": "Archived original advertises PracHub through inserted question links, with no independently corroborated originating candidate account or country. Held out with related promotional syndications; no assumption of US from Prime Video.",
+      "discoveredIn": [
+        "data/exa/us/us-2026.json",
+        "data/exa/us/aws-usa-2026.json",
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-interview-experience-full-loop",
+      "title": "Amazon Sde2 (full Loop) - Amazon | Interview Experiences",
+      "reason": "Mirror of existing leetcode-7576550: disconnect island, rider-finding service, offline download manager and event logging sequence. No new candidate or explicit US location.",
+      "discoveredIn": [
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/anusha-kandagal_amazon-sde-2-interview-experience-2026-activity-7486939540109070336-BQVA",
+      "title": "It's been three months since I joined Amazon as an SDE2, and the learning experience has been incredible. The scale of engineering problems, the people I've worked with, and the engineering culture … | Anusha Kandagal",
+      "reason": "LinkedIn post links through https://lnkd.in/dAcPZyY9 to existing leetcode-8420230. Profile geography is not new interview-location evidence; existing India record unchanged.",
+      "discoveredIn": [
+        "data/exa/us/aws-usa-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1sjntvn/amazon_sde2_interview_experience/",
+      "title": "Amazon SDE2 Interview Experience : r/amazonemployees",
+      "reason": "Already excluded reddit1sjntvn promotional account by same nian2326076 author; outbound problem substitutions not independently verified.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+      "title": "Amazon SDE2 Interview Experience (Full Loop) - Discuss - LeetCode",
+      "reason": "Already included leetcode-7576550. Prior country investigation found only unconfirmed commenter query; no new explicit country evidence.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/csMajors/comments/1sf90ix/amazon_interview_experience_sde2/",
+      "title": "Amazon Interview Experience | SDE2 : r/csMajors",
+      "reason": "Archived original contains vague library-or-parking-lot example and unnamed BFS/system design questions plus PracHub promotion. Specific actually asked prompt cannot be established; no country evidence.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+      "title": "Amazon Interview Experience|SDE-2|2026 | by Code Prismo - Medium",
+      "reason": "Already included medium-c2cd6e71c035; not a new report.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/amazonemployees/comments/1rn2rg0/amazon_sde2_loop_sharing_my_experience_what_do_my/",
+      "title": "Amazon SDE2 Loop – Sharing my experience. What do my chances look like? : r/amazonemployees",
+      "reason": "Already excluded reddit1rn2rg0: no concrete reliably numbered final-loop questions; no new country evidence from discovery.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1rqqlel/completed_my_amazon_sde2_loop_3_rounds_went_great/",
+      "title": "Completed my Amazon SDE-2 Loop. 3 Rounds went great but last LLD round was average or Below Average. Do I have a chance? : r/leetcode",
+      "reason": "Already included reddit-1rqqlel; no new country evidence in Exa discovery; no duplicate count.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/FAANGrecruiting/comments/1shbie9/amazon_sde2_interview_experience/",
+      "title": "Amazon SDE2 Interview Experience : r/FAANGrecruiting",
+      "reason": "Archived crosspost parent reddit1shbi1k recounts scheduling, rejection and HLD/LLD/coding topics but no actual question statements. Cannot create rows from round topics.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ts2gj5/amazon_sde_2_inperson_f2f_loop_upcoming_need/",
+      "title": "[Amazon] SDE 2 In-Person F2F Loop upcoming! Need advice on DSA, LLD, HLD, and Bar Raiser expectations. : r/leetcode",
+      "reason": "Prospective loop preparation request, not completed final-loop question report.",
+      "discoveredIn": [
+        "data/exa/us/us-focused-2026.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MovingToUSA/comments/1u23bxr/german_couple_dreaming_of_seattle_what_are_our/",
+      "title": "German couple dreaming of Seattle – what are our realistic options with a ~5 year timeline? : r/MovingToUSA",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/jobsindata/comments/1s26rdw/data_engineering_tuesday_top_10_highestpaying/",
+      "title": "Data Engineering Tuesday: Top 10 Highest-Paying Positions from Last Week : r/jobsindata",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/jobsindata/comments/1seortw/data_engineering_tuesday_top_10_highestpaying/",
+      "title": "Data Engineering Tuesday: Top 10 Highest-Paying Positions from Last Week : r/jobsindata",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@deoncarten/top-ai-development-companies-in-the-united-states-2026-0613526190b4",
+      "title": "Top AI development companies in the United States 2026 | by Deon Carten | Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/InternshipDrops/comments/1qrjlkk/swe_data_internships_january_30/",
+      "title": "SWE & Data Internships - January 30 💻 : r/InternshipDrops",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/InternshipDrops/comments/1qxvew9/fresh_tech_internships_today_software_data/",
+      "title": "Fresh tech internships today: software, data science, ML : r/InternshipDrops",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@davidsson/fault-lines-showing-is-washingtons-economy-in-trouble-03c0c8f19883",
+      "title": "Fault Lines Showing: Is Washington’s Economy in Trouble? | by John Davidsson, JD | Jun, 2026 | Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@usmedynskahannah/scala-developer-salary-junior-middle-and-senior-rates-in-2026-bfbd604f6a0c",
+      "title": "Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/cscareerquestions/comments/1r5qh42/i_was_a_director_at_amex_when_they_started/",
+      "title": "I Was a Director at Amex When They Started Replacing Us With $30K Workers : r/cscareerquestions",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/cofounderhunt/comments/1ubf25x/raised_preseed_product_built_want_technical/",
+      "title": "raised pre-seed + product built - want technical co-founder for next phase : r/cofounderhunt",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/AppDevelopersDubai/comments/1tcohdr/best_generative_ai_development_company_in_usa_top/",
+      "title": "Best Generative AI development company in USA: Top AI Firms you can trust and pick in 2026 : r/AppDevelopersDubai",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/relocating/comments/1qhzfl2/cant_decide_us_vs_norway_relocation_from/",
+      "title": "Can't decide: US vs Norway relocation (from Argentina, remote US startup) : r/relocating",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://devassure.medium.com/why-ai-agentic-test-automation-is-becoming-essential-for-modern-software-teams-bf0c3cbe6195",
+      "title": "Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/@kbstrainingsocial/react-18-in-production-is-harder-than-anyone-admits-heres-what-expert-job-support-actually-looks-baf7cd9321b2",
+      "title": "React 18 in Production Is Harder Than Anyone Admits — Here’s What Expert Job Support Actually Looks Like | by Kbstraining | May, 2026 | Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    },
+    {
+      "url": "https://medium.com/counterarts/the-discipline-of-choosing-softer-stories-in-a-hard-driving-tech-culture-70704f5283bc",
+      "title": "The Discipline of Choosing Softer Stories in a Hard-Driving Tech Culture | by Kratagya Tripathi | Counter Arts | Medium",
+      "reason": "Off-topic Exa country-phrase result: not an Amazon SDEII/L5 candidate interview account; no extraction.",
+      "discoveredIn": [
+        "data/exa/us/us-country-phrases.json"
+      ]
+    }
+  ],
+  "limitations": [
+    "Provider: Exa live MCP. This bounded US2026/country-unknown pass reviewed initial15 results and four follow-up query result sets (47 distinct discovery URLs); not exhaustive.",
+    "Initial discovery response is data/exa/us-2026-search.json; its query arguments were not embedded in that file and are not reconstructed here. Follow-up exact queries, date filters and raw responses are preserved in data/exa/us/us-2026.json, data/exa/us/aws-usa-2026.json, data/exa/us/us-focused-2026.json, data/exa/us/us-country-phrases.json.",
+    "Quoted USA/United States/Seattle query produced off-topic results; a relaxed shorter Amazon SDE2 USA2026 query was executed rather than interpreting that result as no US accounts. The broad query was repeated once to retain its raw envelope; no new independent coverage claimed for the repeat.",
+    "Search dates filter publication, not interview dates. Accepted Redmond account uses June28 publication fallback; May6 application and relative Day48 timeline are not converted into a fabricated exact interview date.",
+    "Original Reddit and public Jina rendering returned shell/403. Public Arctic Shift archive provided candidate-authored bodies and timestamps; archive provenance is explicit, not live verification or authentication bypass.",
+    "Redmond report exposes inventory-management, S3, anagram and decoding-string labels but not complete coding specifications. The two unspecified string variants use report-specific keys and are not conflated with canonical LeetCode questions. Generic LP/GenAI labels are excluded.",
+    "Promotional service-operator narratives and altered PracHub syndications were held out pending originating candidate evidence; commercial affiliation alone is not proof of fabrication.",
+    "Existing location-unknown records were compared when rediscovered; no source-backed country corrections established. USA in the Jay van Zyl/Reddit SDE story does not establish SDEII level.",
+    "Exa snippets used only for discovery. Accepted evidence is the full original public-post archive. Some gated mirrors, Blind403 and unrendered DesiQna body remain access limitations.",
+    "MCP responses expose request IDs/searchTime but no monetary cost; no cost amount invented. No build, test, lint or formatter commands run by this slice."
+  ],
+  "coverage": {
+    "provider": "Exa",
+    "queryResultFiles": [
+      "data/exa/us/us-2026.json",
+      "data/exa/us/aws-usa-2026.json",
+      "data/exa/us/us-focused-2026.json",
+      "data/exa/us/us-country-phrases.json"
+    ],
+    "initialResultFile": "data/exa/us-2026-search.json",
+    "fetchResultFiles": [
+      "data/exa/us/publisher-fetch.json"
+    ],
+    "verificationFiles": [
+      "data/exa/us/reddit-original-archive.json"
+    ],
+    "uniqueDiscoveryUrls": 47,
+    "acceptedReports": 1,
+    "acceptedOccurrences": 4,
+    "countryCorrections": []
+  }
+}
