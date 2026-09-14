@@ -1,5 +1,7 @@
 # Amazon SDE II Interview Fieldnotes
 
+**[Open the interview question explorer](https://adityaindoori.github.io/amazon-sde2-interview-db/)**
+
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
 **590 round-verified rows · 639 reported occurrences · 137 candidate accounts · 6 stated countries.** These are 525 conservatively normalized question identities across rounds. A separate round-unconfirmed collection contains 31 questions from 7 reports. Counts are public-report frequencies, not Amazon's internal asking rates.
