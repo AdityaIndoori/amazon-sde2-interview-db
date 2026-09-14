@@ -7,7 +7,7 @@
   const sortKeys = ["round", "question", "topic", "frequency", "dates", "sources", "locations"];
   let database;
   const collections = {};
-  let view = "strict";
+  let view = "all";
   let reports = new Map();
   let visibleRows = [];
   let sort = { key: "frequency", direction: "desc" };
@@ -129,16 +129,12 @@
   }
 
   function selectCollection(nextView) {
-    view = ["unconfirmed", "all"].includes(nextView) && collections.unconfirmed ? nextView : "strict";
+    view = nextView === "strict" || !collections.unconfirmed ? "strict" : nextView === "unconfirmed" ? "unconfirmed" : "all";
     database = collections[view];
     if (!database) return;
     reports = new Map(database.reports.map(report => [report.id, report]));
-    const unconfirmed = view === "unconfirmed";
-    const all = view === "all";
     $("collection-switch").value = view;
-    controls.round.querySelector("fieldset").disabled = unconfirmed;
-    controls.round.classList.toggle("round-disabled", unconfirmed);
-    $("collection-note").textContent = unconfirmed ? "Round numbers are unknown; round filters do not apply." : all ? "Numbered round filters exclude unconfirmed questions." : "";
+    $("collection-note").textContent = "";
   }
 
   function dateLabel(date) {
@@ -210,7 +206,7 @@
 
   function publicURL(state = stateFromControls()) {
     const url = new URL(location.pathname, location.origin);
-    if (view !== "strict") url.searchParams.set("view", view);
+    url.searchParams.set("view", view);
     for (const [key, value] of Object.entries(state)) {
       if (key === "personal") continue;
       if (Array.isArray(value)) {
@@ -250,7 +246,7 @@
     const terms = state.q.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const rows = [];
     for (const question of database.questions) {
-      if (view !== "unconfirmed" && state.round.length && !state.round.includes(String(question.round))) continue;
+      if (state.round.length && !state.round.includes(question.round === null ? "unconfirmed" : String(question.round))) continue;
       if (state.topic.length && !state.topic.includes(question.topic)) continue;
       if (state.category.length && !state.category.includes(question.category)) continue;
       const mark = study.marks[markKey(question)];
@@ -399,7 +395,7 @@
     for (const control of Object.values(controls)) {
       if (!control.hasAttribute("data-multiple")) continue;
       const selected = [...control.querySelectorAll("input:checked")].map(input => input.nextElementSibling.textContent);
-      control.querySelector(".selection-label").textContent = control === controls.round && view === "unconfirmed" ? "Not applied · choices retained" : selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
+      control.querySelector(".selection-label").textContent = selected.length === 0 ? control.dataset.all : selected.length <= 2 ? selected.join(", ") : `${selected.length} selected`;
       control.querySelector(".filter-clear").disabled = selected.length === 0;
     }
     const advancedCount = ["topic", "quality", "location", "year", "basis"].filter(key => state[key].length).length + Number(state.min > 1);
@@ -452,7 +448,6 @@
   function reset() {
     clearTimeout(searchTimer);
     for (const [key, control] of Object.entries(controls)) {
-      if (key === "round" && view === "unconfirmed") continue;
       if (control.hasAttribute("data-multiple")) {
         for (const input of control.querySelectorAll("input")) input.checked = false;
       } else control.value = key === "min" ? "1" : "";
@@ -505,7 +500,7 @@
       const data = collections.strict;
       const questions = [...collections.strict.questions, ...(collections.unconfirmed?.questions ?? [])];
       const occurrences = questions.flatMap(question => question.occurrences);
-      populateChoices("round", data.questions.map(question => String(question.round)), value => `Round ${value}`);
+      populateChoices("round", [...data.questions.map(question => String(question.round)), "unconfirmed"], value => value === "unconfirmed" ? "Round unconfirmed" : `Round ${value}`);
       populateChoices("topic", questions.map(question => question.topic));
       populateChoices("category", questions.map(question => question.category).filter(Boolean));
       populateChoices("quality", Object.keys(qualityLabels), value => qualityLabels[value]);
