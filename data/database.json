@@ -6,9 +6,9 @@
     "generatedAt": "2026-09-13",
     "frequencyDefinition": "Distinct candidate reports mentioning this question in this round; cross-posts count once. Not an estimate of Amazon’s actual asking rate.",
     "disclaimer": "Publicly reported experiences only. Discovery is not exhaustive and candidate accounts are not independently authenticated. Missing dates or locations are never inferred. Publication dates are labeled separately from interview dates.",
-    "reportCount": 119,
-    "questionCount": 539,
-    "occurrenceCount": 577
+    "reportCount": 128,
+    "questionCount": 561,
+    "occurrenceCount": 605
   },
   "questions": [
     {
@@ -192,6 +192,42 @@
       ]
     },
     {
+      "id": "r1-edit-distance",
+      "round": 1,
+      "question": "Compute the edit distance between two strings.",
+      "topic": "Dynamic programming",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-09-13",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "frontendlead-2619",
+          "title": "Amazon SDE II interview",
+          "url": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "frontendlead-2619",
+          "date": "2025-09-13",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Four rounds of interview finished in one day ... 1. first round: edit distance",
+          "reportedQuestion": "Compute the edit distance between two strings.",
+          "reportedTopic": "Dynamic programming",
+          "sourceRound": "first round",
+          "roundMappingNote": "Original numbering of four same-day interviews retained; no screening round included."
+        }
+      ]
+    },
+    {
       "id": "r1-number-of-islands",
       "round": 1,
       "question": "Count the islands in a binary grid.",
@@ -286,6 +322,42 @@
           "reportedTopic": "Graphs / Grid traversal",
           "sourceRound": "Round 2: DSA",
           "roundMappingNote": "Source includes the online assessment as round 1; final-loop position is source interview number minus one."
+        }
+      ]
+    },
+    {
+      "id": "r1-decode-ways",
+      "round": 1,
+      "question": "Count the valid decodings of a digit string (Decode Ways).",
+      "topic": "Dynamic programming",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-10-29",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7311674",
+          "title": "Amazon SDE 2 | Interview experience",
+          "url": "https://leetcode.com/discuss/post/7311674/amazon-sde-2-interview-experience-by-ano-2mnf/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7311674",
+          "date": "2025-10-29",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Super Day: Round 1: https://leetcode.com/problems/decode-ways/description/",
+          "reportedQuestion": "Count the valid decodings of a digit string (Decode Ways).",
+          "reportedTopic": "Dynamic programming",
+          "sourceRound": "Round 1",
+          "roundMappingNote": "Source explicitly numbers the Super Day interviews; no OA or screening offset."
         }
       ]
     },
@@ -1052,6 +1124,42 @@
       ]
     },
     {
+      "id": "r1-customer-issue-resolution-lld",
+      "round": 1,
+      "question": "Design a customer issue resolution system using classes, interfaces, design patterns and enums; working code is not required.",
+      "topic": "Low-level design / Customer support",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7554515",
+          "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7554515",
+          "date": "2026-01",
+          "dateBasis": "interview",
+          "location": "Not stated",
+          "evidence": "Round 1 - LLD: I was asked to design a Customer Issue Resolution System. Working code was not required and only the classes, interface, design patterns, enums etc was expected.",
+          "reportedQuestion": "Design a customer issue resolution system using classes, interfaces, design patterns and enums; working code is not required.",
+          "reportedTopic": "Low-level design / Customer support",
+          "sourceRound": "Round 1 - LLD",
+          "roundMappingNote": "Original explicitly numbers four interview rounds; no assessment or screen is included in this numbering."
+        }
+      ]
+    },
+    {
       "id": "r1-dns-resolver-lld",
       "round": 1,
       "question": "Design a DNS resolver with health checks, TTL support, and fast reads.",
@@ -1480,6 +1588,42 @@
           "reportedTopic": "Randomized algorithms",
           "sourceRound": "Round 1",
           "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
+      "id": "r1-rate-limiter-lld-basic",
+      "round": 1,
+      "question": "Design a rate limiter at low level, with some high-level design discussion; specific requirements are not supplied.",
+      "topic": "Low-level design",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-11-28",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7379756",
+          "title": "Amazon | SDE 2 | 2025 | Interview exp",
+          "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7379756",
+          "date": "2025-11-28",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 1 — LLD (Rate Limiter) : f2f; it was pushed little bit toward HLD part as well",
+          "reportedQuestion": "Design a rate limiter at low level, with some high-level design discussion; specific requirements are not supplied.",
+          "reportedTopic": "Low-level design",
+          "sourceRound": "Round 1 — LLD (Rate Limiter)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset."
         }
       ]
     },
@@ -2816,6 +2960,42 @@
       ]
     },
     {
+      "id": "r1-longest-consecutive-sequence",
+      "round": 1,
+      "question": "Find the longest consecutive sequence in an unsorted array.",
+      "topic": "Arrays / Hashing",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-03",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7464207",
+          "title": "Amazon SDE-2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/"
+        }
+      ],
+      "locations": [
+        "Bangalore, India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7464207",
+          "date": "2026-01-03",
+          "dateBasis": "publication",
+          "location": "Bangalore, India",
+          "evidence": "Round 1 (Problem Solving): 2. Longest consecutive sequence [linked to leetcode.com/problems/longest-consecutive-sequence/description/].",
+          "reportedQuestion": "Find the longest consecutive sequence in an unsorted array.",
+          "reportedTopic": "Arrays / Hashing",
+          "sourceRound": "Round 1 (Problem Solving)",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
       "id": "r1-longest-word-all-prefixes",
       "round": 1,
       "question": "Find the longest dictionary word buildable one character at a time with every prefix also present in the word list.",
@@ -3532,6 +3712,42 @@
           "reportedTopic": "Arrays / Divide and conquer",
           "sourceRound": "Round 2: DSA Round",
           "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        }
+      ]
+    },
+    {
+      "id": "r1-new-managers-after-manager-leave",
+      "round": 1,
+      "question": "Given a strict employee–manager tree, count the new managers formed when a manager goes on leave and their immediate reportees become managers; solve first for a binary tree, then for an n-ary tree.",
+      "topic": "Trees",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-03",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7464207",
+          "title": "Amazon SDE-2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/"
+        }
+      ],
+      "locations": [
+        "Bangalore, India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7464207",
+          "date": "2026-01-03",
+          "dateBasis": "publication",
+          "location": "Bangalore, India",
+          "evidence": "Round 1: Given employee manager relationship find how many new managers are formed if current manager goes on leave ... immediate reportees become new manager ... First I was asked to solve for binary tree then extended for N-ary Tree.",
+          "reportedQuestion": "Given a strict employee–manager tree, count the new managers formed when a manager goes on leave and their immediate reportees become managers; solve first for a binary tree, then for an n-ary tree.",
+          "reportedTopic": "Trees",
+          "sourceRound": "Round 1 (Problem Solving)",
+          "roundMappingNote": "Author explicitly numbers four same-day interview rounds, ending with the hiring-manager HLD round; no screening offset."
         }
       ]
     },
@@ -4447,6 +4663,42 @@
       ]
     },
     {
+      "id": "r1-least-frequent-login-user-7515006",
+      "round": 1,
+      "question": "Process user logins and return the last user with the lowest login frequency, in a problem reported as similar to LFU Cache.",
+      "topic": "Data structures / Frequency tracking",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-22",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7515006",
+          "title": "Amazon SDE 2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7515006",
+          "date": "2026-01-22",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 1 - DSA: Problem similar to LFU Cache (LC Hard) (User logs in and we have to return the last user with lowest frequency of login).",
+          "reportedQuestion": "Process user logins and return the last user with the lowest login frequency, in a problem reported as similar to LFU Cache.",
+          "reportedTopic": "Data structures / Frequency tracking",
+          "sourceRound": "Round 1 - DSA",
+          "roundMappingNote": "Author numbers the DSA, LLD and HLD interviews 1–3 and reports rejection after HLD; no assessment or screen is included in this sequence. No fourth round is invented."
+        }
+      ]
+    },
+    {
       "id": "r1-reorganize-string",
       "round": 1,
       "question": "Rearrange a string so no adjacent characters are equal.",
@@ -5076,6 +5328,42 @@
           "reportedTopic": "Binary search",
           "sourceRound": "Round 1",
           "roundMappingNote": "Source numbers the final-loop interviews separately; no offset."
+        }
+      ]
+    },
+    {
+      "id": "r1-insert-and-merge-intervals-combination",
+      "round": 1,
+      "question": "Solve a problem combining Insert Interval and Merge Intervals; the exact combined variant is not supplied.",
+      "topic": "Arrays / Intervals",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-10-12",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "jointaro-3c92609e",
+          "title": "Amazon Software Development Engineer (SDE) II Interview Experience - Austin, Texas",
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/"
+        }
+      ],
+      "locations": [
+        "Austin, Texas, United States"
+      ],
+      "occurrences": [
+        {
+          "reportId": "jointaro-3c92609e",
+          "date": "2025-10-12",
+          "dateBasis": "publication",
+          "location": "Austin, Texas, United States",
+          "evidence": "Interview Questions: Phone screen: Variation of Meeting Rooms II; Round 1: Combination of Insert and Merge Intervals",
+          "reportedQuestion": "Solve a problem combining Insert Interval and Merge Intervals; the exact combined variant is not supplied.",
+          "reportedTopic": "Arrays / Intervals",
+          "sourceRound": "Round 1",
+          "roundMappingNote": "Source separately labels the phone screen and restarts numbered virtual-onsite rounds at 1; phone-screen question excluded."
         }
       ]
     },
@@ -8346,6 +8634,42 @@
       ]
     },
     {
+      "id": "r2-min-stack",
+      "round": 2,
+      "question": "Design a stack that supports retrieving the minimum element (Min Stack).",
+      "topic": "Stacks",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-10-12",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "jointaro-3c92609e",
+          "title": "Amazon Software Development Engineer (SDE) II Interview Experience - Austin, Texas",
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/"
+        }
+      ],
+      "locations": [
+        "Austin, Texas, United States"
+      ],
+      "occurrences": [
+        {
+          "reportId": "jointaro-3c92609e",
+          "date": "2025-10-12",
+          "dateBasis": "publication",
+          "location": "Austin, Texas, United States",
+          "evidence": "Round 2: Min Stack",
+          "reportedQuestion": "Design a stack that supports retrieving the minimum element (Min Stack).",
+          "reportedTopic": "Stacks",
+          "sourceRound": "Round 2",
+          "roundMappingNote": "Original separately numbered virtual-onsite loop retained; screening excluded."
+        }
+      ]
+    },
+    {
       "id": "r2-design-stock-broker-platform",
       "round": 2,
       "question": "Design a stock brokerage platform like Zerodha or Groww.",
@@ -8378,6 +8702,42 @@
           "reportedTopic": "Low-level design",
           "sourceRound": "Round 2",
           "roundMappingNote": "Source labels the interview sequence as Round 2; no screening offset applied."
+        }
+      ]
+    },
+    {
+      "id": "r2-student-course-registration-lld",
+      "round": 2,
+      "question": "Design a student registration system that supports enrolling in courses.",
+      "topic": "Low-level design / Registration",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-22",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7515006",
+          "title": "Amazon SDE 2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7515006",
+          "date": "2026-01-22",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 2 - LLD: Design a Registration system for students where they can enroll for courses. Discussed requirments and edge cases.",
+          "reportedQuestion": "Design a student registration system that supports enrolling in courses.",
+          "reportedTopic": "Low-level design / Registration",
+          "sourceRound": "Round 2 - LLD",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
         }
       ]
     },
@@ -9112,10 +9472,14 @@
       "round": 2,
       "question": "Design and implement a rate limiter; discuss algorithms and scaling. Report-specific concurrency and distribution requirements are preserved in the evidence.",
       "topic": "Low-level design / Rate limiting",
-      "frequency": 2,
+      "frequency": 3,
       "dates": [
         {
           "date": "2026-03-20",
+          "basis": "publication"
+        },
+        {
+          "date": "2025-10-29",
           "basis": "publication"
         },
         {
@@ -9128,6 +9492,11 @@
           "id": "leetcode-7671704",
           "title": "Amazon SWE 2 Interview | Verdict : [Rejected]",
           "url": "https://leetcode.com/discuss/post/7671704/amazon-swe-2-interview-verdict-rejected-lzd4o/"
+        },
+        {
+          "id": "leetcode-7311674",
+          "title": "Amazon SDE 2 | Interview experience",
+          "url": "https://leetcode.com/discuss/post/7311674/amazon-sde-2-interview-experience-by-ano-2mnf/"
         },
         {
           "id": "leetcode-6870939",
@@ -9150,6 +9519,17 @@
           "reportedTopic": "Low-level design / Rate limiting",
           "sourceRound": "3rd Round (LLD + DSA)",
           "roundMappingNote": "Source1 OA excluded; four source interview rounds2–5 normalize to loop1–4. CheerCoin omitted because source gives no usable requirements."
+        },
+        {
+          "reportId": "leetcode-7311674",
+          "date": "2025-10-29",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 2: System Design LLD - Design rate limiter asked various questions like what will happen if system is distributed. There are various services that we need to limit and each can have different rate limit value.",
+          "reportedQuestion": "Design a rate limiter, including rate limiting across multiple application instances.",
+          "reportedTopic": "Low-level design / Rate limiting",
+          "sourceRound": "Round 2: System Design LLD",
+          "roundMappingNote": "Source explicitly numbers the Super Day interviews; no OA or screening offset."
         },
         {
           "reportId": "leetcode-6870939",
@@ -9578,6 +9958,42 @@
           "reportedTopic": "System design",
           "sourceRound": "Round 2",
           "roundMappingNote": "Source numbers the final-loop interviews separately; no offset."
+        }
+      ]
+    },
+    {
+      "id": "r2-weekly-course-schedule-overlap",
+      "round": 2,
+      "question": "Detect timetable overlaps when courses meet on selected weekdays and each course can have different start and end times on different days.",
+      "topic": "Intervals / Scheduling",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-22",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7515006",
+          "title": "Amazon SDE 2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7515006",
+          "date": "2026-01-22",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 2 ... Follow up - what if each course has a different timing for each day and some courses may happen on only a few days of the week, how will I calculate overlap.",
+          "reportedQuestion": "Detect timetable overlaps when courses meet on selected weekdays and each course can have different start and end times on different days.",
+          "reportedTopic": "Intervals / Scheduling",
+          "sourceRound": "Round 2 - LLD follow-up",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
         }
       ]
     },
@@ -10446,6 +10862,42 @@
       ]
     },
     {
+      "id": "r2-most-played-guest-song",
+      "round": 2,
+      "question": "Given each guest's song list and play counts, identify the song most played by the guests for a DJ to play.",
+      "topic": "Arrays / Hashing",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-11-28",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7379756",
+          "title": "Amazon | SDE 2 | 2025 | Interview exp",
+          "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7379756",
+          "date": "2025-11-28",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 2 — DSA (Non–Bar Raiser): Song recommendation system. Guest will come with list of song and freq of play count. DJ has to play song which is most played by guests",
+          "reportedQuestion": "Given each guest's song list and play counts, identify the song most played by the guests for a DJ to play.",
+          "reportedTopic": "Arrays / Hashing",
+          "sourceRound": "Round 2 — DSA (Non–Bar Raiser)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset."
+        }
+      ]
+    },
+    {
       "id": "r2-minimum-train-platforms",
       "round": 2,
       "question": "Given train arrival and departure times, find the minimum number of platforms required.",
@@ -10810,8 +11262,12 @@
       "round": 2,
       "question": "Maintain and return the median of a stream of numbers.",
       "topic": "Heaps / Data streams",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
+        {
+          "date": "2026-01-03",
+          "basis": "publication"
+        },
         {
           "date": "2025-07-22",
           "basis": "publication"
@@ -10819,15 +11275,32 @@
       ],
       "sources": [
         {
+          "id": "leetcode-7464207",
+          "title": "Amazon SDE-2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/"
+        },
+        {
           "id": "leetcode-6988116",
           "title": "AWS SDE II | Rejected | USA",
           "url": "https://leetcode.com/discuss/post/6988116/aws-sde-ii-rejected-usa-by-anonymous_use-s0jp/"
         }
       ],
       "locations": [
+        "Bangalore, India",
         "United States"
       ],
       "occurrences": [
+        {
+          "reportId": "leetcode-7464207",
+          "date": "2026-01-03",
+          "dateBasis": "publication",
+          "location": "Bangalore, India",
+          "evidence": "Round 2 (Bar Raiser): 1 DSA problem was asked: Find median in data stream (question was not directly asked they gave some long problem statement which essentially boiled down to this).",
+          "reportedQuestion": "Maintain and return the median of a stream of numbers.",
+          "reportedTopic": "Heaps / Data streams",
+          "sourceRound": "Round 2 (Bar Raiser)",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        },
         {
           "reportId": "leetcode-6988116",
           "date": "2025-07-22",
@@ -11366,6 +11839,42 @@
       ]
     },
     {
+      "id": "r2-n-queens",
+      "round": 2,
+      "question": "Solve the N-Queens problem.",
+      "topic": "Backtracking",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7554515",
+          "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7554515",
+          "date": "2026-01",
+          "dateBasis": "interview",
+          "location": "Not stated",
+          "evidence": "Round 2 - DSA: Second question was - N Queens problem.",
+          "reportedQuestion": "Solve the N-Queens problem.",
+          "reportedTopic": "Backtracking",
+          "sourceRound": "Round 2 - DSA",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
       "id": "r2-struggling-colleague-impact",
       "round": 2,
       "question": "Tell me about a time a struggling colleague impacted your performance.",
@@ -11743,6 +12252,42 @@
           "reportedTopic": "Strings / Hash maps",
           "sourceRound": "Round 3",
           "roundMappingNote": "Source labels the interview sequence as Round 3; no screening offset applied."
+        }
+      ]
+    },
+    {
+      "id": "r3-number-of-islands",
+      "round": 3,
+      "question": "Count the islands in a binary grid.",
+      "topic": "Graphs / Grid traversal",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-09-13",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "frontendlead-2619",
+          "title": "Amazon SDE II interview",
+          "url": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "frontendlead-2619",
+          "date": "2025-09-13",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "3. third round: find how many island (on leetcode)",
+          "reportedQuestion": "Count the islands in a binary grid.",
+          "reportedTopic": "Graphs / Grid traversal",
+          "sourceRound": "third round",
+          "roundMappingNote": "Original numbering of four same-day interviews retained; no screening round included."
         }
       ]
     },
@@ -12334,6 +12879,42 @@
       ]
     },
     {
+      "id": "r3-finance-app-lld-7464207",
+      "round": 3,
+      "question": "Design a finance application: gather requirements and define classes and APIs, with some high-level design discussion.",
+      "topic": "Low-level design / Finance",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-03",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7464207",
+          "title": "Amazon SDE-2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/"
+        }
+      ],
+      "locations": [
+        "Bangalore, India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7464207",
+          "date": "2026-01-03",
+          "dateBasis": "publication",
+          "location": "Bangalore, India",
+          "evidence": "Round 3 (LLD): problem statement was design finance app ... asked API design ... expectations was to come up with classes and API design and also some HLD.",
+          "reportedQuestion": "Design a finance application: gather requirements and define classes and APIs, with some high-level design discussion.",
+          "reportedTopic": "Low-level design / Finance",
+          "sourceRound": "Round 3 (LLD)",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
       "id": "r3-design-food-delivery",
       "round": 3,
       "question": "Design a food-delivery platform covering customers, restaurants, orders and delivery partners. Report-specific requirements are preserved in the evidence.",
@@ -12719,8 +13300,12 @@
       "round": 3,
       "question": "Design a parking lot with appropriate classes, allocation and pricing behavior. See evidence for report-specific requirements.",
       "topic": "Low-level design / Parking",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
+        {
+          "date": "2026-07-26",
+          "basis": "publication"
+        },
         {
           "date": "2025-02",
           "basis": "interview"
@@ -12728,15 +13313,32 @@
       ],
       "sources": [
         {
+          "id": "medium-c01839b6d87d",
+          "title": "Amazon Interview Experience (SDE 2 — Backend)",
+          "url": "https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d"
+        },
+        {
           "id": "leetcode-6436772",
           "title": "Amazon | SDE2 | FireTV (Bangalore/Chennai) | Feb 2025 [Ghosted]",
           "url": "https://leetcode.com/discuss/post/6436772/amazon-sde2-firetv-bangalorechennai-feb-h5wzc/"
         }
       ],
       "locations": [
-        "Bangalore / Chennai, India"
+        "Bangalore / Chennai, India",
+        "Not stated"
       ],
       "occurrences": [
+        {
+          "reportId": "medium-c01839b6d87d",
+          "date": "2026-07-26",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 3: System Design — LLD (60 Minutes). Topic: Parking Lot System.",
+          "reportedQuestion": "Design a parking lot system in a low-level design interview.",
+          "reportedTopic": "Low-level design / Parking",
+          "sourceRound": "Round 3: System Design — LLD (60 Minutes)",
+          "roundMappingNote": "Four onsite rounds explicitly numbered after a separately described OA; no offset."
+        },
         {
           "reportId": "leetcode-6436772",
           "date": "2025-02",
@@ -12983,6 +13585,42 @@
           "reportedQuestion": "Design BookMyShow.",
           "reportedTopic": "System design",
           "sourceRound": "Round 3",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
+      "id": "r3-social-media-friends-feed",
+      "round": 3,
+      "question": "Design a scalable social-media posting and friends-feed service for users with more than 2,000 friends, supporting high read and write throughput.",
+      "topic": "System design / Social media",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01",
+          "basis": "interview"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7554515",
+          "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7554515",
+          "date": "2026-01",
+          "dateBasis": "interview",
+          "location": "Not stated",
+          "evidence": "Round 3 - HLD: one can have friends (2k+) and the users can create a post and friends can see the feed generated from friend's posts. Focus was on scalability and high read/write throughput.",
+          "reportedQuestion": "Design a scalable social-media posting and friends-feed service for users with more than 2,000 friends, supporting high read and write throughput.",
+          "reportedTopic": "System design / Social media",
+          "sourceRound": "Round 3 - HLD",
           "roundMappingNote": "Source final-loop position; see quoted evidence."
         }
       ]
@@ -13352,8 +13990,12 @@
       "round": 3,
       "question": "Design a URL shortener.",
       "topic": "System design",
-      "frequency": 2,
+      "frequency": 3,
       "dates": [
+        {
+          "date": "2026-01-22",
+          "basis": "publication"
+        },
         {
           "date": "2025-06-29",
           "basis": "publication"
@@ -13364,6 +14006,11 @@
         }
       ],
       "sources": [
+        {
+          "id": "leetcode-7515006",
+          "title": "Amazon SDE 2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/"
+        },
         {
           "id": "leetcode-6898756",
           "title": "Amazon SDE 2 | Interview Experience (REJECTED) | 4 Months Journey | My Resources",
@@ -13380,6 +14027,17 @@
         "Not stated"
       ],
       "occurrences": [
+        {
+          "reportId": "leetcode-7515006",
+          "date": "2026-01-22",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 3 - HLD: Design url shortener. FR, NFR, API design, DB schema, High level design ... Asked me to figure out a way to avoid collisions without using redis counter ... Asked me why I used Postgress DB.",
+          "reportedQuestion": "Design a URL shortener, including requirements, APIs, database schema and architecture; justify the database choice and avoid identifier collisions without a Redis counter.",
+          "reportedTopic": "System design / URL shortening",
+          "sourceRound": "Round 3 - HLD",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        },
         {
           "reportId": "leetcode-6898756",
           "date": "2025-06-29",
@@ -13545,6 +14203,42 @@
           "reportedTopic": "System design",
           "sourceRound": "Round 3",
           "roundMappingNote": "Source labels the interview sequence as Round 3; no screening offset applied."
+        }
+      ]
+    },
+    {
+      "id": "r3-vending-machine-aggregation-system",
+      "round": 3,
+      "question": "Design an aggregation system for vending machines.",
+      "topic": "System design",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-11-28",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7379756",
+          "title": "Amazon | SDE 2 | 2025 | Interview exp",
+          "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7379756",
+          "date": "2025-11-28",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 3 — HLD (Aggregation System for Vending Machines). Good understanding after clarifications, correct data model, correct aggregation logic.",
+          "reportedQuestion": "Design an aggregation system for vending machines.",
+          "reportedTopic": "System design",
+          "sourceRound": "Round 3 — HLD",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset."
         }
       ]
     },
@@ -15901,6 +16595,42 @@
       ]
     },
     {
+      "id": "r4-shopping-history-recommendation-system",
+      "round": 4,
+      "question": "Build a recommendation system based on users' Amazon shopping history.",
+      "topic": "System design / Recommendations",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-10-12",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "jointaro-3c92609e",
+          "title": "Amazon Software Development Engineer (SDE) II Interview Experience - Austin, Texas",
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/"
+        }
+      ],
+      "locations": [
+        "Austin, Texas, United States"
+      ],
+      "occurrences": [
+        {
+          "reportId": "jointaro-3c92609e",
+          "date": "2025-10-12",
+          "dateBasis": "publication",
+          "location": "Austin, Texas, United States",
+          "evidence": "Round 4: System Design - Build a recommendation system based on users' Amazon shopping history.",
+          "reportedQuestion": "Build a recommendation system based on users' Amazon shopping history.",
+          "reportedTopic": "System design / Recommendations",
+          "sourceRound": "Round 4: System Design",
+          "roundMappingNote": "Original separately numbered virtual-onsite loop retained; screening excluded."
+        }
+      ]
+    },
+    {
       "id": "r4-search-suggestions",
       "round": 4,
       "question": "Build search suggestions from a file of previous queries, including returning the top k completions for a prefix.",
@@ -16678,6 +17408,42 @@
       ]
     },
     {
+      "id": "r4-character-add-remove-min-max",
+      "round": 4,
+      "question": "Design a character data structure supporting add(c), remove(c), getMaxChar(), and getMinChar(); exact max/min semantics and complexity requirements are not supplied.",
+      "topic": "Data structures",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2025-11-28",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7379756",
+          "title": "Amazon | SDE 2 | 2025 | Interview exp",
+          "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7379756",
+          "date": "2025-11-28",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 4 — Bar Raiser (Coding + LP). Coding question: Design a data structure with: add(c), remove(c), getMaxChar(), getMinChar().",
+          "reportedQuestion": "Design a character data structure supporting add(c), remove(c), getMaxChar(), and getMinChar(); exact max/min semantics and complexity requirements are not supplied.",
+          "reportedTopic": "Data structures",
+          "sourceRound": "Round 4 — Bar Raiser (Coding + LP)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset."
+        }
+      ]
+    },
+    {
       "id": "r4-design-online-learning-platform",
       "round": 4,
       "question": "Design a Coursera-like learning platform with users, course catalog, payments, notifications and video streaming.",
@@ -16894,6 +17660,42 @@
       ]
     },
     {
+      "id": "r4-company-learning-management-system",
+      "round": 4,
+      "question": "Design a learning-management system for companies, covering database choice, search, content upload/download, security and persistent progress tracking.",
+      "topic": "System design / Learning platform",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-02-05",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "medium-b1f8b0a69de5",
+          "title": "Amazon SDE-2 Interview experience-Selected",
+          "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5"
+        }
+      ],
+      "locations": [
+        "India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "medium-b1f8b0a69de5",
+          "date": "2026-02-05",
+          "dateBasis": "publication",
+          "location": "India",
+          "evidence": "HLD+HM round: Asked to design LMS system for companies ... deep dives on DB choice, handling search using elastic search, presigned URLs for better upload/download of content, security aspects and persistent connections for tracking progress.",
+          "reportedQuestion": "Design a learning-management system for companies, covering database choice, search, content upload/download, security and persistent progress tracking.",
+          "reportedTopic": "System design / Learning platform",
+          "sourceRound": "HLD+HM round / overview item 6",
+          "roundMappingNote": "Only the fourth final-loop position is recovered. Overview explicitly lists recruiter, OA, DSA, DSA, LLD, HLD+HM; detailed onsite sections list DSA-1, LLD, DSA-2, HLD+HM. These conflict on early ordering but both place HLD+HM fourth after OA. No conflicting earlier position is assigned."
+        }
+      ]
+    },
+    {
       "id": "r4-weighted-lottery",
       "round": 4,
       "question": "Design a lottery with tickets costing one cent to 100 dollars and winning probability proportional to ticket price.",
@@ -17034,6 +17836,42 @@
           "reportedTopic": "System design",
           "sourceRound": "Round 4",
           "roundMappingNote": "Source explicitly reports 2025 interviews, but month unknown. R4 is a retry round; original chronological numbering retained. R5 and R6 beyond scope."
+        }
+      ]
+    },
+    {
+      "id": "r4-design-ticket-booking",
+      "round": 4,
+      "question": "Design a scalable BookMyShow-style ticket-booking system. See evidence for report-specific booking and concurrency requirements.",
+      "topic": "System design / Booking",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-07-26",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "medium-c01839b6d87d",
+          "title": "Amazon Interview Experience (SDE 2 — Backend)",
+          "url": "https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d"
+        }
+      ],
+      "locations": [
+        "Not stated"
+      ],
+      "occurrences": [
+        {
+          "reportId": "medium-c01839b6d87d",
+          "date": "2026-07-26",
+          "dateBasis": "publication",
+          "location": "Not stated",
+          "evidence": "Round 4: System Design — HLD (60 Minutes). Topic: Ticketmaster System.",
+          "reportedQuestion": "Design a Ticketmaster-style ticket-booking system.",
+          "reportedTopic": "System design / Booking",
+          "sourceRound": "Round 4: System Design — HLD (60 Minutes)",
+          "roundMappingNote": "Four onsite rounds explicitly numbered after a separately described OA; no offset."
         }
       ]
     },
@@ -17613,6 +18451,42 @@
           "reportedQuestion": "Design e-commerce order validation for payment methods, order information and delivery details, reporting validation failures before downstream processing.",
           "reportedTopic": "Low-level design",
           "sourceRound": "Round 4",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        }
+      ]
+    },
+    {
+      "id": "r4-spotify-playlist-song-queue-design",
+      "round": 4,
+      "question": "Design Spotify with particular focus on playlist and song-queue management.",
+      "topic": "System design / Music streaming",
+      "frequency": 1,
+      "dates": [
+        {
+          "date": "2026-01-03",
+          "basis": "publication"
+        }
+      ],
+      "sources": [
+        {
+          "id": "leetcode-7464207",
+          "title": "Amazon SDE-2 Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/"
+        }
+      ],
+      "locations": [
+        "Bangalore, India"
+      ],
+      "occurrences": [
+        {
+          "reportId": "leetcode-7464207",
+          "date": "2026-01-03",
+          "dateBasis": "publication",
+          "location": "Bangalore, India",
+          "evidence": "Round 4 (HLD): design problem was Design Spotify and he was mainly interested in playlist and song queue management.",
+          "reportedQuestion": "Design Spotify with particular focus on playlist and song-queue management.",
+          "reportedTopic": "System design / Music streaming",
+          "sourceRound": "Round 4 (HLD)",
           "roundMappingNote": "Source final-loop position; see quoted evidence."
         }
       ]
@@ -18260,11 +19134,15 @@
       "round": 4,
       "question": "Find the time for all reachable oranges to rot.",
       "topic": "Graphs / Multi-source BFS",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
         {
           "date": "2026-01-08",
           "basis": "publication"
+        },
+        {
+          "date": "2026-01",
+          "basis": "interview"
         }
       ],
       "sources": [
@@ -18272,6 +19150,11 @@
           "id": "leetcode-7477684",
           "title": "Amazon || SDE - 2 || 3 YOE || Accepted offer",
           "url": "https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/"
+        },
+        {
+          "id": "leetcode-7554515",
+          "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/"
         }
       ],
       "locations": [
@@ -18288,6 +19171,17 @@
           "reportedTopic": "Graphs / Multi-source BFS",
           "sourceRound": "Bar raiser",
           "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "reportId": "leetcode-7554515",
+          "date": "2026-01",
+          "dateBasis": "interview",
+          "location": "Not stated",
+          "evidence": "Round 4 - BarRaiser: Two DSA questions were asked ... Questions were standard medium problems like rotten oranges and level order traversal printing of a tree.",
+          "reportedQuestion": "Solve Rotting Oranges and dry-run the working code on the supplied input.",
+          "reportedTopic": "Graphs / Multi-source BFS",
+          "sourceRound": "Round 4 - BarRaiser",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
         }
       ]
     },
@@ -19108,8 +20002,12 @@
       "round": 4,
       "question": "Print a binary tree in level order.",
       "topic": "Trees / Traversal",
-      "frequency": 1,
+      "frequency": 2,
       "dates": [
+        {
+          "date": "2026-01",
+          "basis": "interview"
+        },
         {
           "date": "2025-06-10",
           "basis": "publication"
@@ -19117,15 +20015,32 @@
       ],
       "sources": [
         {
+          "id": "leetcode-7554515",
+          "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+          "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/"
+        },
+        {
           "id": "leetcode-6763561",
           "title": "Amazon | SDE 2 | Bangalore",
           "url": "https://leetcode.com/discuss/post/6763561/"
         }
       ],
       "locations": [
-        "Bangalore, India"
+        "Bangalore, India",
+        "Not stated"
       ],
       "occurrences": [
+        {
+          "reportId": "leetcode-7554515",
+          "date": "2026-01",
+          "dateBasis": "interview",
+          "location": "Not stated",
+          "evidence": "Round 4 - BarRaiser: Questions were standard medium problems like rotten oranges and level order traversal printing of a tree and some follow ups on the same.",
+          "reportedQuestion": "Print a tree in level order and dry-run the working code on the supplied input.",
+          "reportedTopic": "Trees / BFS",
+          "sourceRound": "Round 4 - BarRaiser",
+          "roundMappingNote": "Source final-loop position; see quoted evidence."
+        },
         {
           "reportId": "leetcode-6763561",
           "date": "2025-06-10",
@@ -20776,6 +21691,50 @@
       ]
     },
     {
+      "id": "medium-c01839b6d87d",
+      "url": "https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d",
+      "retrievedVia": "https://dheeraj-bhagchandani.medium.com/amazon-interview-experience-sde-2-backend-c01839b6d87d",
+      "title": "Amazon Interview Experience (SDE 2 — Backend)",
+      "publishedDate": "2026-07-26",
+      "interviewDate": null,
+      "date": "2026-07-26",
+      "dateBasis": "publication",
+      "dateEvidence": "Original publication metadata: 2026-07-26T05:59:29.753Z. January 2026 refers to application; April 2026 refers to OA. Final-loop dates are not disclosed.",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "I'll share my Amazon SDE 2 interview journey. After the OA ... selected for the onsite interview rounds ... final decision was made after completing all four interviews.",
+      "questions": [
+        {
+          "round": 3,
+          "sourceRound": "Round 3: System Design — LLD (60 Minutes)",
+          "roundMappingNote": "Four onsite rounds explicitly numbered after a separately described OA; no offset.",
+          "key": "design-parking-lot",
+          "question": "Design a parking lot system in a low-level design interview.",
+          "topic": "Low-level design / Parking",
+          "evidence": "Round 3: System Design — LLD (60 Minutes). Topic: Parking Lot System.",
+          "date": "2026-07-26",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4: System Design — HLD (60 Minutes)",
+          "roundMappingNote": "Four onsite rounds explicitly numbered after a separately described OA; no offset.",
+          "key": "design-ticket-booking",
+          "question": "Design a Ticketmaster-style ticket-booking system.",
+          "topic": "System design / Booking",
+          "evidence": "Round 4: System Design — HLD (60 Minutes). Topic: Ticketmaster System.",
+          "date": "2026-07-26",
+          "dateBasis": "publication"
+        }
+      ],
+      "sourceCaveat": "R1 supplies only String + Two Pointers and R2 only Graph, with difficulty labels. These are not specific questions; the two generic LPs per round and OA are omitted.",
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-2026"
+      ]
+    },
+    {
       "id": "leetcode-8457154",
       "url": "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
       "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
@@ -22193,6 +23152,39 @@
       ]
     },
     {
+      "id": "medium-b1f8b0a69de5",
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "retrievedVia": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "title": "Amazon SDE-2 Interview experience-Selected",
+      "publishedDate": "2026-02-05",
+      "interviewDate": null,
+      "date": "2026-02-05",
+      "dateBasis": "publication",
+      "dateEvidence": "Original publication metadata: 2026-02-05T14:19:37.946Z. Interview month not supplied.",
+      "location": "India",
+      "role": "SDE II",
+      "stageEvidence": "This is for Amazon India SDE-2 (L5) level ... After I cleared the OA, onsite invites were sent ... HLD+HM round ... got the offer after 3 days of last interview.",
+      "questions": [
+        {
+          "round": 4,
+          "sourceRound": "HLD+HM round / overview item 6",
+          "roundMappingNote": "Only the fourth final-loop position is recovered. Overview explicitly lists recruiter, OA, DSA, DSA, LLD, HLD+HM; detailed onsite sections list DSA-1, LLD, DSA-2, HLD+HM. These conflict on early ordering but both place HLD+HM fourth after OA. No conflicting earlier position is assigned.",
+          "key": "company-learning-management-system",
+          "question": "Design a learning-management system for companies, covering database choice, search, content upload/download, security and persistent progress tracking.",
+          "topic": "System design / Learning platform",
+          "evidence": "HLD+HM round: Asked to design LMS system for companies ... deep dives on DB choice, handling search using elastic search, presigned URLs for better upload/download of content, security aspects and persistent connections for tracking progress.",
+          "date": "2026-02-05",
+          "dateBasis": "publication"
+        }
+      ],
+      "sourceCaveat": "Previously wholly excluded in 2026-h1.json because early round order conflicts. Only the independently unambiguous fourth round is recovered. Restaurant token-management LLD and DSA descriptions remain excluded; see this slice's exclusion entry.",
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-2026"
+      ]
+    },
+    {
       "id": "leetcode-7710904",
       "url": "https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
       "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
@@ -22250,6 +23242,69 @@
       "aliases": [],
       "slices": [
         "2026-h1"
+      ]
+    },
+    {
+      "id": "leetcode-7515006",
+      "url": "https://leetcode.com/discuss/post/7515006/amazon-sde-2-interview-experience-by-ano-ov3n/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7515006/",
+      "title": "Amazon SDE 2 Interview Experience",
+      "publishedDate": "2026-01-22",
+      "interviewDate": null,
+      "date": "2026-01-22",
+      "dateBasis": "publication",
+      "dateEvidence": "Original browser displays Jan 22, 2026; interview month is not stated.",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Amazon SDE 2 Interview Experience: Round 1 - DSA ... Passed; Round 2 - LLD ... Passed; Round 3 - HLD ... Rejected; Verdict - Rejected.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 - DSA",
+          "roundMappingNote": "Author numbers the DSA, LLD and HLD interviews 1–3 and reports rejection after HLD; no assessment or screen is included in this sequence. No fourth round is invented.",
+          "key": "least-frequent-login-user-7515006",
+          "question": "Process user logins and return the last user with the lowest login frequency, in a problem reported as similar to LFU Cache.",
+          "topic": "Data structures / Frequency tracking",
+          "evidence": "Round 1 - DSA: Problem similar to LFU Cache (LC Hard) (User logs in and we have to return the last user with lowest frequency of login).",
+          "date": "2026-01-22",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 - LLD",
+          "key": "student-course-registration-lld",
+          "question": "Design a student registration system that supports enrolling in courses.",
+          "topic": "Low-level design / Registration",
+          "evidence": "Round 2 - LLD: Design a Registration system for students where they can enroll for courses. Discussed requirments and edge cases.",
+          "date": "2026-01-22",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 - LLD follow-up",
+          "key": "weekly-course-schedule-overlap",
+          "question": "Detect timetable overlaps when courses meet on selected weekdays and each course can have different start and end times on different days.",
+          "topic": "Intervals / Scheduling",
+          "evidence": "Round 2 ... Follow up - what if each course has a different timing for each day and some courses may happen on only a few days of the week, how will I calculate overlap.",
+          "date": "2026-01-22",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 - HLD",
+          "key": "design-url-shortener",
+          "question": "Design a URL shortener, including requirements, APIs, database schema and architecture; justify the database choice and avoid identifier collisions without a Redis counter.",
+          "topic": "System design / URL shortening",
+          "evidence": "Round 3 - HLD: Design url shortener. FR, NFR, API design, DB schema, High level design ... Asked me to figure out a way to avoid collisions without using redis counter ... Asked me why I used Postgress DB.",
+          "date": "2026-01-22",
+          "dateBasis": "publication"
+        }
+      ],
+      "sourceCaveat": "The LFU-like login problem is retained with its own key rather than assumed identical to LFU Cache. Generic LP questions and author-proposed solutions are omitted. No location or interview month is inferred.",
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-2026"
       ]
     },
     {
@@ -22337,6 +23392,152 @@
       "aliases": [],
       "slices": [
         "2026-h1"
+      ]
+    },
+    {
+      "id": "leetcode-7464207",
+      "url": "https://leetcode.com/discuss/post/7464207/amazon-sde-2-interview-experience-by-ano-qm47/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7464207/",
+      "title": "Amazon SDE-2 Interview Experience",
+      "publishedDate": "2026-01-03",
+      "interviewDate": null,
+      "date": "2026-01-03",
+      "dateBasis": "publication",
+      "dateEvidence": "Original browser displays Jan 03, 2026. The author says rounds happened on a weekend, offer call on Monday and letter after three weeks, but does not identify the interview month/year; publication fallback is used, not a January interview claim.",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "Sharing my interview experience for Amazon SDE-2 role in Bangalore. Round 1 (Problem Solving), Round 2 (Bar Raiser), Round 3 (LLD), Round 4 (HLD); all rounds happpened on same day; offering me SDE-2.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 (Problem Solving)",
+          "roundMappingNote": "Author explicitly numbers four same-day interview rounds, ending with the hiring-manager HLD round; no screening offset.",
+          "key": "new-managers-after-manager-leave",
+          "question": "Given a strict employee–manager tree, count the new managers formed when a manager goes on leave and their immediate reportees become managers; solve first for a binary tree, then for an n-ary tree.",
+          "topic": "Trees",
+          "evidence": "Round 1: Given employee manager relationship find how many new managers are formed if current manager goes on leave ... immediate reportees become new manager ... First I was asked to solve for binary tree then extended for N-ary Tree.",
+          "date": "2026-01-03",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 1,
+          "sourceRound": "Round 1 (Problem Solving)",
+          "key": "longest-consecutive-sequence",
+          "question": "Find the longest consecutive sequence in an unsorted array.",
+          "topic": "Arrays / Hashing",
+          "evidence": "Round 1 (Problem Solving): 2. Longest consecutive sequence [linked to leetcode.com/problems/longest-consecutive-sequence/description/].",
+          "date": "2026-01-03",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 (Bar Raiser)",
+          "key": "find-median-from-data-stream",
+          "question": "Maintain and return the median of a stream of numbers.",
+          "topic": "Heaps / Data streams",
+          "evidence": "Round 2 (Bar Raiser): 1 DSA problem was asked: Find median in data stream (question was not directly asked they gave some long problem statement which essentially boiled down to this).",
+          "date": "2026-01-03",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 (LLD)",
+          "key": "finance-app-lld-7464207",
+          "question": "Design a finance application: gather requirements and define classes and APIs, with some high-level design discussion.",
+          "topic": "Low-level design / Finance",
+          "evidence": "Round 3 (LLD): problem statement was design finance app ... asked API design ... expectations was to come up with classes and API design and also some HLD.",
+          "date": "2026-01-03",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 (HLD)",
+          "key": "spotify-playlist-song-queue-design",
+          "question": "Design Spotify with particular focus on playlist and song-queue management.",
+          "topic": "System design / Music streaming",
+          "evidence": "Round 4 (HLD): design problem was Design Spotify and he was mainly interested in playlist and song queue management.",
+          "date": "2026-01-03",
+          "dateBasis": "publication"
+        }
+      ],
+      "sourceCaveat": "Finance-app functionality and the extra requirements are not disclosed; the report-specific key prevents conflation with a specific payments or trading problem. Generic LP discussions are omitted.",
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-2026"
+      ]
+    },
+    {
+      "id": "leetcode-7554515",
+      "url": "https://leetcode.com/discuss/post/7554515/amazon-sde-2-jan-2026-offer-interview-ex-2gkm/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7554515/",
+      "title": "Amazon SDE 2 | Jan 2026 | Offer | Interview Experience",
+      "publishedDate": "2026-02-05",
+      "interviewDate": "2026-01",
+      "date": "2026-01",
+      "dateBasis": "interview",
+      "dateEvidence": "Title: Jan 2026. Body: Amazon had first reached out in November but scheduled the rounds in January. Original browser publication: Feb 05, 2026.",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Title: Amazon SDE 2; Round 1 - LLD; Round 2 - DSA; Round 3 - HLD; Round 4 - BarRaiser; Final Verdict: Offer.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 - LLD",
+          "roundMappingNote": "Original explicitly numbers four interview rounds; no assessment or screen is included in this numbering.",
+          "key": "customer-issue-resolution-lld",
+          "question": "Design a customer issue resolution system using classes, interfaces, design patterns and enums; working code is not required.",
+          "topic": "Low-level design / Customer support",
+          "evidence": "Round 1 - LLD: I was asked to design a Customer Issue Resolution System. Working code was not required and only the classes, interface, design patterns, enums etc was expected.",
+          "date": "2026-01",
+          "dateBasis": "interview"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 - DSA",
+          "key": "n-queens",
+          "question": "Solve the N-Queens problem.",
+          "topic": "Backtracking",
+          "evidence": "Round 2 - DSA: Second question was - N Queens problem.",
+          "date": "2026-01",
+          "dateBasis": "interview"
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 - HLD",
+          "key": "social-media-friends-feed",
+          "question": "Design a scalable social-media posting and friends-feed service for users with more than 2,000 friends, supporting high read and write throughput.",
+          "topic": "System design / Social media",
+          "evidence": "Round 3 - HLD: one can have friends (2k+) and the users can create a post and friends can see the feed generated from friend's posts. Focus was on scalability and high read/write throughput.",
+          "date": "2026-01",
+          "dateBasis": "interview"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 - BarRaiser",
+          "key": "rotting-oranges",
+          "question": "Solve Rotting Oranges and dry-run the working code on the supplied input.",
+          "topic": "Graphs / Multi-source BFS",
+          "evidence": "Round 4 - BarRaiser: Two DSA questions were asked ... Questions were standard medium problems like rotten oranges and level order traversal printing of a tree.",
+          "date": "2026-01",
+          "dateBasis": "interview"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 - BarRaiser",
+          "key": "binary-tree-level-order",
+          "question": "Print a tree in level order and dry-run the working code on the supplied input.",
+          "topic": "Trees / BFS",
+          "evidence": "Round 4 - BarRaiser: Questions were standard medium problems like rotten oranges and level order traversal printing of a tree and some follow ups on the same.",
+          "date": "2026-01",
+          "dateBasis": "interview"
+        }
+      ],
+      "sourceCaveat": "R2's first string/heap/sliding-window problem is explicitly not remembered. Generic LP discussions and unspecified tree follow-ups are omitted. CodingKaro and interviewexperiences.in repeat this account and are discovery only, not separate candidate reports.",
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-2026"
       ]
     },
     {
@@ -23052,6 +24253,70 @@
       ]
     },
     {
+      "id": "leetcode-7379756",
+      "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/",
+      "title": "Amazon | SDE 2 | 2025 | Interview exp",
+      "publishedDate": "2025-11-28",
+      "interviewDate": null,
+      "date": "2025-11-28",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "'Amazon SDE 2 Interview Exp'; Round1 LLD f2f, Round2 DSA f2f, 'then next two round were virtual', Round3 HLD, Round4 Bar Raiser; 'would love to hear how your loop turned out'. Original publication Nov28; Nov29 is update.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1 — LLD (Rate Limiter)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset.",
+          "key": "rate-limiter-lld-basic",
+          "question": "Design a rate limiter at low level, with some high-level design discussion; specific requirements are not supplied.",
+          "topic": "Low-level design",
+          "evidence": "Round 1 — LLD (Rate Limiter) : f2f; it was pushed little bit toward HLD part as well",
+          "date": "2025-11-28",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2 — DSA (Non–Bar Raiser)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset.",
+          "key": "most-played-guest-song",
+          "question": "Given each guest's song list and play counts, identify the song most played by the guests for a DJ to play.",
+          "topic": "Arrays / Hashing",
+          "evidence": "Round 2 — DSA (Non–Bar Raiser): Song recommendation system. Guest will come with list of song and freq of play count. DJ has to play song which is most played by guests",
+          "date": "2025-11-28",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "Round 3 — HLD",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset.",
+          "key": "vending-machine-aggregation-system",
+          "question": "Design an aggregation system for vending machines.",
+          "topic": "System design",
+          "evidence": "Round 3 — HLD (Aggregation System for Vending Machines). Good understanding after clarifications, correct data model, correct aggregation logic.",
+          "date": "2025-11-28",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4 — Bar Raiser (Coding + LP)",
+          "roundMappingNote": "Original final-loop numbering retained; no screening offset.",
+          "key": "character-add-remove-min-max",
+          "question": "Design a character data structure supporting add(c), remove(c), getMaxChar(), and getMinChar(); exact max/min semantics and complexity requirements are not supplied.",
+          "topic": "Data structures",
+          "evidence": "Round 4 — Bar Raiser (Coding + LP). Coding question: Design a data structure with: add(c), remove(c), getMaxChar(), getMinChar().",
+          "date": "2025-11-28",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-late-2025"
+      ]
+    },
+    {
       "id": "reddit-1p8fyxx",
       "url": "https://www.reddit.com/r/leetcode/comments/1p8fyxx/",
       "retrievedVia": "https://embed.reddit.com/r/leetcode/comments/1p8fyxx/",
@@ -23127,6 +24392,48 @@
       "eligibility": "External-hire context reported; candidate account not independently authenticated.",
       "slices": [
         "reddit"
+      ]
+    },
+    {
+      "id": "leetcode-7311674",
+      "url": "https://leetcode.com/discuss/post/7311674/amazon-sde-2-interview-experience-by-ano-2mnf/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7311674/amazon-sde-2-interview-experience-by-ano-2mnf/",
+      "title": "Amazon SDE 2 | Interview experience",
+      "publishedDate": "2025-10-29",
+      "interviewDate": null,
+      "date": "2025-10-29",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Title: Amazon SDE 2 | Interview experience. Body: 'Super Day: Round 1 ... Round 2: System Design LLD'. Super Day establishes the final-loop event; only its first two rounds are disclosed.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1",
+          "roundMappingNote": "Source explicitly numbers the Super Day interviews; no OA or screening offset.",
+          "key": "decode-ways",
+          "question": "Count the valid decodings of a digit string (Decode Ways).",
+          "topic": "Dynamic programming",
+          "evidence": "Super Day: Round 1: https://leetcode.com/problems/decode-ways/description/",
+          "date": "2025-10-29",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2: System Design LLD",
+          "roundMappingNote": "Source explicitly numbers the Super Day interviews; no OA or screening offset.",
+          "key": "design-rate-limiter",
+          "question": "Design a rate limiter, including rate limiting across multiple application instances.",
+          "topic": "Low-level design / Rate limiting",
+          "evidence": "Round 2: System Design LLD - Design rate limiter asked various questions like what will happen if system is distributed. There are various services that we need to limit and each can have different rate limit value.",
+          "date": "2025-10-29",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-late-2025"
       ]
     },
     {
@@ -23251,6 +24558,59 @@
       "aliases": [],
       "slices": [
         "reddit"
+      ]
+    },
+    {
+      "id": "jointaro-3c92609e",
+      "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/",
+      "retrievedVia": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/",
+      "title": "Amazon Software Development Engineer (SDE) II Interview Experience - Austin, Texas",
+      "publishedDate": "2025-10-12",
+      "interviewDate": null,
+      "date": "2025-10-12",
+      "dateBasis": "publication",
+      "location": "Austin, Texas, United States",
+      "role": "SDE II",
+      "stageEvidence": "SDE II experience page dated October12,2025: 'After completing this, I was invited to a phone screen'; 'Within a few days, I was invited to the virtual onsite'; 'I had 4 rounds of interviews'. No explicit interview date; page/report date used.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "Round 1",
+          "roundMappingNote": "Source separately labels the phone screen and restarts numbered virtual-onsite rounds at 1; phone-screen question excluded.",
+          "key": "insert-and-merge-intervals-combination",
+          "question": "Solve a problem combining Insert Interval and Merge Intervals; the exact combined variant is not supplied.",
+          "topic": "Arrays / Intervals",
+          "evidence": "Interview Questions: Phone screen: Variation of Meeting Rooms II; Round 1: Combination of Insert and Merge Intervals",
+          "date": "2025-10-12",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 2,
+          "sourceRound": "Round 2",
+          "roundMappingNote": "Original separately numbered virtual-onsite loop retained; screening excluded.",
+          "key": "min-stack",
+          "question": "Design a stack that supports retrieving the minimum element (Min Stack).",
+          "topic": "Stacks",
+          "evidence": "Round 2: Min Stack",
+          "date": "2025-10-12",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 4,
+          "sourceRound": "Round 4: System Design",
+          "roundMappingNote": "Original separately numbered virtual-onsite loop retained; screening excluded.",
+          "key": "shopping-history-recommendation-system",
+          "question": "Build a recommendation system based on users' Amazon shopping history.",
+          "topic": "System design / Recommendations",
+          "evidence": "Round 4: System Design - Build a recommendation system based on users' Amazon shopping history.",
+          "date": "2025-10-12",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-late-2025"
       ]
     },
     {
@@ -23454,6 +24814,48 @@
       "aliases": [],
       "slices": [
         "2025-h2"
+      ]
+    },
+    {
+      "id": "frontendlead-2619",
+      "url": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619",
+      "retrievedVia": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619",
+      "title": "Amazon SDE II interview",
+      "publishedDate": "2025-09-13",
+      "interviewDate": null,
+      "date": "2025-09-13",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "'Amazon'; 'Level: [What level you were interviewing for] SDE II'; 'Four rounds of interview finished in one day, each round was a combination of half algorithm and half behaviral.' Candidate description retained; unused example template below it excluded.",
+      "questions": [
+        {
+          "round": 1,
+          "sourceRound": "first round",
+          "roundMappingNote": "Original numbering of four same-day interviews retained; no screening round included.",
+          "key": "edit-distance",
+          "question": "Compute the edit distance between two strings.",
+          "topic": "Dynamic programming",
+          "evidence": "Four rounds of interview finished in one day ... 1. first round: edit distance",
+          "date": "2025-09-13",
+          "dateBasis": "publication"
+        },
+        {
+          "round": 3,
+          "sourceRound": "third round",
+          "roundMappingNote": "Original numbering of four same-day interviews retained; no screening round included.",
+          "key": "number-of-islands",
+          "question": "Count the islands in a binary grid.",
+          "topic": "Graphs / Grid traversal",
+          "evidence": "3. third round: find how many island (on leetcode)",
+          "date": "2025-09-13",
+          "dateBasis": "publication"
+        }
+      ],
+      "eligibility": "External-hire context reported; candidate account not independently authenticated.",
+      "aliases": [],
+      "slices": [
+        "expansion-late-2025"
       ]
     },
     {
@@ -29397,6 +30799,320 @@
         "Behavioral principle labels, unspecified GenAI questions, vague BFS/knapsack/Dijkstra descriptions and unspecified follow-ups are excluded rather than reconstructed.",
         "DevBrainiac three-years-experience article repeats the distinctive sequence of LeetCode8409230 with extra solutions; both kept outside strict counts because final-loop stage is uncertain. Last Updated is not an interview date.",
         "Medium author Jordan M links many other interview write-ups. First-person wording alone does not independently establish authenticity; no identical earlier original was found in this slice."
+      ]
+    },
+    {
+      "slice": "expansion-2026",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon \"SDE 2\" \"January\" \"2026\" interview experience",
+        "Amazon \"SDE II\" \"February\" \"2026\" system design interview",
+        "site:leetcode.com/discuss \"Amazon\" \"SDE2\" after:2026-01-01 before:2026-02-01",
+        "site:leetcode.com/discuss \"Amazon\" \"SDE 2\" after:2026-02-01 before:2026-03-01",
+        "Amazon \"L5\" \"January 2026\" interview",
+        "site:leetcode.com/discuss Amazon SDE2 after:2026-01-01 before:2026-03-01",
+        "site:leetcode.com/discuss Amazon \"SDE II\" after:2026-01-01 before:2026-03-01",
+        "Amazon \"SDE-2\" \"January 2026\" interview",
+        "Amazon \"SDE2\" \"February 2026\" interview",
+        "Amazon \"L5\" interview system design after:2026-01-01 before:2026-03-01",
+        "\"Amazon Interview Experience\" \"Dheeraj Bhagchandani\"",
+        "Amazon \"SDE2\" \"Jan 2026\"",
+        "Amazon \"SDE 2\" \"Feb 2026\"",
+        "Amazon \"SDE-II\" interview after:2026-01-01 before:2026-03-01",
+        "Amazon \"system design\" interview \"2026\" \"February\" -site:linkedin.com -site:reddit.com",
+        "\"Amazon\" \"SDE2\" \"Feb\" \"2026\" interview experience -site:reddit.com -site:linkedin.com",
+        "\"Amazon\" \"SDE 2\" \"Jan\" \"2026\" interview experience -site:reddit.com -site:linkedin.com",
+        "\"Amazon SDE 2\" \"Jan 2026\" \"Offer\" leetcode",
+        "\"Amazon\" \"50+ interviews\" \"Customer Issue\"",
+        "Discovery index: https://www.iamunemployed.xyz/archives/amazon (121 entries; oldest displayed March 3, 2026)",
+        "Discovery index: https://www.codingkaro.in/jobs-internships/leetcode-interview-experience/Amazon (newest February 13, 2026; first 20 of 284 entries traversed with Show More, crossing January 3 into December 2025)",
+        "Recovery: re-read 2026 exclusion ledgers and originals 8498190, 8474064, 8401367, 8324674, 7709868, 7648258, 7910016, 8290590, and Medium b1f8b0a69de5"
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/8498190/amazon-interview-experience-sde2-august-m4s5r/",
+          "reason": "Recovery recheck: original read HTTP403; public r.jina.ai rendering and original browser both say Post not exist. Archive has only an OA preview. No final-loop body recovered; prior 2026-h2 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/8474064/amazon-l5-sde-2-will-i-get-offer-by-anon-8lf1/",
+          "reason": "Recovery recheck: original read HTTP403; public rendering and original browser both say Post not exist. Archive summary establishes loop completion but not questions. Prior 2026-h2 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/8401367/amazon-sde-ii-interview-experience-by-an-9llv/",
+          "reason": "Recovery recheck: public rendering and original browser still say Sign in to view this content. Did not authenticate or bypass; prior 2026-h2 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/8324674/amazon-sde2-offer-by-anonymous_user-1r1t/",
+          "reason": "Recovery recheck: public original rendering still says Post not exist. Archive preview is incomplete; prior 2026-h1 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7709868/amazon-sde-2-interview-experience-prime-xq7rx/",
+          "reason": "Recovery recheck: rendering still says Sign in to view this content. No gate bypass; prior 2026-h1 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7648258/amazon-interview-experience-sde-2-hydera-smze/",
+          "reason": "Recovery recheck: rendering still says Sign in to view this content. No gate bypass; prior 2026-h1 exclusion remains."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+          "reason": "Full original rendering and browser reread. Headings are DSA, LLD, HLD, Bar raiser, while body explicitly says first day only HLD and DSA were taken. No numbered final-loop positions or author clarification resolves the sequence; retains prior exclusion rather than assigning positions by heading order."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+          "reason": "Full reread still gives only two onsite interviews (HLD Google Drive/Dropbox and DSA Bus Routes) and two future interviews. No ordinals or chronology for the two completed rounds; prior exclusion remains."
+        },
+        {
+          "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+          "reason": "PARTIAL recovery only: HLD+HM is included as R4. Early rounds remain excluded: numbered process overview lists DSA, DSA, LLD, HLD+HM; detailed sections list DSA-1, LLD, DSA-2, HLD+HM; text says Initially LLD and DSA-1 round were scheduled. Restaurant token-management LLD cannot be safely assigned an early position. Coding topics/unspecified variants and generic LP labels are not invented questions."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7560183/amazon-sde-2-compensation-india-2026-by-quh4j/",
+          "reason": "Full original rendering: February 7, 2026 SDE2 compensation only. No round-specific questions in the report."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7576550/",
+          "reason": "Rediscovered February 13 full-loop report; already included as leetcode-7576550 in 2026-h1.json. No duplicate count."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7477684/",
+          "reason": "Rediscovered January 8 accepted-offer report; already included as leetcode-7477684 in 2026-h1.json. No duplicate count."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
+          "reason": "Search rediscovered February interview report already included as leetcode-7710904 in 2026-h1.json."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7505387/",
+          "reason": "January 18 CodingKaro discovery is explicitly Amazon SDE 2 OA only; no final-loop questions."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7471430/",
+          "reason": "January 6 CodingKaro discovery explicitly SDE I OA, wrong level and stage."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7470581/",
+          "reason": "January 5 CodingKaro discovery explicitly an Amazon OA problem, not a final-loop report."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7530030/",
+          "reason": "January 27 index entry explicitly SDE intern, excluded wrong level."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7577291/",
+          "reason": "February 13 index entry explicitly SDE intern, excluded wrong level."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7563911/",
+          "reason": "February 8 index entry explicitly intern virtual-onsite experience, excluded wrong level."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7563011/",
+          "reason": "February 8 index entry explicitly Software Development Engineer I, excluded wrong level."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7555386/",
+          "reason": "February 5 index entry explicitly SDE 1 AUTA, excluded wrong level."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7554743/",
+          "reason": "February 5 index entry explicitly SDE-1, excluded wrong level."
+        },
+        {
+          "url": "https://interviewexperiences.in/experience/amazon/amazon-sde-2-jan-2026-offer-interview-experience",
+          "reason": "Discovery copy of accepted LeetCode7554515, not an independent report. Full experience is sign-in gated; public preview and title led to the publicly readable original through CodingKaro. No authentication bypass."
+        },
+        {
+          "url": "https://www.codingkaro.in/jobs-internships/leetcode-interview-experience/Amazon",
+          "reason": "Discovery index only. Followed original links for all new qualifying January/February SDE2 candidates; indexed summaries/questions are not independent candidate counts."
+        },
+        {
+          "url": "https://www.iamunemployed.xyz/archives/amazon",
+          "reason": "Discovery only; inspected oldest boundary still March 3, 2026. Does not provide January/February coverage."
+        },
+        {
+          "url": "https://learnyard.com/interviews/loops/amazon-sde2",
+          "reason": "Public page is an AI mock-interview loop built from six claimed experiences, not a candidate original. January2026 testimonial does not expose its complete source or round-specific question evidence; View all 6 leads to general mock-loop page, not originals."
+        },
+        {
+          "url": "https://learnyard.com/interviews",
+          "reason": "Followed View all 6 source link from mock loop; page offers generated mock interviews and no cited candidate originals. Not source evidence."
+        },
+        {
+          "url": "https://takeuforward.org/interview/popular-companies/amazon",
+          "reason": "Search surfaced a possible SDE-II index entry, but direct read and browser rendered navigation/filter shell without candidate reports or original links. No evidence extracted."
+        },
+        {
+          "url": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619",
+          "reason": "Full original Discourse account is dated September 13, 2025, not2026. Handed to expansion-2025 owner for review; not duplicated in this slice."
+        }
+      ],
+      "limitations": [
+        "Bounded gap pass, not exhaustive: rechecked named inaccessible sources and selected ambiguous 2026 exclusions; searched January/February role spellings SDE2, SDE 2, SDE-2, SDE II, SDE-II and L5, including design terms and date operators.",
+        "Some web_search results ignored or relaxed exact role/month constraints and returned irrelevant results. Browser Google fallback produced useful direct discovery before a bot challenge; no CAPTCHA was solved. Later web_search calls also encountered provider challenges.",
+        "January/February gap was materially improved by CodingKaro's public index: first 20 entries were traversed, including all displayed January/February entries down to January 3 before crossing into December2025. Its newest entry is February13, so February14–28 remains dependent on search discovery rather than an archive traversal.",
+        "Original LeetCode bodies and browser publication dates, not aggregator timestamps, ground accepted LeetCode reports. Medium original publication metadata grounds its dates. Dheeraj's January application date is not treated as an interview date; January3 publication is likewise not a claim that interviews happened in January.",
+        "The three specifically requested inaccessible originals remain unavailable or authentication-gated after reader, public-rendering and original-browser attempts. No authentication/paywall bypass was attempted, and preview fragments do not substitute for exact final-loop mapping.",
+        "Only Hissan's fourth HLD+HM round has a mapping independent of contradictory early order; other early questions stay excluded. No generic LP labels, forgotten question variants, undisclosed follow-ups or missing locations were invented.",
+        "New report IDs/URLs and distinctive questions were compared against existing research. Discovered index copies are not independent reports. All question details are candidate self-reports, not independently verified records from Amazon."
+      ]
+    },
+    {
+      "slice": "expansion-late-2025",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE2 interview experience October November December 2025",
+        "site:leetcode.com/discuss/post/ amazon \"2025\" \"October\" \"SDE\"",
+        "site:leetcode.com/discuss/post/ amazon \"2025\" \"November\" \"SDE\"",
+        "site:leetcode.com/discuss/post/ amazon \"2025\" \"December\" \"SDE\"",
+        "Google: site:leetcode.com/discuss amazon SDE2 October November December 2025",
+        "Google: Amazon \"SDE\" \"October\" \"2025\" interview",
+        "Google: Amazon \"SDE\" \"November\" \"2025\" interview",
+        "Google: Amazon \"SDE\" \"December\" \"2025\" interview",
+        "Google: Amazon \"SDE2\" after:2025-10-01 before:2026-01-01",
+        "Google: Amazon \"SDE-2\" \"Oct\" \"2025\"",
+        "Google: Amazon \"SDE II\" \"November\" \"2025\"",
+        "Google: Amazon \"L5\" \"December\" \"2025\" interview",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE\" after:2025-10-01 before:2026-01-01",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE2\" \"Nov\"",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE-2\" \"Dec\"",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE II\" \"Oct\"",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE 2\" after:2025-10-01 before:2026-01-01",
+        "Google: site:leetcode.com/discuss \"Amazon\" \"SDE II\" after:2025-10-01 before:2026-01-01",
+        "Google: Amazon \"SDE2\" \"September 2025\" interview",
+        "Google: site:linkedin.com/posts Amazon \"SDE2\" \"2025\" interview October November December (CAPTCHA)",
+        "web_search: \"Amazon\" \"SDE2\" \"2025\" \"interview\" \"November\"",
+        "web_search: \"Amazon\" \"SDE-2\" \"2025\" \"interview\" \"December\"",
+        "web_search: Amazon \"SDE II\" interview \"2025\" \"October\" blog",
+        "Traversed original links in LeetCode compilation 7355849 (published 2025-11-17), comparing linked IDs against existing reports and exclusions",
+        "Traversed Taro related SDE II experiences from 21bb31a1 to November 6 Vancouver/Bengaluru and October 12 Austin; Austin related links returned the same November reports and an out-of-window 2024 report",
+        "FrontendLead 2619 referred from concurrent 2026 recovery search; read original Discourse report"
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/7402617/amazon-sde-2-interview-experience-by-r1c-500b/",
+          "reason": "December9 publication is a verbatim repost of existing leetcode-6911864: identical bank background, May27 large-island interview, June17 issue-management/parking-lot rounds, June23 locker round, Bangalore/Fresh team and offer narrative. No new candidate count. Original interview dates are May–June2025, not December."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6408439/amazon-sde2-interview-question-by-anonym-ek0p/",
+          "reason": "Recovered original first-person February11,2025 body, correcting prior ledger's code-only access observation. R1 is OA, R2 has max-length subarray with endpoint difference k and max-product L-shaped matrix path, R3 is notification-content LLD. However, only two post-OA interviews are described and final-loop versus screening stage is not established. Expanded comment threads ask whether these were onsite rounds; no author confirmation found. Remains excluded on stage ambiguity, not lack of candidate body. November23 search snippet is not publication date."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7272101/usa-amazon-sde-ii-process-rejected-by-ma-qjsp/",
+          "reason": "Original October13,2025 NYC SDEII account recovered. Five onsite sections are grouped as Coding1, Coding2, ProblemSolving, SystemDesign, HiringManager, but overall chronological round positions are not established. Coding1/2 number interviews within a category rather than the whole loop. Do not assign the weight-limited road path, word decompositions, container filters, warehouse inventory design or LP questions to invented overall R1–4. Phone-screen furthest-building question is excluded screening."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6763561/amazon-sde-2-by-anonymous_user-6e4h/",
+          "reason": "Already counted as leetcode-6763561. Original page publication May20,2025/update June10; November23 search snippet did not establish a new late-period report."
+        },
+        {
+          "url": "https://medium.com/@pragadheeshwaran/what-went-wrong-in-my-amazon-sde-2-interview-and-what-you-can-learn-5fe81ce68195",
+          "reason": "Already investigated as medium-5fe81ce68195 and excluded by normalization adjudication for uncertain final-loop stage. Original rendered mirror says May10,2025, not October; no new evidence resolving stage ambiguity."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7337246/",
+          "reason": "Already counted as leetcode-7337246: November publication describes August interviews. No duplicate count."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7355849/amazon-interview-experiences-last-6-mont-cfv1/",
+          "reason": "November17 compilation, not candidate report. Browser recovered full linked list after read mirror returned only shell. Latest listed interviews were existing September originals; matching IDs and prior exclusions were not recounted."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7178524/amazon-sde2-all-dsa-asked-since-june-202-uywx/",
+          "reason": "Rediscovered existing aggregated question bank, not an independent candidate report; no duplicate count."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/abhay-singh-a64b89192_softwareengineering-programming-coding-activity-7487857283679559680-Ydop",
+          "reason": "Public original describes six process stages but no specific interview questions. December2025 words in search results were from unrelated recommended posts, not the candidate's post."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-united-states-june-11-2025-no-offer-positive-21bb31a1/",
+          "reason": "LRU-cache question is not mapped to a numbered round. November date in search snippet belongs to related Vancouver account, not this June11 report. Traversed related links instead."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-vancouver-british-columbia-november-6-2025-no-offer-neutral-31523d23/",
+          "reason": "November6 account describes recruiter reach-out, OA and rejection before interviews. No final-loop questions."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-bengaluru-karnataka-november-6-2025-no-offer-positive-b4b41a98/",
+          "reason": "November6 account gives only generic Binary Search and Trie topics; no specific question or numbered final-loop mapping."
+        },
+        {
+          "url": "https://www.jointaro.com/interviews/companies/amazon/experiences/software-development-engineer-sde-ii-austin-tx-october-12-2025-accepted-offer-positive-3c92609e/",
+          "reason": "Partial exclusion: Meeting RoomsII variant is explicitly phone screen; Round3 question is not remembered; LP questions are unspecified. Only R1/R2/R4 questions included."
+        },
+        {
+          "url": "https://discuss.frontendlead.com/t/amazon-sde-ii-interview/2619",
+          "reason": "Partial exclusion: R2 'step by step building a tree from 0' and R4 'make the tree has the bigest value when each level has different weight' lack enough specification to reconstruct a defensible question. Unused Google/TwoSum template below candidate description is not Amazon evidence."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/7379756/amazon-sde-2-interview-exp-by-anonymous_-ide4/",
+          "reason": "Partial exclusion: High Standards, Deliver Results, Bias for Action, Dive Deep, Earn Trust, Ownership, Customer Obsession and New Learning are labels only, not specific behavioral questions."
+        },
+        {
+          "url": "https://www.codelessgenie.com/blog/amazon-interview-experience-for-sde-2/",
+          "reason": "Direct HTTP520; public rendered mirror recovered article. Disclaimer explicitly says guide synthesizes patterns from 12 candidates in2023–2024; not a new first-person2025 loop."
+        },
+        {
+          "url": "https://www.hellointerview.com/experience/stories/cmeyawqgp006k08ade17zy88t",
+          "reason": "Rediscovered existing exclusion: SDEII success story mentioning December2025 start but no specific numbered interview questions."
+        }
+      ],
+      "limitations": [
+        "Bounded gap pass concentrated on October–December2025, with a newly discovered September report. Search coverage is not exhaustive; no December-dated final-loop questions were added.",
+        "Google browser search was used after web_search returned unrelated results or relaxed exact LeetCode constraints. Search-result dates were not treated as interview/publication evidence: November snippets led to original February/May reports and unrelated recommended content.",
+        "Google eventually returned an unusual-traffic CAPTCHA for the LinkedIn-specific query. No challenge, authentication or paywall was bypassed. Independent blog/LinkedIn coverage remains limited.",
+        "Public original browser pages supplied hydrated LeetCode content where direct reads returned HTTP403 or an incomplete shell. Original page dates, not search snippets, were retained. Medium and CodelessGenie public rendered mirrors were used after original access errors.",
+        "Publication/report-page date is used when the author gives no interview date; locations are Not stated unless explicitly supplied. Publication in a month does not establish interviews occurred in that month.",
+        "Compilation7355849 repeated existing originals. Unrelated live Trending links were not treated as compilation evidence. Existing reports were not exhaustively reprocessed.",
+        "November7379756 character-data-structure APIs do not specify complexity or exact max/min semantics; no All O(1) identity was inferred. Generic LP labels, unnamed problems and ambiguous round positions were excluded.",
+        "Taro presents candidate narratives on publicly readable experience pages. These are accepted as hosted candidate accounts, not independently authenticated employment records; the displayed date is conservatively labeled publication rather than an inferred interview date."
+      ]
+    },
+    {
+      "slice": "expansion-source-audit",
+      "searchedAt": "2026-09-13",
+      "queries": [
+        "Amazon SDE II interview 2025 Canada Germany UK experience",
+        "\"Amazon\" \"SDE2\" \"2025\" \"London\"",
+        "\"Amazon\" \"SDE II\" \"2025\" \"interview\" \"Canada\"",
+        "\"Amazon\" \"SDE 2\" \"2025\" \"Germany\" interview",
+        "\"SHIVAM SOMANI\" \"Amazon\" \"Round 1\"",
+        "\"SHIVAM SOMANI\" \"Amazon\" \"Last year\""
+      ],
+      "excluded": [
+        {
+          "url": "https://leetcode.com/discuss/post/6970485/sde-ii-amazon-interview-amazon-music-tea-ebd1/",
+          "reason": "Re-read complete public rendering. Two coding interviews have exact prompts but still no evidence distinguishing final-loop interviews from initial screening; no change to previous exclusion."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazoninterview-sde-datastructures-activity-7457426672536014848-nylL",
+          "reason": "Specific N-ary-tree level and dynamic O(1) level-count prompts, but isolated Round2 does not establish screen/loop offset; same-author series was investigated without establishing a reliable single interview timeline."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-sde2-interviewexperience-activity-7435176799292178432-S1WF",
+          "reason": "March5 2026 JSON-LD date and text Last year would imply2025, but same author October16 2025 series also says Last year with different first-two-round content. Cannot safely combine separate promotional series or transfer dates/role evidence."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7435653452879446017-Vm3h",
+          "reason": "March6 2026 public post gives sourceRound3 Splitwise LLD; surrounding same-author series has uncertain screening/loop sequence and inconsistent interview-year references. Keep outside strict corpus pending a coherent timeline."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-dsa-activity-7384466436657815552-mw0D",
+          "reason": "Original JSON-LD published2025-10-16; body says Last year, implying2024. Only vague string/DP questions. Excluded as known pre-window interview, not counted by publication date."
+        },
+        {
+          "url": "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+          "reason": "Canadian geographic search rediscovered existing canonical reddit-1ig72d0; no duplicate count."
+        },
+        {
+          "url": "https://leetcode.com/discuss/post/6923887/amazon-sde-2-interview-experience-select-rwpm/",
+          "reason": "Geographic search rediscovered existing canonical leetcode-6923887; no duplicate count."
+        }
+      ],
+      "limitations": [
+        "Additional UK, Canadian and German queries frequently returned older interviews, salary/preparation posts or already captured accounts, not new qualifying final loops.",
+        "Search-provider results were weak; Chromium-rendered Google discovery and public original pages were used. No authentication or paywall bypass.",
+        "Expansion does not establish exhaustiveness. Same-author reposts require coherent dates and stage evidence before being merged into a candidate account."
       ]
     },
     {

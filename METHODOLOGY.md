@@ -16,11 +16,14 @@ It does not establish every question asked inside Amazon. There is no public den
 | 2026 H2 through cutoff | 7 | 30 |
 | Reddit, whole window | 34 | 804 |
 | Supplemental source audit | 0 | 5 |
-| **Total** | **119** | **901** |
+| Late-2025 expansion | 4 | 17 |
+| 2026 recovery expansion | 5 | 29 |
+| Expanded source audit | 0 | 7 |
+| **Total** | **128** | **954** |
 
-The result is **539 question–round rows**, **577 occurrences**, and **481 canonical question identities**. Rows by round: R1 164, R2 150, R3 109, R4 116. Source-level date years: 81 accounts in 2025 and 38 in 2026. There are 220 occurrence dates grounded in interview timing and 357 using explicitly labeled publication fallback.
+The result is **561 question–round rows**, **605 occurrences**, and **501 canonical question identities**. Rows by round: R1 172, R2 155, R3 113, R4 121. Source-level date years: 85 accounts in 2025 and 43 in 2026. There are 225 occurrence dates grounded in interview timing and 380 using explicitly labeled publication fallback.
 
-The six files contain 160 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 160 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
+The nine files contain 214 query/discovery entries, including direct archive API queries. These are a research log, not necessarily 214 independent web searches. Exclusions are entries, not unique rejected candidate accounts; an account can be excluded in one slice and handled in another. Reddit records 3,400 archived posts retrieved across overlapping searches, not 3,400 unique qualifying interviews. Detailed archive pages, failed requests and counts remain in its research JSON and generated coverage discovery metadata.
 
 Slices are research ownership partitions, not guaranteed interview half-years. Year-only interview dates remain year-only even if publication occurred in a later period. For example, the Prime Video account posted in July 2026 describes joining in April but does not give the interview month; the database does not invent one.
 
@@ -82,7 +85,7 @@ Known syndications are aliases or excluded duplicates, including four repeated p
 
 Locations describe the role/interview location stated in the account, not the author's residence, nationality, interviewer location, or a site's footer. Bengaluru/BLR is displayed as Bangalore, India. Broad country-only labels and multi-city uncertainty remain broad. `Not stated` is never guessed.
 
-There are 13 distinct stated labels, not 13 mutually exclusive geographic markets: for example, India and Bangalore, India are different precisions. Filtering matches the displayed label exactly.
+There are 14 distinct stated labels, not 14 mutually exclusive geographic markets: for example, India and Bangalore, India are different precisions. Filtering matches the displayed label exactly.
 
 ## Viewer and export semantics
 
@@ -92,7 +95,7 @@ Every column is sortable. Dates sort by latest visible date; sources by title; l
 
 ## Known coverage gaps
 
-- Weak later-2025 indexed coverage, especially December, despite monthly/bounded searches; CAPTCHA limited some queries. Reddit adds October/November accounts but does not close the gap.
+- Later-2025 indexed coverage remains weak, especially December. An expanded pass added October/November accounts and Austin, Texas; a December publication proved to be a duplicate June interview rather than new December evidence. CAPTCHA limited some queries.
 - LeetCode/Reddit access failures, deleted posts, login walls and anonymous attribution.
 - Paywalled or membership-gated candidate details (including some Exponent/Glassdoor accounts).
 - Interviews with disclosed questions but no level, round, date or stage evidence.
@@ -101,3 +104,11 @@ Every column is sortable. Dates sort by latest visible date; sources by title; l
 - No estimate of true asking frequency or expected interview order is possible from these observations.
 
 Corrections should preserve an audit trail in research JSON, normalization decisions and the exclusion ledger, followed by regeneration and integrity checks. Do not hide uncertainty to increase the row count.
+
+## Expanded gap pass
+
+After initial publication, an additional public-source research pass added nine candidate accounts and 28 occurrences (22 new question–round rows). It targeted October–December2025, January–February2026, previously inaccessible originals and geographic searches. All newly qualified discovered accounts from that pass were extracted; no exhaustive coverage claim is made.
+
+The January/February CodingKaro index yielded three previously uncaptured original LeetCode accounts. A previously excluded Medium account was partially recovered: both conflicting early-order descriptions independently place HLD+HM fourth, so only that LMS question was admitted. Other uncertain positions remain excluded. A new backend Medium account disclosed parking-lot and Ticketmaster design rounds. Older exclusion entries remain an audit history; the expansion entries record later recovery decisions.
+
+The additional geographic/same-author checks found no reliable new account: a 2025 LinkedIn post explicitly referred to the previous year, while related later promotional posts could not establish a coherent interview timeline. It was not admitted by simply treating a republication date as an interview date.

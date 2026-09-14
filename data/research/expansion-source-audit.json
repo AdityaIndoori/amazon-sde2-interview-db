@@ -1,0 +1,48 @@
+{
+  "slice": "expansion-source-audit",
+  "searchedAt": "2026-09-13",
+  "queries": [
+    "Amazon SDE II interview 2025 Canada Germany UK experience",
+    "\"Amazon\" \"SDE2\" \"2025\" \"London\"",
+    "\"Amazon\" \"SDE II\" \"2025\" \"interview\" \"Canada\"",
+    "\"Amazon\" \"SDE 2\" \"2025\" \"Germany\" interview",
+    "\"SHIVAM SOMANI\" \"Amazon\" \"Round 1\"",
+    "\"SHIVAM SOMANI\" \"Amazon\" \"Last year\""
+  ],
+  "reports": [],
+  "excluded": [
+    {
+      "url": "https://leetcode.com/discuss/post/6970485/sde-ii-amazon-interview-amazon-music-tea-ebd1/",
+      "reason": "Re-read complete public rendering. Two coding interviews have exact prompts but still no evidence distinguishing final-loop interviews from initial screening; no change to previous exclusion."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazoninterview-sde-datastructures-activity-7457426672536014848-nylL",
+      "reason": "Specific N-ary-tree level and dynamic O(1) level-count prompts, but isolated Round2 does not establish screen/loop offset; same-author series was investigated without establishing a reliable single interview timeline."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-sde2-interviewexperience-activity-7435176799292178432-S1WF",
+      "reason": "March5 2026 JSON-LD date and text Last year would imply2025, but same author October16 2025 series also says Last year with different first-two-round content. Cannot safely combine separate promotional series or transfer dates/role evidence."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-lowleveldesign-activity-7435653452879446017-Vm3h",
+      "reason": "March6 2026 public post gives sourceRound3 Splitwise LLD; surrounding same-author series has uncertain screening/loop sequence and inconsistent interview-year references. Keep outside strict corpus pending a coherent timeline."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/shivam-99-somani_amazon-interviewexperience-dsa-activity-7384466436657815552-mw0D",
+      "reason": "Original JSON-LD published2025-10-16; body says Last year, implying2024. Only vague string/DP questions. Excluded as known pre-window interview, not counted by publication date."
+    },
+    {
+      "url": "https://www.reddit.com/r/leetcode/comments/1ig72d0/received_offer_amazon_sde_ii_canada/",
+      "reason": "Canadian geographic search rediscovered existing canonical reddit-1ig72d0; no duplicate count."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6923887/amazon-sde-2-interview-experience-select-rwpm/",
+      "reason": "Geographic search rediscovered existing canonical leetcode-6923887; no duplicate count."
+    }
+  ],
+  "limitations": [
+    "Additional UK, Canadian and German queries frequently returned older interviews, salary/preparation posts or already captured accounts, not new qualifying final loops.",
+    "Search-provider results were weak; Chromium-rendered Google discovery and public original pages were used. No authentication or paywall bypass.",
+    "Expansion does not establish exhaustiveness. Same-author reposts require coherent dates and stage evidence before being merged into a candidate account."
+  ]
+}

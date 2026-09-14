@@ -1,5 +1,6 @@
 {
   "questionAliases": {
+    "binary-tree-level-order-traversal": "binary-tree-level-order",
     "longest-substring-without-repeats": "longest-substring-without-repeating",
     "notification-service-hld": "design-notification-system",
     "device-configuration-sync-hld": "design-device-configuration-sync",

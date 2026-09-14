@@ -93,9 +93,10 @@ Use null for unknown publishedDate/interviewDate, but date must be a defensible 
 ## Execution record
 
 - Repository finalized at `/home/aditya/amazon-sde2-interview-db` (moved out of temporary storage).
-- Delivered 539 question–round rows, 577 occurrences, 119 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer.
-- Recorded 160 discovery/query entries and 901 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
+- Delivered 561 question–round rows, 605 occurrences, 128 candidate accounts, JSON/CSV/SQLite exports, and the seven-column static viewer after the user-requested expanded public-source research pass.
+- Recorded 214 discovery/query entries and 954 exclusion/uncertainty entries; coverage limits are explicit in METHODOLOGY.md.
 - Build/check passed; all three artifacts were byte-identical across regeneration.
 - Chromium exercised loaded data, seven sort controls, filters, source/evidence expansion, CSV export, keyboard reset, project-subpath navigation and 390px mobile layout.
 - Git initialized on main; the user subsequently authorized GitHub publication and interactively authenticated as AdityaIndoori. Target: `AdityaIndoori/amazon-sde2-interview-db`, with GitHub Pages from the main branch root.
 - The literal set of ALL internally asked questions remains unknowable from public reports; the deliverable is a documented, reproducible public-report corpus rather than a claim of exhaustive coverage.
+- Following the explicit coverage choice, expanded late-2025 and early-2026 research added nine candidate accounts and 28 occurrences without claiming exhaustiveness. Newly discovered qualifying accounts from that gap pass were fully extracted; remaining gated/ambiguous sources stay documented.

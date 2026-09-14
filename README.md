@@ -2,9 +2,9 @@
 
 An evidence-backed database and static HTML explorer of publicly reported **Amazon external SDE II / L5 final-loop questions**, covering **January 1, 2025 through September 13, 2026**.
 
-**539 question–round rows · 577 reported occurrences · 119 candidate accounts · 13 stated location labels.** These are 481 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
+**561 question–round rows · 605 reported occurrences · 128 candidate accounts · 14 stated location labels.** These are 501 conservatively normalized question identities across rounds. Counts are public-report frequencies, not Amazon's internal asking rates.
 
-> This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 160 search/query entries and 901 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
+> This is not ALL questions asked at Amazon. No public source can establish that. This repository contains the qualifying accounts discovered in the documented research, with 214 search/query entries and 954 exclusion or uncertainty entries. Private, deleted, inaccessible, unindexed, vague and ambiguously staged reports remain coverage gaps. Candidate accounts are self-reported, not independently authenticated.
 
 ## View locally
 
