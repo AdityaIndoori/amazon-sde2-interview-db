@@ -1,0 +1,1763 @@
+{
+  "slice": "2026-h1",
+  "searchedAt": "2026-09-13",
+  "queries": [
+    "Amazon SDE 2 interview experience 2026 January February March April May June -site:reddit.com",
+    "site:leetcode.com/discuss Amazon SDE II 2026 interview experience",
+    "\"Amazon\" \"SDE2\" \"2026\"",
+    "Amazon SDE 2 interview 2026",
+    "Amazon SDE 2 interview experience 2026 January February March -site:reddit.com",
+    "Amazon SDE II interview experience 2026 April May June -site:reddit.com",
+    "site:leetcode.com/discuss \"Amazon\" \"2026\" \"SDE2\"",
+    "\"Amazon\" \"L5\" \"interview\" \"2026\" -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"January 2026\" interview -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"February 2026\" interview -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"March 2026\" interview -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"April 2026\" interview -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"May 2026\" interview -site:reddit.com",
+    "\"Amazon\" \"SDE\" \"June 2026\" interview -site:reddit.com",
+    "site:leetcode.com/discuss Amazon SDE2 after:2026-01-01 before:2026-07-01",
+    "site:medium.com Amazon SDE II interview 2026 January June",
+    "Amazon SDE 2 interview experience after:2026-01-01 before:2026-07-01",
+    "Discovery index: https://www.iamunemployed.xyz/archives/amazon (followed relevant March–June2026 originals)",
+    "Google result pages start=0,10,20,30 for site:leetcode.com/discuss Amazon SDE2 after:2026-01-01 before:2026-07-01"
+  ],
+  "reports": [
+    {
+      "id": "leetcode-7710904",
+      "url": "https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7710904/amazon-sde2-feb-2026-selected-by-anonymo-5okv/",
+      "title": "Amazon | SDE2 | Feb 2026 [Selected]",
+      "publishedDate": "2026-03-28",
+      "interviewDate": "2026-02",
+      "date": "2026-02",
+      "dateBasis": "interview",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Position: SDE2 (L5) at Amazon; Date: February 2026; Virtual Onsite (4 Rounds)",
+      "questions": [
+        {
+          "round": 1,
+          "key": "car-pooling-variant",
+          "question": "Solve a Car Pooling variant and discuss scaling when trips are stored in a distributed database.",
+          "topic": "Arrays / Intervals",
+          "evidence": "Round 1: Data Structures & Algorithms; Technical: LeetCode 1094 (Car Pooling) variant. ... scale this if the \"trips\" data was stored in a distributed DB.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "real-time-error-log-monitoring",
+          "question": "Design real-time error-log monitoring for over one million writes per second and sub-second alerts; address backpressure during log spikes.",
+          "topic": "System design / Logging",
+          "evidence": "Round 2: System Design (HLD); Design a Real-Time Error Log Monitoring System. Requirements: Handle 1M+ writes/sec, sub-second alerting. ... backpressure",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "vending-machine-leasing",
+          "question": "Design a vending-machine leasing system with machine, lease-agreement and payment relationships and extensible machine states.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: Object-Oriented Design (LLD); Design a Vending Machine Leasing System. ... VendingMachine, LeaseAgreement, and PaymentStrategy.",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "distributed-rate-limiter",
+          "question": "Implement a distributed rate limiter, including concurrency-safe atomic operations.",
+          "topic": "System design / Rate limiting",
+          "evidence": "Round 4: The Bar Raiser; Technical: Distributed Rate Limiter. ... How to handle concurrency using Redis Lua scripts to ensure atomicity.",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7576550",
+      "url": "https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7576550/amazon-sde2-interview-experience-full-lo-jhtv/",
+      "title": "Amazon SDE2 Interview Experience (Full Loop)",
+      "publishedDate": "2026-02-13",
+      "interviewDate": null,
+      "date": "2026-02-13",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "I recently appeared for the Amazon SDE2 interview and completed the full loop.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "minimum-days-disconnect-island",
+          "question": "Find the minimum number of days needed to disconnect an island.",
+          "topic": "Graphs / Grid traversal",
+          "evidence": "Round 1: DSA; Problem: Minimum Number of Days to Disconnect Island",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "quick-commerce-rider-matching",
+          "question": "Design a service to find a rider for a quick-commerce application.",
+          "topic": "Low-level design",
+          "evidence": "Round 2: Bar Raiser; Design a service to find a rider for a quick commerce app-LLD",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "offline-download-manager",
+          "question": "Design an offline download manager for a social-media application.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: LLD (Low-Level Design); Design an offline download manager for a social media app.",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "event-logging-system",
+          "question": "Design an event-logging system.",
+          "topic": "System design / Logging",
+          "evidence": "Round 4: Hiring Manager; Design an Event Logging System",
+          "sourceRound": "Round 4"
+        }
+      ],
+      "dateEvidence": "Original report header: Feb 13, 2026; Feb 14, 2026 is its update."
+    },
+    {
+      "id": "leetcode-8420230",
+      "url": "https://leetcode.com/discuss/post/8420230/amazon-sde-2-interview-experience-2026-e-t1g8/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8420230/amazon-sde-2-interview-experience-2026-e-t1g8/",
+      "title": "Amazon SDE-2 interview experience - 2026, Exp- 3 to 4 yrs",
+      "publishedDate": "2026-07-25",
+      "interviewDate": "2026",
+      "date": "2026",
+      "dateBasis": "interview",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "Role: SDE2; Team: Amazon Prime Video; Location: Bangalore, India; Joined: April 2026; Online application via Amazon Jobs portal → HackerRank assessment → 3 Onsite + 1 Virtual rounds",
+      "questions": [
+        {
+          "round": 1,
+          "key": "bounded-difference-lis",
+          "question": "Find the length of the longest strictly increasing subsequence whose consecutive values differ by at most k.",
+          "topic": "Dynamic programming",
+          "evidence": "Round 1 — DSA / Problem Solving; Q1: Longest Strictly Increasing Subsequence with Maximum Adjacent Difference Constraint",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "ones-and-zeroes",
+          "question": "Find the largest subset of binary strings using at most m ones and n zeroes in total.",
+          "topic": "Dynamic programming / Knapsack",
+          "evidence": "Round 1; Q2: Largest Subset of Binary Strings with Bounded Ones and Zeroes",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "ownership-critical-user-impact",
+          "question": "Describe a project where you took ownership of a critical issue with meaningful user impact.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Round 1; describe a project where I took ownership to solve a critical issue that had a meaningful impact on users.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "genai-productivity",
+          "question": "Tell me about a time you used generative AI to improve personal or team productivity.",
+          "topic": "Behavioral / Generative AI",
+          "evidence": "Round 1; Tell me about a time u used Gen AI to improve your personal or team productivity",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "facebook-news-feed",
+          "question": "Design a Facebook-like feed supporting millions of users, media posts, real-time likes and view counts, and near-instant loading; discuss push/pull, caching, databases and service boundaries.",
+          "topic": "System design / Social media",
+          "evidence": "Round 2 — System Design; Design a Facebook-like News Feed System at Scale ... Like counts and view counts should be visible in real-time",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "news-feed-viral-counter-bottleneck",
+          "question": "How would you prevent millions of likes and views on a viral celebrity post from becoming a bottleneck?",
+          "topic": "System design / Scaling",
+          "evidence": "Round 2; A celebrity's post goes viral with millions of likes and views in seconds — how do you prevent this from becoming a bottleneck?",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "disagreement-critical-problem",
+          "question": "Describe a disagreement with your team or manager while solving a critical problem, and how your approach resolved it.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "Round 2; describe a scenario where I had a difference in opinion with my team or manager while solving a critical problem",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "genai-business-impact",
+          "question": "Tell me about a time you used generative AI to solve a business problem and its measurable results.",
+          "topic": "Behavioral / Generative AI",
+          "evidence": "Round 2; Tell me about a time you used Generative AI to solve a business problem and the measurable results it delivered.",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "music-streaming-platform",
+          "question": "Design a Spotify-like music platform with song/artist/album search, playlists, saved songs, low-latency playback and millions of concurrent listeners; discuss audio distribution, storage, indexing and service boundaries.",
+          "topic": "System design / Streaming",
+          "evidence": "Round 3 — System Design; Design a Music Streaming Application (like Spotify) ... search for songs, artists, and albums ... create and manage playlists",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "outside-expertise-project",
+          "question": "Describe a time you went outside your expertise or did something uniquely different to solve a project problem.",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Round 3; describe a scenario where I had to go outside my area of expertise or do something uniquely different to solve a problem",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "genai-workflow-automation",
+          "question": "Tell me about a time you used generative AI to automate or streamline a workflow.",
+          "topic": "Behavioral / Generative AI",
+          "evidence": "Round 3; Tell me about a time you used Generative AI to automate or streamline a workflow.",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "project-architecture-contribution-impact",
+          "question": "Choose a project that solved a critical issue; explain architectural choices, component interaction at scale, trade-offs, individual design contribution and quantified impact.",
+          "topic": "Project deep dive",
+          "evidence": "Round 4 — Bar Raiser; pick one of my most fascinating projects ... system design choices ... components interacted at scale ... individual contribution ... Impact",
+          "sourceRound": "Round 4"
+        },
+        {
+          "round": 4,
+          "key": "stakeholder-interaction",
+          "question": "Tell me about a time you directly interacted with a project or work stakeholder.",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Round 4; Tell me about a time you directly interacted with the stakeholder of your project/work.",
+          "sourceRound": "Round 4"
+        },
+        {
+          "round": 4,
+          "key": "search-rotated-sorted-array",
+          "question": "Search for a target in a rotated sorted array and return its index, or -1 when absent.",
+          "topic": "Arrays / Binary search",
+          "evidence": "Round 4; Search an Element in a Sorted Rotated Array ... return its index. Return -1 if not found.",
+          "sourceRound": "Round 4"
+        },
+        {
+          "round": 4,
+          "key": "software-engineer-genai-era",
+          "question": "How do you remain a competent software engineer in the generative-AI era?",
+          "topic": "Generative AI",
+          "evidence": "Round 4; How do you be a compitent software engineer in this era of Gen AI?",
+          "sourceRound": "Round 4"
+        }
+      ],
+      "dateEvidence": "Title identifies interview experience as 2026; body says Joined: April 2026. Exact interview month unknown. Publication timestamp is 2026-07-25T23:35:01.910905+00:00; H1 ownership reflects joining timeline, not publication month."
+    },
+    {
+      "id": "leetcode-8315111",
+      "url": "https://leetcode.com/discuss/post/8315111/amazon-l5-sde-2-interview-experience-off-yi2x/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8315111/amazon-l5-sde-2-interview-experience-off-yi2x/",
+      "title": "Amazon | L5 SDE 2 | Interview Experience | Offer",
+      "publishedDate": "2026-06-05",
+      "interviewDate": "2026",
+      "date": "2026",
+      "dateBasis": "interview",
+      "location": "Gurgaon, India",
+      "role": "SDE II",
+      "stageEvidence": "L5 SDE II interview I recently gave at Amazon Gurgaon; I applied directly though the company portal; Round 0: Online Assessment; Rounds 1–4 follow.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "aggressive-cows",
+          "question": "Place cows in stalls to maximize the minimum distance between any two cows.",
+          "topic": "Binary search",
+          "evidence": "Round 1 : DSA + Leadership principles (20 May); Aggressive cows",
+          "date": "2026-05-20",
+          "dateBasis": "interview",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "median-data-stream",
+          "question": "Maintain the median of a running stream of numbers.",
+          "topic": "Heaps",
+          "evidence": "Round 1 (20 May); Median in a running stream",
+          "date": "2026-05-20",
+          "dateBasis": "interview",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "debug-difficult-issue",
+          "question": "Tell me about a difficult debugging issue and what you could have done better.",
+          "topic": "Behavioral / Dive deep",
+          "evidence": "Round 1 LP: Tell me about a time you had to debug a difficult issue, what could you have done better?",
+          "date": "2026-05-20",
+          "dateBasis": "interview",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "simple-solution-complex-problem",
+          "question": "Tell me about a time you gave a simple solution to a complex problem.",
+          "topic": "Behavioral / Invent and simplify",
+          "evidence": "Round 1 LP: Tell me about a time you gave a simple solution for a complex problem.",
+          "date": "2026-05-20",
+          "dateBasis": "interview",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "notification-router-priority-channels",
+          "question": "Design notification routing: urgent messages go to all email/SMS/push channels; normal messages go to the user’s preferred channel. Implement routing only and discuss extensibility.",
+          "topic": "Low-level design",
+          "evidence": "Round 2 : LLD/Maintainable code (25 May); Design a notification router for an ecommerce website ... urgent ... all channels otherwise ... preferred channel.",
+          "date": "2026-05-25",
+          "dateBasis": "interview",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "learn-apply-work",
+          "question": "Tell me about something you recently learned and applied at work.",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Round 2 LPs: Tell me something you recently learned and applied to work",
+          "date": "2026-05-25",
+          "dateBasis": "interview",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "learning-success-metrics",
+          "question": "How do you measure success in a learning journey?",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Round 2 LPs: How do you measure the success metrics of a learning journey",
+          "date": "2026-05-25",
+          "dateBasis": "interview",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "netflix-system",
+          "question": "Design Netflix, including availability, scalability, fault tolerance and movie search.",
+          "topic": "System design / Streaming",
+          "evidence": "Round 3 : HLD (26 May); Design Netflix ... discussions about movie search ... OpenSearch and CDC pipeline.",
+          "date": "2026-05-26",
+          "dateBasis": "interview",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "conflict-seniors-proven-right",
+          "question": "Tell me about a conflict with senior colleagues where your opinion turned out to be correct.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "Round 3 LP: Tell me about a time you had a conflict with your seniors and it turned out that your opinions were right",
+          "date": "2026-05-26",
+          "dateBasis": "interview",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "critical-manager-feedback",
+          "question": "Tell me about harsh feedback from your manager and how you acted on it.",
+          "topic": "Behavioral / Earn trust",
+          "evidence": "Round 3 LP: Tell me about a time you received a harsh feedback from your manager and how did you take it into account",
+          "date": "2026-05-26",
+          "dateBasis": "interview",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "unique-string-permutations",
+          "question": "Return all distinct permutations of a string containing repeated characters.",
+          "topic": "Backtracking",
+          "evidence": "Round 4 : Bar raiser; Find unique permutations of a given string ... s = \"xxyy\"",
+          "sourceRound": "Round 4"
+        },
+        {
+          "round": 4,
+          "key": "learn-quickly-apply-work",
+          "question": "Tell me about learning something quickly and applying it at work.",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Round 4 LPs: Tell me about a time when you had to learn something quickly and apply to work",
+          "sourceRound": "Round 4"
+        },
+        {
+          "round": 4,
+          "key": "deliver-tight-deadline",
+          "question": "Tell me about delivering something under tight deadlines.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "Round 4 LPs: Tell me about a time when you delivered something under tight deadlines",
+          "sourceRound": "Round 4"
+        }
+      ],
+      "dateEvidence": "Publication June 5 2026, May 20/25/26 round labels. R4 not dated; retain year precision for that round rather than invent a day."
+    },
+    {
+      "id": "medium-c2cd6e71c035",
+      "url": "https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+      "retrievedVia": "https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035",
+      "title": "Amazon Interview Experience|SDE-2|2026",
+      "publishedDate": "2026-03-03",
+      "interviewDate": null,
+      "date": "2026-03-03",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Recently, I went through their Amazon hiring process for SDE-2 Role; The Onsite Experience (Face-to-Face): My experience involved three deep dives ... each round ... 60-minute session.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "youtube-system",
+          "question": "Design YouTube with video uploads, likes/dislikes and comments; scale storage and concurrent reads/writes.",
+          "topic": "System design / Video",
+          "evidence": "Onsite Round 1: High-Level Design; Design YouTube. The core requirements were video uploads, likes/dislikes, and a commenting system.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "production-job-failure",
+          "question": "What is your role when a job fails in production?",
+          "topic": "Behavioral / Bias for action",
+          "evidence": "Onsite Round 1; Leadership Principle: What is your role when a job fails in production?",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "next-greater-element",
+          "question": "Find the next greater element.",
+          "topic": "Stacks",
+          "evidence": "Onsite Round 2: DSA 1: The Next Greater Element problem using a Monotonic Stack.",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "currency-conversion",
+          "question": "Given currency exchange rates, find the rate between two arbitrary currencies.",
+          "topic": "Graphs",
+          "evidence": "Onsite Round 2: DSA 2: Currency Conversion. Given a file of rates ... find the rate between two arbitrary currencies.",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "missed-deadline",
+          "question": "Tell me about a time you missed a tight deadline and how you handled it.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "Onsite Round 2; Tell me about a time you missed a tight deadline. How did you handle it?",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "concert-seat-booking",
+          "question": "Design a concert ticket-booking system; prevent concurrent buyers from purchasing the same seat.",
+          "topic": "Low-level design / Concurrency",
+          "evidence": "Onsite Round 3; BookMyShow for a Himesh Reshammiya Concert ... prevent two people from buying the same seat",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "disagreement-team-decision",
+          "question": "Tell me about a disagreement with a team decision.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "Onsite Round 3; Tell me about a disagreement with a team decision.",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 3,
+          "key": "critical-manager-feedback",
+          "question": "Tell me about receiving critical feedback from your manager.",
+          "topic": "Behavioral / Earn trust",
+          "evidence": "Onsite Round 3; Tell me about receiving critical feedback from a manager.",
+          "sourceRound": "Round 3"
+        }
+      ],
+      "dateEvidence": "Original article publication metadata 2026-03-03T06:42:30.358Z; interview date not specified."
+    },
+    {
+      "id": "medium-19b9593b32ec",
+      "url": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+      "retrievedVia": "https://shubhamrajkumawat.medium.com/amazons-sde-ii-interview-affs-pune-in-2026-a-full-breakdown-19b9593b32ec",
+      "title": "Amazon’s SDE II Interview (AFFS, Pune) in 2026 — A Full Breakdown",
+      "publishedDate": "2026-03-11",
+      "interviewDate": "2026",
+      "date": "2026",
+      "dateBasis": "interview",
+      "location": "Pune, India",
+      "role": "SDE II",
+      "stageEvidence": "I recently went through Amazon’s SDE II interview process for the AFFS ... team in Pune; 5 rounds: Online Assessment, DSA, Low-Level Design, High-Level Design, Bar Raiser.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "count-smaller-after-self",
+          "question": "For each product price, count smaller prices to its right.",
+          "topic": "Arrays / Divide and conquer",
+          "evidence": "Round 2: DSA Round; Discount Rebate (Count Smaller Elements to the Right)",
+          "sourceRound": "Round 2: DSA Round",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 1,
+          "key": "merge-versus-selection-sort",
+          "question": "Why choose merge sort rather than selection sort for counting smaller elements to the right?",
+          "topic": "Algorithms / Complexity",
+          "evidence": "Round 2; Follow-up: Why Merge Sort over Selection Sort?",
+          "sourceRound": "Round 2: DSA Round",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 1,
+          "key": "root-cause-over-surface-fix",
+          "question": "Describe digging deeply for a root cause when a surface-level fix was available.",
+          "topic": "Behavioral / Dive deep",
+          "evidence": "Round 2; Describe a situation where you dug really deep to find the root cause, even though a surface-level fix was available.",
+          "sourceRound": "Round 2: DSA Round",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 1,
+          "key": "project-two-weeks-behind",
+          "question": "Tell me about a crucial project two weeks behind schedule and how you got it back on track.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "Round 2; Tell me about a crucial project where you were lagging by two weeks. What did you do to get back on track?",
+          "sourceRound": "Round 2: DSA Round",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 2,
+          "key": "internal-stack-overflow",
+          "question": "Design an internal Q&A platform with questions, answers, comments, votes, tags, moderation, search and reputation.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: Low-Level Design; LLD Problem — Amazon Internal Stack Overflow",
+          "sourceRound": "Round 3: Low-Level Design (LLD)",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 2,
+          "key": "project-fanout-payload-estimate",
+          "question": "Defend whether a roughly 10 MB request from a 10,000-subrequest fan-out was typical and considered in your project architecture.",
+          "topic": "Project deep dive",
+          "evidence": "Round 3; fan-out of 10,000 sub-requests could push request size to ~10MB. He asked: Was this a typical case? Did you think about this?",
+          "sourceRound": "Round 3: Low-Level Design (LLD)",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 3,
+          "key": "critical-manager-feedback",
+          "question": "Describe tough critical feedback, how you received it, and what you did.",
+          "topic": "Behavioral / Earn trust",
+          "evidence": "Round 4: High-Level Design; Tell me about a time you received tough critical feedback. What was it, how did you receive it, and what did you do?",
+          "sourceRound": "Round 4: High-Level Design (HLD)",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 3,
+          "key": "short-term-sacrifice-long-term-value",
+          "question": "Tell me about sacrificing short-term gain for long-term value.",
+          "topic": "Behavioral / Long-term thinking",
+          "evidence": "Round 4; Tell me about a time you sacrificed short-term gain for long-term value",
+          "sourceRound": "Round 4: High-Level Design (HLD)",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 3,
+          "key": "global-software-image-distribution",
+          "question": "Design safe global software-image distribution to millions of devices, with a California release server and 20% of users in India.",
+          "topic": "System design / Content distribution",
+          "evidence": "Round 4; Design a system that distributes software images ... release server is in California. 20% of users are in India.",
+          "sourceRound": "Round 4: High-Level Design (HLD)",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 4,
+          "key": "innovative-customer-need",
+          "question": "How have you identified a customer need and solved it innovatively?",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Round 5: Bar Raiser; In your career, how have you identified a customer need and solved it with an innovative solution?",
+          "sourceRound": "Round 5: Bar Raiser",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 4,
+          "key": "advocate-customer-against-leadership",
+          "question": "Tell me about advocating for a customer even when it meant disagreeing with leadership.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "Round 5; took the side of a customer, even if it meant disagreeing with your own leadership",
+          "sourceRound": "Round 5: Bar Raiser",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 4,
+          "key": "minimum-cost-merge-segments",
+          "question": "Merge all route segments into one while minimizing total cost; merging costs the sum of delivery stops in the two segments.",
+          "topic": "Heaps / Greedy",
+          "evidence": "Round 5; Coding Q1 — Merge Route Segments (Minimum Cost)",
+          "sourceRound": "Round 5: Bar Raiser",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 4,
+          "key": "min-heap-insert-complexity",
+          "question": "What is the cost of inserting into a min-heap?",
+          "topic": "Heaps / Complexity",
+          "evidence": "Round 5; What is the cost of the insert operation into the min-heap?",
+          "sourceRound": "Round 5: Bar Raiser",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        },
+        {
+          "round": 4,
+          "key": "infection-spread-eight-directions",
+          "question": "Find the days to infect all animals in a grid, with infection spreading in all eight directions and empty cages blocking spread.",
+          "topic": "Graphs / Multi-source BFS",
+          "evidence": "Round 5; Coding Q2 — Zoo Infection Spread (Multi-source BFS); Key constraint: Consider all 8 directions",
+          "sourceRound": "Round 5: Bar Raiser",
+          "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+        }
+      ],
+      "dateEvidence": "Title: in 2026; publication 2026-03-11T12:03:59.002Z; exact interview month not stated.",
+      "aliases": [
+        "https://leetcode.com/discuss/post/7641198/amazon-sde-2-interview-experience-by-shu-byg6/"
+      ],
+      "roundMappingNote": "Source counts OA as Round 1. Its four subsequent final-loop interviews, source Rounds 2–5, map to final-loop Rounds 1–4."
+    },
+    {
+      "id": "leetcode-7701734",
+      "url": "https://leetcode.com/discuss/post/7701734/amazon-sde-2-interview-experience-by-ano-x6lv/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7701734/amazon-sde-2-interview-experience-by-ano-x6lv/",
+      "title": "Amazon SDE 2 Interview Experience.",
+      "publishedDate": "2026-03-27",
+      "interviewDate": null,
+      "date": "2026-03-27",
+      "dateBasis": "publication",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "I recently had my Amazon SDE 2 interview. Location Bangalore; numbered DSA, HLD, LLP, LLP, separate Bar Raiser.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "employee-common-ancestors",
+          "question": "Given two employees, find their common ancestors.",
+          "topic": "Graphs",
+          "evidence": "1) DSA; Graph : Given two employees , find the common ansistors",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "jump-game",
+          "question": "Determine whether the last array index can be reached.",
+          "topic": "Dynamic programming",
+          "evidence": "1) DSA; given array and we need find can we reach to last index or not",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 3,
+          "key": "ticket-seat-booking",
+          "question": "Implement real-time seat booking for BookMyShow.",
+          "topic": "Low-level design",
+          "evidence": "3) LLP: It was Book My Show: Code real time seat booking",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "meeting-room-booking",
+          "question": "Implement a Teams meeting-room booking system.",
+          "topic": "Low-level design",
+          "evidence": "4) LLP : Teams meeting room booking ... asked to code directly",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-8096139",
+      "url": "https://leetcode.com/discuss/post/8096139/amazon-sde-ii-interview-experience-need-qrubb/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/8096139/amazon-sde-ii-interview-experience-need-qrubb/",
+      "title": "Amazon SDE II Interview Experience + Need Honest Feedback",
+      "publishedDate": "2026-04-25",
+      "interviewDate": null,
+      "date": "2026-04-25",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "SDE II title; Second Attempt – New Team: DSA + LLD, Next Round HLD, Final Round Technical.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "trim-complete-tree-trash-queue",
+          "question": "Trim a binary tree into a complete binary tree while maintaining a trash queue.",
+          "topic": "Trees / BFS",
+          "evidence": "Round 1 – DSA; Trim a binary tree to make it a complete binary tree + maintain a trash queue",
+          "sourceRound": "Round 1 – DSA",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        },
+        {
+          "round": 1,
+          "key": "number-of-islands",
+          "question": "Count islands in a grid.",
+          "topic": "Graphs / Grid traversal",
+          "evidence": "Round 1 – DSA; Number of islands",
+          "sourceRound": "Round 1 – DSA",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        },
+        {
+          "round": 2,
+          "key": "whatsapp-read-receipts",
+          "question": "Add WhatsApp read receipts to an existing messaging system, including message flow, storage and offline users.",
+          "topic": "Low-level design / Messaging",
+          "evidence": "Round 2 – LLD; Design WhatsApp Read Receipts (ticks) ... Assume WhatsApp is already built ... just design the feature.",
+          "sourceRound": "Round 2 – LLD",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        },
+        {
+          "round": 3,
+          "key": "fastag-system",
+          "question": "Design a FASTag toll-payment system, considering idempotency, caching and scalability.",
+          "topic": "System design / Payments",
+          "evidence": "Next Round – HLD (with SDM); Design FastTag system ... Idempotency in payments",
+          "sourceRound": "Next Round – HLD (with SDM)",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        },
+        {
+          "round": 4,
+          "key": "longest-substring-without-repeats",
+          "question": "Find the longest substring without repeating characters.",
+          "topic": "Strings / Sliding window",
+          "evidence": "Final Round (Technical – Possibly Bar Raiser); Longest Substring Without Repeating Characters",
+          "sourceRound": "Final Round (Technical – Possibly Bar Raiser)",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        },
+        {
+          "round": 4,
+          "key": "serialize-deserialize-binary-tree",
+          "question": "Serialize and deserialize a binary tree.",
+          "topic": "Trees",
+          "evidence": "Final Round (Technical – Possibly Bar Raiser); Serialize & Deserialize Binary Tree",
+          "sourceRound": "Final Round (Technical – Possibly Bar Raiser)",
+          "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded."
+        }
+      ],
+      "roundMappingNote": "Second attempt explicitly numbers first two interviews 1 and 2; subsequent Next Round and Final Round are the third and fourth. First attempt’s lost-feedback elimination round excluded.",
+      "dateEvidence": "Original embedded createdAt 2026-04-25T05:52:50.128527+00:00 (UTC); search result localized date was April24."
+    },
+    {
+      "id": "leetcode-7878487",
+      "url": "https://leetcode.com/discuss/post/7878487/amazon-sde2-selected-by-anonymous_user-c0zq/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7878487/amazon-sde2-selected-by-anonymous_user-c0zq/",
+      "title": "Amazon SDE2 | Selected",
+      "publishedDate": "2026-04-12",
+      "interviewDate": null,
+      "date": "2026-04-12",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Offered SDE2 at Amazon; After clearing the OA ... further rounds ... Amazon office; Round4 Bar Raiser virtual.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "bookmyshow-system",
+          "question": "Design BookMyShow with movie/theatre search and concurrent seat booking.",
+          "topic": "System design / Booking",
+          "evidence": "Round 1: HLD; Design BookMyShow ... Search movies/theatres and Seat concurreny.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "ipo",
+          "question": "Choose projects to maximize capital (IPO).",
+          "topic": "Heaps / Greedy",
+          "evidence": "Round 2: DSA; https://leetcode.com/problems/ipo/description/",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "shortest-path-obstacle-elimination",
+          "question": "Find the shortest grid path with obstacle eliminations.",
+          "topic": "Graphs / BFS",
+          "evidence": "Round 2: DSA; https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "search-rotated-sorted-array",
+          "question": "Search a rotated sorted array.",
+          "topic": "Arrays / Binary search",
+          "evidence": "Round 2: DSA; https://leetcode.com/problems/search-in-rotated-sorted-array/description/",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "ride-sharing-service",
+          "question": "Design a MoveInSync-like ride-sharing service with service classes and data models.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: LLD; Design Ride sharing service (MoveInSync).",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "reconstruct-array-subsequences",
+          "question": "Reconstruct an original array consistent with supplied subsequence arrays; any valid ordering is acceptable.",
+          "topic": "Graphs / Topological sort",
+          "evidence": "Round 4: Bar Raiser; Give a subset of arrays [[1,2,3], [1,6], [7,6]], return the original array (there can be more than one solution).",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7728145",
+      "url": "https://leetcode.com/discuss/post/7728145/amazon-sde2-interview-experience-by-anon-atwr/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7728145/amazon-sde2-interview-experience-by-anon-atwr/",
+      "title": "Amazon SDE2 Interview Experience",
+      "publishedDate": "2026-03-31",
+      "interviewDate": null,
+      "date": "2026-03-31",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Went through the Amazon SDE-2 interview loop recently. Round1 HLD cancelled; completed source rounds2–4.",
+      "questions": [
+        {
+          "round": 3,
+          "key": "rate-limiter-library",
+          "question": "Design a rate limiter, compare token bucket/fixed/sliding windows, and implement one algorithm.",
+          "topic": "Low-level design / Rate limiting",
+          "evidence": "Round 3 ... designing a rate limiter and its diffierent algorithms token bucket, fixed window, sliding window along with implmentation",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "lru-cache-ttl",
+          "question": "Implement an LRU cache with time-to-live expiration.",
+          "topic": "Caching / Data structures",
+          "evidence": "Round 4 ... LRU cache with TTL",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7796848",
+      "url": "https://leetcode.com/discuss/post/7796848/amazon-sde-2-interview-experience-onsite-e6cs/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7796848/amazon-sde-2-interview-experience-onsite-e6cs/",
+      "title": "Amazon SDE 2 Interview Experience | Onsite | Bengaluru",
+      "publishedDate": "2026-04-06",
+      "interviewDate": null,
+      "date": "2026-04-06",
+      "dateBasis": "publication",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "SDE2 title; Alexa 3P onsite hiring drive ... Online Assessment followed by onsite rounds ... only two onsite rounds conducted.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "boundary-binary-tree",
+          "question": "Return the boundary of a binary tree.",
+          "topic": "Trees",
+          "evidence": "Round 1: DSA (Onsite – Paper Coding + Dry Run); Boundary of Binary Tree",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "adjacent-crop-grid",
+          "question": "Fill an M×N grid from crop frequencies so that identical crops are adjacent horizontally or vertically.",
+          "topic": "Arrays / Grid construction",
+          "evidence": "Round 1; cropArray representing frequencies ... fill the grid such that same crops are placed adjacently (horizontally or vertically).",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "overcome-work-challenges",
+          "question": "Tell me about challenges while working on something and how you overcame them.",
+          "topic": "Behavioral",
+          "evidence": "Round 1 Behavioral; Tell me about a time you faced challenges while working on something and how you overcame them.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "handle-customer-issue",
+          "question": "Tell me about a time you handled a customer issue.",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Round 1 Behavioral; Tell me about a time you handled a customer issue.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "digital-wellbeing-system",
+          "question": "Design application screen-time tracking and usage statistics that persist the last seven days across reboots.",
+          "topic": "Low-level design",
+          "evidence": "Round 2: Low-Level Design; Digital Wellbeing System ... Persist data for the last 7 days (even across device reboots)",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "learn-apply-work",
+          "question": "Tell me about learning something new and applying it at work.",
+          "topic": "Behavioral / Learn and be curious",
+          "evidence": "Round 2 Behavioral; Tell me about a time you had to learn something new and apply it in your work.",
+          "sourceRound": "Round 2"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-8363946",
+      "url": "https://leetcode.com/discuss/post/8363946/amazon-sde-2-experience-by-user3981po-nwlw/",
+      "retrievedVia": "https://leetcode.com/discuss/post/8363946/amazon-sde-2-experience-by-user3981po-nwlw/",
+      "title": "Amazon SDE-2 Experience",
+      "publishedDate": "2026-06-28",
+      "interviewDate": null,
+      "date": "2026-06-28",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "SDE-2 title; sourceRound1 OA, sourceRounds2–5 DSA/LLD/Bar Raiser/HM-HLD.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "median-data-stream",
+          "question": "Maintain the median of a data stream.",
+          "topic": "Heaps",
+          "evidence": "Round 2: DSA; one question related to find median from data stream",
+          "sourceRound": "Round 2: DSA",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 2,
+          "key": "music-search-player",
+          "question": "Design Amazon music search by songs/artists/albums, playlists and play/pause/reset operations.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: LLD; Design Amazon music search ... User can search by songs, artists and album ... create playlist ... play, pause and reset",
+          "sourceRound": "Round 3: LLD",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 3,
+          "key": "distributed-cron-scheduler",
+          "question": "Design a distributed CRON job scheduler like Airflow.",
+          "topic": "Low-level design / Scheduling",
+          "evidence": "Round 4: Bar Raiser (machine coding); Design Amazon distributed CRON job scheduler like (AirFlow)",
+          "sourceRound": "Round 4: Bar Raiser (machine coding)",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 4,
+          "key": "why-change-job",
+          "question": "Why are you looking for a job change?",
+          "topic": "Behavioral / Motivation",
+          "evidence": "Round 5: Hiring manager + HLD; why are you looking out for change",
+          "sourceRound": "Round 5: Hiring manager + HLD",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 4,
+          "key": "impossible-project-possible",
+          "question": "Tell me about a time you made an impossible project possible.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "Round 5; tell me about a time where you made impossible project, possible",
+          "sourceRound": "Round 5: Hiring manager + HLD",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 4,
+          "key": "ai-code-expectation-failure",
+          "question": "Tell me about a time AI could not generate the expected code.",
+          "topic": "Generative AI",
+          "evidence": "Round 5; tell me about a time where AI couldnt generate expected code",
+          "sourceRound": "Round 5: Hiring manager + HLD",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        },
+        {
+          "round": 4,
+          "key": "web-crawler",
+          "question": "Design a web crawler in depth.",
+          "topic": "System design / Crawling",
+          "evidence": "Round 5; HLD question: Design Web Crawler within 20 mins that to in depth",
+          "sourceRound": "Round 5: Hiring manager + HLD",
+          "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+        }
+      ],
+      "roundMappingNote": "Source OA Round1 excluded; sourceRounds2–5 map to final-loop1–4."
+    },
+    {
+      "id": "leetcode-8312943",
+      "url": "https://leetcode.com/discuss/post/8312943/amazon-sde-2-india-interview-experience-a2s2q/",
+      "retrievedVia": "https://leetcode.com/discuss/post/8312943/amazon-sde-2-india-interview-experience-a2s2q/",
+      "title": "Amazon SDE-2 (India) Interview Experience — Result: Rejected",
+      "publishedDate": "2026-06-04",
+      "interviewDate": null,
+      "date": "2026-06-04",
+      "dateBasis": "publication",
+      "location": "Hyderabad, India",
+      "role": "SDE II",
+      "stageEvidence": "Hi everyone,\r I recently completed the Amazon SDE-2 interview loop for India (HYD). I’m sharing my experience here since reading these posts helped me a lot during my own preparation.\r ### 👤 Background\r",
+      "questions": [
+        {
+          "round": 1,
+          "key": "shipping-cost-calculator",
+          "question": "Design extensible shipping-cost calculation based on weight, distance, delivery type, priority, region and special handling.",
+          "topic": "Low-level design",
+          "evidence": "Round 3: Low-Level Design; Design a Shipping Cost Calculator ... multiple dynamic conditions",
+          "sourceRound": "Round 3: Low-Level Design (LLD)",
+          "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+        },
+        {
+          "round": 2,
+          "key": "streaming-lower-median",
+          "question": "After each delivery time arrives, output the running median; the supplied example uses the lower middle value for even prefixes.",
+          "topic": "Heaps",
+          "evidence": "Round 4: DSA; Streaming Median; Input: [5,17,100,11]; Output: [5,5,17,11]",
+          "sourceRound": "Round 4: Data Structures & Algorithms (DSA)",
+          "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+        },
+        {
+          "round": 2,
+          "key": "house-robber",
+          "question": "Maximize the value taken from a row of houses without choosing adjacent houses.",
+          "topic": "Dynamic programming",
+          "evidence": "Round 4: DSA; Problem 2: House Robber",
+          "sourceRound": "Round 4: Data Structures & Algorithms (DSA)",
+          "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+        },
+        {
+          "round": 3,
+          "key": "food-delivery-platform",
+          "question": "Design Zomato: restaurants/menus, search, orders/payments, delivery assignment/tracking and notifications; discuss scaling and failure handling.",
+          "topic": "System design / Delivery",
+          "evidence": "Round 5: Hiring Manager (System Design); Design Zomato (Food Delivery App)",
+          "sourceRound": "Round 5: Hiring Manager (System Design)",
+          "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+        },
+        {
+          "round": 4,
+          "key": "employee-ratings-index-shift",
+          "question": "Support adding employee ratings, querying the maximum rating and its first index, and deleting by index with subsequent indices shifting.",
+          "topic": "Data structures",
+          "evidence": "Round 6: Bar Raiser; Employee Ratings Management System ... Indices shift after deletion ... Query-max + first-occurrence",
+          "sourceRound": "Round 6: Bar Raiser",
+          "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+        }
+      ],
+      "roundMappingNote": "Explicit Overall Process: OA → Technical Screen → 4 Virtual Onsite Rounds. Source3–6 normalize to loop1–4; source1–2 excluded."
+    },
+    {
+      "id": "leetcode-8293814",
+      "url": "https://leetcode.com/discuss/post/8293814/amazon-sde2-interview-experience-by-anon-wi0f/",
+      "retrievedVia": "https://leetcode.com/discuss/post/8293814/amazon-sde2-interview-experience-by-anon-wi0f/",
+      "title": "Amazon SDE2 Interview Experience",
+      "publishedDate": "2026-05-26",
+      "interviewDate": null,
+      "date": "2026-05-26",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Recently interviewed for Amazon SDE2 role. Interview Process: Coding Round; Managerial / Leadership Principles Round; Hiring Manager Round (HLD focus). Source explicitly numbers Coding R1, HLD R2.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "transfer-chain-endpoints",
+          "question": "Given directed account-transfer pairs forming a chain, find the initial source and final destination account.",
+          "topic": "Graphs",
+          "evidence": "Round 1 — Coding + Project Discussion; Find: Initial source account; Final destination account",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "amazon-locker-system",
+          "question": "Design Amazon Locker deposits and code-based collection, locker sizes/allocation, expiry, concurrency, notifications and failure handling.",
+          "topic": "System design / Logistics",
+          "evidence": "Round 2 — System Design (HLD); Design Amazon Locker System",
+          "sourceRound": "Round 2"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-8286346",
+      "url": "https://leetcode.com/discuss/post/8286346/amazon-sde-2-l5-bangalore-interview-expe-24nl/",
+      "retrievedVia": "https://leetcode.com/discuss/post/8286346/amazon-sde-2-l5-bangalore-interview-expe-24nl/",
+      "title": "Amazon SDE 2 (L5) | Bangalore | Interview Experience",
+      "publishedDate": "2026-05-22",
+      "interviewDate": null,
+      "date": "2026-05-22",
+      "dateBasis": "publication",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "SDE2 Backend role; 5 rounds in total ... DSA, system design (HLD + LLD), Bar Raiser; first four explicitly numbered retained, fifth excluded.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "course-schedule-ii",
+          "question": "Return a valid course order given prerequisite dependencies.",
+          "topic": "Graphs / Topological sort",
+          "evidence": "Round 1 — DSA; Course Schedule II",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "merge-intervals",
+          "question": "Merge overlapping intervals.",
+          "topic": "Arrays / Intervals",
+          "evidence": "Round 2 — DSA; DSA 1: Merge Intervals",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "product-array-except-self",
+          "question": "Return the product of all other array elements for each position.",
+          "topic": "Arrays",
+          "evidence": "Round 2; DSA 2: Product of Array Except Self",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "collaborative-document-editing",
+          "question": "Design Google Docs with real-time editing, conflict resolution, history/versioning, presence, permissions and regional scaling.",
+          "topic": "System design / Collaboration",
+          "evidence": "Round 3 — System Design HLD; Design: Google Docs (Collaborative Document Editing)",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "ride-hailing-lld",
+          "question": "Design Uber classes, trip states, driver matching, pricing, payments and booking/tracking/cancellation APIs.",
+          "topic": "Low-level design",
+          "evidence": "Round 4 — System Design LLD; Design: Uber (Ride-Hailing System)",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-8074897",
+      "url": "https://leetcode.com/discuss/post/8074897/amazon-sde-2-interview-exp-blr-by-anonym-wddt/",
+      "retrievedVia": "https://leetcode.com/discuss/post/8074897/amazon-sde-2-interview-exp-blr-by-anonym-wddt/",
+      "title": "Amazon | SDE 2 | Interview  Exp | BLR",
+      "publishedDate": "2026-04-23",
+      "interviewDate": null,
+      "date": "2026-04-23",
+      "dateBasis": "publication",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "Recently ... Amazon virtual Inteview for SDE2 position; Applied on career page; Round0 OA then Round1 DSA, Round2 LLD.",
+      "questions": [
+        {
+          "round": 2,
+          "key": "ecommerce-platform-lld",
+          "question": "Design classes for an e-commerce platform and discuss handling scenarios.",
+          "topic": "Low-level design",
+          "evidence": "Round 2 : LLD; Ecommerce Platform -- class design , some ceanrios and how will I handle",
+          "sourceRound": "Round 2"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7815146",
+      "url": "https://leetcode.com/discuss/post/7815146/rant-on-amazon-sde-ii-interview-process-xl98c/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7815146/rant-on-amazon-sde-ii-interview-process-xl98c/",
+      "title": "Rant on Amazon SDE II interview process.",
+      "publishedDate": "2026-04-07",
+      "interviewDate": null,
+      "date": "2026-04-07",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "I recived OA link in late feb, then onsite rounds were scheduled for first 2 rounds. \r round 1 : DSA\r 1. alian dictonary\r",
+      "questions": [
+        {
+          "round": 1,
+          "key": "alien-dictionary",
+          "question": "Infer character ordering from an alien dictionary.",
+          "topic": "Graphs / Topological sort",
+          "evidence": "round 1 : DSA; alian dictonary",
+          "sourceRound": "round 1 : DSA",
+          "roundMappingNote": "Source explicitly describes first two onsite rounds; numbered DSA1 followed by LLD maps to2. Later HLD cancelled."
+        },
+        {
+          "round": 1,
+          "key": "sliding-window-maximum",
+          "question": "Find the maximum value in each sliding window.",
+          "topic": "Arrays / Monotonic queue",
+          "evidence": "round 1 : DSA; sliding window maximum",
+          "sourceRound": "round 1 : DSA",
+          "roundMappingNote": "Source explicitly describes first two onsite rounds; numbered DSA1 followed by LLD maps to2. Later HLD cancelled."
+        },
+        {
+          "round": 2,
+          "key": "logging-framework",
+          "question": "Design a Log4j-like logging framework.",
+          "topic": "Low-level design",
+          "evidence": "onsite rounds were scheduled for first 2 rounds ... round1 DSA ... LLD: design log4j + lp",
+          "sourceRound": "LLD",
+          "roundMappingNote": "Source explicitly describes first two onsite rounds; numbered DSA1 followed by LLD maps to2. Later HLD cancelled."
+        }
+      ],
+      "roundMappingNote": "Source explicitly describes first two onsite rounds; numbered DSA1 followed by LLD maps to2. Later HLD cancelled."
+    },
+    {
+      "id": "leetcode-7787615",
+      "url": "https://leetcode.com/discuss/post/7787615/amazon-sde-2-experience-and-compensation-9419/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7787615/amazon-sde-2-experience-and-compensation-9419/",
+      "title": "Amazon SDE-2 Experience and Compensation ",
+      "publishedDate": "2026-04-05",
+      "interviewDate": null,
+      "date": "2026-04-05",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Hey folks,\r I recently completed my interview loop with Amazon (SDE-2) and received an offer. Sharing my experience below:\r ---\r",
+      "questions": [
+        {
+          "round": 4,
+          "key": "file-filtering-api",
+          "question": "Design a file-filtering API with clean, extensible code.",
+          "topic": "Low-level design",
+          "evidence": "Round 4: LLD; Designed a file filtering API system",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7671704",
+      "url": "https://leetcode.com/discuss/post/7671704/amazon-swe-2-interview-verdict-rejected-lzd4o/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7671704/amazon-swe-2-interview-verdict-rejected-lzd4o/",
+      "title": "Amazon SWE 2 Interview | Verdict : [Rejected]",
+      "publishedDate": "2026-03-20",
+      "interviewDate": null,
+      "date": "2026-03-20",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "Will keep it short. There were 5 rounds in the process. 1st OA: 2 medium/hard DSA questions 2nd DSA Round:",
+      "questions": [
+        {
+          "round": 2,
+          "key": "rate-limiter-library",
+          "question": "Design a rate limiter and discuss support for millions of users.",
+          "topic": "Low-level design / Rate limiting",
+          "evidence": "3rd Round (LLD + DSA): Designed a Rate Limiter ... for million users",
+          "sourceRound": "3rd Round (LLD + DSA)",
+          "roundMappingNote": "Source1 OA excluded; four source interview rounds2–5 normalize to loop1–4. CheerCoin omitted because source gives no usable requirements."
+        },
+        {
+          "round": 4,
+          "key": "maximum-concurrent-logins",
+          "question": "Design a system to determine the maximum concurrent users logged in at the same time.",
+          "topic": "Low-level design",
+          "evidence": "5th Round (Bar Raiser) ... LLD round to design max concurrent users logged in at the same time",
+          "sourceRound": "5th Round (Bar Raiser)",
+          "roundMappingNote": "Source1 OA excluded; four source interview rounds2–5 normalize to loop1–4. CheerCoin omitted because source gives no usable requirements."
+        }
+      ],
+      "roundMappingNote": "Source1 OA excluded; four source interview rounds2–5 normalize to loop1–4. CheerCoin omitted because source gives no usable requirements."
+    },
+    {
+      "id": "leetcode-7670163",
+      "url": "https://leetcode.com/discuss/post/7670163/amazon-sde-2-selected-by-anonymous_user-7rq8/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7670163/amazon-sde-2-selected-by-anonymous_user-7rq8/",
+      "title": "Amazon | SDE 2 | Selected",
+      "publishedDate": "2026-03-19",
+      "interviewDate": null,
+      "date": "2026-03-19",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "I had applied directly for an SDE 2 opening on the Amazon Careers portal. ---- **Online Assessment** ",
+      "questions": [
+        {
+          "round": 1,
+          "key": "copy-list-random-pointer",
+          "question": "Deep-copy a linked list with random pointers.",
+          "topic": "Linked lists",
+          "evidence": "Round 1 Interview; https://leetcode.com/problems/copy-list-with-random-pointer",
+          "sourceRound": "Round 1 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 1,
+          "key": "first-unique-number",
+          "question": "Maintain the first unique number in a stream.",
+          "topic": "Data structures",
+          "evidence": "Round 1 Interview; https://leetcode.com/problems/first-unique-number/description/",
+          "sourceRound": "Round 1 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 1,
+          "key": "quality-speed-tradeoff",
+          "question": "Tell me about compromising quality to deliver quickly.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "Round 1 Leadership questions: Compromised quality to deliver quickly.",
+          "sourceRound": "Round 1 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 1,
+          "key": "improve-team-process",
+          "question": "Tell me about improving an existing team process.",
+          "topic": "Behavioral / Invent and simplify",
+          "evidence": "Round 1 Leadership questions: Improved an existing process in your team.",
+          "sourceRound": "Round 1 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 2,
+          "key": "food-ordering-lld",
+          "question": "Design classes and services for food ordering with search, sorting, ordering and ratings.",
+          "topic": "Low-level design",
+          "evidence": "Round 2 Interview; Design the classes and services for a Food Ordering system supporting search, sort, ordering and rating features.",
+          "sourceRound": "Round 2 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 2,
+          "key": "end-to-end-ownership",
+          "question": "Tell me about owning a module end to end.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Round 2 Leadership questions: Owned a module end to end.",
+          "sourceRound": "Round 2 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 2,
+          "key": "conflict-manager",
+          "question": "Tell me about a conflict with your manager.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "Round 2 Leadership questions: Conflict with manager.",
+          "sourceRound": "Round 2 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 3,
+          "key": "vending-machine-leasing-hld",
+          "question": "Design the high-level system for a vending-machine leasing company.",
+          "topic": "System design",
+          "evidence": "Round 3 Interview; High level design of a Vending Machine Leasing Company.",
+          "sourceRound": "Round 3 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 3,
+          "key": "simplify-for-customer",
+          "question": "Tell me about making something simple for a customer.",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Round 3 Leadership questions: Made something simple for a customer.",
+          "sourceRound": "Round 3 Interview",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 4,
+          "key": "maximum-car-pooling-occupancy",
+          "question": "Find the maximum number of passengers in a car at any point given trips.",
+          "topic": "Arrays / Intervals",
+          "evidence": "Bar Raiser; similar to car-pooling ... return the maximum number of passengers in the car at any point.",
+          "sourceRound": "Bar Raiser",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 4,
+          "key": "above-beyond-customer",
+          "question": "Tell me about going above and beyond to deliver for a customer.",
+          "topic": "Behavioral / Customer obsession",
+          "evidence": "Bar Raiser; Went above and beyond to deliver for a customer.",
+          "sourceRound": "Bar Raiser",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        },
+        {
+          "round": 4,
+          "key": "impact-vague-requirements",
+          "question": "Tell me about delivering something impactful with vague requirements.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "Bar Raiser; Delivered something impactful with vague requirements.",
+          "sourceRound": "Bar Raiser",
+          "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+        }
+      ],
+      "roundMappingNote": "Source lists OA then numbered Interviews1–3 followed by Bar Raiser, which is final-loop4."
+    },
+    {
+      "id": "leetcode-7646418",
+      "url": "https://leetcode.com/discuss/post/7646418/amazon-sde-2-blr-interview-experience-re-c2kl/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7646418/amazon-sde-2-blr-interview-experience-re-c2kl/",
+      "title": "Amazon SDE 2 | BLR | Interview Experience",
+      "publishedDate": "2026-03-13",
+      "interviewDate": null,
+      "date": "2026-03-13",
+      "dateBasis": "publication",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "Hi Everyone,\r Giving back to the community as you guys have helped a lot.\r Onsite BLR office F2F :\r",
+      "questions": [
+        {
+          "round": 1,
+          "key": "ai-daily-work",
+          "question": "How do you use AI in your day-to-day work?",
+          "topic": "Generative AI",
+          "evidence": "Round 1 (System Design - F2F); how do you use AI in your day-to-day work.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 1,
+          "key": "personalized-autosuggestion",
+          "question": "Design personalized autosuggestions with top-k trending suggestions and multilingual support.",
+          "topic": "System design / Search",
+          "evidence": "Round 1; Personalized Auto suggestion. A little mix of Top-k ... trending suggestions ... Multi-language support.",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "meeting-rooms-iii",
+          "question": "Schedule meetings across rooms and determine the most-used room (Meeting Rooms III).",
+          "topic": "Heaps / Scheduling",
+          "evidence": "Round 2 (DSA - F2F); Different wordings but it was Meeting Rooms III",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 2,
+          "key": "lca-binary-tree-ii",
+          "question": "Find the lowest common ancestor in a binary tree when queried nodes may be absent.",
+          "topic": "Trees",
+          "evidence": "Round 2; Lowest Common Ancestor of a Binary Tree II",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "swim-rising-water",
+          "question": "Find the minimum time needed to swim across a grid as water rises.",
+          "topic": "Graphs / Shortest paths",
+          "evidence": "Round 3 (DSA - F2F); Swim in Rising Water",
+          "sourceRound": "Round 3"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7622801",
+      "url": "https://leetcode.com/discuss/post/7622801/amazon-sde-2-by-anonymous_user-u9pj/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7622801/amazon-sde-2-by-anonymous_user-u9pj/",
+      "title": "Amazon SDE-2",
+      "publishedDate": "2026-03-03",
+      "interviewDate": null,
+      "date": "2026-03-03",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "All rounds had 2-3 questions based on Amazon leadership principles. Round 1 - 2 DSA questions: 1 -> Search in rotated sorted array",
+      "questions": [
+        {
+          "round": 1,
+          "key": "search-rotated-sorted-array",
+          "question": "Search a rotated sorted array.",
+          "topic": "Arrays / Binary search",
+          "evidence": "Round 1 - 2 DSA questions: Search in rotated sorted array",
+          "sourceRound": "Round 1"
+        },
+        {
+          "round": 2,
+          "key": "idempotent-order-engine",
+          "question": "Design an order-processing engine that handles duplicate orders caused by network failures and retries.",
+          "topic": "Low-level design / Idempotency",
+          "evidence": "Round 2 - LLD: Design an order processing engine ... one order can come multiple times due to network issues and retries.",
+          "sourceRound": "Round 2"
+        },
+        {
+          "round": 3,
+          "key": "contact-center-ai-summarization",
+          "question": "Design an AI-based summarization system for an Amazon contact center.",
+          "topic": "System design / Generative AI",
+          "evidence": "Round 3 - HLD + Resume ... designing an AI-based summarization solution for contact center at Amazon.",
+          "sourceRound": "Round 3"
+        },
+        {
+          "round": 4,
+          "key": "twitter-ranked-feed",
+          "question": "Design tweet creation, sub-second feeds from followed accounts, and popularity-ranked tweets in the user’s network.",
+          "topic": "System design / Social media",
+          "evidence": "Round 4 - HLD: Design a simplified version of Twitter ... Tweet creation ... Feed aggregation ... Popular Tweets in Feed",
+          "sourceRound": "Round 4"
+        }
+      ]
+    },
+    {
+      "id": "leetcode-7638107",
+      "url": "https://leetcode.com/discuss/post/7638107/amazon-sde-2-4th-time-rejected-jan-2026-b5b72/",
+      "retrievedVia": "https://leetcode.com/discuss/post/7638107/amazon-sde-2-4th-time-rejected-jan-2026-b5b72/",
+      "title": "Amazon | SDE 2 | 4th time rejected | Jan 2026 | Bangalore",
+      "publishedDate": "2026-03-10",
+      "interviewDate": "2026-01",
+      "date": "2026-01",
+      "dateBasis": "interview",
+      "location": "Bangalore, India",
+      "role": "SDE II",
+      "stageEvidence": "Current total exp - 6.5 yrs\r Phone Screen(1 hour)\r - Problem: Partition to K Equal Sum Subsets (LC Hard).\r",
+      "questions": [
+        {
+          "round": 1,
+          "key": "production-incident-response",
+          "question": "Tell me about breaking production or being on-call during an outage and how you resolved it.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "DSA round 1; Tell a time where you broke production system or you were on call while it broke",
+          "sourceRound": "DSA round 1",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 1,
+          "key": "lead-technical-project-metrics",
+          "question": "Describe leading a technical project, your approach, and success metrics.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "DSA round 1; Tell a time where you lead/develop a technical project ... success metric",
+          "sourceRound": "DSA round 1",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 1,
+          "key": "minimum-rotated-array",
+          "question": "Find the minimum element in a rotated sorted array.",
+          "topic": "Arrays / Binary search",
+          "evidence": "DSA round 1; Find min element in rotated sorted array",
+          "sourceRound": "DSA round 1",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 1,
+          "key": "132-pattern",
+          "question": "Detect a 132 pattern in an array.",
+          "topic": "Stacks",
+          "evidence": "DSA round 1; https://leetcode.com/problems/132-pattern/description/",
+          "sourceRound": "DSA round 1",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 2,
+          "key": "proactive-issue-resolution",
+          "question": "Tell me about taking the lead to identify and resolve issues.",
+          "topic": "Behavioral / Ownership",
+          "evidence": "DSA Round 2; Tell me a time where you took lead and saw some issues and resolve them",
+          "sourceRound": "DSA Round 2",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 2,
+          "key": "deliver-tight-deadline",
+          "question": "Tell me about facing tight deadlines and ensuring they were met.",
+          "topic": "Behavioral / Deliver results",
+          "evidence": "DSA Round 2; Tell me a time where you faced tight deadlines and how do you ensure that those are met",
+          "sourceRound": "DSA Round 2",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 2,
+          "key": "flight-route-reachability",
+          "question": "Determine whether a destination city is reachable using given flights.",
+          "topic": "Graphs",
+          "evidence": "DSA Round 2; Flight connectivity problem ... check if destination reachable.",
+          "sourceRound": "DSA Round 2",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 2,
+          "key": "flight-route-time-constraints",
+          "question": "Validate flight routes subject to departure and arrival time constraints.",
+          "topic": "Graphs / Scheduling",
+          "evidence": "DSA Round 2; Follow-up: flights with departure/arrival times, requiring path validation with time constraints.",
+          "sourceRound": "DSA Round 2",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 3,
+          "key": "simple-solution-complex-problem",
+          "question": "Tell me about solving a complex problem with a simple solution.",
+          "topic": "Behavioral / Invent and simplify",
+          "evidence": "DSA Round 3; When did you solve a complex problem with simple solution",
+          "sourceRound": "DSA Round 3",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 3,
+          "key": "disagree-manager-commit",
+          "question": "Tell me about disagreeing with your manager and committing to the decision.",
+          "topic": "Behavioral / Disagree and commit",
+          "evidence": "DSA Round 3; Time when you disagreed with you rmanager and commit",
+          "sourceRound": "DSA Round 3",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 3,
+          "key": "ec2-discount-system",
+          "question": "Design an extensible EC2 instance discount system supporting multiple discount types.",
+          "topic": "Low-level design",
+          "evidence": "DSA Round 3; Design question: EC2 instance discount system ... multiple discount types.",
+          "sourceRound": "DSA Round 3",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        },
+        {
+          "round": 4,
+          "key": "also-bought-recommendations",
+          "question": "Design a “people who bought this also bought that” recommendation system using purchase history.",
+          "topic": "System design / Recommendations",
+          "evidence": "System Design: Design “People who bought this also bought that” recommendation system.",
+          "sourceRound": "System Design",
+          "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+        }
+      ],
+      "dateEvidence": "Title: Jan 2026; publication March10 2026.",
+      "roundMappingNote": "Source explicitly says four loop rounds after Phone Screen. DSA rounds1–3 and subsequent System Design are retained as loop1–4, with original labels preserved."
+    },
+    {
+      "id": "leetcode-7477684",
+      "url": "https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/",
+      "retrievedVia": "https://r.jina.ai/https://leetcode.com/discuss/post/7477684/amazon-india-sde-2-interview-experience-ca6y0/",
+      "title": "Amazon || SDE - 2 || 3 YOE || Accepted offer",
+      "publishedDate": "2026-01-08",
+      "interviewDate": null,
+      "date": "2026-01-08",
+      "dateBasis": "publication",
+      "location": "Not stated",
+      "role": "SDE II",
+      "stageEvidence": "First round was HackerRank OA; subsequent System design, LLD/Hiring Manager, DSA, and Bar raiser interviews lead to offer.",
+      "questions": [
+        {
+          "round": 1,
+          "key": "auction-platform",
+          "question": "Design an auction platform, including editable bids, near-real-time leaderboards and reliable winning-bid tracking.",
+          "topic": "System design / Commerce",
+          "evidence": "Second Round: ... design an auction platform ... handle edits to bids ... near real-time leaderboard ... winning bid",
+          "sourceRound": "Second Round",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "round": 2,
+          "key": "inventory-nosql-design",
+          "question": "Could an inventory service be built using NoSQL instead of SQL? Discuss project design choices and patterns.",
+          "topic": "System design / Databases",
+          "evidence": "Third round: LLD discussion with Hiring manager ... build an inventory service using NoSQL ... design pattern ... old projects.",
+          "sourceRound": "Third round: LLD discussion with Hiring manager",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "round": 3,
+          "key": "browser-history",
+          "question": "Implement an interface to navigate browser history.",
+          "topic": "Data structures",
+          "evidence": "Round 3: DSA round ... Implement an interface to navigate browser history.",
+          "sourceRound": "Round 3: DSA round",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "round": 3,
+          "key": "basic-arithmetic-implementation",
+          "question": "Implement basic arithmetic operations +, −, × and ÷ without built-in functions.",
+          "topic": "Algorithms",
+          "evidence": "Round 3: DSA round ... Implement basic arithmetic operations like +,-,*,/ without using any inbuilt functions.",
+          "sourceRound": "Round 3: DSA round",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "round": 4,
+          "key": "rotting-oranges",
+          "question": "Find the time for all reachable oranges to rot.",
+          "topic": "Graphs / Multi-source BFS",
+          "evidence": "Bar raiser ... rotten oranges (graph BFS)",
+          "sourceRound": "Bar raiser",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        },
+        {
+          "round": 4,
+          "key": "asteroid-collision",
+          "question": "Resolve asteroid collisions.",
+          "topic": "Stacks",
+          "evidence": "Bar raiser ... Asteriod collisions (Stack)",
+          "sourceRound": "Bar raiser",
+          "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+        }
+      ],
+      "roundMappingNote": "Source names OA First round, then Second Round system design, Third round LLD/HM, Round3 DSA (inconsistent numbering), Bar raiser. Explicit sequential post-OA stages map to four final-loop interviews, preserving each source label."
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://leetcode.com/discuss/post/8355124/amazon-sde-ii-rejected-4-yoe-tier-1-by-a-uvq1/",
+      "reason": "Original read: one unnumbered virtual interview before rejection, with Number of Atoms. Final-loop versus screening stage not established."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7641198/amazon-sde-2-interview-experience-by-shu-byg6/",
+      "reason": "Original is sign-in gated. Archive identifies it as the same AFFS Pune/Medium report; retained only as alias/discovery provenance, not independent evidence or count."
+    },
+    {
+      "url": "https://medium.com/@hissandanish/amazon-sde-2-interview-experience-selected-b1f8b0a69de5",
+      "reason": "Full original read, published February5 2026. Topic headings DSA1/LLD/DSA2/HLD conflict with overview scheduling order; no defensible final-loop round numbers without assuming order. Specific token-management/LMS questions not assigned invented rounds."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8351419/amazon-sde-2-interview-experience-by-ano-b2rm/",
+      "reason": "Full source read: May–June rounds but all coding/design descriptions are vague topic/difficulty labels, not extractable specific questions."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7910016/amazon-sde2-interview-and-compensation-b-tbkv/",
+      "reason": "Full source read: April2026 publication, Hyderabad; DSA/LLD/HLD/Bar headings not numbered and actual chronology explicitly HLD+DSA before LLD. Round mapping uncertain."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/6870939/amazon-sde2-hyderabad-by-anonymous_user-br96/",
+      "reason": "June2025 report handed to 2025-H1 researcher, not duplicated here."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7868487/amazon-2025-interview-sde2-offer-by-spri-950y/",
+      "reason": "Title explicitly2025 despite April2026 publication. Handed to 2025-H2 researcher for year-precision inclusion."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8110242/amazon-sde-2-strong-technical-solved-br-tg56r/",
+      "reason": "Full original read: no specific coding, design or behavioral questions."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8191929/amazon-aws-sde2-role-by-anonymous_user-h973/",
+      "reason": "Explicit AWS phone-screen question only, not final loop."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8173956/amazon-sde-interview-experience-4-rounds-csg3/",
+      "reason": "Original embedded tags identify amazon sde1; title/body merely SDE. Excluded wrong level."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7709868/amazon-sde-2-interview-experience-prime-xq7rx/",
+      "reason": "Original browser says Sign in to view this content. Authentication not bypassed; related-post/archive excerpts are insufficient round evidence."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8324674/amazon-sde2-offer-by-anonymous_user-1r1t/",
+      "reason": "Original says Post not exist; browser yields no article. Archive snippet insufficient for all rounds."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8290590/sde-2-amazon-interview-loop-on-site-bang-egra/",
+      "reason": "Full source confirms two onsite interviews (Dropbox HLD and Bus Routes DSA) but never states round numbers or chronological order; do not infer from topic listing."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8283939/amazon-interview-experience-sde-2-by-agr-k2mo/",
+      "reason": "Only one DSA interview after OA is reported before rejection. Cannot establish whether it was a technical screen or first final-loop interview; exclude uncertain stage."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7816202/amazon-interview-experience-sde2-by-anon-9ykn/",
+      "reason": "Full report has four-round outline but question descriptions are generic examples (like library or parking lot), not actual specific questions."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/7648258/amazon-interview-experience-sde-2-hydera-smze/",
+      "reason": "Original says Sign in to view this content. Archive snippet insufficient; not bypassed."
+    },
+    {
+      "url": "https://www.teamblind.com/post/my-amazon-interview-experience-sde-2-3-yoe-svat3via",
+      "reason": "Blind original and public rendering return403. Potential Reddit crosspost handed to Reddit researcher; not counted separately."
+    },
+    {
+      "url": "https://leetcode.com/discuss/post/8457154/amazon-sde-ii-interview-experience-2026-19lzv/",
+      "reason": "August2026 source handed to 2026-H2 researcher."
+    },
+    {
+      "url": "https://www.hellointerview.com/guides/amazon/l5",
+      "reason": "General interview guide, not a dated first-person final-loop report."
+    },
+    {
+      "url": "https://www.iamunemployed.xyz/archives/amazon",
+      "reason": "Used only as discovery index to original LeetCode reports, not as independent candidate evidence."
+    }
+  ],
+  "limitations": [
+    "Not exhaustive. Indexed public self-reports cannot establish all questions asked internally, and deleted, private, unindexed and non-English reports can be missing.",
+    "Queries used multiple spellings and January–June terms. All web_search providers repeatedly failed with throttling/challenges; direct Google read also blocked. Public browser Google fallback succeeded for broad/date-operator queries, but exact monthly queries hit CAPTCHA. No CAPTCHA solved or authentication bypassed.",
+    "The date-constrained LeetCode search was traversed through all four displayed pages (39 entries); broadly relevant originals were read. Several result dates differed from original publication metadata; originals/UTC timestamps take precedence.",
+    "The supplied archive exposed March–June2026 candidates but its retrieved page stopped at March3; January–February coverage relies on independent searches and is weaker.",
+    "YouTube/Instagram video reports were discovered by search but no transcript-based round evidence was retrieved; video-only coverage remains incomplete. Search snippets and generic/paywalled aggregators were not treated as verified questions.",
+    "Where source includes OA or phone screen in numbering, only an explicitly established post-screen sequence is normalized. Every such occurrence retains sourceRound and roundMappingNote. Missing/cancelled rounds retain source gaps.",
+    "Generic LP labels, unspecified variants, bare difficulty/topics, vague HLD problems, and unspecified follow-ups were omitted. Source examples contain occasional mathematical errors; no solution claims or erroneous examples were copied as answers.",
+    "LeetCode8420230 publication is July25 2026, but title says2026 and author joined April2026; retained at interview year precision in H1 by explicit assignment, not mislabeled April interview.",
+    "Some reports have five or six actual post-screen rounds. Only their actual first four are included; additional rounds are not forced into R4.",
+    "Locations are only stated interview/role locations, never inferred from currency, employer, profile, or default website country footer."
+  ]
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
+  <title>Amazon SDE II · Interview fieldnotes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to questions</a>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="Interview fieldnotes home"><span class="mark" aria-hidden="true">IF</span> INTERVIEW FIELDNOTES</a>
+      <span class="edition">PUBLIC REPORTS / INDEPENDENT RESEARCH</span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">AMAZON · EXTERNAL HIRING · L5</p>
+          <h1 id="page-title">The SDE II<br>interview record.</h1>
+          <p class="lede">Final-loop questions, grounded in candidate accounts. Explore what was reported, in which round, and the evidence behind it.</p>
+          <p id="date-window" class="window">January 2025 – September 13, 2026 · Rounds 1–4</p>
+        </div>
+        <aside class="scope-note" aria-label="How to read this collection">
+          <span class="eyebrow">A RECORD, NOT A PREDICTION</span>
+          <p id="disclaimer">This is a collection of discovered public reports—not every question asked at Amazon. Rounds refer to final-loop positions; original labels and any explicit numbering offsets remain in the evidence.</p>
+          <a href="#methodology">Read the evidence rules <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Current selection statistics">
+        <div><strong id="stat-questions">—</strong><span>question–round pairs</span></div>
+        <div><strong id="stat-reports">—</strong><span>distinct candidate reports</span></div>
+        <div><strong id="stat-occurrences">—</strong><span>matching occurrences</span></div>
+        <div><strong id="stat-locations">—</strong><span>stated locations</span></div>
+      </section>
+
+      <section class="workspace" aria-labelledby="explore-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE QUESTION INDEX</p><h2 id="explore-heading">Follow the evidence.</h2></div>
+          <button id="reset" type="button" class="text-button" disabled>Reset filters</button>
+        </div>
+        <form id="filters" class="filters" role="search" aria-label="Filter interview questions">
+          <fieldset id="filter-fields" disabled>
+            <legend class="sr-only">Question filters</legend>
+            <div class="search-field">
+              <label for="search">Search the record</label>
+              <input id="search" name="q" type="search" placeholder="Question, topic, source, or evidence…" autocomplete="off">
+            </div>
+            <div class="filter-grid">
+              <div><label for="round">Round</label><select id="round" name="round"><option value="">All rounds</option></select></div>
+              <div><label for="topic">Topic</label><select id="topic" name="topic"><option value="">All topics</option></select></div>
+              <div><label for="location">Location</label><select id="location" name="location"><option value="">All locations</option></select></div>
+              <div><label for="year">Year</label><select id="year" name="year"><option value="">All years</option></select></div>
+              <div><label for="basis">Date basis</label><select id="basis" name="basis"><option value="">Interview & publication</option><option value="interview">Interview date</option><option value="publication">Publication date</option></select></div>
+              <div><label for="minimum">Min. frequency</label><input id="minimum" name="min" type="number" min="1" step="1" value="1" inputmode="numeric"></div>
+            </div>
+          </fieldset>
+        </form>
+        <p class="filter-note">Year, location, and date basis must match the <em>same occurrence</em>. Frequencies, dates, and sources are recalculated for your selection.</p>
+
+        <div class="results-toolbar">
+          <p id="result-summary" role="status" aria-live="polite" aria-atomic="true">Loading the research database…</p>
+          <button id="export-csv" type="button" class="button" disabled>Export selection · CSV</button>
+        </div>
+        <div id="load-error" class="notice error" role="alert" hidden><h3>The database could not be loaded.</h3><p id="error-message"></p><button id="retry" type="button" class="button">Try again</button></div>
+        <div id="empty-state" class="notice" hidden><h3>No questions in this selection.</h3><p>Try a broader search or reduce the minimum frequency. Unknown locations are listed as “Not stated.”</p><button id="empty-reset" type="button" class="button">Clear all filters</button></div>
+        <p id="table-hint" class="table-hint" hidden>Scroll horizontally for all seven columns. Open a question’s evidence to inspect each matching report.</p>
+        <div id="results" class="table-wrap" tabindex="0" role="region" aria-label="Interview questions; horizontally scrollable" aria-describedby="table-hint" aria-busy="true">
+          <table id="question-table" hidden>
+            <caption class="sr-only">Publicly reported final-loop questions. Sort with column-header buttons; expand evidence within the question column.</caption>
+            <thead><tr>
+              <th scope="col" aria-sort="none" data-sort="round"><button type="button">Round<span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="none" data-sort="question"><button type="button">Question<span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="none" data-sort="topic"><button type="button">Topic<span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="descending" data-sort="frequency"><button type="button">Frequency<span aria-hidden="true">↓</span></button></th>
+              <th scope="col" aria-sort="none" data-sort="dates"><button type="button">Dates<span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="none" data-sort="sources"><button type="button">Sources<span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="none" data-sort="locations"><button type="button">Locations<span aria-hidden="true">↕</span></button></th>
+            </tr></thead>
+            <tbody id="question-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="methodology" class="methodology" aria-labelledby="methodology-heading">
+        <div><p class="eyebrow">PROVENANCE FIRST</p><h2 id="methodology-heading">What the numbers mean.</h2></div>
+        <div class="method-grid">
+          <article><h3>Count reports, not repetitions</h3><p id="frequency-definition">Frequency is the number of distinct candidate reports for a question in a particular round. Cross-posts and repeated mentions do not add to the count. It is not an estimate of Amazon’s asking rate.</p></article>
+          <article><h3>Preserve the date evidence</h3><p>Interview dates take precedence. When unavailable, publication dates are explicitly labeled. Month- and year-only dates retain that precision; no exact interview day is inferred.</p></article>
+          <article><h3>Keep the scope narrow</h3><p>External SDE II / L5 final loops, rounds 1–4 only. Online assessments, phone screens, internal transfers, and other levels are excluded. Explicit OA/screen numbering offsets are documented in the evidence. “Not stated” means the report supplied no location.</p></article>
+        </div>
+        <details class="coverage-panel">
+          <summary>Search coverage, exclusions & limitations <span id="coverage-summary"></span></summary>
+          <div class="coverage-body"><p>Coverage reflects the searches documented below, not a complete inventory of Amazon interviews. Source access gaps and ambiguous reports remain visible rather than being filled in.</p><div id="coverage-content"><p>Coverage details load with the database.</p></div></div>
+        </details>
+      </section>
+      <section class="downloads" aria-labelledby="downloads-heading">
+        <div><h2 id="downloads-heading">Take the evidence with you.</h2><p>Full-corpus downloads include all records, regardless of the active filters.</p></div>
+        <div class="download-links"><a class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a></div>
+      </section>
+    </main>
+    <footer><p>Independent research. Not affiliated with or endorsed by Amazon.</p><p id="generated-at">Source evidence stays attached to every question.</p></footer>
+  </div>
+  <noscript><div class="noscript">JavaScript is needed to filter this index. You can still download the <a href="data/database.json">complete JSON database</a> or <a href="data/database.sqlite">SQLite database</a>.</div></noscript>
+</body>
+</html>

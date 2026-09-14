@@ -1,0 +1,38 @@
+{
+  "slice": "supplemental-source-audit",
+  "searchedAt": "2026-09-13",
+  "queries": [
+    "Amazon SDE 2 interview experience 2025 site:geeksforgeeks.org",
+    "Amazon SDE2 interview experience 2025 2026 medium blog"
+  ],
+  "reports": [],
+  "excluded": [
+    {
+      "url": "https://www.geeksforgeeks.org/interview-experiences/amazon-interview-experience-for-sde-ii-virtual-rounds/",
+      "reason": "Search result displayed July 23, 2025, but original page metadata explicitly gives published_time 2021-03-25 and modified_time 2025-07-23. Excluded as an old report, not a 2025 interview."
+    },
+    {
+      "url": "https://www.glassdoor.com/Interview/Amazon-SDE-2-Interview-Questions-EI_IE6036.0,6_KO7,12.htm",
+      "reason": "HTTP 403 prevented original report inspection. Search snippets are not sufficient to verify question-to-round/date/level assignments."
+    },
+    {
+      "url": "https://www.tryexponent.com/experiences/amazon-software-engineer-interview-7a58f5",
+      "reason": "Question details are membership-gated; public excerpt has conflicting SDE II versus L4 labels and no verified exact questions or rounds. No access controls bypassed."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-sde2-feb-2026-selected",
+      "reason": "Public page lists four questions but complete experience is login-gated. Numbered question list cannot establish interview-round assignment. Excluded unless independently corroborated by original report elsewhere."
+    },
+    {
+      "url": "https://interviewexperiences.in/experience/amazon/amazon-aws-sde2-role",
+      "reason": "May 11, 2026 report explicitly describes only a phone screen, not final-loop rounds."
+    }
+  ],
+  "limitations": [
+    "ALL internally asked questions cannot be enumerated from public self-reports. This corpus is a documented discovery effort, not a complete Amazon question bank.",
+    "Search providers intermittently returned bot challenges and empty results. Browser-rendered search was used for discovery when programmatic search failed; original sources, not snippets, establish included questions.",
+    "Public first-person reports can contain mistakes and are not independently authenticated. Questions are concise paraphrases, not guaranteed verbatim interviewer wording.",
+    "Some reports omit location, interview date, exact behavioral question wording, or final-round numbering; missing facts are not reconstructed.",
+    "Private, deleted, unindexed, non-public and inaccessible material is not included. Non-English reports and video-only accounts without accessible transcripts may be underrepresented."
+  ]
+}

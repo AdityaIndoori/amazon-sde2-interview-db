@@ -1,0 +1,13 @@
+{
+  "name": "amazon-sde2-interview-db",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-backed public Amazon SDE II interview question reports, 2025–2026",
+  "scripts": {
+    "build": "bun scripts/build.js",
+    "check": "bun scripts/check.js",
+    "serve": "bun scripts/serve.js"
+  },
+  "engines": { "bun": ">=1.2.0" }
+}
