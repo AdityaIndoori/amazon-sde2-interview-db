@@ -8,7 +8,7 @@
   <meta name="description" content="An evidence-backed collection of publicly reported Amazon SDE II final-loop interview questions, with round-level provenance and transparent coverage.">
   <title>Amazon SDE II · Interview fieldnotes</title>
   <link rel="stylesheet" href="styles.css?v=307d883a1836">
-  <script src="app.js?v=e2439a162735" defer></script>
+  <script src="app.js?v=55feb3a03e90" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#results">Skip to questions</a>
@@ -50,6 +50,7 @@
           <div class="collection-options">
             <label><input id="view-strict" type="radio" name="view" value="strict" checked disabled><span>Round verified</span></label>
             <label><input id="view-unconfirmed" type="radio" name="view" value="unconfirmed" disabled><span>Round unconfirmed</span></label>
+            <label><input id="view-all" type="radio" name="view" value="all" disabled><span>All</span></label>
           </div>
         </fieldset>
         <p id="collection-note" class="filter-note">Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number.</p>
@@ -156,7 +157,7 @@
       </section>
       <section class="downloads" aria-labelledby="downloads-heading">
         <div><h2 id="downloads-heading">Take the evidence with you.</h2><p id="download-description">Full downloads include the round-verified collection, regardless of the active filters.</p></div>
-        <div class="download-links"><a id="download-json" class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a id="download-sqlite" class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a></div>
+        <div class="download-links"><a id="download-json" class="button" href="data/database.json" download>Full JSON <span aria-hidden="true">↓</span></a><a id="download-sqlite" class="button" href="data/database.sqlite" download>Full SQLite <span aria-hidden="true">↓</span></a><a id="download-unconfirmed-json" class="button" href="data/unconfirmed.json" download hidden>Unconfirmed JSON</a><a id="download-unconfirmed-sqlite" class="button" href="data/unconfirmed.sqlite" download hidden>Unconfirmed SQLite</a></div>
       </section>
     </main>
     <footer><p>Independent research. Not affiliated with or endorsed by Amazon.</p><p id="generated-at">Source evidence stays attached to every question.</p></footer>

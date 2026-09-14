@@ -63,7 +63,7 @@
     catch { storageNotice("This browser could not save local study data."); }
   }
 
-  function markKey(row) { return JSON.stringify([view, row.id]); }
+  function markKey(row) { return JSON.stringify([row.round === null ? "unconfirmed" : "strict", row.id]); }
 
   function renderSavedViews(selected = $("saved-view").value) {
     $("saved-view").replaceChildren(new Option(study.views.length ? "Choose a saved filter set" : "No saved filter sets", ""), ...study.views.map((item, index) => new Option(item.name, String(index))));
@@ -135,28 +135,36 @@
   }
 
   function selectCollection(nextView) {
-    view = nextView === "unconfirmed" && collections.unconfirmed ? "unconfirmed" : "strict";
+    view = ["unconfirmed", "all"].includes(nextView) && collections.unconfirmed ? nextView : "strict";
     database = collections[view];
     if (!database) return;
     reports = new Map(database.reports.map(report => [report.id, report]));
     const unconfirmed = view === "unconfirmed";
-    $("view-strict").checked = !unconfirmed;
+    const all = view === "all";
+    $("view-strict").checked = view === "strict";
+    $("view-all").checked = all;
     $("view-unconfirmed").checked = unconfirmed;
     controls.round.querySelector("fieldset").disabled = unconfirmed;
     controls.round.classList.toggle("round-disabled", unconfirmed);
-    $("stat-question-label").textContent = unconfirmed ? "questions · round unconfirmed" : "question–round pairs · verified";
-    $("collection-note").textContent = unconfirmed
+    $("stat-question-label").textContent = all ? "question entries · both collections" : unconfirmed ? "questions · round unconfirmed" : "question–round pairs · verified";
+    $("collection-note").textContent = all
+      ? "All: verified and unconfirmed rows are shown together, not merged. Each row keeps its evidence status and frequency; shared reports count once in the summary. Selecting numbered rounds excludes unconfirmed rows. Study marks remain attached to their original collection."
+      : unconfirmed
       ? "Round unconfirmed: these accounts verify an SDE II / L5 final loop, but do not establish the question’s round number. No round is inferred. Round choices are ignored here and retained for Round verified; frequencies remain separate."
       : "Round verified: final-loop questions with a supported position in rounds 1–4. The separate unconfirmed collection verifies the final-loop stage, but not the round number. Frequencies are never combined across collections.";
-    $("date-window").textContent = `${dateLabel(database.metadata.startDate)} – ${dateLabel(database.metadata.endDate)} · ${unconfirmed ? "Final loop · round unconfirmed" : "Rounds 1–4 · round verified"}`;
-    $("frequency-definition").textContent = unconfirmed
+    $("date-window").textContent = `${dateLabel(database.metadata.startDate)} – ${dateLabel(database.metadata.endDate)} · ${all ? "Both question collections" : unconfirmed ? "Final loop · round unconfirmed" : "Rounds 1–4 · round verified"}`;
+    $("frequency-definition").textContent = all
+      ? "Row frequencies stay separate for verified and unconfirmed questions. The distinct-report summary deduplicates shared accounts across both collections; frequencies are not merged across evidence statuses."
+      : unconfirmed
       ? "Frequency is the number of distinct candidate reports for a question with an unconfirmed final-loop round. It does not include round-verified reports. Cross-posts and repeated mentions do not add to the count; this is not an estimate of Amazon’s asking rate."
       : database.metadata.frequencyDefinition;
-    $("download-description").textContent = `Full downloads include only the round-${unconfirmed ? "unconfirmed" : "verified"} collection, regardless of the active filters.`;
+    $("download-description").textContent = all ? "Export selection above downloads a combined CSV. Full JSON and SQLite downloads remain separate for each collection to preserve their evidence contracts." : `Full downloads include only the round-${unconfirmed ? "unconfirmed" : "verified"} collection, regardless of the active filters.`;
     for (const format of ["json", "sqlite"]) {
       const link = $(`download-${format}`);
       link.href = `data/${unconfirmed ? "unconfirmed" : "database"}.${format}`;
       link.setAttribute("aria-label", `Full round-${unconfirmed ? "unconfirmed" : "verified"} ${format.toUpperCase()} download`);
+      link.textContent = `${all ? "Verified" : "Full"} ${format.toUpperCase()} ↓`;
+      $(`download-unconfirmed-${format}`).hidden = !all;
     }
     if (database.metadata.generatedAt) $("generated-at").textContent = `Active collection generated ${dateLabel(database.metadata.generatedAt.slice(0, 10))}`;
   }
@@ -179,7 +187,8 @@
   }
 
   function sourceFor(question, reportId) {
-    return reports.get(reportId) || question.sources.find((source) => source.id === reportId) || { id: reportId, title: reportId };
+    const source = view === "all" ? collections.all.sourceReports[question.round === null ? "unconfirmed" : "strict"].get(reportId) : reports.get(reportId);
+    return source || question.sources.find((item) => item.id === reportId) || { id: reportId, title: reportId };
   }
 
   function populateChoices(id, values, label = (value) => value) {
@@ -229,7 +238,7 @@
 
   function publicURL(state = stateFromControls()) {
     const url = new URL(location.pathname, location.origin);
-    if (view === "unconfirmed") url.searchParams.set("view", view);
+    if (view !== "strict") url.searchParams.set("view", view);
     for (const [key, value] of Object.entries(state)) {
       if (key === "personal") continue;
       if (Array.isArray(value)) {
@@ -269,7 +278,7 @@
     const terms = state.q.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const rows = [];
     for (const question of database.questions) {
-      if (view === "strict" && state.round.length && !state.round.includes(String(question.round))) continue;
+      if (view !== "unconfirmed" && state.round.length && !state.round.includes(String(question.round))) continue;
       if (state.topic.length && !state.topic.includes(question.topic)) continue;
       if (state.category.length && !state.category.includes(question.category)) continue;
       const mark = study.marks[markKey(question)];
@@ -439,7 +448,7 @@
     $("stat-reports").textContent = reportIds.size.toLocaleString();
     $("stat-occurrences").textContent = occurrenceCount.toLocaleString();
     $("stat-locations").textContent = locations.size.toLocaleString();
-    $("result-summary").textContent = `${view === "unconfirmed" ? "Round unconfirmed" : "Round verified"} · ${visibleRows.length.toLocaleString()} of ${database.questions.length.toLocaleString()} ${view === "unconfirmed" ? "questions" : "question–round pairs"} · ${reportIds.size.toLocaleString()} distinct reports`;
+    $("result-summary").textContent = `${view === "all" ? "All collections" : view === "unconfirmed" ? "Round unconfirmed" : "Round verified"} · ${visibleRows.length.toLocaleString()} of ${database.questions.length.toLocaleString()} ${view === "all" ? "question entries" : view === "unconfirmed" ? "questions" : "question–round pairs"} · ${reportIds.size.toLocaleString()} distinct reports`;
     $("question-table").hidden = !visibleRows.length;
     $("empty-state").hidden = !!visibleRows.length;
     $("table-hint").hidden = !visibleRows.length;
@@ -494,7 +503,7 @@
     const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
     const link = element("a");
     link.href = url;
-    link.download = `amazon-sde2-${view === "unconfirmed" ? "unconfirmed" : "round-verified"}-filtered-questions.csv`;
+    link.download = `amazon-sde2-${view === "all" ? "all" : view === "unconfirmed" ? "unconfirmed" : "round-verified"}-filtered-questions.csv`;
     document.body.append(link);
     link.click();
     link.remove();
@@ -693,8 +702,13 @@
     try {
       if (strictResult.status === "rejected") throw strictResult.reason;
       collections.strict = strictResult.value;
+      if (collections.unconfirmed) {
+        const combinedReports = [...new Map([...collections.strict.reports, ...collections.unconfirmed.reports].map(report => [report.id, report])).values()];
+        collections.all = { metadata: { ...collections.strict.metadata, reportCount: combinedReports.length }, questions: [...collections.strict.questions, ...collections.unconfirmed.questions], reports: combinedReports };
+        collections.all.sourceReports = { strict: new Map(collections.strict.reports.map(report => [report.id, report])), unconfirmed: new Map(collections.unconfirmed.reports.map(report => [report.id, report])) };
+      } else delete collections.all;
       const data = collections.strict;
-      const questions = Object.values(collections).flatMap(collection => collection.questions);
+      const questions = [...collections.strict.questions, ...(collections.unconfirmed?.questions ?? [])];
       const occurrences = questions.flatMap(question => question.occurrences);
       populateChoices("round", data.questions.map(question => String(question.round)), value => `Round ${value}`);
       populateChoices("topic", questions.map(question => question.topic));
@@ -709,6 +723,7 @@
       render(false);
       $("view-strict").disabled = false;
       $("view-unconfirmed").disabled = !collections.unconfirmed;
+      $("view-all").disabled = !collections.unconfirmed;
       $("filter-fields").disabled = false;
       $("save-view").disabled = false;
       $("share-view").disabled = false;
@@ -718,6 +733,7 @@
       visibleRows = [];
       $("view-strict").disabled = true;
       $("view-unconfirmed").disabled = true;
+      $("view-all").disabled = true;
       $("filter-fields").disabled = true;
       $("reset").disabled = true;
       $("export-csv").disabled = true;
@@ -760,7 +776,7 @@
     clearTimeout(searchTimer);
     restoreURL(saved.query);
     render();
-    $("study-status").textContent = `Loaded “${saved.name}”. Personal progress filter reset to All.${new URLSearchParams(saved.query).get("view") === "unconfirmed" && !collections.unconfirmed ? " The unconfirmed collection is unavailable; showing round verified instead." : ""}`;
+    $("study-status").textContent = `Loaded “${saved.name}”. Personal progress filter reset to All.${["unconfirmed", "all"].includes(new URLSearchParams(saved.query).get("view")) && !collections.unconfirmed ? " The unconfirmed collection is unavailable; showing round verified instead." : ""}`;
   });
   $("delete-view").addEventListener("click", () => {
     if ($("saved-view").value === "") return;

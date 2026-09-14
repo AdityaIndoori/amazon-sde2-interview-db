@@ -107,6 +107,8 @@ Every column is sortable. Dates sort by latest visible date; sources by title; l
 
 `view=unconfirmed` selects the supplemental collection. Round choices are disabled/ignored but retained for switching back; other filters and same-occurrence semantics remain. Exported CSV uses Unconfirmed in the round column; full downloads target the active collection. No cross-collection frequencies are combined. Promotion requires explicit strict evidence and removal of the same source/question from supplemental input.
 
+`view=all` combines the two row lists for browsing, not their canonical frequencies. Verified and unconfirmed rows remain separate even when a question key is shared. The summary deduplicates report IDs, and each row uses its original collection's source context and local study identity. Numbered round filters apply to known ordinals and therefore exclude null-round entries. Combined selection CSV retains each round label; full databases remain separate downloads.
+
 Structured campaigns under `data/campaigns/` are distinct from historic free-form query logs. Each records country/date search scope, execution time, provider, actual query, artifact and source dispositions. Completed means the request/inspection ran, not exhaustive coverage. Derived outcomes distinguish admitted evidence, unresolved leads, inspected sources with no admissions, no returned candidates and failed execution. No-candidates and failures never mean no interviews exist. Sixteen campaigns are currently recorded; the latest pass added12 runs and93 per-source dispositions. Some candidates remain explicitly unresolved.
 
 ## Known coverage gaps
